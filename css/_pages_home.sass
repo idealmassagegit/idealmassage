@@ -1,0 +1,188 @@
+@import _mixins
+@import _colors
+@import _fonts
+
+.main-jumbo
+    +backgroundCover
+    background-image: url('/img/massage-smiling.jpeg')
+    background-blend-mode: multiply
+    background-color: #756D54
+    background-attachment: fixed
+    border-radius: 0
+    height: calc(100vh - 50px)
+    min-height: 450px
+    margin: 0
+    padding: 0
+    position: relative
+    h1
+        // +textShadow
+        color: $aqua
+        font-family: $headerFont
+        font-size: 100pt
+        // font-weight: bold
+        letter-spacing: 10px
+        padding-top: 100px
+    .jumbo-subtext
+        +textShadow($darkGray)
+        color: #eaeaea
+        font-family: Dancing Script
+        font-size: 70px
+        // margin-top: 250px
+        position: absolute
+        bottom: 30px
+        left: 50%
+        transform: translateX(-50%)
+
+.cards-section
+    +backgroundCover
+    background-image: url('/img/relaxation.jpg')
+    background-attachment: fixed
+    background-blend-mode: multiply
+    height: 650px
+    padding-top: 30px
+    .cards-section-header
+        h2
+            +textShadow($darkBlue)
+            color: $aqua
+            font-family: $headerFont
+            font-size: 120px
+    .card-flex-box
+        margin-top: 100px
+        padding: 0 50px   
+    .card
+        +backgroundFull
+        box-shadow: 0 0 300px black
+        border: none
+        // color: $black
+        height: 250px
+        width: 400px
+        margin: 0 auto
+        a
+            background-color: rgba(0,0,0,.2)
+            border-radius: 8px
+            display: block
+            height: 100%
+            transition: all .4s ease-in
+            width: 100%
+            &:hover
+                background-color: rgba(0,0,0,.6)
+                box-shadow: 0 0 5px #555
+                .card-title
+                    transform: scale(1.1)
+                    // +textShadow(transparent)
+                    // color: $darkBlue
+                    // color: $white
+                .hidden-text
+                    opacity: 1
+                    height: 200px
+        .card-body
+            border-radius: 5px
+            box-shadow: 0 0 -20px #444
+            padding: 0
+            position: relative
+        .card-title
+            color: $purp
+            font-family: $subheaderFont
+            font-size: 30pt
+            font-weight: bold
+            padding: 15px
+            transition: all .3s ease-in
+        .hidden-text
+            display: block
+            color: $aqua
+            font-family: $subheaderFont
+            font-size: 25pt
+            margin: 0 auto
+            opacity: 0
+            overflow: hidden
+            word-wrap: none
+            transition: all .4s ease-in
+            height: 0
+    .full-menu
+        +transition(all .3s)
+        color: $white
+        font-size: 30px
+        margin-top: 40px
+        padding: 20px 40px
+        &:hover
+            box-shadow: 0 5px 15px rgba(0,0,0,.7)
+            transform: scale(1.02)
+
+    .custom-card
+        background-image: url('/img/massage-stones-guy.jpg')
+    .stretch-card
+        background-image: url('/img/massage-blur.jpg')
+    .prenatal-card
+        background-image: url('/img/prenatal-massage.jpg')
+    
+.reviews-benefits-box
+    +backgroundCover
+    background-image: url('/img/horizon-clouds.jpg')
+    background-attachment: fixed
+    // padding-bottom: 50px
+
+    .reviews-section
+        height: 275px
+        .reviews-slider
+            margin: 0 auto
+            padding-top: 75px
+            padding-bottom: 75px
+            width: 100%
+            img
+                border-radius: 10px
+                box-shadow: 5px 5px 15px #999
+                display: block
+                margin: 0 auto
+
+    .benefits-section
+        .benefits-box
+            background: radial-gradient(circle, rgba(250, 252, 255, .7) 60%, rgba(212, 232, 255, .7))
+            border-radius: 20px
+            color: $night
+            width: 60%
+            margin: 0 auto
+            padding: 30px 60px 50px 60px
+            .benefits-header
+                font-size: 60px
+                font-family: $headerFont
+                padding-bottom: 20px
+            .benefits-text
+                font-size: 20pt
+                font-family: $basicFont
+                line-height: 1.5em
+                text-indent: 50px
+
+.hours-map
+    background: radial-gradient(circle, rgba(250, 252, 255, .7) 60%, rgba(212, 232, 255, .7))
+    box-shadow: 0 -20px 100px $deepBlue
+    color: $navy
+    height: 420px
+    padding-bottom: 50px
+    .hours-box
+        width: 70%
+        margin: 0 auto
+        h2
+            font-size: 50px
+            font-family: $headerFont
+        h4
+            font-size: 25px
+            font-style: italic
+        .hours
+            font-size: 22px   
+            // font-style: italic
+            line-height: 1.7em
+            left: 50%
+            transform: translateX(-50%) 
+    .map
+        border-radius: 20px
+        box-shadow: 0 0 30px $navy
+        overflow: hidden
+        height: 100%
+        width: 70%
+        margin: 0 auto
+        iframe
+            height: 100%
+            width: 100%
+
+
+

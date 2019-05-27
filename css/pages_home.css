@@ -1,0 +1,265 @@
+.exampleofmixing {
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.exampleTransition {
+  -webkit-transition: width 0.4s, color 0.2s;
+  transition: width 0.4s, color 0.2s;
+}
+
+.main-jumbo {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("/img/massage-smiling.jpeg");
+  background-blend-mode: multiply;
+  background-color: #756D54;
+  background-attachment: fixed;
+  border-radius: 0;
+  height: calc(100vh - 50px);
+  min-height: 450px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.main-jumbo h1 {
+  color: #06ffd3;
+  font-family: "Dancing Script", cursive;
+  font-size: 100pt;
+  letter-spacing: 10px;
+  padding-top: 100px;
+}
+
+.main-jumbo .jumbo-subtext {
+  text-shadow: 0 0 1px #282b28, 0 0 1px #282b28, 0 0 1px #282b28, 0 0 1px #282b28, 0 0 1px #282b28, 0 0 1px #282b28;
+  -webkit-font-smoothing: antialiased;
+  color: #eaeaea;
+  font-family: Dancing Script;
+  font-size: 70px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.cards-section {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("/img/relaxation.jpg");
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  height: 650px;
+  padding-top: 30px;
+}
+
+.cards-section .cards-section-header h2 {
+  text-shadow: 0 0 1px #086375, 0 0 1px #086375, 0 0 1px #086375, 0 0 1px #086375, 0 0 1px #086375, 0 0 1px #086375;
+  -webkit-font-smoothing: antialiased;
+  color: #84bff9;
+  font-family: "Dancing Script", cursive;
+  font-size: 120px;
+}
+
+.cards-section .card-flex-box {
+  margin-top: 100px;
+  padding: 0 50px;
+}
+
+.cards-section .card {
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 0 0 300px black;
+          box-shadow: 0 0 300px black;
+  border: none;
+  color: #eeeeee;
+  height: 250px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.cards-section .card a {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  display: block;
+  height: 100%;
+  -webkit-transition: all .4s ease-in;
+  transition: all .4s ease-in;
+  width: 100%;
+}
+
+.cards-section .card a:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 500px #555;
+          box-shadow: 0 0 500px #555;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.cards-section .card a:hover .card-title {
+  text-shadow: 0 0 1px #06ffd3, 0 0 1px #06ffd3, 0 0 1px #06ffd3, 0 0 1px #06ffd3, 0 0 1px #06ffd3, 0 0 1px #06ffd3;
+  -webkit-font-smoothing: antialiased;
+  color: #F7F7FF;
+}
+
+.cards-section .card a:hover .hidden-text {
+  opacity: 1;
+}
+
+.cards-section .card .card-body {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 -20px #444;
+          box-shadow: 0 0 -20px #444;
+  padding: 0;
+  position: relative;
+}
+
+.cards-section .card .card-title {
+  text-shadow: 0 0 1px #007FFF, 0 0 1px #007FFF, 0 0 1px #007FFF, 0 0 1px #007FFF, 0 0 1px #007FFF, 0 0 1px #007FFF;
+  -webkit-font-smoothing: antialiased;
+  color: #84bff9;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30pt;
+  padding: 15px;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.cards-section .card .hidden-text {
+  color: #06ffd3;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25pt;
+  opacity: 0;
+  -webkit-transition: opacity .4s ease-in;
+  transition: opacity .4s ease-in;
+}
+
+.cards-section .full-menu {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #F7F7FF;
+  font-size: 30px;
+  margin-top: 40px;
+  padding: 20px 40px;
+}
+
+.cards-section .full-menu:hover {
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.cards-section .custom-card {
+  background-image: url("/img/massage-stones-guy.jpg");
+}
+
+.cards-section .stretch-card {
+  background-image: url("/img/massage-blur.jpg");
+}
+
+.cards-section .prenatal-card {
+  background-image: url("/img/prenatal-massage.jpg");
+}
+
+.reviews-benefits-box {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("/img/horizon-clouds.jpg");
+  background-attachment: fixed;
+}
+
+.reviews-benefits-box .reviews-section {
+  height: 275px;
+}
+
+.reviews-benefits-box .reviews-section .reviews-slider {
+  margin: 0 auto;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  width: 100%;
+}
+
+.reviews-benefits-box .reviews-section .reviews-slider img {
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 15px #999;
+          box-shadow: 5px 5px 15px #999;
+  display: block;
+  margin: 0 auto;
+}
+
+.reviews-benefits-box .benefits-section .benefits-box {
+  background: radial-gradient(circle, rgba(250, 252, 255, 0.7) 60%, rgba(212, 232, 255, 0.7));
+  border-radius: 20px;
+  color: #00171F;
+  width: 60%;
+  margin: 0 auto;
+  padding: 30px 60px 50px 60px;
+}
+
+.reviews-benefits-box .benefits-section .benefits-box .benefits-header {
+  font-size: 60px;
+  font-family: "Dancing Script", cursive;
+  padding-bottom: 20px;
+}
+
+.reviews-benefits-box .benefits-section .benefits-box .benefits-text {
+  font-size: 20pt;
+  font-family: "Lato", sans-serif;
+  line-height: 1.5em;
+  text-indent: 50px;
+}
+
+.hours-map {
+  background: radial-gradient(circle, rgba(250, 252, 255, 0.7) 60%, rgba(212, 232, 255, 0.7));
+  -webkit-box-shadow: 0 -20px 100px #13293D;
+          box-shadow: 0 -20px 100px #13293D;
+  color: #00487C;
+  height: 420px;
+  padding-bottom: 50px;
+}
+
+.hours-map .hours-box {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.hours-map .hours-box h2 {
+  font-size: 50px;
+  font-family: "Dancing Script", cursive;
+}
+
+.hours-map .hours-box h4 {
+  font-size: 25px;
+  font-style: italic;
+}
+
+.hours-map .hours-box .hours {
+  font-size: 22px;
+  font-style: italic;
+  line-height: 1.7em;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.hours-map .map {
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 30px #00487C;
+          box-shadow: 0 0 30px #00487C;
+  overflow: hidden;
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.hours-map .map iframe {
+  height: 100%;
+  width: 100%;
+}
+/*# sourceMappingURL=pages_home.css.map */

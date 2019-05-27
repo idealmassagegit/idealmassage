@@ -1,0 +1,32 @@
+@import _mixins
+@import _colors
+@import _fonts
+
+.services-jumbo
+	+backgroundCover
+	background-position: top
+	background-image: url('/img/leaf-border.png')
+	background-blend-mode: multiply
+	background-color: $white
+	height: 90vh
+	padding-top: 75px
+	h1
+		font-family: $headerFont
+		font-size: 50px
+
+.menu
+	margin-top: -70vh
+	padding: 20px 100px
+.menu-list
+	width: 40vw
+	a
+		color: $steel
+	span
+		display: none
+
+.menu-deets
+	width: 60vw
+	.menu-item
+		display: none
+	.active
+		display: block

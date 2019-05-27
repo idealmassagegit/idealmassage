@@ -1,0 +1,87 @@
+.exampleofmixing {
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.exampleTransition {
+  -webkit-transition: width 0.4s, color 0.2s;
+  transition: width 0.4s, color 0.2s;
+}
+
+body {
+  background-color: #444444;
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+}
+
+nav.navbar {
+  background-color: #141115;
+  height: 80px;
+  position: fixed;
+  z-index: 500;
+  width: 100%;
+}
+
+nav.navbar .navbar-nav {
+  font-family: "Montserrat", sans-serif;
+}
+
+nav.navbar .nav-right {
+  position: absolute;
+  right: 30px;
+}
+
+nav.navbar .nav-link.schedule-btn {
+  background-color: #06ffd3;
+  color: #141115;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+nav.navbar .active .nav-link {
+  border-bottom: 1px solid #06ffd3;
+}
+
+.social-media {
+  position: fixed;
+  top: 50%;
+  left: 15px;
+  font-size: 50px;
+  margin-top: -100px;
+}
+
+.social-media a {
+  color: #84bff9;
+}
+
+.social-media .hidden-text {
+  color: #84bff9;
+  text-shadow: none;
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  overflow: hidden;
+  padding: 10px 0;
+  -webkit-transition: width .3s ease-in;
+  transition: width .3s ease-in;
+  vertical-align: middle;
+  width: 0px;
+  white-space: nowrap;
+}
+
+.social-media .smiley a {
+  display: block;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.social-media .smiley a:hover {
+  color: #eccbd9;
+}
+
+footer {
+  background-color: #141115;
+  color: #c0f9ef;
+  height: 30vh;
+}
+/*# sourceMappingURL=fixed-elements.css.map */

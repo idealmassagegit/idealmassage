@@ -1,0 +1,36 @@
+@import _colors
+  
+=backgroundCover
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat  
+
+=backgroundFull
+  background-position: center
+  background-size: 100% 100%
+  background-repeat: no-repeat  
+  
+=textShadow($color)
+  text-shadow: 0 0 1px $color, 0 0 1px $color, 0 0 1px $color, 0 0 1px $color, 0 0 1px $color, 0 0 1px $color
+  -webkit-font-smoothing: antialiased
+  
+
+
+=transform($property)
+  -webkit-transform: $property
+  -ms-transform: $property
+  transform: $property
+
+.exampleofmixing
+  +transform(rotate(30deg))
+
+=transition($props...) 
+  -webkit-transition: $props
+  -moz-transition: $props
+  -ms-transition: $props
+  -o-transition: $props
+  transition: $props
+
+.exampleTransition
+  +transition(width .4s, color .2s)
+

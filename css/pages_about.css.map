@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "ACuBA,AAAA,gBAAgB,CAAC;EAJf,iBAAiB,EAKE,aAAa;EAJhC,aAAa,EAIM,aAAa;EAHhC,SAAS,EAGU,aAAa;CAAI;;AAStC,AAAA,kBAAkB,CAAC;EANjB,kBAAkB,EAOE,KAAK,CAAC,IAAG,EAAE,KAAK,CAAC,IAAG;EANxC,eAAe,EAMK,KAAK,CAAC,IAAG,EAAE,KAAK,CAAC,IAAG;EALxC,cAAc,EAKM,KAAK,CAAC,IAAG,EAAE,KAAK,CAAC,IAAG;EAJxC,aAAa,EAIO,KAAK,CAAC,IAAG,EAAE,KAAK,CAAC,IAAG;EAHxC,UAAU,EAGU,KAAK,CAAC,IAAG,EAAE,KAAK,CAAC,IAAG;CAAI;;AD7B9C,AAAA,YAAY,CAAC;ECFX,mBAAmB,EAAE,MAAM;EAC3B,eAAe,EAAE,KAAK;EACtB,iBAAiB,EAAE,SAAS;EDE7B,gBAAgB,EAAE,kCAAkC;EACpD,qBAAqB,EAAE,QAAQ;EAC/B,gBAAgB,EAAE,IAAI;EACtB,MAAM,EAAE,mBAAmB;CAAG",
+    "sources": [
+        "pages_about.sass",
+        "_mixins.sass",
+        "_colors.sass",
+        "_colors.sass",
+        "_fonts.sass"
+    ],
+    "names": [],
+    "file": "pages_about.css"
+}

@@ -1,0 +1,20 @@
+.exampleofmixing {
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.exampleTransition {
+  -webkit-transition: width 0.4s, color 0.2s;
+  transition: width 0.4s, color 0.2s;
+}
+
+.about-jumbo {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("/img/pink-flower-stones.jpg");
+  background-blend-mode: multiply;
+  background-color: blue;
+  height: calc(100vh - 100px);
+}
+/*# sourceMappingURL=pages_about.css.map */
