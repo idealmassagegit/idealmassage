@@ -310,7 +310,7 @@
   src: ulr("/fonts/Dancing-Script.ttf");
 }
 
-.services-jumbo {
+.services {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -319,41 +319,88 @@
   background-blend-mode: multiply;
   background-color: #F7F7FF;
   height: 90vh;
+  min-height: 600px;
   padding-top: 75px;
 }
 
-.services-jumbo h1 {
+.services h1 {
   font-family: "Dancing Script", Dancing Script local, cursive;
-  font-size: 50px;
+  font-size: 45px;
+  margin-top: 20px;
+  margin-left: 100px;
 }
 
-.menu {
-  margin-top: -70vh;
-  padding: 20px 100px;
+.services h3 {
+  font-family: "Dancing Script", Dancing Script local, cursive;
+  font-size: 25pt;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  margin-left: -10px;
 }
 
-.menu-list {
+.services .menu {
+  color: #141115;
+  padding: 15px 250px 20px 100px;
+}
+
+.services .menu-list {
+  width: 30vw;
+  padding-left: 15px;
+}
+
+.services .menu-list li {
+  cursor: pointer;
+  font-size: 13pt;
+  line-height: 30px;
+  text-indent: -25px;
+  color: #3E6680;
+  padding-left: 45px;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.services .menu-list li:hover {
+  padding-left: 60px;
+}
+
+.services .menu-deets {
   width: 40vw;
 }
 
-.menu-list a {
-  color: #3E6680;
-}
-
-.menu-list span {
+.services .menu-deets .menu-item {
+  background-color: #ECEBE4;
+  border-radius: 5px;
+  padding: 25px 50px;
   display: none;
+  opacity: 0;
+  -webkit-transition: opacity .3s ease-in;
+  transition: opacity .3s ease-in;
 }
 
-.menu-deets {
-  width: 60vw;
+.services .menu-deets .menu-item .menu-item-header .menu-item-title {
+  font-size: 25pt;
+  font-family: "Dancing Script", Dancing Script local, cursive;
+  padding-bottom: 15px;
 }
 
-.menu-deets .menu-item {
-  display: none;
+.services .menu-deets .menu-item .menu-item-header .menu-item-price {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14pt;
+  line-height: 25px;
+  padding-bottom: 15px;
+  padding-left: 25px;
 }
 
-.menu-deets .active {
+.services .menu-deets .menu-item .menu-item-body {
+  font-size: 13pt;
+  font-family: "Montserrat", sans-serif;
+  line-height: 25px;
+  padding: 0 25px;
+}
+
+.services .menu-deets .active {
   display: block;
+  opacity: 1;
 }
 
 #contact-section {
@@ -427,10 +474,23 @@ nav.navbar .active .nav-link {
   left: 15px;
   font-size: 50px;
   margin-top: -100px;
+  z-index: 100;
 }
 
 .social-media a {
   color: #84bff9;
+}
+
+.social-media a i {
+  -webkit-transition: -webkit-transform .15s ease-in;
+  transition: -webkit-transform .15s ease-in;
+  transition: transform .15s ease-in;
+  transition: transform .15s ease-in, -webkit-transform .15s ease-in;
+}
+
+.social-media a i:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 .social-media .hidden-text {
@@ -456,6 +516,16 @@ nav.navbar .active .nav-link {
 
 .social-media .smiley a:hover {
   color: #eccbd9;
+}
+
+aside.shadow {
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  width: 80px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 50;
 }
 
 footer {

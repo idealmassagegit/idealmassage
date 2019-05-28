@@ -11,16 +11,28 @@ $(window).scroll(function(){
 
 $(function(){
 
-	$('.social-media div').mouseenter(function(){
-		$(this).find('.hidden-text').css({
-			width: '200px'
-		})
-	}).mouseleave(function(){
-		$(this).find('.hidden-text').css({
-			width: 0
-		})
-	})
+	// social media
 
+	// $('.social-media div').mouseenter(function(){
+	// 	$(this).find('.hidden-text').css({
+	// 		width: '200px'
+	// 	});
+	// }).mouseleave(function(){
+	// 	$(this).find('.hidden-text').css({
+	// 		width: 0
+	// 	})
+	// });
+
+
+	// services
+
+	// $('.custom-massage').addClass('active');
+
+	$('.menu-list li').click(function(){
+		var target = $(this).data('qstring');
+		$('.menu-item').removeClass('active');
+		$('.menu-deets').find('.' + target).addClass('active');
+	});
 
 
 });

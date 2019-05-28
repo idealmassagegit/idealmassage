@@ -2,31 +2,69 @@
 @import _colors
 @import _fonts
 
-.services-jumbo
+.services
 	+backgroundCover
 	background-position: top
 	background-image: url('/img/leaf-border.png')
 	background-blend-mode: multiply
 	background-color: $white
 	height: 90vh
+	min-height: 600px
 	padding-top: 75px
 	h1
 		font-family: $headerFont
-		font-size: 50px
+		font-size: 45px
+		margin-top: 20px
+		margin-left: 100px
+	h3
+		font-family: $headerFont
+		font-size: 25pt
+		margin-top: 15px
+		margin-bottom: 5px
+		margin-left: -10px
+	.menu
+		color: $black
+		padding: 15px 250px 20px 100px
+	.menu-list
+		width: 30vw
+		padding-left: 15px
+		li
+			cursor: pointer
+			font-size: 13pt
+			line-height: 30px
+			text-indent: -25px
+			color: $steel
+			padding-left: 45px
+			transition: all .2s ease-in
+			&:hover
+				padding-left: 60px
 
-.menu
-	margin-top: -70vh
-	padding: 20px 100px
-.menu-list
-	width: 40vw
-	a
-		color: $steel
-	span
-		display: none
 
-.menu-deets
-	width: 60vw
-	.menu-item
-		display: none
-	.active
-		display: block
+	.menu-deets
+		width: 40vw
+		.menu-item
+			background-color: $offWhite
+			border-radius: 5px
+			padding: 25px 50px
+			display: none
+			opacity: 0
+			transition: opacity .3s ease-in
+			.menu-item-header
+				.menu-item-title
+					font-size: 25pt
+					font-family: $headerFont
+					padding-bottom: 15px
+				.menu-item-price
+					font-family: $subheaderFont
+					font-size: 14pt
+					line-height: 25px
+					padding-bottom: 15px
+					padding-left: 25px
+			.menu-item-body
+				font-size: 13pt
+				font-family: $subheaderFont
+				line-height: 25px
+				padding: 0 25px
+		.active
+			display: block
+			opacity: 1
