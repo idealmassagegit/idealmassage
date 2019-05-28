@@ -17,7 +17,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("/img/massage-smiling.jpeg");
+  background-image: url("../img/massage-smiling.jpeg");
   background-blend-mode: multiply;
   background-color: #756D54;
   background-attachment: fixed;
@@ -54,7 +54,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("/img/relaxation.jpg");
+  background-image: url("../img/relaxation.jpg");
   background-attachment: fixed;
   background-blend-mode: multiply;
   height: 650px;
@@ -161,22 +161,22 @@
 }
 
 .cards-section .custom-card {
-  background-image: url("/img/massage-stones-guy.jpg");
+  background-image: url("../img/massage-stones-guy.jpg");
 }
 
 .cards-section .stretch-card {
-  background-image: url("/img/massage-blur.jpg");
+  background-image: url("../img/massage-blur.jpg");
 }
 
 .cards-section .prenatal-card {
-  background-image: url("/img/prenatal-massage.jpg");
+  background-image: url("../img/prenatal-massage.jpg");
 }
 
 .reviews-benefits-box {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("/img/horizon-clouds.jpg");
+  background-image: url("../img/horizon-clouds.jpg");
   background-attachment: fixed;
 }
 
@@ -354,6 +354,22 @@
 
 .menu-deets .active {
   display: block;
+}
+
+#contact-section {
+  background-color: #F7F7FF;
+  height: 80vh;
+}
+
+#contact-section .form-box {
+  width: 50vw;
+  margin: 0 auto;
+  padding-top: 200px;
+}
+
+#thank-you-section {
+  width: 50vw;
+  margin: 0 auto;
 }
 
 .exampleofmixing {
