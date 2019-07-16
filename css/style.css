@@ -215,7 +215,7 @@
 }
 
 .reviews-benefits-box .benefits-section .benefits-box .benefits-text {
-  font-size: 20pt;
+  font-size: 17pt;
   font-family: "Lato", sans-serif;
   line-height: 1.5em;
   text-indent: 50px;
@@ -284,15 +284,13 @@
 }
 
 .about-jumbo {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("/img/wellness.jpg");
-  background-blend-mode: multiply;
-  background-color: #eccbd9;
+  background-color: #F7F7FF;
   height: calc(100vh - 100px);
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
+}
+
+.about-jumbo .about-text-box {
+  padding: 0 150px;
+  padding-top: 200px;
 }
 
 .exampleofmixing {
@@ -368,7 +366,6 @@
 }
 
 .services .menu-deets .menu-item {
-  background-color: #ECEBE4;
   border-radius: 5px;
   padding: 25px 50px;
   display: none;
@@ -405,13 +402,42 @@
 
 #contact-section {
   background-color: #F7F7FF;
-  height: 80vh;
+}
+
+#contact-section h1 {
+  font-size: 35px;
+  font-family: "Dancing Script", Dancing Script local, cursive;
+  padding-bottom: 20px;
 }
 
 #contact-section .form-box {
-  width: 50vw;
+  padding-top: 150px;
+  width: 30vw;
   margin: 0 auto;
-  padding-top: 200px;
+}
+
+#contact-section .form-box .form-label {
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+#contact-section .form-box input,
+#contact-section .form-box textarea {
+  background-color: #c0f9ef;
+  border: 1px solid #007FFF;
+  width: 100%;
+  padding: 10px;
+}
+
+#contact-section .form-box textarea {
+  height: 100px;
+  padding-bottom: 10px;
+}
+
+#contact-section .form-box .submit {
+  margin-top: 15px;
+  padding-bottom: 50px;
+  text-align: center;
 }
 
 #thank-you-section {
