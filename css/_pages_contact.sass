@@ -1,25 +1,36 @@
 
 
+
 #contact-section
-	background-color: $white
+	+backgroundCover
+	background-image: url('../img/calm-water.jpg')
+	// background-color: $white
 	// height: 80vh
 	h1
-		font-size: 35px
+		color: $yellow
+		font-size: 50px
 		font-family: $headerFont
+		padding-top: 120px
 		padding-bottom: 20px
 	.form-box
-		padding-top: 150px
-		width: 30vw
+		width: 500px
 		margin: 0 auto
 		.form-label
 			font-size: 16px
 			padding: 10px 0
 		input,
 		textarea
-			background-color: $fadedAqua
-			border: 1px solid $blue
+			background-color: $white
+			border: -10px solid $tonedDownBlue
 			width: 100%
 			padding: 10px
+		input::placeholder,
+		textarea::placeholder
+			transition: all .2s ease-in-out
+		input:focus::placeholder
+			padding-left: 220px
+		textarea:focus::placeholder
+			padding-left: 172px
 		textarea
 			height: 100px
 			padding-bottom: 10px

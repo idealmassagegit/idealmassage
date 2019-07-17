@@ -408,18 +408,22 @@
 }
 
 #contact-section {
-  background-color: #F7F7FF;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/calm-water.jpg");
 }
 
 #contact-section h1 {
-  font-size: 35px;
+  color: #f8f991;
+  font-size: 50px;
   font-family: "Dancing Script", Dancing Script local, cursive;
+  padding-top: 120px;
   padding-bottom: 20px;
 }
 
 #contact-section .form-box {
-  padding-top: 150px;
-  width: 30vw;
+  width: 500px;
   margin: 0 auto;
 }
 
@@ -430,10 +434,66 @@
 
 #contact-section .form-box input,
 #contact-section .form-box textarea {
-  background-color: #c0f9ef;
-  border: 1px solid #007FFF;
+  background-color: #F7F7FF;
+  border: -10px solid #8ACDEA;
   width: 100%;
   padding: 10px;
+}
+
+#contact-section .form-box input::-webkit-input-placeholder,
+#contact-section .form-box textarea::-webkit-input-placeholder {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#contact-section .form-box input:-ms-input-placeholder,
+#contact-section .form-box textarea:-ms-input-placeholder {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#contact-section .form-box input::-ms-input-placeholder,
+#contact-section .form-box textarea::-ms-input-placeholder {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#contact-section .form-box input::placeholder,
+#contact-section .form-box textarea::placeholder {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+#contact-section .form-box input:focus::-webkit-input-placeholder {
+  padding-left: 220px;
+}
+
+#contact-section .form-box input:focus:-ms-input-placeholder {
+  padding-left: 220px;
+}
+
+#contact-section .form-box input:focus::-ms-input-placeholder {
+  padding-left: 220px;
+}
+
+#contact-section .form-box input:focus::placeholder {
+  padding-left: 220px;
+}
+
+#contact-section .form-box textarea:focus::-webkit-input-placeholder {
+  padding-left: 172px;
+}
+
+#contact-section .form-box textarea:focus:-ms-input-placeholder {
+  padding-left: 172px;
+}
+
+#contact-section .form-box textarea:focus::-ms-input-placeholder {
+  padding-left: 172px;
+}
+
+#contact-section .form-box textarea:focus::placeholder {
+  padding-left: 172px;
 }
 
 #contact-section .form-box textarea {
