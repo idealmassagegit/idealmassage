@@ -11,6 +11,23 @@ $(window).scroll(function(){
 
 $(function(){
 
+	$('nav.navbar').on('mouseenter', function(){
+		$('nav.navbar, .social-media').addClass('fatnav');
+		$('nav.navbar, .social-media').addClass('fatsocial');
+	}).on('mouseleave', function(){
+		$('nav.navbar, .social-media').removeClass('fatnav');
+		$('nav.navbar, .social-media').removeClass('fatsocial');
+	});
+
+	// setInterval(function(){
+	// 	$('.nav-link.schedule-btn').css('color', '#EE6352');
+	// }, 1000)
+	// setInterval(function(){
+	// 	$('.nav-link.schedule-btn').css('color', 'black');
+	// }, 2000)
+
+
+
 	// social media
 
 	// $('.social-media div').mouseenter(function(){

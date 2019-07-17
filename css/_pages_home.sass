@@ -6,7 +6,7 @@
     +backgroundCover
     background-image: url('../img/massage-smiling.jpeg')
     background-blend-mode: multiply
-    background-color: #756D54
+    background-color: #615b46
     background-attachment: fixed
     border-radius: 0
     height: calc(100vh - 50px)
@@ -15,16 +15,17 @@
     padding: 0
     position: relative
     h1
-        // +textShadow
-        color: $aqua
+        // +textShadow($darkOrange)
+        color: $shade2yellow
         font-family: $headerFont
         font-size: 100pt
         // font-weight: bold
         letter-spacing: 10px
         padding-top: 100px
     .jumbo-subtext
-        +textShadow($darkGray)
-        color: #eaeaea
+        // +textShadow($yellow)
+        color: $shade2yellow
+        // color: #8ACDEA
         font-family: Dancing Script
         font-size: 70px
         // margin-top: 250px
@@ -42,8 +43,8 @@
     padding-top: 30px
     .cards-section-header
         h2
-            +textShadow($darkBlue)
-            color: $aqua
+            +textShadow($tonedDownBlue)
+            color: $newBlue
             font-family: $headerFont
             font-size: 120px
     .card-flex-box
@@ -53,20 +54,26 @@
         +backgroundFull
         box-shadow: 0 0 300px black
         border: none
+        border-radius: 150px
         // color: $black
         height: 250px
         width: 400px
         margin: 0 auto
+        transform: scale(.9)
+        &:hover
+            // border-radius: 150px
+            transition: all .4s ease-in
         a
-            background-color: rgba(0,0,0,.2)
-            border-radius: 8px
+            background-color: rgba(0,0,0,.3)
+            border-radius: 150px
             display: block
             height: 100%
             transition: all .4s ease-in
             width: 100%
             &:hover
-                background-color: rgba(0,0,0,.6)
+                background-color: rgba(0,0,0,.8)
                 box-shadow: 0 0 5px #555
+                border-radius: 150px
                 .card-title
                     transform: scale(1.1)
                     // +textShadow(transparent)
@@ -81,15 +88,15 @@
             padding: 0
             position: relative
         .card-title
-            color: $purp
+            color: #D8DBE2
             font-family: $subheaderFont
-            font-size: 30pt
+            font-size: 25pt
             font-weight: bold
-            padding: 15px
+            padding: 30px 15px 40px 15px
             transition: all .3s ease-in
         .hidden-text
             display: block
-            color: $aqua
+            color: $ruby
             font-family: $subheaderFont
             font-size: 25pt
             margin: 0 auto

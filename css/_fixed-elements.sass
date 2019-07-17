@@ -10,43 +10,79 @@ body
     font-family: $basicFont
     overflow-x: hidden
 
+.navbar-dark .navbar-nav .nav-link
+    color: $tonedDownBlue
+
 nav.navbar
-    background-color: $black
-    height: 80px
+    background-color: rgba(0,0,0,.6)
+    height: 60px
+    font-family: $subheaderFont
+    padding: 0 0 0 10px
     position: fixed
-    z-index: 500
+    transition: all .25s ease-in-out
     width: 100%
-    .navbar-nav 
-        font-family: $subheaderFont
+    z-index: 500
+    .navbar-brand
+        color: $tonedDownBlue
+        font-family: $headerFont
+        font-size: 35px
+        letter-spacing: 1px
+        position: absolute
+    .navbar-nav
+        height: 60px
+    .nav-item
+        font-size: 20px
+        padding-top: 15px
+        transform: scale(.97)
+        transition: all .25s ease-in-out
+    
     .nav-right
         position: absolute
         right: 30px
     .nav-link.schedule-btn
-        background-color: $aqua
+        background-color: $ruby
         color: $black
         font-size: 16px
         letter-spacing: 1px
-    .active .nav-link
-        border-bottom: 1px solid $aqua
+        transform: scale(.8)
+        transition: all .25s ease-in-out
+        &:hover
+            background-color: $tonedDownBlue
+    .active
+        color: $tonedDownBlue
+    
+        
 
-
-
+nav.navbar.fatnav
+    background-color: rgba(0,0,0,.9)
+    height: 80px
+    *   
+        transform: none
+    .nav-link.schedule-btn
+        transform: none
 
 
 .social-media
+    background-color: rgba(0,0,0,.6)
+    // border-top-right-radius: 6px
+    border-bottom-right-radius: 6px
     position: fixed
-    top: 50%
-    left: 15px
-    font-size: 50px
+    top: 160px
+    font-size: 40px
     margin-top: -100px
+    padding: 20px 0 20px 20px
+    // transform: scale(.97)
+    transition: all .25s ease-in-out
+    width: 220px
     z-index: 100
     
     a
         // +textShadowBlue
-        color: $fadedBlue
+        color: $tonedDownBlue
         i
-            transition: transform .15s ease-in
+            transition: transform .15s ease-in-out
             &:hover
+                color: white
                 transform: scale(1.15)
 
     .hidden-text
@@ -57,25 +93,23 @@ nav.navbar
         font-size: 20px
         overflow: hidden
         padding: 10px 0
-        transition: width .3s ease-in
+        transition: width .25s ease-in-out
         vertical-align: middle
         width: 0px
         white-space: nowrap
-    .smiley
-        a
-            display: block
-            transition: all .4s
-            &:hover
-                color: $pink
 
-aside.shadow
-    position: fixed
-    height: 100vh
-    top: 0
-    left: 0
-    width: 80px
-    background-color: rgba(0,0,0,.6)
-    z-index: 50
+
+.social-media.fatsocial
+    background-color: rgba(0,0,0,.9)
+    top: 180px
+
+// .social-media-text
+//     p
+//         overflow: hidden
+//         width: 0
+//         white-space: 
+//         font-size: 20px
+//         font-family: $subheaderFont
 
 
 
