@@ -29,7 +29,7 @@
     position: relative
     h1
         // +textShadow($darkOrange)
-        color: $shade2yellow
+        color: $light3yellow
         font-family: $headerFont
         font-size: 100pt
         // font-weight: bold
@@ -38,7 +38,7 @@
         // position: relative
     .jumbo-subtext
         // +textShadow($yellow)
-        color: $tonedDownBlue
+        color: $light3yellow
         // color: #8ACDEA
         font-family: Dancing Script
         font-size: 70px
@@ -71,6 +71,8 @@
         height: 250px
         width: 400px
         margin: 0 auto
+        // overflow-y: hidden
+        position: relative
         transform: scale(.9)
         transition: all .25s ease-in
         &:hover
@@ -120,10 +122,12 @@
             height: 0
     .full-menu
         +transition(all .3s)
-        color: $white
+        color: $light3yellow
         font-size: 30px
         margin-top: 40px
         padding: 20px 40px
+        position: relative
+        z-index: 100
         &:hover
             box-shadow: 0 0px 5px $lightNewBlue
             color: $tonedDownBlue

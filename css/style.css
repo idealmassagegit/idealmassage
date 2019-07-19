@@ -30,7 +30,7 @@
 }
 
 .main-jumbo h1 {
-  color: #f6f771;
+  color: #fcfdd1;
   font-family: "Dancing Script", Dancing Script local, cursive;
   font-size: 100pt;
   letter-spacing: 10px;
@@ -38,7 +38,7 @@
 }
 
 .main-jumbo .jumbo-subtext {
-  color: #8ACDEA;
+  color: #fcfdd1;
   font-family: Dancing Script;
   font-size: 70px;
   position: absolute;
@@ -78,6 +78,7 @@
   height: 250px;
   width: 400px;
   margin: 0 auto;
+  position: relative;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
   -webkit-transition: all .25s ease-in;
@@ -154,10 +155,12 @@
 .cards-section .full-menu {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  color: #F7F7FF;
+  color: #fcfdd1;
   font-size: 30px;
   margin-top: 40px;
   padding: 20px 40px;
+  position: relative;
+  z-index: 100;
 }
 
 .cards-section .full-menu:hover {
