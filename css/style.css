@@ -102,6 +102,7 @@
   background-color: rgba(0, 0, 0, 0.9);
   -webkit-box-shadow: 0 0px 5px #383a55;
           box-shadow: 0 0px 5px #383a55;
+  text-decoration: none;
 }
 
 .cards-section .card a:hover .card-title {
@@ -111,6 +112,10 @@
 .cards-section .card a:hover .hidden-text {
   opacity: 1;
   height: 200px;
+}
+
+.cards-section .card a:visited {
+  text-decoration: none;
 }
 
 .cards-section .card .card-body {
