@@ -38,7 +38,7 @@
 }
 
 .main-jumbo .jumbo-subtext {
-  color: #f6f771;
+  color: #8ACDEA;
   font-family: Dancing Script;
   font-size: 70px;
   position: absolute;
@@ -49,20 +49,16 @@
 }
 
 .cards-section {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   background-image: url("../img/relaxation.jpg");
+  background-color: #1d1e2c;
   background-attachment: fixed;
   background-blend-mode: multiply;
-  height: 650px;
+  height: 500px;
   padding-top: 30px;
 }
 
 .cards-section .cards-section-header h2 {
-  text-shadow: 0 0 1px #8ACDEA, 0 0 1px #8ACDEA, 0 0 1px #8ACDEA, 0 0 1px #8ACDEA, 0 0 1px #8ACDEA, 0 0 1px #8ACDEA;
-  -webkit-font-smoothing: antialiased;
-  color: #1d1e2c;
+  color: #f6f771;
   font-family: "Dancing Script", Dancing Script local, cursive;
   font-size: 120px;
 }
@@ -76,25 +72,25 @@
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  -webkit-box-shadow: 0 0 300px black;
-          box-shadow: 0 0 300px black;
+  -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
   border: none;
-  border-radius: 150px;
   height: 250px;
   width: 400px;
   margin: 0 auto;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
+  -webkit-transition: all .25s ease-in;
+  transition: all .25s ease-in;
 }
 
 .cards-section .card:hover {
-  -webkit-transition: all .4s ease-in;
-  transition: all .4s ease-in;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .cards-section .card a {
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 150px;
+  background-color: rgba(0, 0, 0, 0.5);
   display: block;
   height: 100%;
   -webkit-transition: all .4s ease-in;
@@ -103,15 +99,13 @@
 }
 
 .cards-section .card a:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  -webkit-box-shadow: 0 0 5px #555;
-          box-shadow: 0 0 5px #555;
-  border-radius: 150px;
+  background-color: rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 0 0px 5px #383a55;
+          box-shadow: 0 0px 5px #383a55;
 }
 
 .cards-section .card a:hover .card-title {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  color: #8ACDEA;
 }
 
 .cards-section .card a:hover .hidden-text {
@@ -128,10 +122,11 @@
 }
 
 .cards-section .card .card-title {
-  color: #D8DBE2;
+  color: #fcfdd1;
   font-family: "Montserrat", sans-serif;
   font-size: 25pt;
   font-weight: bold;
+  letter-spacing: 2px;
   padding: 30px 15px 40px 15px;
   -webkit-transition: all .3s ease-in;
   transition: all .3s ease-in;
@@ -139,7 +134,7 @@
 
 .cards-section .card .hidden-text {
   display: block;
-  color: #EE6352;
+  color: #8ACDEA;
   font-family: "Montserrat", sans-serif;
   font-size: 25pt;
   margin: 0 auto;
@@ -161,8 +156,9 @@
 }
 
 .cards-section .full-menu:hover {
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0 0px 5px #383a55;
+          box-shadow: 0 0px 5px #383a55;
+  color: #8ACDEA;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
@@ -187,32 +183,44 @@
   background-attachment: fixed;
 }
 
-.reviews-benefits-box .reviews-section {
-  height: 275px;
+.reviews-benefits-box .reviews-benefits-overlay {
+  background: radial-gradient(circle, rgba(250, 252, 255, 0.7) 60%, rgba(212, 232, 255, 0.7));
 }
 
 .reviews-benefits-box .reviews-section .reviews-slider {
+  color: #4a4a4a;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  letter-spacing: 1px;
+  line-height: 30px;
   margin: 0 auto;
-  padding-top: 75px;
-  padding-bottom: 75px;
-  width: 100%;
+  padding: 35px 0;
+  text-align: center;
+  width: 900px;
 }
 
-.reviews-benefits-box .reviews-section .reviews-slider img {
-  border-radius: 10px;
-  -webkit-box-shadow: 5px 5px 15px #999;
-          box-shadow: 5px 5px 15px #999;
-  display: block;
-  margin: 0 auto;
+.reviews-benefits-box .reviews-section .reviews-slider .review-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews-benefits-box .reviews-section .reviews-slider .review-box img {
+  width: 40px;
+  opacity: .5;
+  margin: 0 25px;
+}
+
+.reviews-benefits-box .reviews-section .reviews-slider .review-author {
+  font-style: normal;
+  text-align: right;
+  margin-top: 15px;
 }
 
 .reviews-benefits-box .benefits-section .benefits-box {
-  background: radial-gradient(circle, rgba(250, 252, 255, 0.7) 60%, rgba(212, 232, 255, 0.7));
-  border-radius: 20px;
-  color: #00171F;
-  width: 60%;
-  margin: 0 auto;
-  padding: 30px 60px 50px 60px;
+  color: #1D1E2C;
+  padding: 50px 0;
 }
 
 .reviews-benefits-box .benefits-section .benefits-box .benefits-header {
@@ -222,17 +230,17 @@
 }
 
 .reviews-benefits-box .benefits-section .benefits-box .benefits-text {
-  font-size: 17pt;
+  font-size: 18px;
   font-family: "Lato", sans-serif;
-  line-height: 1.5em;
+  letter-spacing: 1px;
+  line-height: 35px;
   text-indent: 50px;
+  width: 900px;
+  margin: 0 auto;
 }
 
 .hours-map {
-  background: radial-gradient(circle, rgba(250, 252, 255, 0.7) 60%, rgba(212, 232, 255, 0.7));
-  -webkit-box-shadow: 0 -20px 100px #13293D;
-          box-shadow: 0 -20px 100px #13293D;
-  color: #00487C;
+  color: #1D1E2C;
   height: 420px;
   padding-bottom: 50px;
 }
@@ -250,6 +258,7 @@
 .hours-map .hours-box h4 {
   font-size: 25px;
   font-style: italic;
+  margin-left: -25px;
 }
 
 .hours-map .hours-box .hours {
@@ -261,12 +270,10 @@
 }
 
 .hours-map .map {
-  border-radius: 20px;
-  -webkit-box-shadow: 0 0 30px #00487C;
-          box-shadow: 0 0 30px #00487C;
+  border: 15px solid #1D1E2C;
   overflow: hidden;
   height: 100%;
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -344,7 +351,7 @@
 }
 
 .services .menu {
-  color: #141115;
+  color: #1D1E2C;
   padding: 15px 250px 20px 100px;
 }
 
@@ -411,11 +418,12 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../img/calm-water.jpg");
+  background-image: url("../img/horizon-gradient.jpg");
+  background-blend-mode: multiply;
 }
 
 #contact-section h1 {
-  color: #f8f991;
+  color: #1d1e2c;
   font-size: 50px;
   font-family: "Dancing Script", Dancing Script local, cursive;
   padding-top: 120px;
@@ -435,9 +443,10 @@
 #contact-section .form-box input,
 #contact-section .form-box textarea {
   background-color: #F7F7FF;
-  border: -10px solid #8ACDEA;
+  border: 2px solid transparent;
+  border-radius: 20px;
   width: 100%;
-  padding: 10px;
+  padding: 20px;
 }
 
 #contact-section .form-box input::-webkit-input-placeholder,
@@ -465,46 +474,66 @@
 }
 
 #contact-section .form-box input:focus::-webkit-input-placeholder {
-  padding-left: 220px;
+  padding-left: 210px;
 }
 
 #contact-section .form-box input:focus:-ms-input-placeholder {
-  padding-left: 220px;
+  padding-left: 210px;
 }
 
 #contact-section .form-box input:focus::-ms-input-placeholder {
-  padding-left: 220px;
+  padding-left: 210px;
 }
 
 #contact-section .form-box input:focus::placeholder {
-  padding-left: 220px;
+  padding-left: 210px;
 }
 
 #contact-section .form-box textarea:focus::-webkit-input-placeholder {
-  padding-left: 172px;
+  padding-left: 161px;
 }
 
 #contact-section .form-box textarea:focus:-ms-input-placeholder {
-  padding-left: 172px;
+  padding-left: 161px;
 }
 
 #contact-section .form-box textarea:focus::-ms-input-placeholder {
-  padding-left: 172px;
+  padding-left: 161px;
 }
 
 #contact-section .form-box textarea:focus::placeholder {
-  padding-left: 172px;
+  padding-left: 161px;
 }
 
 #contact-section .form-box textarea {
-  height: 100px;
+  height: 150px;
+  line-height: 25px;
   padding-bottom: 10px;
+}
+
+#contact-section .form-box input:focus,
+#contact-section .form-box textarea:focus {
+  border: 2px solid #083D77;
 }
 
 #contact-section .form-box .submit {
   margin-top: 15px;
   padding-bottom: 50px;
   text-align: center;
+}
+
+#contact-section .form-box .submit button {
+  background: linear-gradient(45deg, #083D77 30%, #1B998B 100%);
+  color: #F7F7FF;
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 2px;
+  outline: none;
+  padding: 15px 30px;
+}
+
+#contact-section .form-box .submit button i {
+  padding-right: 8px;
 }
 
 #thank-you-section {
@@ -576,18 +605,17 @@ nav.navbar .nav-right {
 }
 
 nav.navbar .nav-link.schedule-btn {
-  background-color: #EE6352;
-  color: #141115;
+  background: linear-gradient(45deg, #b5dff2 0%, #8ACDEA 100%);
+  color: #1D1E2C;
   font-size: 16px;
   letter-spacing: 1px;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
-  -webkit-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out;
-}
-
-nav.navbar .nav-link.schedule-btn:hover {
-  background-color: #8ACDEA;
+  -webkit-transition: background 1s ease-in-out, color 1s ease-in-out, -webkit-transform .25s ease-in-out;
+  transition: background 1s ease-in-out, color 1s ease-in-out, -webkit-transform .25s ease-in-out;
+  transition: background 1s ease-in-out, color 1s ease-in-out, transform .25s ease-in-out;
+  transition: background 1s ease-in-out, color 1s ease-in-out, transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
+  font-weight: bold;
 }
 
 nav.navbar .active {
@@ -619,7 +647,6 @@ nav.navbar.fatnav .nav-link.schedule-btn {
   padding: 20px 0 20px 20px;
   -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out;
-  width: 220px;
   z-index: 100;
 }
 
@@ -661,7 +688,7 @@ nav.navbar.fatnav .nav-link.schedule-btn {
 }
 
 footer {
-  background-color: #141115;
+  background-color: #1D1E2C;
   color: #c0f9ef;
   height: 30vh;
 }

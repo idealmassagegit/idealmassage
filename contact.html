@@ -80,7 +80,7 @@
 		<form action="https://docs.google.com/forms/d/e/1FAIpQLSdfnlg5Ej-Kl3CyhexlclUfNm_gqzswyU_QtTPIED9Bw-GHjA/formResponse" target="hidden_iframe" method="post" onsubmit="submitted=true;">
 
 			<p class="form-label"></p>
-			<p><input required type="text" name="entry.2005620554" placeholder="Name"></p>
+			<p><input class="name-input" required type="text" name="entry.2005620554" placeholder="Name"></p>
 
 			<p class="form-label"></p>
 			<p><input required type="email" name="entry.1045781291" placeholder="Email"></p>
@@ -88,7 +88,7 @@
 			<p class="form-label"></p>
 			<p><textarea name="entry.839337160" cols="" rows="" placeholder="How may I help you?"></textarea></p>
 
-			<p class="submit"><button class="rounded-pill" type="submit" formaction="https://docs.google.com/forms/d/e/1FAIpQLSdfnlg5Ej-Kl3CyhexlclUfNm_gqzswyU_QtTPIED9Bw-GHjA/formResponse">Send</button></p>
+			<p class="submit"><button class="rounded-pill" type="submit" formaction="https://docs.google.com/forms/d/e/1FAIpQLSdfnlg5Ej-Kl3CyhexlclUfNm_gqzswyU_QtTPIED9Bw-GHjA/formResponse"><i class="fas fa-envelope"></i> Send</button></p>
 
 		</form>
 	</div>
@@ -114,27 +114,7 @@
     </a>
 </aside>
 
-<!-- 
-<aside class="social-media">    
-        <div class="facebook mt-4">
-            <a href="#" target="_blank">
-                <i class="fab fa-facebook-square"></i>
-                <span class="hidden-text pl-1">Facebook</span>
-            </a>
-        </div>
-        <div class="instagram my-4">
-            <a href="#" target="_blank">
-                <i class="fab fa-instagram"></i>
-                <span class="hidden-text pl-1">Instagram</span>
-            </a>
-        </div>
-        <div class="yelp">
-            <a href="#" target="_blank">
-                <i class="fab fa-yelp"></i>
-                <span class="hidden-text pl-3">Yelp</span>
-            </a>
-        </div>
-	</aside> -->
+
 	
 	
 
@@ -156,6 +136,12 @@
 
             <!-- Functions -->
     <script src="js/functions.js"></script>
+
+    <script>
+        $(function(){
+            $('.name-input').focus();
+        });
+    </script>
 
 </body>
 </html>

@@ -19,26 +19,6 @@ $(function(){
 		$('nav.navbar, .social-media').removeClass('fatsocial');
 	});
 
-	// setInterval(function(){
-	// 	$('.nav-link.schedule-btn').css('color', '#EE6352');
-	// }, 1000)
-	// setInterval(function(){
-	// 	$('.nav-link.schedule-btn').css('color', 'black');
-	// }, 2000)
-
-
-
-	// social media
-
-	// $('.social-media div').mouseenter(function(){
-	// 	$(this).find('.hidden-text').css({
-	// 		width: '200px'
-	// 	});
-	// }).mouseleave(function(){
-	// 	$(this).find('.hidden-text').css({
-	// 		width: 0
-	// 	})
-	// });
 
 
 	// services
@@ -51,5 +31,18 @@ $(function(){
 		$('.menu-deets').find('.' + target).addClass('active');
 	});
 
+
+
+
+
+
+	// reviews
+	var reviews = [
+		{
+			body: 'yo',
+			author: 'yo'
+
+		}
+	]
 
 });

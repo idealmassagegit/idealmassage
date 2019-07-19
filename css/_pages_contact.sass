@@ -3,11 +3,12 @@
 
 #contact-section
 	+backgroundCover
-	background-image: url('../img/calm-water.jpg')
-	// background-color: $white
+	background-image: url('../img/horizon-gradient.jpg')
+	background-blend-mode: multiply
+	// background-color: #ddd
 	// height: 80vh
 	h1
-		color: $yellow
+		color: $newBlue
 		font-size: 50px
 		font-family: $headerFont
 		padding-top: 120px
@@ -21,23 +22,40 @@
 		input,
 		textarea
 			background-color: $white
-			border: -10px solid $tonedDownBlue
+			border: 2px solid transparent
+			border-radius: 20px
 			width: 100%
-			padding: 10px
+			padding: 20px
 		input::placeholder,
 		textarea::placeholder
 			transition: all .2s ease-in-out
 		input:focus::placeholder
-			padding-left: 220px
+			padding-left: 210px
 		textarea:focus::placeholder
-			padding-left: 172px
+			padding-left: 161px
 		textarea
-			height: 100px
+			height: 150px
+			line-height: 25px
 			padding-bottom: 10px
+		input:focus,
+		textarea:focus
+			border: 2px solid $royal
 		.submit
 			margin-top: 15px
 			padding-bottom: 50px
 			text-align: center
+			button
+				background: linear-gradient(45deg, $royal  30%, $teal 100%)
+				color: $white
+				cursor: pointer
+				font-size: 20px
+				letter-spacing: 2px
+				outline: none
+				padding: 15px 30px
+				i
+					padding-right: 8px
+			&:hover
+
 
 #thank-you-section
 	width: 50vw

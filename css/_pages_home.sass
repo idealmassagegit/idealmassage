@@ -2,6 +2,19 @@
 @import _colors
 @import _fonts
 
+// .overlay
+//     background: linear-gradient(180deg, #615b46 0%, $newBlue 100%)
+//     opacity: .4
+//     height: calc(100vh-50px)
+//     min-height: 450px
+//     margin: 0
+//     top: 50px
+//     padding: 0
+//     position: absolute
+//     z-index: 5
+//     width: 100vw
+
+
 .main-jumbo
     +backgroundCover
     background-image: url('../img/massage-smiling.jpeg')
@@ -22,9 +35,10 @@
         // font-weight: bold
         letter-spacing: 10px
         padding-top: 100px
+        // position: relative
     .jumbo-subtext
         // +textShadow($yellow)
-        color: $shade2yellow
+        color: $tonedDownBlue
         // color: #8ACDEA
         font-family: Dancing Script
         font-size: 70px
@@ -35,16 +49,16 @@
         transform: translateX(-50%)
 
 .cards-section
-    +backgroundCover
     background-image: url('../img/relaxation.jpg')
+    // background: linear-gradient(45deg, $teal  30%, $white 100%)
+    background-color: $newBlue
     background-attachment: fixed
     background-blend-mode: multiply
-    height: 650px
+    height: 500px
     padding-top: 30px
     .cards-section-header
         h2
-            +textShadow($tonedDownBlue)
-            color: $newBlue
+            color: $shade2yellow
             font-family: $headerFont
             font-size: 120px
     .card-flex-box
@@ -52,33 +66,26 @@
         padding: 0 50px   
     .card
         +backgroundFull
-        box-shadow: 0 0 300px black
+        box-shadow: 10px 10px 5px rgba(0,0,0,.3)
         border: none
-        border-radius: 150px
-        // color: $black
         height: 250px
         width: 400px
         margin: 0 auto
         transform: scale(.9)
+        transition: all .25s ease-in
         &:hover
-            // border-radius: 150px
-            transition: all .4s ease-in
+            transform: scale(1.02)
         a
-            background-color: rgba(0,0,0,.3)
-            border-radius: 150px
+            background-color: rgba(0,0,0,.5)
             display: block
             height: 100%
             transition: all .4s ease-in
             width: 100%
             &:hover
-                background-color: rgba(0,0,0,.8)
-                box-shadow: 0 0 5px #555
-                border-radius: 150px
+                background-color: rgba(0,0,0,.9)
+                box-shadow: 0 0px 5px $lightNewBlue
                 .card-title
-                    transform: scale(1.1)
-                    // +textShadow(transparent)
-                    // color: $darkBlue
-                    // color: $white
+                    color: $tonedDownBlue
                 .hidden-text
                     opacity: 1
                     height: 200px
@@ -88,17 +95,20 @@
             padding: 0
             position: relative
         .card-title
-            color: #D8DBE2
+            // text-shadow: 1px -1px 1px $pink
+            color: $light3yellow
             font-family: $subheaderFont
             font-size: 25pt
             font-weight: bold
+            letter-spacing: 2px
             padding: 30px 15px 40px 15px
             transition: all .3s ease-in
         .hidden-text
             display: block
-            color: $ruby
+            color: $tonedDownBlue
             font-family: $subheaderFont
             font-size: 25pt
+            // font-style: italic
             margin: 0 auto
             opacity: 0
             overflow: hidden
@@ -112,7 +122,8 @@
         margin-top: 40px
         padding: 20px 40px
         &:hover
-            box-shadow: 0 5px 15px rgba(0,0,0,.7)
+            box-shadow: 0 0px 5px $lightNewBlue
+            color: $tonedDownBlue
             transform: scale(1.02)
 
     .custom-card
@@ -126,43 +137,58 @@
     +backgroundCover
     background-image: url('../img/horizon-clouds.jpg')
     background-attachment: fixed
-    // padding-bottom: 50px
+    .reviews-benefits-overlay
+        background: radial-gradient(circle, rgba(250, 252, 255, .7) 60%, rgba(212, 232, 255, .7))
 
     .reviews-section
-        height: 275px
+        // height: 225px
+        // background-color: $newBlue
         .reviews-slider
+            color: #4a4a4a
+            font-family: $basicFont
+            font-size: 18px
+            font-style: italic
+            letter-spacing: 1px
+            line-height: 30px
             margin: 0 auto
-            padding-top: 75px
-            padding-bottom: 75px
-            width: 100%
-            img
-                border-radius: 10px
-                box-shadow: 5px 5px 15px #999
-                display: block
-                margin: 0 auto
+            padding: 35px 0
+            text-align: center
+            width: 900px
+            .review-box
+                display: flex
+                img
+                    width: 40px
+                    // filter: sepia(100%)
+                    opacity: .5
+                    margin: 0 25px
+            .review-author
+                font-style: normal
+                text-align: right
+                margin-top: 15px
 
     .benefits-section
         .benefits-box
-            background: radial-gradient(circle, rgba(250, 252, 255, .7) 60%, rgba(212, 232, 255, .7))
-            border-radius: 20px
-            color: $night
-            width: 60%
-            margin: 0 auto
-            padding: 30px 60px 50px 60px
+            // border-bottom: 1px solid $newBlue
+            // border-top: 1px solid $newBlue
+            color: $black
+            padding: 50px 0
             .benefits-header
                 font-size: 60px
                 font-family: $headerFont
                 padding-bottom: 20px
             .benefits-text
-                font-size: 17pt
+                font-size: 18px
                 font-family: $basicFont
-                line-height: 1.5em
+                letter-spacing: 1px
+                line-height: 35px
                 text-indent: 50px
+                width: 900px
+                margin: 0 auto
 
 .hours-map
-    background: radial-gradient(circle, rgba(250, 252, 255, .7) 60%, rgba(212, 232, 255, .7))
-    box-shadow: 0 -20px 100px $deepBlue
-    color: $navy
+    // background: radial-gradient(circle, rgba(250, 252, 255, .7) 60%, rgba(212, 232, 255, .7))
+    // box-shadow: 0 -20px 100px $deepBlue
+    color: $black
     height: 420px
     padding-bottom: 50px
     .hours-box
@@ -174,6 +200,7 @@
         h4
             font-size: 25px
             font-style: italic
+            margin-left: -25px
         .hours
             font-size: 22px   
             // font-style: italic
@@ -181,11 +208,12 @@
             left: 50%
             transform: translateX(-50%) 
     .map
-        border-radius: 20px
-        box-shadow: 0 0 30px $navy
+        border: 15px solid $black
+        // border-radius: 20px
+        // box-shadow: 0 0 30px $navy
         overflow: hidden
         height: 100%
-        width: 70%
+        width: 90%
         margin: 0 auto
         iframe
             height: 100%
