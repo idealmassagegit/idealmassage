@@ -164,8 +164,13 @@
   -webkit-box-shadow: 0 0px 5px #383a55;
           box-shadow: 0 0px 5px #383a55;
   color: #8ACDEA;
+  text-decoration: none;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+}
+
+.cards-section .full-menu:visited {
+  text-decoration: none;
 }
 
 .cards-section .custom-card {
