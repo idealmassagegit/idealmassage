@@ -200,15 +200,19 @@
   background: radial-gradient(circle, rgba(250, 252, 255, 0.7) 60%, rgba(212, 232, 255, 0.7));
 }
 
+.reviews-benefits-box .reviews-section {
+  padding-top: 30px;
+}
+
 .reviews-benefits-box .reviews-section .reviews-slider {
   color: #4a4a4a;
   font-family: "Lato", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-style: italic;
   letter-spacing: 1px;
   line-height: 30px;
   margin: 0 auto;
-  padding: 35px 0;
+  padding: 50px 0;
   text-align: center;
   width: 900px;
 }
@@ -227,13 +231,13 @@
 
 .reviews-benefits-box .reviews-section .reviews-slider .review-author {
   font-style: normal;
+  font-weight: bold;
   text-align: right;
   margin-top: 15px;
 }
 
 .reviews-benefits-box .benefits-section .benefits-box {
   color: #1D1E2C;
-  padding: 50px 0;
 }
 
 .reviews-benefits-box .benefits-section .benefits-box .benefits-header {
@@ -252,10 +256,44 @@
   margin: 0 auto;
 }
 
+.cta {
+  background: radial-gradient(circle, #1d1e2c 65%, #383a55 100%);
+  height: 260px;
+  padding: 30px 0;
+  width: 100%;
+}
+
+.cta h3 {
+  color: #fcfdd1;
+  font-size: 50px;
+  font-family: "Dancing Script", Dancing Script local, cursive;
+  padding: 20px 0;
+}
+
+.cta p {
+  margin: 25px 0 50px;
+}
+
+.cta p .schedule-btn {
+  background: linear-gradient(45deg, #b5dff2 0%, #8ACDEA 100%);
+  color: #1D1E2C;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 15px 30px;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+.cta p .schedule-btn:hover {
+  font-size: 20px;
+}
+
 .hours-map {
   color: #1D1E2C;
-  height: 420px;
-  padding-bottom: 50px;
+  height: 450px;
+  margin-top: 50px;
+  padding-bottom: 100px;
 }
 
 .hours-map .hours-box {
@@ -275,7 +313,8 @@
 }
 
 .hours-map .hours-box .hours {
-  font-size: 22px;
+  font-size: 18px;
+  letter-spacing: 1px;
   line-height: 1.7em;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -310,14 +349,89 @@
   src: ulr("/fonts/Dancing-Script.ttf");
 }
 
-.about-jumbo {
-  background-color: #F7F7FF;
-  height: calc(100vh - 100px);
+.about-section {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: url("../img/horizon-clouds.jpg");
 }
 
-.about-jumbo .about-text-box {
-  padding: 0 150px;
-  padding-top: 200px;
+.about-section .top-bar {
+  height: 60px;
+  background-color: #1d1e2c;
+  width: 100%;
+}
+
+.about-section .about-title {
+  font-family: "Dancing Script", Dancing Script local, cursive;
+  font-size: 50px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.about-section .about-text-box {
+  color: black;
+  padding: 35px 0;
+}
+
+.about-section .about-text-box p {
+  width: 60%;
+  margin: 0 auto;
+  line-height: 25px;
+  padding: 15px 0;
+}
+
+.about-section .about-slider {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  padding-top: 100px;
+  width: 100%;
+}
+
+.about-section .about-slider #about-carousel {
+  margin: 0 auto;
+  width: 500px;
+}
+
+.about-section .about-slider #about-carousel .carousel-inner {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px #1d1e2c;
+          box-shadow: 0 0 5px #1d1e2c;
+  cursor: pointer;
+}
+
+.cta-box {
+  background-color: #1d1e2c;
+  font-family: "Dancing Script", Dancing Script local, cursive;
+  font-size: 30px;
+  line-height: 25px;
+  padding: 30px 0;
+}
+
+.cta-box p {
+  color: #8ACDEA;
+  letter-spacing: 1px;
+  line-height: 50px;
+}
+
+.cta-box .call-us-link {
+  color: #8ACDEA;
+  font-size: 25px;
+  border-bottom: 2px solid #8ACDEA;
+  padding-bottom: 5px;
+}
+
+.cta-box a.about-book-online-btn {
+  background: linear-gradient(45deg, #b5dff2 0%, #8ACDEA 100%);
+  color: #1D1E2C;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 15px 30px;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
 }
 
 .exampleofmixing {
@@ -340,7 +454,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  background-image: url("/img/leaf-border.png");
+  background-image: url("/img/horizon-clouds.jpg");
   background-blend-mode: multiply;
   background-color: #F7F7FF;
   height: 90vh;
@@ -621,6 +735,7 @@ nav.navbar .nav-link.schedule-btn {
   background: linear-gradient(45deg, #b5dff2 0%, #8ACDEA 100%);
   color: #1D1E2C;
   font-size: 16px;
+  font-weight: bold;
   letter-spacing: 1px;
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
@@ -628,7 +743,6 @@ nav.navbar .nav-link.schedule-btn {
   transition: background 1s ease-in-out, color 1s ease-in-out, -webkit-transform .25s ease-in-out;
   transition: background 1s ease-in-out, color 1s ease-in-out, transform .25s ease-in-out;
   transition: background 1s ease-in-out, color 1s ease-in-out, transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
-  font-weight: bold;
 }
 
 nav.navbar .active {
@@ -655,9 +769,9 @@ nav.navbar.fatnav .nav-link.schedule-btn {
   border-bottom-right-radius: 6px;
   position: fixed;
   top: 160px;
-  font-size: 40px;
+  font-size: 25px;
   margin-top: -100px;
-  padding: 20px 0 20px 20px;
+  padding: 5px 0 5px 20px;
   -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out;
   z-index: 100;
