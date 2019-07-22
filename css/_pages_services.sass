@@ -5,13 +5,14 @@
 .services
 	+backgroundCover
 	background-position: top
-	background-image: url('/img/horizon-clouds.jpg')
+	background-image: url('/img/candle-stones.png')
 	background-blend-mode: multiply
-	background-color: $white
+	background-color: rgba(0,0,0,.6)
 	height: 90vh
 	min-height: 600px
 	padding-top: 75px
 	h1
+		color: $light3yellow
 		font-family: $headerFont
 		font-size: 45px
 		margin-top: 20px
@@ -23,27 +24,28 @@
 		margin-bottom: 5px
 		margin-left: -10px
 	.menu
-		color: $black
+		color: $light3yellow
 		padding: 15px 250px 20px 100px
 	.menu-list
 		width: 30vw
-		padding-left: 15px
+		padding: 0 35px
 		li
+			color: $lightTonedDownBlue
 			cursor: pointer
 			font-size: 13pt
 			line-height: 30px
 			text-indent: -25px
-			color: $steel
-			padding-left: 45px
 			transition: all .2s ease-in
 			&:hover
 				padding-left: 60px
 
 
 	.menu-deets
+		border: 1px solid white
+		border-radius: 5px
 		width: 40vw
+		margin: 0 auto
 		.menu-item
-			// background-color: $offWhite
 			border-radius: 5px
 			padding: 25px 50px
 			display: none
@@ -61,8 +63,10 @@
 					padding-bottom: 15px
 					padding-left: 25px
 			.menu-item-body
-				font-size: 13pt
+				color: white
+				font-size: 14px
 				font-family: $subheaderFont
+				letter-spacing: 1px
 				line-height: 25px
 				padding: 0 25px
 		.active

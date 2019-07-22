@@ -231,7 +231,6 @@
 
 .reviews-benefits-box .reviews-section .reviews-slider .review-author {
   font-style: normal;
-  font-weight: bold;
   text-align: right;
   margin-top: 15px;
 }
@@ -382,11 +381,23 @@
   padding: 15px 0;
 }
 
+.about-section .about-text-box a {
+  border-bottom: 1px solid #1d1e2c;
+  color: #1d1e2c;
+  padding: 10px 5px;
+}
+
+.about-section .about-text-box a:hover {
+  color: #083D77;
+  border-color: #083D77;
+}
+
 .about-section .about-slider {
   background-color: rgba(0, 0, 0, 0.3);
   padding: 15px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
   padding-top: 100px;
-  width: 100%;
 }
 
 .about-section .about-slider #about-carousel {
@@ -422,6 +433,16 @@
   padding-bottom: 5px;
 }
 
+.cta-box .about-span {
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+.cta-box .about-span:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
 .cta-box a.about-book-online-btn {
   background: linear-gradient(45deg, #b5dff2 0%, #8ACDEA 100%);
   color: #1D1E2C;
@@ -429,9 +450,7 @@
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 1px;
-  padding: 15px 30px;
-  -webkit-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out;
+  padding: 5px 25px;
 }
 
 .exampleofmixing {
@@ -454,15 +473,16 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  background-image: url("/img/horizon-clouds.jpg");
+  background-image: url("/img/candle-stones.png");
   background-blend-mode: multiply;
-  background-color: #F7F7FF;
+  background-color: rgba(0, 0, 0, 0.6);
   height: 90vh;
   min-height: 600px;
   padding-top: 75px;
 }
 
 .services h1 {
+  color: #fcfdd1;
   font-family: "Dancing Script", Dancing Script local, cursive;
   font-size: 45px;
   margin-top: 20px;
@@ -478,22 +498,21 @@
 }
 
 .services .menu {
-  color: #1D1E2C;
+  color: #fcfdd1;
   padding: 15px 250px 20px 100px;
 }
 
 .services .menu-list {
   width: 30vw;
-  padding-left: 15px;
+  padding: 0 35px;
 }
 
 .services .menu-list li {
+  color: #b5dff2;
   cursor: pointer;
   font-size: 13pt;
   line-height: 30px;
   text-indent: -25px;
-  color: #3E6680;
-  padding-left: 45px;
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
 }
@@ -503,7 +522,10 @@
 }
 
 .services .menu-deets {
+  border: 1px solid white;
+  border-radius: 5px;
   width: 40vw;
+  margin: 0 auto;
 }
 
 .services .menu-deets .menu-item {
@@ -530,8 +552,10 @@
 }
 
 .services .menu-deets .menu-item .menu-item-body {
-  font-size: 13pt;
+  color: white;
+  font-size: 14px;
   font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
   line-height: 25px;
   padding: 0 25px;
 }
@@ -545,7 +569,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../img/horizon-gradient.jpg");
+  background-image: url("../img/beach-cinemagraph.gif");
   background-blend-mode: multiply;
 }
 
@@ -570,7 +594,7 @@
 #contact-section .form-box input,
 #contact-section .form-box textarea {
   background-color: #F7F7FF;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   border-radius: 20px;
   width: 100%;
   padding: 20px;
@@ -640,7 +664,7 @@
 
 #contact-section .form-box input:focus,
 #contact-section .form-box textarea:focus {
-  border: 2px solid #083D77;
+  border: 1px solid #1d1e2c;
 }
 
 #contact-section .form-box .submit {
