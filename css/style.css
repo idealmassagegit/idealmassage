@@ -473,7 +473,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  background-image: url("../img/candle-stones.png");
+  background-image: url("../img/candle-stones-flip.png");
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.6);
   height: 90vh;
@@ -485,8 +485,7 @@
   color: #fcfdd1;
   font-family: "Dancing Script", Dancing Script local, cursive;
   font-size: 45px;
-  margin-top: 20px;
-  margin-left: 100px;
+  margin: 20px 0;
 }
 
 .services h3 {
@@ -499,37 +498,37 @@
 
 .services .menu {
   color: #fcfdd1;
-  padding: 15px 250px 20px 100px;
 }
 
 .services .menu-list {
   width: 30vw;
-  padding: 0 35px;
+  margin: 0 auto;
 }
 
 .services .menu-list li {
   color: #b5dff2;
   cursor: pointer;
-  font-size: 13pt;
   line-height: 30px;
-  text-indent: -25px;
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
+  -webkit-transition: all .15s;
+  transition: all .15s;
 }
 
 .services .menu-list li:hover {
-  padding-left: 60px;
+  padding-left: 20px;
 }
 
 .services .menu-deets {
+  background-color: rgba(0, 0, 0, 0.4);
   border: 1px solid white;
   border-radius: 5px;
   width: 40vw;
   margin: 0 auto;
+  margin-top: 50px;
 }
 
 .services .menu-deets .menu-item {
-  border-radius: 5px;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
   padding: 25px 50px;
   display: none;
   opacity: 0;
@@ -560,6 +559,20 @@
   padding: 0 25px;
 }
 
+.services .menu-deets .menu-item .menu-item-body .menu-btn-box {
+  margin-top: 50px;
+}
+
+.services .menu-deets .menu-item .menu-item-body .menu-btn-box a {
+  background: linear-gradient(45deg, #b5dff2 0%, #8ACDEA 100%);
+  color: #1D1E2C;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 5px 25px;
+}
+
 .services .menu-deets .active {
   display: block;
   opacity: 1;
@@ -570,19 +583,24 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/beach-cinemagraph.gif");
-  background-blend-mode: multiply;
+}
+
+#contact-section .contact-box {
+  padding: 100px 0 50px 0;
 }
 
 #contact-section h1 {
-  color: #1d1e2c;
+  color: #fcfdd1;
   font-size: 50px;
   font-family: "Dancing Script", Dancing Script local, cursive;
-  padding-top: 120px;
   padding-bottom: 20px;
 }
 
 #contact-section .form-box {
-  width: 500px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 25px 50px;
+  width: 600px;
   margin: 0 auto;
 }
 
@@ -598,6 +616,8 @@
   border-radius: 20px;
   width: 100%;
   padding: 20px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 #contact-section .form-box input::-webkit-input-placeholder,
@@ -664,7 +684,7 @@
 
 #contact-section .form-box input:focus,
 #contact-section .form-box textarea:focus {
-  border: 1px solid #1d1e2c;
+  background-color: #b5dff2;
 }
 
 #contact-section .form-box .submit {
