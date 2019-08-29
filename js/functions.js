@@ -20,6 +20,7 @@ $(function(){
 		$('nav.navbar, .social-media').removeClass('fatnav');
 		$('nav.navbar, .social-media').removeClass('fatsocial');
 	});
+	
 
 
 

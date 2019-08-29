@@ -133,7 +133,7 @@
   font-size: 25pt;
   font-weight: bold;
   letter-spacing: 2px;
-  padding: 30px 15px 40px 15px;
+  padding: 30px 15px 20px 15px;
   -webkit-transition: all .3s ease-in;
   transition: all .3s ease-in;
 }
@@ -242,7 +242,7 @@
 .reviews-benefits-box .benefits-section .benefits-box .benefits-header {
   font-size: 60px;
   font-family: "Dancing Script", Dancing Script local, cursive;
-  padding-bottom: 20px;
+  padding: 40px 0;
 }
 
 .reviews-benefits-box .benefits-section .benefits-box .benefits-text {
@@ -289,7 +289,7 @@
 }
 
 .hours-map {
-  color: #1D1E2C;
+  color: #1d1e2c;
   height: 450px;
   margin-top: 50px;
   padding-bottom: 100px;
@@ -321,7 +321,7 @@
 }
 
 .hours-map .map {
-  border: 15px solid #1D1E2C;
+  border: 15px solid #1d1e2c;
   overflow: hidden;
   height: 100%;
   width: 90%;
@@ -372,6 +372,7 @@
 .about-section .about-text-box {
   color: black;
   padding: 35px 0;
+  width: 50%;
 }
 
 .about-section .about-text-box p {
@@ -395,9 +396,8 @@
 .about-section .about-slider {
   background-color: rgba(0, 0, 0, 0.3);
   padding: 15px;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
   padding-top: 100px;
+  width: 50%;
 }
 
 .about-section .about-slider #about-carousel {
@@ -451,6 +451,30 @@
   font-weight: bold;
   letter-spacing: 1px;
   padding: 5px 25px;
+}
+
+.expect-box .what-to-expect {
+  width: 50%;
+}
+
+.expect-box .what-to-expect .expect-title {
+  font-family: "Dancing Script", Dancing Script local, cursive;
+  font-size: 50px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.expect-box .what-to-expect p {
+  width: 60%;
+  margin: 0 auto;
+  line-height: 25px;
+  padding: 15px 0;
+}
+
+.expect-box .reviews-box {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 350px;
+  width: 50%;
 }
 
 .exampleofmixing {
@@ -519,7 +543,7 @@
 
 .services .menu-deets {
   background-color: rgba(0, 0, 0, 0.4);
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 5px;
   width: 40vw;
   margin: 0 auto;
