@@ -209,12 +209,17 @@
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: italic;
+  height: 300px;
   letter-spacing: 1px;
   line-height: 30px;
   margin: 0 auto;
   padding: 50px 0;
   text-align: center;
   width: 900px;
+}
+
+.reviews-benefits-box .reviews-section .reviews-slider .carousel-inner {
+  margin: 0 auto;
 }
 
 .reviews-benefits-box .reviews-section .reviews-slider .review-box {
@@ -227,6 +232,10 @@
   width: 40px;
   opacity: .5;
   margin: 0 25px;
+}
+
+.reviews-benefits-box .reviews-section .reviews-slider .review-body {
+  margin: 0 auto;
 }
 
 .reviews-benefits-box .reviews-section .reviews-slider .review-author {
@@ -311,13 +320,25 @@
   margin-left: -25px;
 }
 
+.hours-map .hours-box .hours-container {
+  margin: 0 auto;
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 .hours-map .hours-box .hours {
   font-size: 18px;
   letter-spacing: 1px;
   line-height: 1.7em;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+}
+
+.hours-map .map-address {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  padding-bottom: 10px;
 }
 
 .hours-map .map {
@@ -353,7 +374,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-image: url("../img/horizon-clouds.jpg");
+  background-image: url("../img/horizon-gradient.jpg");
 }
 
 .about-section .top-bar {
@@ -396,13 +417,12 @@
 .about-section .about-slider {
   background-color: rgba(0, 0, 0, 0.3);
   padding: 15px;
-  padding-top: 100px;
   width: 50%;
 }
 
 .about-section .about-slider #about-carousel {
   margin: 0 auto;
-  width: 500px;
+  width: 100%;
 }
 
 .about-section .about-slider #about-carousel .carousel-inner {
@@ -410,6 +430,50 @@
   -webkit-box-shadow: 0 0 5px #1d1e2c;
           box-shadow: 0 0 5px #1d1e2c;
   cursor: pointer;
+  width: 100%;
+}
+
+.about-section .about-slider #about-carousel .carousel-inner img {
+  width: 100%;
+}
+
+.about-section .reviews-slider {
+  width: 50%;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  height: 300px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  margin: 0 auto;
+  padding: 250px 0;
+  text-align: center;
+}
+
+.about-section .reviews-slider .carousel-inner {
+  margin: 0 auto;
+}
+
+.about-section .reviews-slider .review-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-section .reviews-slider .review-box img {
+  width: 40px;
+  opacity: .5;
+  margin: 0 25px;
+}
+
+.about-section .reviews-slider .review-body {
+  margin: 0 auto;
+}
+
+.about-section .reviews-slider .review-author {
+  font-style: normal;
+  text-align: right;
+  margin-top: 15px;
 }
 
 .cta-box {
@@ -453,28 +517,109 @@
   padding: 5px 25px;
 }
 
-.expect-box .what-to-expect {
+.what-to-expect {
+  padding-top: 35px;
   width: 50%;
 }
 
-.expect-box .what-to-expect .expect-title {
+.what-to-expect .expect-title {
   font-family: "Dancing Script", Dancing Script local, cursive;
   font-size: 50px;
   padding-top: 20px;
   padding-bottom: 30px;
 }
 
-.expect-box .what-to-expect p {
+.what-to-expect p {
   width: 60%;
   margin: 0 auto;
   line-height: 25px;
   padding: 15px 0;
 }
 
-.expect-box .reviews-box {
+.what-to-expect .reviews-box {
   background-color: rgba(0, 0, 0, 0.3);
   height: 350px;
   width: 50%;
+}
+
+.cancel-policy {
+  width: 50%;
+  margin: 50px auto 0;
+  padding-bottom: 50px;
+}
+
+.cancel-policy h2 {
+  font-family: "Dancing Script", Dancing Script local, cursive;
+  font-size: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.cancel-policy p {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  line-height: 25px;
+}
+
+.modal-dialog {
+  width: 70%;
+  max-width: none;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.modal-dialog .modal-content {
+  border: none;
+  background-color: transparent;
+}
+
+#staff {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/rock-texture.jpg");
+  background-blend-mode: multiply;
+  background-color: #333;
+  padding: 75px 0;
+}
+
+#staff h1 {
+  color: #fcfdd1;
+  font-size: 50px;
+  font-family: "Dancing Script", Dancing Script local, cursive;
+  margin: 40px 0;
+}
+
+#staff .staff-box {
+  background-color: rgba(252, 253, 211, 0.7);
+  margin: 0 auto;
+  width: 80%;
+}
+
+#staff .staff-row {
+  padding: 20px 50px;
+}
+
+#staff .staff-row h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  padding-bottom: 15px;
+}
+
+#staff .staff-row .staff-pic {
+  width: 30%;
+}
+
+#staff .staff-row .staff-info {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  width: 50%;
+  text-indent: 35px;
+}
+
+#staff .staff-row .chelsea-info {
+  padding-top: 40px;
 }
 
 .exampleofmixing {
@@ -500,9 +645,8 @@
   background-image: url("../img/candle-stones-flip.png");
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.6);
-  height: 90vh;
-  min-height: 600px;
-  padding-top: 75px;
+  height: 1000px;
+  padding: 75px 0;
 }
 
 .services h1 {
@@ -600,6 +744,39 @@
 .services .menu-deets .active {
   display: block;
   opacity: 1;
+}
+
+#accordion {
+  width: 45%;
+  min-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+#accordion .card {
+  border: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+#accordion .card .card-link {
+  color: #8ACDEA;
+  display: inline-block;
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+#accordion .card .card-header:hover {
+  background-color: black;
+}
+
+#accordion .card .card-body {
+  background-color: #b5dff2;
+  color: black;
+  line-height: 30px;
+  text-indent: 20px;
 }
 
 #contact-section {
@@ -718,8 +895,9 @@
 }
 
 #contact-section .form-box .submit button {
-  background: linear-gradient(45deg, #083D77 30%, #1B998B 100%);
-  color: #F7F7FF;
+  background-color: #fcfdd1;
+  border: none;
+  color: #333;
   cursor: pointer;
   font-size: 20px;
   letter-spacing: 2px;
@@ -729,6 +907,10 @@
 
 #contact-section .form-box .submit button i {
   padding-right: 8px;
+}
+
+#contact-section .form-box .submit button:hover {
+  background-color: #b5dff2;
 }
 
 #thank-you-section {

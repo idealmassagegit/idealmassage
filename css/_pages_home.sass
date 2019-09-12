@@ -155,18 +155,23 @@
             font-family: $basicFont
             font-size: 16px
             font-style: italic
+            height: 300px
             letter-spacing: 1px
             line-height: 30px
             margin: 0 auto
             padding: 50px 0
             text-align: center
             width: 900px
+            .carousel-inner
+                margin: 0 auto
             .review-box
                 display: flex
                 img
                     width: 40px
                     opacity: .5
                     margin: 0 25px
+            .review-body
+                margin: 0 auto
             .review-author
                 font-style: normal
                 // font-weight: bold
@@ -229,13 +234,23 @@
             font-size: 25px
             font-style: italic
             margin-left: -25px
+        .hours-container
+            margin: 0 auto
+            width: 400px
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
         .hours
             font-size: 18px   
             // font-style: italic
             letter-spacing: 1px
             line-height: 1.7em
-            left: 50%
-            transform: translateX(-50%) 
+            // left: 50%
+            // transform: translateX(-50%) 
+    .map-address
+        font-family: $subheaderFont
+        font-size: 24px
+        padding-bottom: 10px
     .map
         border: 15px solid $newBlue
         overflow: hidden

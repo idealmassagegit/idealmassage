@@ -11,64 +11,8 @@ $(window).scroll(function(){
   });
 
 
-$(function(){
 
-	$('nav.navbar').on('mouseenter', function(){
-		$('nav.navbar, .social-media').addClass('fatnav');
-		$('nav.navbar, .social-media').addClass('fatsocial');
-	}).on('mouseleave', function(){
-		$('nav.navbar, .social-media').removeClass('fatnav');
-		$('nav.navbar, .social-media').removeClass('fatsocial');
-	});
-	
-
-
-
-	// services
-
-	// $('.custom-massage').addClass('active');
-
-	$('.menu-list li').click(function(){
-		var target = $(this).data('qstring');
-		$('.menu-item').removeClass('active');
-		$('.menu-deets').find('.' + target).addClass('active');
-	});
-
-
-
-	function reviewSliderTop() {
-		for (var i=0; i<reviews.length;) {
-			setTimeout(function(){
-				$('.top-review .review-body').html(reviews[i])
-				console.log(i)
-			}, 2000)
-			if(i === reviews.length){i=0} else {i++}
-		}
-	}
-
-	function reviewSliderBottom() {
-		for (var i=8; i<reviews.length; i++) {
-			$('.bottom-review .review-body').html(reviews[i])
-			setTimeout(function(){
-			}, 2000)
-			if(i === reviews.length){i=0} else {i++}
-		}
-	}
-
-	reviewSliderTop()
-	reviewSliderBottom()
-
-
-	
-	$('.review-body').html(reviews[14])
-
-
-});
-
-
-
-
-	// reviews
+  	// reviews
 	var reviews = [
 		"<p class='review-text'>My complete experience from booking to post massage was wonderful! Chelsey is kind and personable and so knowledgeable! I loved my 60 minute massage and was so pleased with my results afterwards. I will be booking again!</p><p class='review-author'>Whitney C. - 2018</p>", 
 		
@@ -106,3 +50,57 @@ $(function(){
 		
 		"<p class='review-text'>I absolutely recommend Ideal Massage! The atmosphere created in this space is peaceful and relaxing, clean and professional. Chelsey is attentive and knowledgeable, finds the roots of discomfort and stress and works her magic to release it all! She offers a variety of options and add-ons, and does incredible work. Give yourself a treat and book with Chelsey!</p><p class='review-author'>Amber M. - 2018</p>",
 	];
+
+
+
+
+$(function(){
+
+	$('nav.navbar').on('mouseenter', function(){
+		$('nav.navbar, .social-media').addClass('fatnav');
+		$('nav.navbar, .social-media').addClass('fatsocial');
+	}).on('mouseleave', function(){
+		$('nav.navbar, .social-media').removeClass('fatnav');
+		$('nav.navbar, .social-media').removeClass('fatsocial');
+	});
+	
+
+
+
+	// services
+
+	// $('.custom-massage').addClass('active');
+
+	$('.menu-list li').click(function(){
+		var target = $(this).data('qstring');
+		$('.menu-item').removeClass('active');
+		$('.menu-deets').find('.' + target).addClass('active');
+	});
+
+
+
+	// function reviewSlider() {
+	// 	for (var i=0; i<reviews.length;) {
+	// 		setTimeout(function(){
+	// 			$('.review-body').html(reviews[i])
+	// 			console.log(i)
+	// 		}, 2000)
+	// 		if(i === reviews.length){i=0} else {i++}
+	// 	}
+	// }
+
+	// reviewSlider();
+
+
+	
+	// $('.review-body').html(reviews[14])
+
+
+
+
+
+
+
+
+
+});

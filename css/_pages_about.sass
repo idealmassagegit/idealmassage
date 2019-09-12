@@ -6,7 +6,7 @@
 .about-section
 	+backgroundCover
 	background-attachment: fixed
-	background-image: url('../img/horizon-clouds.jpg')
+	background-image: url('../img/horizon-gradient.jpg')
 	.top-bar
 		height: 60px
 		background-color: $newBlue
@@ -36,15 +36,44 @@
 	.about-slider
 		background-color: rgba(0,0,0, .3)
 		padding: 15px
-		padding-top: 100px
 		width: 50%
 		#about-carousel
 			margin: 0 auto
-			width: 500px
+			width: 100%
 			.carousel-inner
 				border-radius: 5px
 				box-shadow: 0 0 5px $newBlue
 				cursor: pointer
+				width: 100%
+				img
+					width: 100%
+	.reviews-slider
+		width: 50%
+		// color: #4a4a4a
+		font-family: $basicFont
+		font-size: 16px
+		font-style: italic
+		height: 300px
+		letter-spacing: 1px
+		line-height: 30px
+		margin: 0 auto
+		padding: 250px 0
+		text-align: center
+		.carousel-inner
+			margin: 0 auto
+		.review-box
+			display: flex
+			img
+				width: 40px
+				opacity: .5
+				margin: 0 25px
+		.review-body
+			margin: 0 auto
+		.review-author
+			font-style: normal
+			text-align: right
+			margin-top: 15px
+			
 .cta-box
 	background-color: $newBlue
 	font-family: $headerFont
@@ -76,20 +105,45 @@
 
 
 .expect-box
-	.what-to-expect
-		width: 50%
-		.expect-title
-			font-family: $headerFont
-			font-size: 50px
-			padding-top: 20px
-			padding-bottom: 30px
-		p
-			width: 60%
-			margin: 0 auto
-			line-height: 25px
-			padding: 15px 0
+.what-to-expect
+	padding-top: 35px
+	width: 50%
+	.expect-title
+		font-family: $headerFont
+		font-size: 50px
+		padding-top: 20px
+		padding-bottom: 30px
+	p
+		width: 60%
+		margin: 0 auto
+		line-height: 25px
+		padding: 15px 0
 
 	.reviews-box
 		background-color: rgba(0,0,0, .3)
 		height: 350px
 		width: 50%
+
+.cancel-policy
+	width: 50%
+	margin: 50px auto 0
+	padding-bottom: 50px
+	h2
+		font-family: $headerFont
+		font-size: 40px
+		padding-bottom: 20px
+		text-align: center
+	p
+		font-size: 16px
+		font-family: $basicFont
+		line-height: 25px
+
+.modal-dialog
+	width: 70%
+	max-width: none
+	margin: 0 auto
+	margin-top: 50px
+	
+	.modal-content
+		border: none
+		background-color: transparent
