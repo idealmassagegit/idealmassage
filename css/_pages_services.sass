@@ -4,11 +4,12 @@
 
 .services
 	+backgroundCover
+	background-attachment: fixed
 	background-position: top
 	background-image: url('../img/candle-stones-flip.png')
 	background-blend-mode: multiply
 	background-color: rgba(0,0,0,.6)
-	height: 1000px
+	// height: 1000px
 	padding: 75px 0
 	h1
 		color: $light3yellow
@@ -82,7 +83,8 @@
 			display: block
 			opacity: 1
 
-#accordion
+#accordion,
+#accordion2
 	width: 45%
 	min-width: 600px
 	margin: 0 auto
@@ -92,7 +94,7 @@
 		background-color: rgba(0,0,0,.6)
 		color: white
 		
-		.card-link
+		.card-title
 			color: $tonedDownBlue
 			display: inline-block
 			font-size: 18px
@@ -106,4 +108,21 @@
 			background-color: $lightTonedDownBlue
 			color: black
 			line-height: 30px
-			text-indent: 20px
+			// text-indent: 20px
+		.price
+			font-size: 18px
+			font-weight: bold
+			margin-top: 15px
+		.card-link
+			background-color: $newBlue
+			border: none
+			color: $light3yellow
+			cursor: pointer
+			letter-spacing: 1px
+			margin: 0 auto
+			margin-top: 10px
+			padding: 10px 15px
+			transition: all .15s ease-in
+			&:hover
+				background-color: black
+				color: white

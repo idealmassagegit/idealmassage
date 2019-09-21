@@ -12,7 +12,6 @@
 		font-family: $headerFont
 		margin: 40px 0
 	.staff-box
-		// background-color: rgba(252, 253, 211, .7)
 		background-color: rgba(181,223,242, .6)
 		margin: 0 auto
 		width: 80%
@@ -24,12 +23,13 @@
 			padding-bottom: 15px
 		.staff-pic
 			width: 30%
+			@media (max-width: 1000px)
+				width: 100%
 		.staff-info
 			font-family: $basicFont
 			font-size: 16px
 			line-height: 25px
-			// padding-top: 20px
 			width: 50%
 			text-indent: 35px
-		.chelsea-info
-			padding-top: 40px
+			@media (max-width: 1000px)
+				width: 100%

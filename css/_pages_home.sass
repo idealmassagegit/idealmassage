@@ -27,42 +27,51 @@
     padding: 0
     position: relative
     h1
-        // +textShadow($darkOrange)
         color: $light3yellow
         font-family: $headerFont
         font-size: 100pt
-        // font-weight: bold
         letter-spacing: 10px
         padding-top: 100px
-        // position: relative
+        @media (max-width: 1250px)
+            font-size: 80pt
+        @media (max-width: 900px)
+            font-size: 60pt
     .jumbo-subtext
-        // +textShadow($yellow)
         color: $light3yellow
-        // color: #8ACDEA
         font-family: Dancing Script
         font-size: 70px
-        // margin-top: 250px
         position: absolute
         bottom: 30px
         left: 50%
         transform: translateX(-50%)
+        @media (max-width: 1250px)
+            font-size: 50px
+        @media (max-width: 900px)
+            bottom: 75px
+            font-size: 40px
 
 .cards-section
     background-image: url('../img/relaxation.jpg')
-    // background: linear-gradient(45deg, $teal  30%, $white 100%)
     background-color: $newBlue
     background-attachment: fixed
     background-blend-mode: multiply
-    height: 500px
-    padding-top: 30px
+    padding: 30px 0
     .cards-section-header
         h2
             color: $shade2yellow
             font-family: $headerFont
             font-size: 120px
     .card-flex-box
-        margin-top: 100px
-        padding: 0 50px   
+        display: flex
+        margin-top: 35px
+        padding: 0 50px  
+        @media (max-width: 720px)
+            display: block
+    .card-shell
+        width: 30%
+        @media (max-width: 720px)
+            width: 100% 
+            margin: 15px 0
     .card
         +backgroundFull
         box-shadow: 10px 10px 5px rgba(0,0,0,.3)
@@ -70,12 +79,22 @@
         height: 250px
         width: 400px
         margin: 0 auto
-        // overflow-y: hidden
         position: relative
         transform: scale(.9)
         transition: all .25s ease-in
         &:hover
             transform: scale(1.02)
+        @media (max-width: 1250px)
+            width: 350px
+        @media (max-width: 1150px)
+            width: 300px
+        @media (max-width: 1000px)
+            width: 250px
+            height: 175px
+        @media (max-width: 865px)
+            width: 200px
+        @media (max-width: 720px)
+            width: 300px
         a
             background-color: rgba(0,0,0,.5)
             display: block
@@ -101,23 +120,35 @@
         .card-title
             color: $light3yellow
             font-family: $subheaderFont
-            font-size: 25pt
+            font-size: 24pt
             font-weight: bold
             letter-spacing: 2px
             padding: 30px 15px 20px 15px
             transition: all .3s ease-in
+            @media (max-width: 1150px)
+                font-size: 20pt
+                padding: 50px 15px 20px 15px
+            @media (max-width: 1000px)
+                font-size: 17pt
+                padding: 30px 15px 20px
+            @media (max-width: 865px)
+                font-size: 15pt
+                padding: 20px
         .hidden-text
             display: block
             color: $tonedDownBlue
             font-family: $subheaderFont
             font-size: 25pt
-            // font-style: italic
             margin: 0 auto
             opacity: 0
             overflow: hidden
             word-wrap: none
             transition: all .4s ease-in
             height: 0
+            @media (max-width: 1150px)
+                font-size: 20pt
+            @media (max-width: 1000px)
+                font-size: 17pt
     .full-menu
         +transition(all .3s)
         color: $light3yellow
@@ -126,6 +157,8 @@
         padding: 20px 40px
         position: relative
         z-index: 100
+        @media (max-width: 1150px)
+            font-size: 25px
         &:hover
             box-shadow: 0 0px 5px $lightNewBlue
             color: $tonedDownBlue
@@ -134,9 +167,9 @@
         &:visited
             text-decoration: none
 
-    .custom-card
-        background-image: url('../img/massage-stones-guy.jpg')
-    .stretch-card
+    .cbd-card
+        background-image: url('../img/massage-cbd.jpeg')
+    .deep-card
         background-image: url('../img/massage-blur.jpg')
     .prenatal-card
         background-image: url('../img/prenatal-massage.jpg')
@@ -161,7 +194,11 @@
             margin: 0 auto
             padding: 50px 0
             text-align: center
-            width: 900px
+            width: 90%
+            max-width: 900px
+            @media (max-width: 1000px)
+                font-size: 14px
+                line-height: 25px
             .carousel-inner
                 margin: 0 auto
             .review-box
@@ -170,30 +207,39 @@
                     width: 40px
                     opacity: .5
                     margin: 0 25px
+                    @media (max-width: 600px)
+                        width: 30px
+                        padding-top: 20px
             .review-body
                 margin: 0 auto
             .review-author
                 font-style: normal
-                // font-weight: bold
                 text-align: right
                 margin-top: 15px
 
     .benefits-section
         .benefits-box
             color: $black
-            // padding: 50px 0
             .benefits-header
                 font-size: 60px
                 font-family: $headerFont
                 padding: 40px 0
+                @media (max-width: 1000px)
+                    font-size: 45px
             .benefits-text
                 font-size: 18px
                 font-family: $basicFont
                 letter-spacing: 1px
                 line-height: 35px
                 text-indent: 50px
-                width: 900px
+                width: 90%
+                max-width: 900px
                 margin: 0 auto
+                @media (max-width: 1000px)
+                    font-size: 16px
+                    line-height: 25px
+                @media (max-width: 850px)
+                    font-size: 14px
 
 .cta
     background: radial-gradient(circle, $newBlue 65%, $lightNewBlue 100%)
@@ -216,41 +262,66 @@
             padding: 15px 30px
             transition: all .25s ease-in-out
             &:hover
-                // color: white
                 font-size: 20px
 
 .hours-map
     color: $newBlue
-    height: 450px
-    margin-top: 50px
+    display: flex
+    height: 500px
+    margin: 50px 0
     padding-bottom: 100px
+    @media (max-width: 800px)
+        display: block
+        height: 600px
+        margin: 30px 0
     .hours-box
-        width: 70%
+        width: 50%
         margin: 0 auto
+        @media (max-width: 800px)
+            width: 100%
         h2
             font-size: 50px
             font-family: $headerFont
+            @media(max-width: 1000px)
+                font-size: 40px
         h4
             font-size: 25px
             font-style: italic
             margin-left: -25px
+            @media(max-width: 1000px)
+                font-size: 20px
         .hours-container
             margin: 0 auto
             width: 400px
             position: absolute
             left: 50%
             transform: translateX(-50%)
+            @media (max-width: 800px)
+                width: 60%
+            @media (max-width: 550px)
+                width: 100%
         .hours
             font-size: 18px   
-            // font-style: italic
             letter-spacing: 1px
             line-height: 1.7em
-            // left: 50%
-            // transform: translateX(-50%) 
+            width: 50%
+            @media (max-width: 1000px)
+                font-size: 15px
+            @media (max-width: 800px)
+                width: 90%
+                margin: 0 auto
     .map-address
         font-family: $subheaderFont
         font-size: 24px
         padding-bottom: 10px
+        @media(max-width: 1000px)
+            font-size: 20px
+    .map-box
+        width: 50%
+        @media (max-width: 800px)
+            width: 90%
+            margin: 0 auto
+            margin-top: 200px
     .map
         border: 15px solid $newBlue
         overflow: hidden

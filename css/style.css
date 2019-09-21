@@ -37,6 +37,18 @@
   padding-top: 100px;
 }
 
+@media (max-width: 1250px) {
+  .main-jumbo h1 {
+    font-size: 80pt;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-jumbo h1 {
+    font-size: 60pt;
+  }
+}
+
 .main-jumbo .jumbo-subtext {
   color: #fcfdd1;
   font-family: Dancing Script;
@@ -48,13 +60,25 @@
           transform: translateX(-50%);
 }
 
+@media (max-width: 1250px) {
+  .main-jumbo .jumbo-subtext {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-jumbo .jumbo-subtext {
+    bottom: 75px;
+    font-size: 40px;
+  }
+}
+
 .cards-section {
   background-image: url("../img/relaxation.jpg");
   background-color: #1d1e2c;
   background-attachment: fixed;
   background-blend-mode: multiply;
-  height: 500px;
-  padding-top: 30px;
+  padding: 30px 0;
 }
 
 .cards-section .cards-section-header h2 {
@@ -64,8 +88,28 @@
 }
 
 .cards-section .card-flex-box {
-  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 35px;
   padding: 0 50px;
+}
+
+@media (max-width: 720px) {
+  .cards-section .card-flex-box {
+    display: block;
+  }
+}
+
+.cards-section .card-shell {
+  width: 30%;
+}
+
+@media (max-width: 720px) {
+  .cards-section .card-shell {
+    width: 100%;
+    margin: 15px 0;
+  }
 }
 
 .cards-section .card {
@@ -88,6 +132,37 @@
 .cards-section .card:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+}
+
+@media (max-width: 1250px) {
+  .cards-section .card {
+    width: 350px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .cards-section .card {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .cards-section .card {
+    width: 250px;
+    height: 175px;
+  }
+}
+
+@media (max-width: 865px) {
+  .cards-section .card {
+    width: 200px;
+  }
+}
+
+@media (max-width: 720px) {
+  .cards-section .card {
+    width: 300px;
+  }
 }
 
 .cards-section .card a {
@@ -130,12 +205,33 @@
 .cards-section .card .card-title {
   color: #fcfdd1;
   font-family: "Montserrat", sans-serif;
-  font-size: 25pt;
+  font-size: 24pt;
   font-weight: bold;
   letter-spacing: 2px;
   padding: 30px 15px 20px 15px;
   -webkit-transition: all .3s ease-in;
   transition: all .3s ease-in;
+}
+
+@media (max-width: 1150px) {
+  .cards-section .card .card-title {
+    font-size: 20pt;
+    padding: 50px 15px 20px 15px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .cards-section .card .card-title {
+    font-size: 17pt;
+    padding: 30px 15px 20px;
+  }
+}
+
+@media (max-width: 865px) {
+  .cards-section .card .card-title {
+    font-size: 15pt;
+    padding: 20px;
+  }
 }
 
 .cards-section .card .hidden-text {
@@ -152,6 +248,18 @@
   height: 0;
 }
 
+@media (max-width: 1150px) {
+  .cards-section .card .hidden-text {
+    font-size: 20pt;
+  }
+}
+
+@media (max-width: 1000px) {
+  .cards-section .card .hidden-text {
+    font-size: 17pt;
+  }
+}
+
 .cards-section .full-menu {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -161,6 +269,12 @@
   padding: 20px 40px;
   position: relative;
   z-index: 100;
+}
+
+@media (max-width: 1150px) {
+  .cards-section .full-menu {
+    font-size: 25px;
+  }
 }
 
 .cards-section .full-menu:hover {
@@ -176,11 +290,11 @@
   text-decoration: none;
 }
 
-.cards-section .custom-card {
-  background-image: url("../img/massage-stones-guy.jpg");
+.cards-section .cbd-card {
+  background-image: url("../img/massage-cbd.jpeg");
 }
 
-.cards-section .stretch-card {
+.cards-section .deep-card {
   background-image: url("../img/massage-blur.jpg");
 }
 
@@ -215,7 +329,15 @@
   margin: 0 auto;
   padding: 50px 0;
   text-align: center;
-  width: 900px;
+  width: 90%;
+  max-width: 900px;
+}
+
+@media (max-width: 1000px) {
+  .reviews-benefits-box .reviews-section .reviews-slider {
+    font-size: 14px;
+    line-height: 25px;
+  }
 }
 
 .reviews-benefits-box .reviews-section .reviews-slider .carousel-inner {
@@ -232,6 +354,13 @@
   width: 40px;
   opacity: .5;
   margin: 0 25px;
+}
+
+@media (max-width: 600px) {
+  .reviews-benefits-box .reviews-section .reviews-slider .review-box img {
+    width: 30px;
+    padding-top: 20px;
+  }
 }
 
 .reviews-benefits-box .reviews-section .reviews-slider .review-body {
@@ -254,14 +383,34 @@
   padding: 40px 0;
 }
 
+@media (max-width: 1000px) {
+  .reviews-benefits-box .benefits-section .benefits-box .benefits-header {
+    font-size: 45px;
+  }
+}
+
 .reviews-benefits-box .benefits-section .benefits-box .benefits-text {
   font-size: 18px;
   font-family: "Lato", sans-serif;
   letter-spacing: 1px;
   line-height: 35px;
   text-indent: 50px;
-  width: 900px;
+  width: 90%;
+  max-width: 900px;
   margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+  .reviews-benefits-box .benefits-section .benefits-box .benefits-text {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 850px) {
+  .reviews-benefits-box .benefits-section .benefits-box .benefits-text {
+    font-size: 14px;
+  }
 }
 
 .cta {
@@ -299,14 +448,31 @@
 
 .hours-map {
   color: #1d1e2c;
-  height: 450px;
-  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 500px;
+  margin: 50px 0;
   padding-bottom: 100px;
 }
 
+@media (max-width: 800px) {
+  .hours-map {
+    display: block;
+    height: 600px;
+    margin: 30px 0;
+  }
+}
+
 .hours-map .hours-box {
-  width: 70%;
+  width: 50%;
   margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  .hours-map .hours-box {
+    width: 100%;
+  }
 }
 
 .hours-map .hours-box h2 {
@@ -314,10 +480,22 @@
   font-family: "Dancing Script", Dancing Script local, cursive;
 }
 
+@media (max-width: 1000px) {
+  .hours-map .hours-box h2 {
+    font-size: 40px;
+  }
+}
+
 .hours-map .hours-box h4 {
   font-size: 25px;
   font-style: italic;
   margin-left: -25px;
+}
+
+@media (max-width: 1000px) {
+  .hours-map .hours-box h4 {
+    font-size: 20px;
+  }
 }
 
 .hours-map .hours-box .hours-container {
@@ -329,16 +507,60 @@
           transform: translateX(-50%);
 }
 
+@media (max-width: 800px) {
+  .hours-map .hours-box .hours-container {
+    width: 60%;
+  }
+}
+
+@media (max-width: 550px) {
+  .hours-map .hours-box .hours-container {
+    width: 100%;
+  }
+}
+
 .hours-map .hours-box .hours {
   font-size: 18px;
   letter-spacing: 1px;
   line-height: 1.7em;
+  width: 50%;
+}
+
+@media (max-width: 1000px) {
+  .hours-map .hours-box .hours {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 800px) {
+  .hours-map .hours-box .hours {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .hours-map .map-address {
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
   padding-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+  .hours-map .map-address {
+    font-size: 20px;
+  }
+}
+
+.hours-map .map-box {
+  width: 50%;
+}
+
+@media (max-width: 800px) {
+  .hours-map .map-box {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 200px;
+  }
 }
 
 .hours-map .map {
@@ -415,7 +637,6 @@
 }
 
 .about-section .about-slider {
-  background-color: rgba(0, 0, 0, 0.3);
   padding: 15px;
   width: 50%;
 }
@@ -427,8 +648,6 @@
 
 .about-section .about-slider #about-carousel .carousel-inner {
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 5px #1d1e2c;
-          box-shadow: 0 0 5px #1d1e2c;
   cursor: pointer;
   width: 100%;
 }
@@ -544,13 +763,13 @@
 
 .cancel-policy {
   width: 50%;
-  margin: 50px auto 0;
+  margin: 0 auto;
   padding-bottom: 50px;
 }
 
 .cancel-policy h2 {
   font-family: "Dancing Script", Dancing Script local, cursive;
-  font-size: 40px;
+  font-size: 50px;
   padding-bottom: 20px;
   text-align: center;
 }
@@ -612,6 +831,12 @@
   width: 30%;
 }
 
+@media (max-width: 1000px) {
+  #staff .staff-row .staff-pic {
+    width: 100%;
+  }
+}
+
 #staff .staff-row .staff-info {
   font-family: "Lato", sans-serif;
   font-size: 16px;
@@ -620,8 +845,10 @@
   text-indent: 35px;
 }
 
-#staff .staff-row .chelsea-info {
-  padding-top: 40px;
+@media (max-width: 1000px) {
+  #staff .staff-row .staff-info {
+    width: 100%;
+  }
 }
 
 .exampleofmixing {
@@ -643,11 +870,11 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: top;
   background-image: url("../img/candle-stones-flip.png");
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.6);
-  height: 1000px;
   padding: 75px 0;
 }
 
@@ -748,20 +975,23 @@
   opacity: 1;
 }
 
-#accordion {
+#accordion,
+#accordion2 {
   width: 45%;
   min-width: 600px;
   margin: 0 auto;
   margin-bottom: 50px;
 }
 
-#accordion .card {
+#accordion .card,
+#accordion2 .card {
   border: 0px;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
 }
 
-#accordion .card .card-link {
+#accordion .card .card-title,
+#accordion2 .card .card-title {
   color: #8ACDEA;
   display: inline-block;
   font-size: 18px;
@@ -770,15 +1000,43 @@
   height: 100%;
 }
 
-#accordion .card .card-header:hover {
+#accordion .card .card-header:hover,
+#accordion2 .card .card-header:hover {
   background-color: black;
 }
 
-#accordion .card .card-body {
+#accordion .card .card-body,
+#accordion2 .card .card-body {
   background-color: #b5dff2;
   color: black;
   line-height: 30px;
-  text-indent: 20px;
+}
+
+#accordion .card .price,
+#accordion2 .card .price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+#accordion .card .card-link,
+#accordion2 .card .card-link {
+  background-color: #1d1e2c;
+  border: none;
+  color: #fcfdd1;
+  cursor: pointer;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 10px 15px;
+  -webkit-transition: all .15s ease-in;
+  transition: all .15s ease-in;
+}
+
+#accordion .card .card-link:hover,
+#accordion2 .card .card-link:hover {
+  background-color: black;
+  color: white;
 }
 
 #contact-section {
