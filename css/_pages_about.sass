@@ -11,21 +11,38 @@
 		height: 60px
 		background-color: $newBlue
 		width: 100%
-	.about-container
+	.about-box
+		display: flex
+		@media (max-width: 960px)
+			display: block
 	.about-title
 		font-family: $headerFont
 		font-size: 50px
 		padding-top: 20px
 		padding-bottom: 30px
+		@media (max-width: 600px)
+			font-size: 40px
+			padding-bottom: 15px
+		@media (max-width: 400px)
+			font-size: 30px
 	.about-text-box
 		color: black
 		padding: 35px 0
 		width: 50%
-		p
+		margin: 0 auto
+		@media (max-width: 960px)
+			width: 90%
+		.about-text,
+		.address
 			width: 60%
 			margin: 0 auto
 			line-height: 25px
 			padding: 15px 0
+			@media (max-width: 1250px)
+				width: 75%
+			@media (max-width: 600px)
+				font-size: 14px
+				width: 100%
 		a
 			border-bottom: 1px solid $newBlue
 			color: $newBlue
@@ -33,23 +50,29 @@
 			&:hover
 				color: $royal
 				border-color: $royal
+
+	.slider-box 
+		display: flex
+		@media (max-width: 1000px)
+			display: block
 	.about-slider
-		// background-color: rgba(0,0,0, .3)
 		padding: 15px
 		width: 50%
+		@media (max-width: 1000px)
+			width: 90%
+			margin: 0 auto
 		#about-carousel
 			margin: 0 auto
 			width: 100%
 			.carousel-inner
 				border-radius: 5px
-				// box-shadow: 0 0 5px $newBlue
 				cursor: pointer
 				width: 100%
 				img
 					width: 100%
+					
 	.reviews-slider
 		width: 50%
-		// color: #4a4a4a
 		font-family: $basicFont
 		font-size: 16px
 		font-style: italic
@@ -57,8 +80,15 @@
 		letter-spacing: 1px
 		line-height: 30px
 		margin: 0 auto
-		padding: 250px 0
+		padding: 50px 0
 		text-align: center
+		@media (max-width: 1000px)
+			width: 90%
+		@media (max-width: 550px)
+			width: 100%
+			font-size: 14px
+			line-height: 20px
+
 		.carousel-inner
 			margin: 0 auto
 		.review-box
@@ -67,6 +97,8 @@
 				width: 40px
 				opacity: .5
 				margin: 0 25px
+				@media (max-width: 500px)
+					width: 30px
 		.review-body
 			margin: 0 auto
 		.review-author
@@ -79,6 +111,7 @@
 	font-family: $headerFont
 	font-size: 30px
 	line-height: 25px
+	margin-bottom: 50px
 	padding: 30px 0
 	p
 		color: $tonedDownBlue
@@ -89,6 +122,8 @@
 		font-size: 25px
 		border-bottom: 2px solid $tonedDownBlue
 		padding-bottom: 5px
+		@media (max-width: 400px)
+			font-size: 20px
 	.about-span
 		transition: all .25s ease-in-out
 		&:hover
@@ -101,23 +136,37 @@
 		font-weight: bold
 		letter-spacing: 1px
 		padding: 5px 25px
-		
+		@media (max-width: 400px)
+			font-size: 14px
 
-
-.expect-box
 .what-to-expect
 	padding-top: 35px
 	width: 50%
+	margin: 0 auto
+	@media (max-width: 960px)
+		width: 90%
+	@media (max-width: 600px)
+		padding-top: 0
 	.expect-title
 		font-family: $headerFont
 		font-size: 50px
 		padding-top: 20px
 		padding-bottom: 30px
-	p
+		@media (max-width: 600px)
+			font-size: 40px
+			padding-bottom: 15px
+		@media (max-width: 400px)
+			font-size: 30px
+	.expect-text
 		width: 60%
 		margin: 0 auto
 		line-height: 25px
 		padding: 15px 0
+		@media (max-width: 1250px)
+			width: 75%
+		@media (max-width: 600px)
+			font-size: 14px
+			width: 100%
 
 	.reviews-box
 		background-color: rgba(0,0,0, .3)
@@ -128,15 +177,30 @@
 	width: 50%
 	margin: 0 auto
 	padding-bottom: 50px
+	@media (max-width: 1250px)
+		width: 75%
+	@media (max-width: 960px)
+		padding-top: 50px
+	@media (max-width: 600px)
+		width: 100%
 	h2
 		font-family: $headerFont
 		font-size: 50px
 		padding-bottom: 20px
 		text-align: center
-	p
+		@media (max-width: 600px)
+			font-size: 40px
+		@media (max-width: 400px)
+			font-size: 30px
+	.cancel-text
 		font-size: 16px
 		font-family: $basicFont
+		margin: 0 auto
 		line-height: 25px
+		@media (max-width: 960px)
+			width: 90%
+		@media (max-width: 600px)
+			font-size: 14px
 
 .modal-dialog
 	background-color: $newBlue

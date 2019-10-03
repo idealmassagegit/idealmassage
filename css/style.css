@@ -605,6 +605,18 @@
   width: 100%;
 }
 
+.about-section .about-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 960px) {
+  .about-section .about-box {
+    display: block;
+  }
+}
+
 .about-section .about-title {
   font-family: "Dancing Script", Dancing Script local, cursive;
   font-size: 50px;
@@ -612,17 +624,53 @@
   padding-bottom: 30px;
 }
 
+@media (max-width: 600px) {
+  .about-section .about-title {
+    font-size: 40px;
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-section .about-title {
+    font-size: 30px;
+  }
+}
+
 .about-section .about-text-box {
   color: black;
   padding: 35px 0;
   width: 50%;
+  margin: 0 auto;
 }
 
-.about-section .about-text-box p {
+@media (max-width: 960px) {
+  .about-section .about-text-box {
+    width: 90%;
+  }
+}
+
+.about-section .about-text-box .about-text,
+.about-section .about-text-box .address {
   width: 60%;
   margin: 0 auto;
   line-height: 25px;
   padding: 15px 0;
+}
+
+@media (max-width: 1250px) {
+  .about-section .about-text-box .about-text,
+  .about-section .about-text-box .address {
+    width: 75%;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-section .about-text-box .about-text,
+  .about-section .about-text-box .address {
+    font-size: 14px;
+    width: 100%;
+  }
 }
 
 .about-section .about-text-box a {
@@ -636,9 +684,28 @@
   border-color: #083D77;
 }
 
+.about-section .slider-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 1000px) {
+  .about-section .slider-box {
+    display: block;
+  }
+}
+
 .about-section .about-slider {
   padding: 15px;
   width: 50%;
+}
+
+@media (max-width: 1000px) {
+  .about-section .about-slider {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .about-section .about-slider #about-carousel {
@@ -665,8 +732,22 @@
   letter-spacing: 1px;
   line-height: 30px;
   margin: 0 auto;
-  padding: 250px 0;
+  padding: 50px 0;
   text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .about-section .reviews-slider {
+    width: 90%;
+  }
+}
+
+@media (max-width: 550px) {
+  .about-section .reviews-slider {
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .about-section .reviews-slider .carousel-inner {
@@ -685,6 +766,12 @@
   margin: 0 25px;
 }
 
+@media (max-width: 500px) {
+  .about-section .reviews-slider .review-box img {
+    width: 30px;
+  }
+}
+
 .about-section .reviews-slider .review-body {
   margin: 0 auto;
 }
@@ -700,6 +787,7 @@
   font-family: "Dancing Script", Dancing Script local, cursive;
   font-size: 30px;
   line-height: 25px;
+  margin-bottom: 50px;
   padding: 30px 0;
 }
 
@@ -714,6 +802,12 @@
   font-size: 25px;
   border-bottom: 2px solid #8ACDEA;
   padding-bottom: 5px;
+}
+
+@media (max-width: 400px) {
+  .cta-box .call-us-link {
+    font-size: 20px;
+  }
 }
 
 .cta-box .about-span {
@@ -736,9 +830,28 @@
   padding: 5px 25px;
 }
 
+@media (max-width: 400px) {
+  .cta-box a.about-book-online-btn {
+    font-size: 14px;
+  }
+}
+
 .what-to-expect {
   padding-top: 35px;
   width: 50%;
+  margin: 0 auto;
+}
+
+@media (max-width: 960px) {
+  .what-to-expect {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .what-to-expect {
+    padding-top: 0;
+  }
 }
 
 .what-to-expect .expect-title {
@@ -748,11 +861,37 @@
   padding-bottom: 30px;
 }
 
-.what-to-expect p {
+@media (max-width: 600px) {
+  .what-to-expect .expect-title {
+    font-size: 40px;
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  .what-to-expect .expect-title {
+    font-size: 30px;
+  }
+}
+
+.what-to-expect .expect-text {
   width: 60%;
   margin: 0 auto;
   line-height: 25px;
   padding: 15px 0;
+}
+
+@media (max-width: 1250px) {
+  .what-to-expect .expect-text {
+    width: 75%;
+  }
+}
+
+@media (max-width: 600px) {
+  .what-to-expect .expect-text {
+    font-size: 14px;
+    width: 100%;
+  }
 }
 
 .what-to-expect .reviews-box {
@@ -767,6 +906,24 @@
   padding-bottom: 50px;
 }
 
+@media (max-width: 1250px) {
+  .cancel-policy {
+    width: 75%;
+  }
+}
+
+@media (max-width: 960px) {
+  .cancel-policy {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cancel-policy {
+    width: 100%;
+  }
+}
+
 .cancel-policy h2 {
   font-family: "Dancing Script", Dancing Script local, cursive;
   font-size: 50px;
@@ -774,10 +931,35 @@
   text-align: center;
 }
 
-.cancel-policy p {
+@media (max-width: 600px) {
+  .cancel-policy h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .cancel-policy h2 {
+    font-size: 30px;
+  }
+}
+
+.cancel-policy .cancel-text {
   font-size: 16px;
   font-family: "Lato", sans-serif;
+  margin: 0 auto;
   line-height: 25px;
+}
+
+@media (max-width: 960px) {
+  .cancel-policy .cancel-text {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  .cancel-policy .cancel-text {
+    font-size: 14px;
+  }
 }
 
 .modal-dialog {
@@ -812,7 +994,7 @@
 }
 
 #staff .staff-box {
-  background-color: rgba(181, 223, 242, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   margin: 0 auto;
   width: 80%;
 }
@@ -822,6 +1004,7 @@
 }
 
 #staff .staff-row h2 {
+  color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
   padding-bottom: 15px;
@@ -838,11 +1021,11 @@
 }
 
 #staff .staff-row .staff-info {
+  color: white;
   font-family: "Lato", sans-serif;
-  font-size: 16px;
-  line-height: 25px;
-  width: 50%;
-  text-indent: 35px;
+  font-size: 18px;
+  line-height: 30px;
+  width: 70%;
 }
 
 @media (max-width: 1000px) {
