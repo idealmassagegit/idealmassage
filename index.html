@@ -33,11 +33,11 @@
 <body>
 
     <nav class="navbar navbar-dark navbar-expand-xl">
-        <a href="./" class="navbar-brand d-flex mr-auto">Ideal Massage</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+        <a href="./" class="navbar-brand">Ideal Massage</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-nav">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="nav-center navbar-collapse collapse">
+        <div id="collapse-nav" class="nav-center navbar-collapse collapse">
             <ul class="navbar-nav w-100 justify-content-center">
                 <li class="nav-item active px-2">
                     <a class="nav-link" href="./">Home</a>
@@ -60,7 +60,7 @@
             </ul>
         </div>
         <div class="nav-right">
-            <a class="nav-link schedule-btn rounded-pill p-3" style="--x: 0; --y:0" href="https://www.vagaro.com/idealmassage/services">SCHEDULE YOUR MASSAGE</a>
+            <a class="nav-link schedule-btn rounded-pill" href="https://www.vagaro.com/idealmassage/services">SCHEDULE YOUR MASSAGE</a>
         </div>
     </nav>
     
@@ -71,7 +71,6 @@
         <p class="jumbo-subtext">You deserve to feel ideal</p>
     </section>
 
-    <!-- <div class="overlay"></div> -->
 
     <!-- Cards -->
     <section class="cards-section">
@@ -91,7 +90,7 @@
                 <div class="card rounded-pill deep-card text-center">
                     <a class="rounded-pill" href="services.html">
                         <div class="card-body">
-                            <h4 class="card-title">The 90min DEEP<br/>Tissue Massage</h4>
+                            <h4 class="card-title">DEEP Tissue Massage</h4>
                             <p class="hidden-text">More Info</p>
                         </div>
                     </a>
@@ -411,7 +410,6 @@
             <div class="map-box">
                 <p class="map-address text-center">112 US-79, Ste. B, Hutto, TX, 78634</p>
                 <div class="map">
-                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3435.958876669809!2d-97.55867108454056!3d30.550465901444348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644dbbab2618709%3A0x7f4e0c7756ac761b!2s226+Hyltin+St%2C+Hutto%2C+TX+78634!5e0!3m2!1sen!2sus!4v1550525085086" allowfullscreen></iframe> -->
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3436.202929264016!2d-97.54684208518339!3d30.543570181703462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644db9f168e1d4f%3A0xf32cc898e7a16743!2s112%20US-79%2C%20Hutto%2C%20TX%2078634!5e0!3m2!1sen!2sus!4v1568315392297!5m2!1sen!2sus" allowfullscreen=""></iframe>
                 </div>
             </div>
@@ -420,35 +418,48 @@
 </div>
 
 
-    <aside class="social-media">
-        <a href="#" target="_blank" title="Facebook">
-            <i class="fab fa-facebook-square"></i>
-            <span class="hidden-text pl-1">Facebook</span>
-        </a>
-        <a href="#" target="_blank" title="Instagram">
-            <i class="fab fa-instagram"></i>
-            <span class="hidden-text pl-1">Instagram</span>
-        </a>
-        <a href="#" target="_blank" title="Yelp">
-            <i class="fab fa-yelp"></i>
-            <span class="hidden-text pl-3">Yelp</span>
-        </a>
-    </aside>
-
     
 
-    <footer class="text-center">
-        <div class="footer-box d-flex">
-            <div class="footer-left">
-
+    <footer>
+        <h2>Ideal Massage</h2>
+        <div class="footer-box">
+            <div class="footer-left footer-contact">
+                <!-- <p><a href="https://www.vagaro.com/idealmassage/services">Schedule Your Massage</a></p> -->
+                <p><a href="tel:+15129025510"><i class="fas fa-phone pr-4"></i>(512) 902-5510</a></p>
+                <p><a href="https://www.google.com/maps/place/112+US-79+Ste.+B,+Hutto,+TX+78634/@30.5435702,-97.5468421,17z/data=!3m1!4b1!4m5!3m4!1s0x8644db9f168e1d4f:0x77049654096a0337!8m2!3d30.5435702!4d-97.5446534"><i class="fas fa-map-pin pr-4"></i>112 US-79, Ste. B, Hutto, TX, 78634</a></p>
+                <p class="time"><i class="fas fa-clock pr-4"></i>Mon - Sat 10:00am - 7:00pm</p>
+                <p class="time2">Sun 1:00pm - 7:00pm</p>
             </div>
-            <div class="footer-mid">
-
+            <div class="footer-middle footer-nav">
+                <p><a href="/">Home</a></p>
+                <p><a href="/about-us.html">About</a></p>
+                <p><a href="/staff.html">Staff</a></p>
+                <p><a href="/services.html">Services</a></p>
+                <p><a href="https://www.vagaro.com/idealmassage/gift-certificates" target="_blank">Gift Cards</a></p>
+                <p><a href="/contact.html">Contact</a></p>
             </div>
-            <div class="footer-right">
-
+            <div class="footer-right social-media">
+                <p>
+                    <a href="#" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook-square"></i>
+                        <span class="hidden-text">Facebook</span>
+                    </a>
+                </p>
+                <p>
+                    <a href="#" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span class="hidden-text">Instagram</span>
+                    </a>
+                </p>
+                <p>
+                    <a href="#" target="_blank" title="Yelp">
+                        <i class="fab fa-yelp"></i>
+                        <span class="hidden-text">Yelp</span>
+                    </a>
+                </p>
             </div>
         </div>
+        <p class="copyright">Ideal Massage &copy;2019</p>
     </footer>
 
 

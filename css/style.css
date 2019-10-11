@@ -213,7 +213,7 @@
   transition: all .3s ease-in;
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1250px) {
   .cards-section .card .card-title {
     font-size: 20pt;
     padding: 50px 15px 20px 15px;
@@ -451,9 +451,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 500px;
-  margin: 50px 0;
-  padding-bottom: 100px;
+  padding: 50px 0;
 }
 
 @media (max-width: 800px) {
@@ -566,7 +564,7 @@
 .hours-map .map {
   border: 15px solid #1d1e2c;
   overflow: hidden;
-  height: 100%;
+  height: 420px;
   width: 90%;
   margin: 0 auto;
 }
@@ -982,7 +980,7 @@
   background-repeat: no-repeat;
   background-image: url("../img/rock-texture.jpg");
   background-blend-mode: multiply;
-  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.9);
   padding: 75px 0;
 }
 
@@ -994,7 +992,6 @@
 }
 
 #staff .staff-box {
-  background-color: rgba(0, 0, 0, 0.6);
   margin: 0 auto;
   width: 80%;
 }
@@ -1227,6 +1224,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/beach-cinemagraph.gif");
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: multiply;
 }
 
 #contact-section .contact-box {
@@ -1240,12 +1239,24 @@
   padding-bottom: 20px;
 }
 
+@media (max-width: 650px) {
+  #contact-section h1 {
+    font-size: 35px;
+  }
+}
+
 #contact-section .form-box {
-  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding: 25px 50px;
-  width: 600px;
+  max-width: 600px;
   margin: 0 auto;
+}
+
+@media (max-width: 650px) {
+  #contact-section .form-box {
+    max-width: 90%;
+    padding: 25px 0;
+  }
 }
 
 #contact-section .form-box .form-label {
@@ -1258,6 +1269,7 @@
   background-color: #F7F7FF;
   border: 1px solid transparent;
   border-radius: 20px;
+  outline: none;
   width: 100%;
   padding: 20px;
   -webkit-transition: all .2s ease-in-out;
@@ -1387,10 +1399,9 @@ body {
 }
 
 nav.navbar {
-  background-color: rgba(0, 0, 0, 0.6);
-  height: 60px;
+  background-color: rgba(0, 0, 0, 0.4);
   font-family: "Montserrat", sans-serif;
-  padding: 0 0 0 10px;
+  padding: 10px 0 10px 10px;
   position: fixed;
   -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out;
@@ -1404,24 +1415,41 @@ nav.navbar .navbar-brand {
   font-size: 35px;
   letter-spacing: 1px;
   position: absolute;
+  left: 10px;
+  top: 10px;
 }
 
-nav.navbar .navbar-nav {
-  height: 60px;
+@media (max-width: 1200px) {
+  nav.navbar .navbar-brand {
+    left: 100px;
+  }
+}
+
+@media (max-width: 650px) {
+  nav.navbar .navbar-brand {
+    display: none;
+  }
 }
 
 nav.navbar .nav-item {
   font-size: 20px;
-  padding-top: 15px;
+  padding-top: 8px;
   -webkit-transform: scale(0.97);
           transform: scale(0.97);
   -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out;
 }
 
+@media (max-width: 1200px) {
+  nav.navbar .nav-item {
+    font-size: 18px;
+  }
+}
+
 nav.navbar .nav-right {
   position: absolute;
-  right: 30px;
+  right: 5px;
+  top: 9px;
 }
 
 nav.navbar .nav-link.schedule-btn {
@@ -1436,6 +1464,18 @@ nav.navbar .nav-link.schedule-btn {
   transition: background 1s ease-in-out, color 1s ease-in-out, -webkit-transform .25s ease-in-out;
   transition: background 1s ease-in-out, color 1s ease-in-out, transform .25s ease-in-out;
   transition: background 1s ease-in-out, color 1s ease-in-out, transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
+  padding: 15px 20px;
+}
+
+nav.navbar .nav-link.schedule-btn:hover {
+  background: linear-gradient(45deg, #b5dff2 0%, white 100%);
+}
+
+@media (max-width: 360px) {
+  nav.navbar .nav-link.schedule-btn {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
 }
 
 nav.navbar .active {
@@ -1443,73 +1483,137 @@ nav.navbar .active {
 }
 
 nav.navbar.fatnav {
-  background-color: rgba(0, 0, 0, 0.9);
-  height: 80px;
+  background-color: black;
 }
 
-nav.navbar.fatnav * {
-  -webkit-transform: none;
-          transform: none;
+footer {
+  background-color: #111;
+  background-image: url("../img/ideal-massage-sign-dark-crop.jpg");
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #c0f9ef;
+  height: 400px;
 }
 
-nav.navbar.fatnav .nav-link.schedule-btn {
-  -webkit-transform: none;
-          transform: none;
+footer h2 {
+  color: #8ACDEA;
+  font-family: "Dancing Script", Dancing Script local, cursive;
+  font-size: 45px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+
+footer .footer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .footer-box .footer-left,
+footer .footer-box .footer-middle,
+footer .footer-box .footer-right {
+  width: 33%;
+  margin: 0 auto;
+}
+
+footer .footer-box .footer-contact {
+  margin-left: 50px;
+}
+
+footer .footer-box .footer-contact p {
+  color: #8ACDEA;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+footer .footer-box .footer-contact a {
+  color: #8ACDEA;
+  -webkit-transition: all .15s ease-in;
+  transition: all .15s ease-in;
+}
+
+footer .footer-box .footer-contact a:hover {
+  color: #b5dff2;
+  padding-left: 10px;
+}
+
+footer .footer-box .footer-contact .time {
+  padding-top: 15px;
+}
+
+footer .footer-box .footer-contact .time2 {
+  padding-left: 45px;
+}
+
+footer .footer-box .footer-nav {
+  text-align: center;
+  margin-top: -20px;
+}
+
+footer .footer-box .footer-nav p {
+  line-height: 35px;
+}
+
+footer .footer-box .footer-nav a {
+  color: #8ACDEA;
+  font-size: 25px;
+  -webkit-transition: all .15s ease-in;
+  transition: all .15s ease-in;
+}
+
+footer .footer-box .footer-nav a:hover {
+  color: #b5dff2;
+  padding-left: 10px;
 }
 
 .social-media {
-  background-color: rgba(0, 0, 0, 0.6);
-  border-bottom-right-radius: 6px;
-  position: fixed;
-  top: 160px;
-  font-size: 25px;
-  margin-top: -100px;
-  padding: 5px 0 5px 20px;
-  -webkit-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out;
-  z-index: 100;
+  margin-left: 50px;
+}
+
+.social-media .hidden-text {
+  display: inline-block;
+  width: 0px;
+  overflow: hidden;
+  -webkit-transition: width .25s ease-in-out;
+  transition: width .25s ease-in-out;
+  vertical-align: middle;
+}
+
+.social-media p {
+  line-height: 40px;
 }
 
 .social-media a {
   color: #8ACDEA;
-}
-
-.social-media a i {
-  -webkit-transition: -webkit-transform .15s ease-in-out;
-  transition: -webkit-transform .15s ease-in-out;
-  transition: transform .15s ease-in-out;
-  transition: transform .15s ease-in-out, -webkit-transform .15s ease-in-out;
-}
-
-.social-media a i:hover {
-  color: white;
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-}
-
-.social-media .hidden-text {
-  color: #84bff9;
-  text-shadow: none;
-  display: inline-block;
-  font-family: "Montserrat", sans-serif;
   font-size: 20px;
-  overflow: hidden;
-  padding: 10px 0;
-  -webkit-transition: width .25s ease-in-out;
-  transition: width .25s ease-in-out;
+}
+
+.social-media a:hover {
+  color: #b5dff2;
+}
+
+.social-media a:hover .hidden-text {
+  width: 150px;
+}
+
+.social-media i {
+  font-size: 30px;
+  padding-right: 10px;
   vertical-align: middle;
-  width: 0px;
-  white-space: nowrap;
 }
 
-.social-media.fatsocial {
-  background-color: rgba(0, 0, 0, 0.9);
-  top: 180px;
-}
-
-footer {
-  background-color: #1D1E2C;
-  color: #c0f9ef;
-  height: 30vh;
+.copyright {
+  text-align: right;
+  padding-right: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  margin-top: 40px;
 }
 /*# sourceMappingURL=style.css.map */

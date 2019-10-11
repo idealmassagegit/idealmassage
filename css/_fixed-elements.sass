@@ -14,10 +14,9 @@ body
     color: $tonedDownBlue
 
 nav.navbar
-    background-color: rgba(0,0,0,.6)
-    height: 60px
+    background-color: rgba(0,0,0,.4)
     font-family: $subheaderFont
-    padding: 0 0 0 10px
+    padding: 10px 0 10px 10px
     position: fixed
     transition: all .25s ease-in-out
     width: 100%
@@ -28,17 +27,25 @@ nav.navbar
         font-size: 35px
         letter-spacing: 1px
         position: absolute
+        left: 10px
+        top: 10px
+        @media (max-width: 1200px)
+            left: 100px
+        @media (max-width: 650px)
+            display: none
     .navbar-nav
-        height: 60px
     .nav-item
         font-size: 20px
-        padding-top: 15px
+        padding-top: 8px
         transform: scale(.97)
         transition: all .25s ease-in-out
+        @media (max-width: 1200px)
+            font-size: 18px
     
     .nav-right
         position: absolute
-        right: 30px
+        right: 5px
+        top: 9px
     .nav-link.schedule-btn
         background: linear-gradient(45deg, $lightTonedDownBlue  0%, $tonedDownBlue 100%)
         color: $black
@@ -47,74 +54,102 @@ nav.navbar
         letter-spacing: 1px
         transform: scale(.8)
         transition: background 1s ease-in-out, color 1s ease-in-out, transform .25s ease-in-out
+        padding: 15px 20px
         &:hover
-        //     background: linear-gradient(45deg, $teal  30%, $tonedDownBlue 100%)
-        //     color: $black
+            background: linear-gradient(45deg, $lightTonedDownBlue  0%, white 100%)
+        @media (max-width: 360px)
+            font-size: 14px
+            padding: 10px 15px
+
     .active
         color: $tonedDownBlue
-    
-        
 
 nav.navbar.fatnav
-    background-color: rgba(0,0,0,.9)
-    height: 80px
-    *   
-        transform: none
-    .nav-link.schedule-btn
-        transform: none
-
-
-.social-media
-    background-color: rgba(0,0,0,.6)
-    // border-top-right-radius: 6px
-    border-bottom-right-radius: 6px
-    position: fixed
-    top: 160px
-    font-size: 25px
-    margin-top: -100px
-    padding: 5px 0 5px 20px
-    // transform: scale(.97)
-    transition: all .25s ease-in-out
-    // width: 220px
-    z-index: 100
-    
-    a
-        color: $tonedDownBlue
-        i
-            transition: transform .15s ease-in-out
-            &:hover
-                color: white
-                transform: scale(1.15)
-
-    .hidden-text
-        color: $fadedBlue
-        text-shadow: none
-        display: inline-block
-        font-family: $subheaderFont
-        font-size: 20px
-        overflow: hidden
-        padding: 10px 0
-        transition: width .25s ease-in-out
-        vertical-align: middle
-        width: 0px
-        white-space: nowrap
-
-
-.social-media.fatsocial
-    background-color: rgba(0,0,0,.9)
-    top: 180px
-
-// .social-media-text
-//     p
-//         overflow: hidden
-//         width: 0
-//         white-space: 
-//         font-size: 20px
-//         font-family: $subheaderFont
-
-
+    background-color: rgba(0,0,0,1)
+  
 
 footer
-    background-color: $black
+    background-color: #111
+    background-image: url('../img/ideal-massage-sign-dark-crop.jpg')
+    background-blend-mode: multiply
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
     color: $fadedAqua
-    height: 30vh
+    height: 400px
+    h2
+        color: $tonedDownBlue
+        font-family: $headerFont
+        font-size: 45px
+        padding-top: 25px
+        padding-bottom: 30px
+        padding-left: 30px
+
+    .footer-box
+        display: flex
+        flex-direction: row
+        .footer-left,
+        .footer-middle,
+        .footer-right
+            width: 33%
+            margin: 0 auto
+        .footer-contact
+            margin-left: 50px
+            p
+                color: $tonedDownBlue
+                font-size: 16px
+                line-height: 40px
+            a
+                color: $tonedDownBlue
+                transition: all .15s ease-in
+                &:hover
+                    color: $lightTonedDownBlue
+                    padding-left: 10px
+            .time
+                padding-top: 15px
+            .time2
+                padding-left: 45px
+        .footer-nav
+            text-align: center
+            margin-top: -20px
+            p
+                line-height: 35px
+            a
+                color: $tonedDownBlue
+                font-size: 25px
+                transition: all .15s ease-in
+                &:hover
+                    color: $lightTonedDownBlue
+                    padding-left: 10px
+
+        
+.social-media
+    // padding-top: 20px
+    margin-left: 50px
+    .hidden-text
+        display: inline-block
+        width: 0px
+        overflow: hidden
+        transition: width .25s ease-in-out
+        vertical-align: middle
+    p
+        line-height: 40px
+    a
+        color: $tonedDownBlue
+        font-size: 20px
+        &:hover
+            color: $lightTonedDownBlue
+            .hidden-text
+                width: 150px
+    i
+        font-size: 30px
+        padding-right: 10px
+        vertical-align: middle
+        
+
+.copyright
+    text-align: right
+    padding-right: 20px
+    font-family: $subheaderFont
+    font-size: 14px
+    margin-top: 40px
