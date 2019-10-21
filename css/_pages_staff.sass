@@ -10,26 +10,44 @@
 		color: $light3yellow
 		font-size: 50px
 		font-family: $headerFont
-		margin: 40px 0
+		margin: 20px 0
+		@media (max-width: 500px)
+			margin: 0
 	.staff-box
 		margin: 0 auto
 		width: 80%
+		@media (max-width: 1000px)
+			width: 90%
 	.staff-row
 		padding: 20px 50px
+		display: flex
+		flex-direction: row
+		@media (max-width: 1000px)
+			padding: 20px 0
+			display: block
 		h2
-			color: white
+			color: #aaa
 			font-family: $subheaderFont
-			font-size: 22px
+			font-size: 24px
+			font-weight: bold
+			padding-top: 15px
 			padding-bottom: 15px
 		.staff-pic
 			width: 30%
+			text-align: center
 			@media (max-width: 1000px)
 				width: 100%
+				// text-align: left
+				padding-bottom: 20px
 		.staff-info
-			color: white
+			color: #aaa
 			font-family: $basicFont
 			font-size: 18px
 			line-height: 30px
 			width: 70%
 			@media (max-width: 1000px)
 				width: 100%
+				text-indent: 25px
+				.bilingual
+					text-align: center
+					text-indent: 0

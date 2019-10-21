@@ -2,17 +2,6 @@
 @import _colors
 @import _fonts
 
-// .overlay
-//     background: linear-gradient(180deg, #615b46 0%, $newBlue 100%)
-//     opacity: .4
-//     height: calc(100vh-50px)
-//     min-height: 450px
-//     margin: 0
-//     top: 50px
-//     padding: 0
-//     position: absolute
-//     z-index: 5
-//     width: 100vw
 
 .main-jumbo
     +backgroundCover
@@ -22,10 +11,12 @@
     background-attachment: fixed
     border-radius: 0
     height: calc(100vh - 50px)
-    min-height: 450px
+    min-height: 470px
     margin: 0
     padding: 0
     position: relative
+    @media (max-width: 650px)
+        background-position: right
     h1
         color: $light3yellow
         font-family: $headerFont
@@ -36,6 +27,8 @@
             font-size: 80pt
         @media (max-width: 900px)
             font-size: 60pt
+        @media (max-width: 450px)
+            font-size: 50pt
     .jumbo-subtext
         color: $light3yellow
         font-family: Dancing Script
@@ -67,6 +60,7 @@
         padding: 0 50px  
         @media (max-width: 720px)
             display: block
+            padding: 0
     .card-shell
         width: 30%
         @media (max-width: 720px)
@@ -94,7 +88,7 @@
         @media (max-width: 865px)
             width: 200px
         @media (max-width: 720px)
-            width: 300px
+            width: 310px
         a
             background-color: rgba(0,0,0,.5)
             display: block
@@ -134,6 +128,8 @@
             @media (max-width: 865px)
                 font-size: 15pt
                 padding: 20px
+            @media (max-width: 720px)
+                padding: 25px
         .hidden-text
             display: block
             color: $tonedDownBlue
@@ -159,6 +155,15 @@
         z-index: 100
         @media (max-width: 1150px)
             font-size: 25px
+        @media (max-width: 500px)
+            font-size: 20px
+            padding: 15px 30px
+        @media (max-width: 400px)
+            .capf
+                display: inline
+            .see
+                display: none
+        
         &:hover
             box-shadow: 0 0px 5px $lightNewBlue
             color: $tonedDownBlue
@@ -166,6 +171,8 @@
             transform: scale(1.02)
         &:visited
             text-decoration: none
+    .capf
+        display: none
 
     .cbd-card
         background-image: url('../img/massage-cbd.jpeg')
@@ -199,6 +206,8 @@
             @media (max-width: 1000px)
                 font-size: 14px
                 line-height: 25px
+            @media (max-width: 700px)
+                width: 100%
             .carousel-inner
                 margin: 0 auto
             .review-box
@@ -210,6 +219,9 @@
                     @media (max-width: 600px)
                         width: 30px
                         padding-top: 20px
+                    @media (max-width: 400px)
+                        width: 20px
+                        margin: 0 15px
             .review-body
                 margin: 0 auto
             .review-author
@@ -243,7 +255,6 @@
 
 .cta
     background: radial-gradient(circle, $newBlue 65%, $lightNewBlue 100%)
-    height: 260px
     padding: 30px 0
     width: 100%
     h3
@@ -251,6 +262,10 @@
         font-size: 50px
         font-family: $headerFont
         padding: 20px 0
+        @media (max-width: 550px)
+            font-size: 40px
+        @media (max-width: 420px)
+            font-size: 30px
     p
         margin: 25px 0 50px
         .schedule-btn
@@ -261,8 +276,17 @@
             letter-spacing: 1px
             padding: 15px 30px
             transition: all .25s ease-in-out
+            @media (max-width: 550px)
+                font-size: 14px
+            @media (max-width: 420px)
+                font-size: 12px
             &:hover
                 font-size: 20px
+                @media (max-width: 550px)
+                    font-size: 16px
+                @media (max-width: 420px)
+                    font-size: 14px
+
 
 .hours-map
     color: $newBlue
@@ -270,8 +294,7 @@
     padding: 50px 0
     @media (max-width: 800px)
         display: block
-        height: 600px
-        margin: 30px 0
+        padding: 20px 0
     .hours-box
         width: 50%
         margin: 0 auto
@@ -282,12 +305,16 @@
             font-family: $headerFont
             @media(max-width: 1000px)
                 font-size: 40px
+            @media(max-width: 400px)
+                font-size: 30px
         h4
             font-size: 25px
             font-style: italic
             margin-left: -25px
             @media(max-width: 1000px)
                 font-size: 20px
+            @media (max-width: 400px)
+                font-size: 16px
         .hours-container
             margin: 0 auto
             width: 400px
@@ -308,12 +335,20 @@
             @media (max-width: 800px)
                 width: 90%
                 margin: 0 auto
+            @media (max-width: 400px)
+                font-size: 14px
+            @media (max-width: 320px)
+                font-size: 13px
     .map-address
         font-family: $subheaderFont
         font-size: 24px
         padding-bottom: 10px
         @media(max-width: 1000px)
             font-size: 20px
+        @media (max-width: 500px)
+            font-size: 18px
+        @media (max-width: 350px)
+            font-size: 14px
     .map-box
         width: 50%
         @media (max-width: 800px)

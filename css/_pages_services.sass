@@ -9,13 +9,14 @@
 	background-image: url('../img/candle-stones-flip.png')
 	background-blend-mode: multiply
 	background-color: rgba(0,0,0,.6)
-	// height: 1000px
 	padding: 75px 0
 	h1
 		color: $light3yellow
 		font-family: $headerFont
 		font-size: 45px
 		margin: 20px 0
+		@media (max-width: 350px)
+			font-size: 40px
 	h3
 		font-family: $headerFont
 		font-size: 25pt
@@ -36,52 +37,52 @@
 				padding-left: 20px
 
 
-	.menu-deets
-		background-color: rgba(0,0,0,.4)
-		border: 1px solid rgba(255,255,255,.4)
-		border-radius: 5px
-		width: 40vw
-		margin: 0 auto
-		margin-top: 50px
-		.menu-item
-			transition: all .25s ease-in-out
-			// border-radius: 5px
-			padding: 25px 50px
-			display: none
-			opacity: 0
-			transition: opacity .3s ease-in
-			.menu-item-header
-				.menu-item-title
-					font-size: 25pt
-					font-family: $headerFont
-					padding-bottom: 15px
-				.menu-item-price
-					font-family: $subheaderFont
-					font-size: 14pt
-					line-height: 25px
-					padding-bottom: 15px
-					padding-left: 25px
-			.menu-item-body
-				color: white
-				font-size: 14px
-				font-family: $subheaderFont
-				letter-spacing: 1px
-				line-height: 25px
-				padding: 0 25px
-				.menu-btn-box
-					margin-top: 50px
-					a
-						background: linear-gradient(45deg, $lightTonedDownBlue  0%, $tonedDownBlue 100%)
-						color: $black
-						font-family: $subheaderFont
-						font-size: 16px
-						font-weight: bold
-						letter-spacing: 1px
-						padding: 5px 25px
+	// .menu-deets
+	// 	background-color: rgba(0,0,0,.4)
+	// 	border: 1px solid rgba(255,255,255,.4)
+	// 	border-radius: 5px
+	// 	width: 40vw
+	// 	margin: 0 auto
+	// 	margin-top: 50px
+	// 	.menu-item
+	// 		transition: all .25s ease-in-out
+	// 		// border-radius: 5px
+	// 		padding: 25px 50px
+	// 		display: none
+	// 		opacity: 0
+	// 		transition: opacity .3s ease-in
+	// 		.menu-item-header
+	// 			.menu-item-title
+	// 				font-size: 25pt
+	// 				font-family: $headerFont
+	// 				padding-bottom: 15px
+	// 			.menu-item-price
+	// 				font-family: $subheaderFont
+	// 				font-size: 14pt
+	// 				line-height: 25px
+	// 				padding-bottom: 15px
+	// 				padding-left: 25px
+	// 		.menu-item-body
+	// 			color: white
+	// 			font-size: 14px
+	// 			font-family: $subheaderFont
+	// 			letter-spacing: 1px
+	// 			line-height: 25px
+	// 			padding: 0 25px
+	// 			.menu-btn-box
+	// 				margin-top: 50px
+	// 				a
+	// 					background: linear-gradient(45deg, $lightTonedDownBlue  0%, $tonedDownBlue 100%)
+	// 					color: $black
+	// 					font-family: $subheaderFont
+	// 					font-size: 16px
+	// 					font-weight: bold
+	// 					letter-spacing: 1px
+	// 					padding: 5px 25px
 						
-		.active
-			display: block
-			opacity: 1
+	// 	.active
+	// 		display: block
+	// 		opacity: 1
 
 #accordion,
 #accordion2
@@ -89,6 +90,9 @@
 	min-width: 600px
 	margin: 0 auto
 	margin-bottom: 50px
+	@media (max-width: 600px)
+		min-width: 0
+		width: auto
 	.card
 		border: 0px
 		background-color: rgba(0,0,0,.6)
@@ -98,6 +102,7 @@
 			color: $tonedDownBlue
 			display: inline-block
 			font-size: 18px
+			letter-spacing: 1px
 			text-align: center
 			width: 100%
 			height: 100%
@@ -108,14 +113,19 @@
 			background-color: $lightTonedDownBlue
 			color: black
 			line-height: 30px
-			// text-indent: 20px
+			@media (max-width: 600px)
+				font-size: 15px
+				line-height: 25px
 		.price
 			font-size: 18px
 			font-weight: bold
 			margin-top: 15px
+			@media (max-width: 600px)
+				font-size: 17px
 		.card-link
 			background-color: $newBlue
 			border: none
+			display: inline-block
 			color: $light3yellow
 			cursor: pointer
 			letter-spacing: 1px
@@ -123,6 +133,8 @@
 			margin-top: 10px
 			padding: 10px 15px
 			transition: all .15s ease-in
+			@media (max-width: 600px)
+				font-size: 14px
 			&:hover
 				background-color: black
 				color: white

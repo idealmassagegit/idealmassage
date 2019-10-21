@@ -46,6 +46,8 @@ nav.navbar
         position: absolute
         right: 5px
         top: 9px
+        @media (max-width: 320px)
+            right: -20px
     .nav-link.schedule-btn
         background: linear-gradient(45deg, $lightTonedDownBlue  0%, $tonedDownBlue 100%)
         color: $black
@@ -76,7 +78,6 @@ footer
     background-size: cover
     background-repeat: no-repeat
     color: $fadedAqua
-    height: 400px
     h2
         color: $tonedDownBlue
         font-family: $headerFont
@@ -84,34 +85,56 @@ footer
         padding-top: 25px
         padding-bottom: 30px
         padding-left: 30px
-
+        @media (max-width: 915px)
+            text-align: center
+            padding: 25px 0
     .footer-box
         display: flex
         flex-direction: row
+        @media (max-width: 915px)
+            display: block
         .footer-left,
         .footer-middle,
         .footer-right
             width: 33%
             margin: 0 auto
+            @media (max-width: 915px)
+                width: 100%
+                text-align: center
+                margin: 0 0 30px 0
         .footer-contact
-            margin-left: 50px
+            @media (min-width: 915px)
+                padding-left: 50px
             p
                 color: $tonedDownBlue
                 font-size: 16px
-                line-height: 40px
+                padding: 10px 0
+            .address a,
+            .phone a
+                &:hover
+                    margin-left: 10px
             a
                 color: $tonedDownBlue
                 transition: all .15s ease-in
                 &:hover
                     color: $lightTonedDownBlue
-                    padding-left: 10px
             .time
                 padding-top: 15px
             .time2
-                padding-left: 45px
+                padding-left: 32px
+                @media (max-width: 915px)
+                    padding: 0
+            .add-br
+                display: none
+                @media (max-width: 400px)
+                    display: block
         .footer-nav
-            text-align: center
-            margin-top: -20px
+            text-align: left
+            margin-top: -50px
+            @media(max-width: 915px)
+                margin-top: 20px
+                margin-bottom: 20px
+                text-align: center
             p
                 line-height: 35px
             a
@@ -121,35 +144,37 @@ footer
                 &:hover
                     color: $lightTonedDownBlue
                     padding-left: 10px
-
         
-.social-media
-    // padding-top: 20px
-    margin-left: 50px
-    .hidden-text
-        display: inline-block
-        width: 0px
-        overflow: hidden
-        transition: width .25s ease-in-out
-        vertical-align: middle
-    p
-        line-height: 40px
-    a
-        color: $tonedDownBlue
-        font-size: 20px
-        &:hover
-            color: $lightTonedDownBlue
-            .hidden-text
-                width: 150px
-    i
-        font-size: 30px
-        padding-right: 10px
-        vertical-align: middle
-        
+    .social-media
+        text-align: left
+        padding-left: 50px
+        @media (max-width: 915px)
+            padding-left: 0
+        .hidden-text
+            display: inline-block
+            width: 0px
+            overflow: hidden
+            transition: all .25s ease-in-out
+            vertical-align: middle
+        p
+            line-height: 40px
+        a
+            color: $tonedDownBlue
+            font-size: 20px
+            &:hover
+                color: $lightTonedDownBlue
+                .hidden-text
+                    width: 120px
+                i
+                    padding-right: 10px
+        i
+            font-size: 30px
+            vertical-align: middle
+            
 
-.copyright
-    text-align: right
-    padding-right: 20px
-    font-family: $subheaderFont
-    font-size: 14px
-    margin-top: 40px
+    .copyright
+        text-align: right
+        padding-right: 20px
+        font-family: $subheaderFont
+        font-size: 14px
+        margin-top: 40px
