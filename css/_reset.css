@@ -4,5 +4,5 @@ html,body,div,span,applet,object,iframe,a,abbr,acronym,address,big,cite,code,del
 
 a:visited, 
 a:hover {
-	text-decoration: none
+	text-decoration: none !important
 }
