@@ -1,15 +1,33 @@
 
 
-//     PARALLAX
+//     SCROLL
 $(window).scroll(function(){
     var scroll = $(window).scrollTop();
-    $('.jumbo-subtext').css({
-      transform: 'translateX(-50%) translate(0px, -'+ scroll /2 +'%)'
-	});
-	
-	// speed up scroll for favorites trio too?
+    if (scroll >= 180) {
+		//show fixed nav
+		$('#scroll-nav').css('transform', 'translateY(0)');
+		if(!$('.navbar-toggler').hasClass('collapsed')) {
+			$('.navbar-toggler').click();
+		}
+	} else {
+		$('#scroll-nav').css('transform', 'translateY(-200px)');
+		if(!$('.navbar-toggler').hasClass('collapsed')) {
+			$('.navbar-toggler').click();
+		}
+	}
   });
 
+
+//  	RESIZE
+$(window).resize(function(){
+	var win = $(window).width();
+	console.log(win);
+	if (win <= 580) {
+		$('top-nav').css('transform','translateY(-200px)');
+	} else {
+		$('top-nav').css('transform', '');
+	}
+});
 
 
   	// reviews
@@ -53,50 +71,38 @@ $(window).scroll(function(){
 
 
 
-
+	//    READY
 $(function(){
 
-	$('nav.navbar').on('mouseenter', function(){
-		$('nav.navbar, .social-media').addClass('fatnav');
-		$('nav.navbar, .social-media').addClass('fatsocial');
-	}).on('mouseleave', function(){
-		$('nav.navbar, .social-media').removeClass('fatnav');
-		$('nav.navbar, .social-media').removeClass('fatsocial');
-	});
+
+	//untoggle collapsed nav
+	setTimeout(function(){
+		if ($('#collapse-nav').hasClass('show')) {
+			$('.navbar-toggler').click();
+		}
+	}, 300);
+
+	// scroll nav
+	var scroll = $(window).scrollTop();
+    if (scroll >= 180) {
+		//show fixed nav
+		$('#scroll-nav').css('transform', 'translateY(0)');
+		if(!$('.navbar-toggler').hasClass('collapsed')) {
+			// $('.navbar-toggler').click();
+		}
+	} else {
+		$('#scroll-nav').css('transform', 'translateY(-200px)');
+		if(!$('.navbar-toggler').hasClass('collapsed')) {
+			// $('.navbar-toggler').click();
+		}
+	}
 	
-
-
-
-	// services
-
-	// $('.custom-massage').addClass('active');
 
 	$('.menu-list li').click(function(){
 		var target = $(this).data('qstring');
 		$('.menu-item').removeClass('active');
 		$('.menu-deets').find('.' + target).addClass('active');
 	});
-
-
-
-	// function reviewSlider() {
-	// 	for (var i=0; i<reviews.length;) {
-	// 		setTimeout(function(){
-	// 			$('.review-body').html(reviews[i])
-	// 			console.log(i)
-	// 		}, 2000)
-	// 		if(i === reviews.length){i=0} else {i++}
-	// 	}
-	// }
-
-	// reviewSlider();
-
-
-	
-	// $('.review-body').html(reviews[14])
-
-
-
 
 
 

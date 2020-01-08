@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- fonts: 
-    Charm, Dancing Script, Lato, Montserrat, Nunito, Nunito Sans
-  -->
-
 <head>
   <meta charset="utf-8">
 
@@ -13,15 +8,34 @@
   <!-- Favicon -->
 
   <!-- Meta  -->
-  <meta name="revised" content="2019" />
+  <meta name="revised" content="2020" /> 
   <meta name="author" content="Jonathan Soape" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!--  Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
+  <!-- Facebook Pixel -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window,document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '418244429130448'); 
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" 
+        src="https://www.facebook.com/tr?id=418244429130448&ev=PageView
+        &noscript=1"/>
+    </noscript>
+
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Charm|Dancing+Script|Lato|Montserrat|Nunito|Nunito+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Nunito|Nunito+Sans|Pathway+Gothic+One" rel="stylesheet">
 
   <!--   CSS   -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -32,39 +46,69 @@
 
 <body>
 
-    <nav class="navbar navbar-dark navbar-expand-xl">
-        <a href="./" class="navbar-brand">Ideal Massage</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-nav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="collapse-nav" class="nav-center navbar-collapse collapse">
-            <ul class="navbar-nav w-100 justify-content-center">
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="./">Home</a>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="./about-us.html">About Us</a>
-                </li>
-                <li class="nav-item active px-2">
-                    <a class="nav-link" href="./staff.html">Staff</a>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="./services.html">Services</a>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="https://www.vagaro.com/idealmassage/gift-certificates" target="_blank">Gift Cards</a>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="./contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <div class="nav-right">
-            <a class="nav-link schedule-btn rounded-pill" href="https://www.vagaro.com/idealmassage/services">SCHEDULE YOUR MASSAGE</a>
-        </div>
-    </nav>
     
+    <header class="text-center">
+        <nav id="scroll-nav" class="navbar navbar-default navbar-expand-xl">
+            <a href="./" class="navbar-brand"><img src="./img/im-logo.png" alt="Ideal Massage" width="200px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-nav">
+                <i style="color: #558000;" class="fas fa-bars fa-2x"></i>
+            </button>
+            <div id="collapse-nav" class="nav-center navbar-collapse collapse">
+                <ul class="navbar-nav justify-content-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./staff.html">Staff</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.vagaro.com/idealmassage/gift-certificates" target="_blank">Gift Cards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a class="nav-link schedule-btn" href="https://www.vagaro.com/idealmassage/services">SCHEDULE YOUR MASSAGE</a>
+            </div>
+        </nav>
 
+        <img class="header-img" src="./img/im-logo.png" alt="Ideal Massage" width="500px">
+
+        <nav id="top-nav" class="navbar navbar-expand-sm justify-content-center">
+            <div class="nav-center navbar-collapse collapse">
+                <ul class="navbar-nav w-100 justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./staff.html">Staff</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.vagaro.com/idealmassage/gift-certificates" target="_blank">Gift Cards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    
     <section id="staff">
         <h1 class="text-center">Staff</h1>
 
@@ -162,7 +206,7 @@
 		<script src="/js/bootstrap.js"></script> -->
 	
 				<!-- Functions -->
-		<script src="js/functions.js"></script>
+		<script src="./js/functions.js"></script>
 		
 		
 		</body>

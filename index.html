@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- fonts: 
-    Charm, Dancing Script, Lato, Montserrat, Nunito, Nunito Sans
-  -->
-
 <head>
   <meta charset="utf-8">
 
@@ -13,15 +8,34 @@
   <!-- Favicon -->
 
   <!-- Meta  -->
-  <meta name="revised" content="2019" />
+  <meta name="revised" content="2020" /> 
   <meta name="author" content="Jonathan Soape" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!--  Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
+  <!-- Facebook Pixel -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window,document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '418244429130448'); 
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" 
+        src="https://www.facebook.com/tr?id=418244429130448&ev=PageView
+        &noscript=1"/>
+    </noscript>
+
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Charm|Dancing+Script|Lato|Montserrat|Nunito|Nunito+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Nunito|Nunito+Sans|Pathway+Gothic+One" rel="stylesheet">
 
   <!--   CSS   -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -32,436 +46,472 @@
 
 <body>
 
-    <nav class="navbar navbar-dark navbar-expand-xl">
-        <a href="./" class="navbar-brand">Ideal Massage</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-nav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="collapse-nav" class="nav-center navbar-collapse collapse">
-            <ul class="navbar-nav w-100 justify-content-center">
-                <li class="nav-item active px-2">
-                    <a class="nav-link" href="./">Home</a>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="./about-us.html">About Us</a>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="./staff.html">Staff</a>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="./services.html">Services</a>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="https://www.vagaro.com/idealmassage/gift-certificates" target="_blank">Gift Cards</a>
-                </li>
-                <li class="nav-item px-2">
-                    <a class="nav-link" href="./contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <div class="nav-right">
-            <a class="nav-link schedule-btn rounded-pill" href="https://www.vagaro.com/idealmassage/services">SCHEDULE YOUR MASSAGE</a>
-        </div>
-    </nav>
+    
+    <header class="text-center">
+        <nav id="scroll-nav" class="navbar navbar-default navbar-expand-xl">
+            <a href="./" class="navbar-brand"><img src="./img/im-logo.png" alt="Ideal Massage" width="200px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-nav">
+                <i style="color: #558000;" class="fas fa-bars fa-2x"></i>
+            </button>
+            <div id="collapse-nav" class="nav-center navbar-collapse collapse">
+                <ul class="navbar-nav justify-content-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./staff.html">Staff</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.vagaro.com/idealmassage/gift-certificates" target="_blank">Gift Cards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a class="nav-link schedule-btn" href="https://www.vagaro.com/idealmassage/services">SCHEDULE YOUR MASSAGE</a>
+            </div>
+        </nav>
+
+        <img class="header-img" src="./img/im-logo.png" alt="Ideal Massage" width="500px">
+
+        <nav id="top-nav" class="navbar navbar-expand-sm justify-content-center">
+            <div class="nav-center navbar-collapse collapse">
+                <ul class="navbar-nav w-100 justify-content-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./staff.html">Staff</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.vagaro.com/idealmassage/gift-certificates" target="_blank">Gift Cards</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    
     
 
 
-    <section class="jumbotron main-jumbo text-center">
-        <h1 class="display-1">Ideal Massage</h1>
-        <p class="jumbo-subtext">You deserve to feel ideal</p>
-    </section>
+    <!-- <section class="jumbotron main-jumbo text-center"> -->
+        <div class="montage">
+            <video autoplay loop>
+                <source src="./img/massage-montage.mp4" type="video/mp4">
+            </video>
+        </div>
+    <!-- </section> -->
 
 
     <!-- Cards -->
     <section class="cards-section">
         
         <div class="card-flex-box">
-            <div class="card-shell mx-auto">
-                <div class="card rounded-pill cbd-card text-center">
-                    <a class="rounded-pill" href="services.html">
-                        <div class="card-body">
-                            <h4 class="card-title">CBD Oil <br/>Massage</h4>
-                            <p class="hidden-text">More Info</p>
-                        </div>
-                    </a>
+            <a href="https://www.vagaro.com/idealmassage/#services" style="display: block;" class="card-shell mx-auto text-center">
+                <img class="card-img-top" src="./img/massage-icon.png" alt="DEEP Tissue Massage">
+                <div class="card-body">
+                    <h3 class="card-title">DEEP Tissue <br class="card-br"/>Massage</h3>
+                </div>
+            </a>
+            <a href="https://www.vagaro.com/idealmassage/#services" style="display: block;"  class="card-shell mx-auto text-center">
+                <img class="card-img-top" src="./img/cbd-icon.png" alt="DEEP Tissue Massage">
+                <div class="card-body">
+                    <h3 class="card-title">CBD Oil <br class="card-br"/>Massage</h3>
+                </div>
+            </a>
+            <a href="https://www.vagaro.com/idealmassage/#services" style="display: block;"  class="card-shell mx-auto text-center">
+                <img class="card-img-top" src="./img/preg-icon.png" alt="DEEP Tissue Massage">
+                <div class="card-body">
+                    <h3 class="card-title">Prenatal <br class="card-br"/> Massage</h3>
                 </div>
             </div>
-            <div class="card-shell mx-auto">
-                <div class="card rounded-pill deep-card text-center">
-                    <a class="rounded-pill" href="services.html">
-                        <div class="card-body">
-                            <h4 class="card-title">DEEP Tissue Massage</h4>
-                            <p class="hidden-text">More Info</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="card-shell mx-auto">
-                <div class="card rounded-pill prenatal-card text-center">
-                    <a class="rounded-pill" href="services.html">
-                        <div class="card-body">
-                            <h4 class="card-title">Prenatal <br />Massage</h4>
-                            <p class="hidden-text">More Info</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="text-center">
-            <a href="services.html" class="full-menu d-inline-block rounded-pill">
-                <span class="see">See our f</span><span class="capf">F</span>ull menu of services 
-                <i class="fas fa-arrow-circle-right"></i>
+        </a>
+        <div class="launch-btns text-center">
+            <span class="launch-spacer" ><a class="book-now d-inline-block rounded-pill" href="https://www.vagaro.com/idealmassage/book-now">SCHEDULE YOUR MASSAGE</a></span> 
+            <span>
+                <br class="launch-btns-br" />
+            <a href="https://www.vagaro.com/idealmassage/#services" class="full-menu d-inline-block rounded-pill">
+                <span class="see">See our f</span><span class="capf">F</span>ull menu of services
             </a>
         </div>
     </section>
 
-    <div class="reviews-benefits-box">
-        <div class="reviews-benefits-overlay">     
+    <section class="reviews-section">
+        <div class="reviews-slider">
 
-        <section class="benefits-section">
-            <div class="benefits-box">
-                <div class="benefits-header text-center">
-                    <h2>Benefits of Massage</h2>
-                </div>
-                <div class="benefits-text text-justify">
-                    <p>At Ideal Massage we approach pain and tension patterns from a clinical and therapeutic standpoint. Whatever your needs may be our goal is to develop a plan to get you functioning at optimum health while enjoying a corrective and relaxing experience. We specialize in pain management therapy that focuses on releasing the root of tension and injury in the body. We can work as light or as deep as needed while still providing muscular rehabilitation or deep relaxation. We have a passion for healing work and believe that massage can be beneficial in many ways. We look forward to working with you! </p>
-                </div>
-            </div>
-        </section>
-
-        <section class="reviews-section">
-            <div class="reviews-slider">
-
-                <div id="reviews-carousel" class="carousel slide" data-ride="carousel" data-interval="5000">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="review-box">
-                                <div class="review-quote-open">
-                                    <img src="./img/open-quote.png" alt="quote">
-                                </div>
-                                <div class="review-body">
-                                    <p class="review-text">My complete experience from booking to post massage was wonderful! I will be booking again!</p>
-                                    <p class="review-author">Whitney C.<br/>2018</p>
-                                </div>
-                                <div class="review-quote-close">
-                                    <img src="./img/close-quote.png" alt="quote">
-                                </div>
+            <div id="reviews-carousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="review-box">
+                            <div class="review-quote-open">
+                                <img src="./img/quote-open.png" alt="quote">
+                            </div>
+                            <div class="review-body">
+                                <p class="review-text">My complete experience from booking to post massage was wonderful! I will be booking again!</p>
+                                <p class="review-author">Whitney C.<br/>2018</p>
+                            </div>
+                            <div class="review-quote-close">
+                                <img src="./img/quote-close.png" alt="quote">
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <div class="review-box">
-                                <div class="review-quote-open">
-                                    <img src="./img/open-quote.png" alt="quote">
-                                </div>
-                                <div class="review-body">
-                                    <p class='review-text'>I already have another appointment.</p><p class='review-author'>Sandy G. - 2018</p>
-                                </div>
-                                <div class="review-quote-close">
-                                    <img src="./img/close-quote.png" alt="quote">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="review-box">
-                                <div class="review-quote-open">
-                                    <img src="./img/open-quote.png" alt="quote">
-                                </div>
-                                <div class="review-body">
-                                    <p class='review-text'>I went for my first ever massage it was AMAZING! It was very clean and calming!</p><p class='review-author'>Janelle S. - 2018</p>
-                                </div>
-                                <div class="review-quote-close">
-                                    <img src="./img/close-quote.png" alt="quote">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="review-box">
-                                <div class="review-quote-open">
-                                    <img src="./img/open-quote.png" alt="quote">
-                                </div>
-                                <div class="review-body">
-                                    <p class='review-text'>Chelsey is so good! Got a massage from her for my birthday &amp;&amp; she did an amazing job!</p><p class='review-author'>Nikka L. - 2018</p>
-                                </div>
-                                <div class="review-quote-close">
-                                    <img src="./img/close-quote.png" alt="quote">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="review-box">
-                                <div class="review-quote-open">
-                                    <img src="./img/open-quote.png" alt="quote">
-                                </div>
-                                <div class="review-body">
-                                    <p class='review-text'>Venue
-                                            Location is beautiful, relaxing, and convenient to our city. LOVE THIS PLACE!</p><p class='review-author'>Chelsey L. - 2019</p>
-                                </div>
-                                <div class="review-quote-close">
-                                    <img src="./img/close-quote.png" alt="quote">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="review-box">
-                                <div class="review-quote-open">
-                                    <img src="./img/open-quote.png" alt="quote">
-                                </div>
-                                <div class="review-body">
-                                    <p class='review-text'>What a great experience! Chelsey is wonderful. My 50-minute massage with her will definitely be the highlight of my week. Very happy customer!</p><p class='review-author'>Claire S. - 2018</p>
-                                </div>
-                                <div class="review-quote-close">
-                                    <img src="./img/close-quote.png" alt="quote">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="review-box">
-                                <div class="review-quote-open">
-                                    <img src="./img/open-quote.png" alt="quote">
-                                </div>
-                                <div class="review-body">
-                                    <p class='review-text'>WOW! Just had a TWO HOUR massage with Mike! Professional, Knowledgeable, and had great attention to detail. Truly exceptional massage!</p><p class='review-author'>Chelsey L. - 2019</p>
-                                </div>
-                                <div class="review-quote-close">
-                                    <img src="./img/close-quote.png" alt="quote">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="review-box">
-                                <div class="review-quote-open">
-                                    <img src="./img/open-quote.png" alt="quote">
-                                </div>
-                                <div class="review-body">
-                                    <p class='review-text'>Chelsey is an excellent massage therapist! Highly recommend Ideal Massage</p><p class='review-author'>Cassandra B. - 2018</p>
-                                </div>
-                                <div class="review-quote-close">
-                                    <img src="./img/close-quote.png" alt="quote">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="review-box">
-                                <div class="review-quote-open">
-                                    <img src="./img/open-quote.png" alt="quote">
-                                </div>
-                                <div class="review-body">
-                                    <p class='review-text'>I've always had a great experience here, whether with hair or massage it has been beyond expectations. Really great service!</p><p class='review-author'>Anna S. - 2018</p>
-                                </div>
-                                <div class="review-quote-close">
-                                    <img src="./img/close-quote.png" alt="quote">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="review-box">
-                                <div class="review-quote-open">
-                                    <img src="./img/open-quote.png" alt="quote">
-                                </div>
-                                <div class="review-body">
-                                    <p class='review-text'>I was seriously in need of help with my lower back. Chelsey listened to me and took great care that I was comfortable. Will definitely be coming back soon!</p><p class='review-author'>Pedro E. - 2018</p>
-                                </div>
-                                <div class="review-quote-close">
-                                    <img src="./img/close-quote.png" alt="quote">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="review-box">
-                                <div class="review-quote-open">
-                                    <img src="./img/open-quote.png" alt="quote">
-                                </div>
-                                <div class="review-body">
-                                    <p class='review-text'>The most detailed and thorough massage you can imagine. It's not just a massage, it's full body care for muscles and joints.</p><p class='review-author'>Tiffany H. - 2018</p>
-                                </div>
-                                <div class="review-quote-close">
-                                    <img src="./img/close-quote.png" alt="quote">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="review-box">
-                                <div class="review-quote-open">
-                                    <img src="./img/open-quote.png" alt="quote">
-                                </div>
-                                <div class="review-body">
-                                    <p class='review-text'>Chelsey is awesome and made room for me when I tweaked my back. Thank you so much.</p><p class='review-author'>Heather M	. - 2018</p>
-                                </div>
-                                <div class="review-quote-close">
-                                    <img src="./img/close-quote.png" alt="quote">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="review-box">
-                                <div class="review-quote-open">
-                                    <img src="./img/open-quote.png" alt="quote">
-                                </div>
-                                <div class="review-body">
-                                    <p class='review-text'>Highly recommend Chelsey at Ideal Massage. I went for help with serious shoulder/neck pain. She's amazing!</p><p class='review-author'>Brittany W. - 2018</p>
-                                </div>
-                                <div class="review-quote-close">
-                                    <img src="./img/close-quote.png" alt="quote">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="review-box">
-                                <div class="review-quote-open">
-                                    <img src="./img/open-quote.png" alt="quote">
-                                </div>
-                                <div class="review-body">
-                                    <p class='review-text'>Chelsey is amazing!! She is extremely professional and friendly. The environment is very relaxing</p><p class='review-author'>Marty P. - 2018</p>
-                                </div>
-                                <div class="review-quote-close">
-                                    <img src="./img/close-quote.png" alt="quote">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="review-box">
-                                <div class="review-quote-open">
-                                    <img src="./img/open-quote.png" alt="quote">
-                                </div>
-                                <div class="review-body">
-                                    <p class='review-text'>I had Chelsey and she was so awesome. I am trying to get to her every week now! She really knows how to get rid of my soreness from working out. Thank you Chelsey.</p><p class='review-author'>Brook H. - 2018</p>
-                                </div>
-                                <div class="review-quote-close">
-                                    <img src="./img/close-quote.png" alt="quote">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="review-box">
-                                <div class="review-quote-open">
-                                    <img src="./img/open-quote.png" alt="quote">
-                                </div>
-                                <div class="review-body">
-                                    <p class='review-text'>Amazing experience! Overall it was a wonderful massage and I felt great afterwards. Thank you Chelsey!!</p><p class='review-author'>Kateland C. - 2018</p>
-                                </div>
-                                <div class="review-quote-close">
-                                    <img src="./img/close-quote.png" alt="quote">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="review-box">
-                                <div class="review-quote-open">
-                                    <img src="./img/open-quote.png" alt="quote">
-                                </div>
-                                <div class="review-body">
-                                    <p class='review-text'>I received the therapeutic massage and hot oil scalp treatment from Chelsey and it was amazing! I've never felt more relaxed. Would definitely return!</p><p class='review-author'>Nicole W. - 2018</p>
-                                </div>
-                                <div class="review-quote-close">
-                                    <img src="./img/close-quote.png" alt="quote">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="review-box">
-                                <div class="review-quote-open">
-                                    <img src="./img/open-quote.png" alt="quote">
-                                </div>
-                                <div class="review-body">
-                                    <p class='review-text'>I absolutely recommend Ideal Massage! The atmosphere created in this space is peaceful and relaxing, clean and professional. Give yourself a treat and book with Chelsey!</p><p class='review-author'>Amber M. - 2018</p>
-                                </div>
-                                <div class="review-quote-close">
-                                    <img src="./img/close-quote.png" alt="quote">
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
-                </div>
-            </div>   
-        </section>
+                    <div class="carousel-item">
+                        <div class="review-box">
+                            <div class="review-quote-open">
+                                <img src="./img/quote-open.png" alt="quote">
+                            </div>
+                            <div class="review-body">
+                                <p class='review-text'>I already have another appointment.</p><p class='review-author'>Sandy G. - 2018</p>
+                            </div>
+                            <div class="review-quote-close">
+                                <img src="./img/quote-close.png" alt="quote">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="review-box">
+                            <div class="review-quote-open">
+                                <img src="./img/quote-open.png" alt="quote">
+                            </div>
+                            <div class="review-body">
+                                <p class='review-text'>I went for my first ever massage it was AMAZING! It was very clean and calming!</p><p class='review-author'>Janelle S. - 2018</p>
+                            </div>
+                            <div class="review-quote-close">
+                                <img src="./img/quote-close.png" alt="quote">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="review-box">
+                            <div class="review-quote-open">
+                                <img src="./img/quote-open.png" alt="quote">
+                            </div>
+                            <div class="review-body">
+                                <p class='review-text'>Chelsey is so good! Got a massage from her for my birthday &amp;&amp; she did an amazing job!</p><p class='review-author'>Nikka L. - 2018</p>
+                            </div>
+                            <div class="review-quote-close">
+                                <img src="./img/quote-close.png" alt="quote">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="review-box">
+                            <div class="review-quote-open">
+                                <img src="./img/quote-open.png" alt="quote">
+                            </div>
+                            <div class="review-body">
+                                <p class='review-text'>Venue
+                                        Location is beautiful, relaxing, and convenient to our city. LOVE THIS PLACE!</p><p class='review-author'>Chelsey L. - 2019</p>
+                            </div>
+                            <div class="review-quote-close">
+                                <img src="./img/quote-close.png" alt="quote">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="review-box">
+                            <div class="review-quote-open">
+                                <img src="./img/quote-open.png" alt="quote">
+                            </div>
+                            <div class="review-body">
+                                <p class='review-text'>What a great experience! Chelsey is wonderful. My 50-minute massage with her will definitely be the highlight of my week. Very happy customer!</p><p class='review-author'>Claire S. - 2018</p>
+                            </div>
+                            <div class="review-quote-close">
+                                <img src="./img/quote-close.png" alt="quote">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="review-box">
+                            <div class="review-quote-open">
+                                <img src="./img/quote-open.png" alt="quote">
+                            </div>
+                            <div class="review-body">
+                                <p class='review-text'>WOW! Just had a TWO HOUR massage with Mike! Professional, Knowledgeable, and had great attention to detail. Truly exceptional massage!</p><p class='review-author'>Chelsey L. - 2019</p>
+                            </div>
+                            <div class="review-quote-close">
+                                <img src="./img/quote-close.png" alt="quote">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="review-box">
+                            <div class="review-quote-open">
+                                <img src="./img/quote-open.png" alt="quote">
+                            </div>
+                            <div class="review-body">
+                                <p class='review-text'>Chelsey is an excellent massage therapist! Highly recommend Ideal Massage</p><p class='review-author'>Cassandra B. - 2018</p>
+                            </div>
+                            <div class="review-quote-close">
+                                <img src="./img/quote-close.png" alt="quote">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="review-box">
+                            <div class="review-quote-open">
+                                <img src="./img/quote-open.png" alt="quote">
+                            </div>
+                            <div class="review-body">
+                                <p class='review-text'>I've always had a great experience here, whether with hair or massage it has been beyond expectations. Really great service!</p><p class='review-author'>Anna S. - 2018</p>
+                            </div>
+                            <div class="review-quote-close">
+                                <img src="./img/quote-close.png" alt="quote">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="review-box">
+                            <div class="review-quote-open">
+                                <img src="./img/quote-open.png" alt="quote">
+                            </div>
+                            <div class="review-body">
+                                <p class='review-text'>I was seriously in need of help with my lower back. Chelsey listened to me and took great care that I was comfortable. Will definitely be coming back soon!</p><p class='review-author'>Pedro E. - 2018</p>
+                            </div>
+                            <div class="review-quote-close">
+                                <img src="./img/quote-close.png" alt="quote">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="review-box">
+                            <div class="review-quote-open">
+                                <img src="./img/quote-open.png" alt="quote">
+                            </div>
+                            <div class="review-body">
+                                <p class='review-text'>The most detailed and thorough massage you can imagine. It's not just a massage, it's full body care for muscles and joints.</p><p class='review-author'>Tiffany H. - 2018</p>
+                            </div>
+                            <div class="review-quote-close">
+                                <img src="./img/quote-close.png" alt="quote">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="review-box">
+                            <div class="review-quote-open">
+                                <img src="./img/quote-open.png" alt="quote">
+                            </div>
+                            <div class="review-body">
+                                <p class='review-text'>Chelsey is awesome and made room for me when I tweaked my back. Thank you so much.</p><p class='review-author'>Heather M	. - 2018</p>
+                            </div>
+                            <div class="review-quote-close">
+                                <img src="./img/quote-close.png" alt="quote">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="review-box">
+                            <div class="review-quote-open">
+                                <img src="./img/quote-open.png" alt="quote">
+                            </div>
+                            <div class="review-body">
+                                <p class='review-text'>Highly recommend Chelsey at Ideal Massage. I went for help with serious shoulder/neck pain. She's amazing!</p><p class='review-author'>Brittany W. - 2018</p>
+                            </div>
+                            <div class="review-quote-close">
+                                <img src="./img/quote-close.png" alt="quote">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="review-box">
+                            <div class="review-quote-open">
+                                <img src="./img/quote-open.png" alt="quote">
+                            </div>
+                            <div class="review-body">
+                                <p class='review-text'>Chelsey is amazing!! She is extremely professional and friendly. The environment is very relaxing</p><p class='review-author'>Marty P. - 2018</p>
+                            </div>
+                            <div class="review-quote-close">
+                                <img src="./img/quote-close.png" alt="quote">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="review-box">
+                            <div class="review-quote-open">
+                                <img src="./img/quote-open.png" alt="quote">
+                            </div>
+                            <div class="review-body">
+                                <p class='review-text'>I had Chelsey and she was so awesome. I am trying to get to her every week now! She really knows how to get rid of my soreness from working out. Thank you Chelsey.</p><p class='review-author'>Brook H. - 2018</p>
+                            </div>
+                            <div class="review-quote-close">
+                                <img src="./img/quote-close.png" alt="quote">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="review-box">
+                            <div class="review-quote-open">
+                                <img src="./img/quote-open.png" alt="quote">
+                            </div>
+                            <div class="review-body">
+                                <p class='review-text'>Amazing experience! Overall it was a wonderful massage and I felt great afterwards. Thank you Chelsey!!</p><p class='review-author'>Kateland C. - 2018</p>
+                            </div>
+                            <div class="review-quote-close">
+                                <img src="./img/quote-close.png" alt="quote">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="review-box">
+                            <div class="review-quote-open">
+                                <img src="./img/quote-open.png" alt="quote">
+                            </div>
+                            <div class="review-body">
+                                <p class='review-text'>I received the therapeutic massage and hot oil scalp treatment from Chelsey and it was amazing! I've never felt more relaxed. Would definitely return!</p><p class='review-author'>Nicole W. - 2018</p>
+                            </div>
+                            <div class="review-quote-close">
+                                <img src="./img/quote-close.png" alt="quote">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="review-box">
+                            <div class="review-quote-open">
+                                <img src="./img/quote-open.png" alt="quote">
+                            </div>
+                            <div class="review-body">
+                                <p class='review-text'>I absolutely recommend Ideal Massage! The atmosphere created in this space is peaceful and relaxing, clean and professional. Give yourself a treat and book with Chelsey!</p><p class='review-author'>Amber M. - 2018</p>
+                            </div>
+                            <div class="review-quote-close">
+                                <img src="./img/quote-close.png" alt="quote">
+                            </div>
+                        </div>
+                    </div>
 
-        <section class="cta text-center">
-            <h3>You deserve to feel ideal!</h3>
-            <p><a class="schedule-btn rounded-pill" href="https://www.vagaro.com/idealmassage/services" target="_blank">SCHEDULE YOUR MASSAGE</a></p>
-        </section>
-
-        <section class="hours-map">
-            <div class="hours-box position-relative text-center">
-                <h2 class="py-3">We're here for you</h2>
-                <h4 class="pt-2 pb-3">
-                    <i class="fas fa-phone pr-4"></i>(512) 902-5510
-                </h4>
-                <div class="hours-container d-flex">
-                    <p class="hours d-block text-left pl-3">
-                        Sunday <br />
-                        Monday<br />
-                        Tuesday<br />
-                        Wednesday<br />
-                        Thursday<br />
-                        Friday<br />
-                        Saturday<br />
-                    </p>
-                    <p class="hours d-block">
-                        1:00 PM - 7:00 PM <br />
-                        10:00 AM - 7:00 PM <br />
-                        10:00 AM - 7:00 PM <br />
-                        10:00 AM - 7:00 PM <br />
-                        10:00 AM - 7:00 PM <br />
-                        10:00 AM - 7:00 PM <br />
-                        10:00 AM - 7:00 PM <br />
-                    </p>
                 </div>
             </div>
-            <div class="map-box">
-                <p class="map-address text-center">112 US-79, Ste. B, Hutto, TX, 78634</p>
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3436.202929264016!2d-97.54684208518339!3d30.543570181703462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644db9f168e1d4f%3A0xf32cc898e7a16743!2s112%20US-79%2C%20Hutto%2C%20TX%2078634!5e0!3m2!1sen!2sus!4v1568315392297!5m2!1sen!2sus" allowfullscreen=""></iframe>
-                </div>
+        </div>   
+    </section>
+
+
+
+    <section class="contact">
+        <div class="hours-box">
+            <div class="hours">
+                <h3>Address:</h3>
+                <p>112 US-79, Ste. B, Hutto, TX, 78634</p>
+                <hr style="color: #304800;margin-top: 25px;">
+
+                <h3>Phone:</h3>
+                <p>(512) 902-5510</p>
+                <hr style="color: #304800;margin-top: 25px;">
+            
+                <h3>Hours:</h3>
+                <p>
+                    Monday - Saturday: 10:00 am - 7:00 pm<br />
+                    Sunday: 1:00 pm - 7:00 pm
+                </p>
             </div>
-        </section>
+        </div>
+        <div class="map-box">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3436.202929264016!2d-97.54684208518339!3d30.543570181703462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644db9f168e1d4f%3A0xf32cc898e7a16743!2s112%20US-79%2C%20Hutto%2C%20TX%2078634!5e0!3m2!1sen!2sus!4v1568315392297!5m2!1sen!2sus" allowfullscreen=""></iframe>
+            </div>
+        </div>
+</section>
+
+<section class="benefits-section">
+    <div class="benefits-box">
+        <div class="benefits-header text-center">
+            <h2>Benefits of Massage</h2>
+        </div>
+        <div class="benefits-text text-justify">
+            <p>At Ideal Massage we approach pain and tension patterns from a clinical and therapeutic standpoint. Whatever your needs may be, our goal is to develop a plan to get you functioning at optimum health while enjoying a corrective and relaxing experience. We specialize in pain management therapy that focuses on releasing the root of tension and injury in the body. We can work as light or as deep as needed while still providing muscular rehabilitation or deep relaxation. We have a passion for healing work and believe that massage can be beneficial in many ways.</p>
+            <p style="text-indent: none; text-align: center;">We look forward to working with you! </p>
+        </div>
     </div>
-</div>
+</section>
 
 
-    
 
     <footer>
-        <h2>Ideal Massage</h2>
+        
         <div class="footer-box">
-            <div class="footer-left footer-contact">
-                <p class="phone"><a href="tel:+15129025510"><i class="fas fa-phone pr-3"></i>(512) 902-5510</a></p>
-                <p class="address"><a href="https://www.google.com/maps/place/112+US-79+Ste.+B,+Hutto,+TX+78634/@30.5435702,-97.5468421,17z/data=!3m1!4b1!4m5!3m4!1s0x8644db9f168e1d4f:0x77049654096a0337!8m2!3d30.5435702!4d-97.5446534"><i class="fas fa-map-pin pr-3"></i>112 US-79, Ste. B,<br class="add-br"/> Hutto, TX, 78634</a></p>
-                <p class="time"><i class="fas fa-clock pr-3"></i>Mon - Sat 10:00am - 7:00pm</p>
-                <p class="time2">Sun 1:00pm - 7:00pm</p>
+            <div class="footer-left">
+                <a href="./"><img src="./img/im-logo.png" alt="Ideal Massage" width="300px"></a>
+                <div class="social">
+                    <a style="padding-left: 0;" href="https://www.facebook.com/IdealMassageHutto/" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook-square" alt="Facebook"></i>
+                    </a>
+                    <a href="#" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram" alt="Instagram"></i>
+                    </a>
+                    <a href="#" target="_blank" title="Yelp">
+                        <i class="fab fa-yelp" alt="Yelp"></i>
+                    </a>
+                </div>
+                <p><a href="mailto:ideal.massage@yahoo.com">Ideal.Massage@yahoo.com</a></p>
+                <p class="phone">
+                    <strong>Phone:</strong><br/>
+                    <a href="tel:+15129025510">(512) 902-5510</a>
+                </p>
+                <p class="address">
+                    <strong>Address:</strong> <br/>
+                    <a href="https://www.google.com/maps/place/112+US-79+Ste.+B,+Hutto,+TX+78634/@30.5435702,-97.5468421,17z/data=!3m1!4b1!4m5!3m4!1s0x8644db9f168e1d4f:0x77049654096a0337!8m2!3d30.5435702!4d-97.5446534">
+                        112 US-79, Ste. B,<br class="add-br"/> Hutto, TX, 78634
+                    </a>
+                </p>
+                <p>
+                    <strong>Hours:</strong> <br/>
+                    Mon - Sat 10:00am - 7:00pm<br/>
+                    Sun 1:00pm - 7:00pm
+                </p>
+            </div>
+
+            <div class="footer-middle">
+                <p><a href="/">Home</a></p>
+                <p><a href="/about-us.html">About</a></p>
+                <p><a href="/staff.html">Staff</a></p>
+                <p><a href="/services.html">Services</a></p>
+                <p><a href="https://www.vagaro.com/idealmassage/gift-certificates" target="_blank">Gift Cards</a></p>
+                <p><a href="/contact.html">Contact</a></p>
             </div>
             
-            <div class="footer-right social-media">
-                <p>
-                    <a href="https://www.facebook.com/IdealMassageHutto/" target="_blank" title="Facebook">
-                        <i class="fab fa-facebook-square"></i>
-                        <span class="hidden-text">Facebook</span>
-                    </a>
-                </p>
-                <p>
-                    <a href="#" target="_blank" title="Instagram">
-                        <i class="fab fa-instagram"></i>
-                        <span class="hidden-text">Instagram</span>
-                    </a>
-                </p>
-                <p>
-                    <a href="#" target="_blank" title="Yelp">
-                        <i class="fab fa-yelp"></i>
-                        <span class="hidden-text">Yelp</span>
-                    </a>
-                </p>
-            </div>
-            <div class="footer-middle footer-nav">
-                    <p><a href="/">Home</a></p>
-                    <p><a href="/about-us.html">About</a></p>
-                    <p><a href="/staff.html">Staff</a></p>
-                    <p><a href="/services.html">Services</a></p>
-                    <p><a href="https://www.vagaro.com/idealmassage/gift-certificates" target="_blank">Gift Cards</a></p>
-                    <p><a href="/contact.html">Contact</a></p>
+            <div class="footer-right">
+                <div class="form-box">
+                    <h1 class="text-center">Leave us a message:</h1>
+                    
+                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSdfnlg5Ej-Kl3CyhexlclUfNm_gqzswyU_QtTPIED9Bw-GHjA/formResponse" target="hidden_iframe" method="post" onsubmit="submitted=true;">
+                        
+                        <p class="form-label"></p>
+                        <p><input class="name-input form-control" required type="text" name="entry.2005620554" placeholder="Name"></p>
+            
+                        <p class="form-label"></p>
+                        <p><input class="form-control" required type="email" name="entry.1045781291" placeholder="Email"></p>
+            
+                        <p class="form-label"></p>
+                        <p><textarea class="form-control" name="entry.839337160" cols="" rows="5" placeholder="How may I help you?"></textarea></p>
+            
+                        <p class="submit"><button class="rounded-pill" type="submit" formaction="https://docs.google.com/forms/d/e/1FAIpQLSdfnlg5Ej-Kl3CyhexlclUfNm_gqzswyU_QtTPIED9Bw-GHjA/formResponse"><i class="fas fa-envelope"></i> Send</button></p>
+            
+                    </form>
                 </div>
+            </div>
         </div>
         <p class="copyright">Ideal Massage &copy;2019</p>
+
+
+
     </footer>
+
 
 
 

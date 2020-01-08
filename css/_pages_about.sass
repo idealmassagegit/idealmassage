@@ -5,18 +5,14 @@
 
 .about-section
 	+backgroundCover
+	background-position: center
 	background-attachment: fixed
-	background-image: url('../img/horizon-gradient.jpg')
-	.top-bar
-		height: 60px
-		background-color: $newBlue
-		width: 100%
+	background-image: url('../img/massage-guy.jpg')
 	.about-box
-		display: flex
-		@media (max-width: 960px)
-			display: block
+		background-color: rgba(246,246,246,.8)
 	.about-title
-		font-family: $headerFont
+		color: #3d321d
+		font-family: "Pathway Gothic One", sans-serif
 		font-size: 50px
 		padding-top: 20px
 		padding-bottom: 30px
@@ -26,181 +22,276 @@
 		@media (max-width: 400px)
 			font-size: 30px
 	.about-text-box
-		color: black
 		padding: 35px 0
-		width: 50%
+		max-width: 690px
 		margin: 0 auto
-		@media (max-width: 960px)
-			width: 90%
-		.about-text,
+		text-align: center
+		@media (max-width: 1200px)
+			padding: 0 40px
 		.address
-			width: 60%
-			margin: 0 auto
-			line-height: 25px
-			padding: 15px 0
-			@media (max-width: 1250px)
-				width: 75%
+			font-weight: bold
 			@media (max-width: 600px)
 				font-size: 14px
-				width: 100%
+		p
+			color: #3d321d
+			font-size: 18px
+			line-height: 35px
+			padding: 15px 0
 		a
-			border-bottom: 1px solid $newBlue
-			color: $newBlue
+			color: #558000
+			letter-spacing: 1px
 			padding: 10px 5px
+			text-decoration: underline
 			&:hover
-				color: $royal
-				border-color: $royal
+				color: #77b300
 
-	.slider-box 
-		display: flex
-		@media (max-width: 1000px)
-			display: block
-	.about-slider
-		padding: 15px
-		width: 50%
-		@media (max-width: 1000px)
-			width: 90%
-			margin: 0 auto
-		#about-carousel
-			margin: 0 auto
-			width: 100%
-			.carousel-inner
-				border-radius: 5px
-				cursor: pointer
-				width: 100%
-				img
-					width: 100%
-					
-	.reviews-slider
-		width: 50%
-		font-family: $basicFont
-		font-size: 16px
-		font-style: italic
-		height: 300px
-		letter-spacing: 1px
-		line-height: 30px
-		margin: 0 auto
-		padding: 50px 0
-		text-align: center
-		@media (max-width: 1000px)
-			width: 90%
-		@media (max-width: 550px)
-			width: 100%
-			font-size: 14px
-			line-height: 20px
+.nav-tabs .nav-link.active
+	background-color: $green
+	color: white
+	&:hover
+		background-color: $green
 
-		.carousel-inner
-			margin: 0 auto
-		.review-box
-			display: flex
-			img
-				width: 40px
-				opacity: .5
-				margin: 0 25px
-				@media (max-width: 500px)
-					width: 30px
-		.review-body
-			margin: 0 auto
-		.review-author
-			font-style: normal
-			text-align: right
-			margin-top: 15px
-			
-.cta-box
-	background-color: $newBlue
-	font-family: $headerFont
-	font-size: 30px
-	line-height: 25px
-	margin-bottom: 50px
-	padding: 30px 0
-	p
-		color: $tonedDownBlue
-		letter-spacing: 1px
-		line-height: 50px
-	.call-us-link
-		color: $tonedDownBlue
-		font-size: 25px
-		border-bottom: 2px solid $tonedDownBlue
-		padding-bottom: 5px
-		@media (max-width: 400px)
-			font-size: 20px
-	.about-span
-		transition: all .25s ease-in-out
-		&:hover
-			transform: scale(1.15)
-	a.about-book-online-btn
-		background: linear-gradient(45deg, $lightTonedDownBlue  0%, $tonedDownBlue 100%)
-		color: $black
-		font-family: $subheaderFont
-		font-size: 16px
-		font-weight: bold
-		letter-spacing: 1px
-		padding: 5px 25px
-		@media (max-width: 400px)
-			font-size: 14px
-
-.what-to-expect
-	padding-top: 35px
-	width: 50%
+.about-tabs,
+.tab-content
+	max-width: 1100px
 	margin: 0 auto
+	@media (max-width: 1175px)
+		max-width: 900px
 	@media (max-width: 960px)
 		width: 90%
-	@media (max-width: 600px)
-		padding-top: 0
-	.expect-title
-		font-family: $headerFont
+.about-tabs
+	margin-top: 50px
+	padding: 0
+	.nav-link
+		border-radius: 0
+		color: $green
+		font-family: 'Montserrat', sans-serif
+		font-weight: bold
+		font-size: 20px
+		letter-spacing: 1px
+		padding: 20px 0
+		&:hover
+			background-color: $green
+			color: white
+
+.tab-content
+	margin-top: -2px
+	margin-bottom: 70px
+	#expect,
+	#faq,
+	#cancel
+		background-color: #f6f6f6
+		box-shadow: 0 0 10px #bbb
+		padding: 0
+	.expect-title,
+	.faq-title,
+	.cancel-title
+		border-top: 2px solid $green
+		color: #3d321d
+		font-family: "Pathway Gothic One", sans-serif
 		font-size: 50px
-		padding-top: 20px
-		padding-bottom: 30px
+		padding: 40px 0
+		text-align: center
+		@media (max-width: 600px)
+			font-size: 40px
+		@media (max-width: 400px)
+			font-size: 30px
+
+#expect
+	.expect-title
+		color: #3d321d
 		@media (max-width: 600px)
 			font-size: 40px
 			padding-bottom: 15px
 		@media (max-width: 400px)
 			font-size: 30px
-	.expect-text
-		width: 60%
-		margin: 0 auto
-		line-height: 25px
-		padding: 15px 0
+	.expect-block
+		display: flex
+		flex-wrap: wrap
+		position: relative
+		.copy-box,
+		.img-box
+			width: 50%
+			margin: 0 auto
+		@media (max-width: 1175px)
+			.copy-box
+				width: 60%
+				margin: 0 2.5%
+			.img-box
+				width: 35%			
+			
+		.copy-box
+			padding: 0 30px
+			p
+				top: 50%
+				transform: translateY(-50%)
+				position: absolute
+				color: #3d321d
+				display: inline-block
+				font-size: 20px
+				line-height: 40px
+				max-width: 500px
+				margin: 0 auto
+				@media (max-width: 1175px)
+					font-size: 17px
+					span
+						font-size: 21px
+				span
+					color: #558000
+					font-size: 24px
+					font-weight: bold
+					padding: 0 5px
+		.img-box
+			img
+				width: 100%
+
+
+#faq
+	.faq-box
+		padding: 0 40px	40px	
+	.ques-box
+		background-color: white
+		border-left: 2px solid $green
+		color: #3d321d
+		margin: 10px 0
+		&:hover
+			.ques
+				color: #558000
+		.ques
+			padding: 20px
+			cursor: pointer
+			font-size: 20px
+	.active
+		.answ
+			background-color: rgba(153,230,0,.1)
+			max-height: 300px
+			padding-top: 20px
+			padding-bottom: 20px
+	.expect-natal
+		color: #3d321d
+		font-family: 'Pathway Gothic One', sans-serif
+		font-size: 40px
+		margin-top: -2px
+		padding-top: 30px
+		text-align: center
+	.natal-copy
+		color: #3d321d
+		font-size: 18px
+		line-height: 35px
+		padding-bottom: 30px
+		font-family: 'Lato', sans-serif
+		padding: 25px
+		h3
+			font-size: 40px
+		h5
+			margin-top: 20px
+			font-size: 30px
+			font-family: "Pathway Gothic One", sans-serif
+			padding-bottom: 15px
+		li
+			list-style-type: disc
+			margin-left: 35px
+			
+.answ
+	color: #3d321d
+	font-size: 16px
+	overflow: hidden
+	max-height: 0
+	transition: all .3s
+	line-height: 30px
+	padding-left: 40px
+	padding-right: 40px
+		
+					
+				
+
+#cancel
+	.cancel-box
+		padding-bottom: 50px
 		@media (max-width: 1250px)
 			width: 75%
+		@media (max-width: 960px)
+			padding-top: 50px
+		@media (max-width: 600px)
+			width: 100%
+	.cancel-text
+		color: #3d321d
+		max-width: 800px
+		margin: 30px auto 0
+		font-size: 18px
+		font-family: $basicFont
+		margin: 0 auto
+		line-height: 35px
+		padding-bottom: 30px
+		@media (max-width: 960px)
+			width: 90%
 		@media (max-width: 600px)
 			font-size: 14px
+
+
+.slider-box 
+	display: flex
+	@media (max-width: 1000px)
+		display: block
+.about-slider
+	padding: 15px
+	width: 50%
+	@media (max-width: 1000px)
+		width: 90%
+		margin: 0 auto
+	#about-carousel
+		margin: 0 auto
+		width: 100%
+		.carousel-inner
+			border-radius: 5px
+			cursor: pointer
 			width: 100%
+			img
+				width: 100%
+
+.reviews-slider
+	color: #3d321d
+	width: 50%
+	font-family: $basicFont
+	font-size: 16px
+	font-style: italic
+	height: 250px
+	letter-spacing: 1px
+	line-height: 30px
+	margin: 0 auto
+	padding: 30px 0 50px 0
+	text-align: center
+	@media (max-width: 1000px)
+		width: 90%
+	@media (max-width: 550px)
+		width: 100%
+		font-size: 14px
+		line-height: 20px
+
+	.carousel-inner
+		margin: 0 auto
+	.review-box
+		display: flex
+		img
+			width: 40px
+			opacity: .5
+			margin: 0 25px
+			@media (max-width: 500px)
+				width: 30px
+	.review-body
+		margin: 0 auto
+	.review-author
+		font-style: normal
+		text-align: right
+		margin-top: 15px
+			
+
 
 	.reviews-box
 		background-color: rgba(0,0,0, .3)
 		height: 350px
 		width: 50%
 
-.cancel-policy
-	width: 50%
-	margin: 0 auto
-	padding-bottom: 50px
-	@media (max-width: 1250px)
-		width: 75%
-	@media (max-width: 960px)
-		padding-top: 50px
-	@media (max-width: 600px)
-		width: 100%
-	h2
-		font-family: $headerFont
-		font-size: 50px
-		padding-bottom: 20px
-		text-align: center
-		@media (max-width: 600px)
-			font-size: 40px
-		@media (max-width: 400px)
-			font-size: 30px
-	.cancel-text
-		font-size: 16px
-		font-family: $basicFont
-		margin: 0 auto
-		line-height: 25px
-		@media (max-width: 960px)
-			width: 90%
-		@media (max-width: 600px)
-			font-size: 14px
 
 .modal-dialog
 	background-color: $newBlue

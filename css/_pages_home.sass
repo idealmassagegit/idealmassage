@@ -3,20 +3,17 @@
 @import _fonts
 
 
-.main-jumbo
-    +backgroundCover
-    background-image: url('../img/massage-smiling.jpeg')
-    background-blend-mode: multiply
-    background-color: #615b46
-    background-attachment: fixed
-    border-radius: 0
-    height: calc(100vh - 50px)
-    min-height: 470px
-    margin: 0
-    padding: 0
-    position: relative
-    @media (max-width: 650px)
-        background-position: right
+.montage
+    height: 550px
+    filter: blur(11px)
+    opacity: .5    
+    transition: all .3s
+    video
+        position: fixed
+        margin-top: -125px
+        min-width: 100%
+        min-height: 100%
+        z-index: 0
     h1
         color: $light3yellow
         font-family: $headerFont
@@ -29,341 +26,244 @@
             font-size: 60pt
         @media (max-width: 450px)
             font-size: 50pt
-    .jumbo-subtext
-        color: $light3yellow
-        font-family: Dancing Script
-        font-size: 70px
-        position: absolute
-        bottom: 30px
-        left: 50%
-        transform: translateX(-50%)
-        @media (max-width: 1250px)
-            font-size: 50px
-        @media (max-width: 900px)
-            bottom: 75px
-            font-size: 40px
 
 .cards-section
-    background-image: url('../img/relaxation.jpg')
-    background-color: $newBlue
-    background-attachment: fixed
-    background-blend-mode: multiply
-    padding: 30px 0
-    .cards-section-header
-        h2
-            color: $shade2yellow
-            font-family: $headerFont
-            font-size: 120px
+    margin-top: -500px
+    position: relative
+    z-index: 2
     .card-flex-box
-        display: flex
-        margin-top: 35px
-        padding: 0 50px  
-        @media (max-width: 720px)
+        display: flex 
+        max-width: 1100px
+        margin: 0 auto
+        @media (max-width: 500px)
             display: block
             padding: 0
     .card-shell
         width: 30%
-        @media (max-width: 720px)
+        padding: 0
+        transition: all .3s
+        &:hover
+            .info-btn
+                opacity: 1
+                transform: scale(1)
+        @media (max-width: 500px)
             width: 100% 
             margin: 15px 0
-    .card
-        +backgroundFull
-        box-shadow: 10px 10px 5px rgba(0,0,0,.3)
-        border: none
-        height: 250px
-        width: 400px
-        margin: 0 auto
-        position: relative
-        transform: scale(.9)
-        transition: all .25s ease-in
+        
+
         &:hover
-            transform: scale(1.02)
-        @media (max-width: 1250px)
-            width: 350px
-        @media (max-width: 1150px)
-            width: 300px
-        @media (max-width: 1000px)
-            width: 250px
-            height: 175px
-        @media (max-width: 865px)
-            width: 200px
-        @media (max-width: 720px)
-            width: 310px
-        a
-            background-color: rgba(0,0,0,.5)
-            display: block
-            height: 100%
-            transition: all .4s ease-in
-            width: 100%
-            &:hover
-                background-color: rgba(0,0,0,.9)
-                box-shadow: 0 0px 5px $lightNewBlue
-                text-decoration: none
-                .card-title
-                    color: $tonedDownBlue
-                .hidden-text
-                    opacity: 1
-                    height: 200px
-            &:visited
-                text-decoration: none
-        .card-body
-            border-radius: 5px
-            box-shadow: 0 0 -20px #444
-            padding: 0
-            position: relative
+            transform: scale(1.05)
+        .card-img-top
+            width: 150px
+            margin: 0 auto
+            @media (max-width: 1000px)
+                width: 120px
+            @media (max-width: 700px)
+                width: 100px
+            @media (max-width: 500px)
+                width: 80px
+
         .card-title
-            color: $light3yellow
-            font-family: $subheaderFont
-            font-size: 24pt
-            font-weight: bold
+            color: #111a00
+            font-family: "Pathway Gothic One", sans-serif
+            font-size: 26pt
+            // font-style: italic
             letter-spacing: 2px
-            padding: 30px 15px 20px 15px
+            padding: 0
             transition: all .3s ease-in
             @media (max-width: 1250px)
                 font-size: 20pt
-                padding: 50px 15px 20px 15px
             @media (max-width: 1000px)
                 font-size: 17pt
-                padding: 30px 15px 20px
             @media (max-width: 865px)
                 font-size: 15pt
-                padding: 20px
-            @media (max-width: 720px)
-                padding: 25px
-        .hidden-text
-            display: block
-            color: $tonedDownBlue
-            font-family: $subheaderFont
-            font-size: 25pt
-            margin: 0 auto
-            opacity: 0
-            overflow: hidden
-            word-wrap: none
-            transition: all .4s ease-in
-            height: 0
-            @media (max-width: 1150px)
-                font-size: 20pt
-            @media (max-width: 1000px)
-                font-size: 17pt
-    .full-menu
-        +transition(all .3s)
-        color: $light3yellow
-        font-size: 30px
+
+    .launch-btns
         margin-top: 40px
+        .launch-spacer
+            padding-right: 30px
+        @media (max-width: 700px)
+            .launch-spacer
+                display: block
+                padding: 0 0 20px 0
+            .launch-btns
+                // text-align: center
+            .launch-btns-br
+                display: block
+        
+    .book-now,
+    .full-menu
+        font-family: "Pathway Gothic One", sans-serif
+        font-size: 24px
+        letter-spacing: 2px
         padding: 20px 40px
-        position: relative
-        z-index: 100
-        @media (max-width: 1150px)
-            font-size: 25px
-        @media (max-width: 500px)
+        transition: all .3s
+        &:hover
+            transform: scale(1.05)
+        &:visited,
+        &:active
+            text-decoration: none
+        @media (max-width: 1000px)
             font-size: 20px
-            padding: 15px 30px
-        @media (max-width: 400px)
+            letter-spacing: 1px
+        // @media (max-width: 800px)
+        //     font-size: 18px
+        //     padding: 15px 30px
+        
+                
+        @media (max-width: 700px)
             .capf
                 display: inline
             .see
                 display: none
-        
+    .book-now
+        background-color: #558000
+        color: white
         &:hover
-            box-shadow: 0 0px 5px $lightNewBlue
-            color: $tonedDownBlue
-            text-decoration: none
-            transform: scale(1.02)
-        &:visited
-            text-decoration: none
+            background-color: #77b300  
+    .full-menu
+        box-shadow: 0 0px 5px #304800
+        color: #304800
+        &:hover
+            background-color: rgba(0,0,0,.1)
     .capf
         display: none
+    .launch-btns-br
+        display: none
 
-    .cbd-card
-        background-image: url('../img/massage-cbd.jpeg')
-    .deep-card
-        background-image: url('../img/massage-blur.jpg')
-    .prenatal-card
-        background-image: url('../img/prenatal-massage.jpg')
-    
-.reviews-benefits-box
-    +backgroundCover
-    background-image: url('../img/horizon-clouds.jpg')
-    background-attachment: fixed
-    .reviews-benefits-overlay
-        background: radial-gradient(circle, rgba(250, 252, 255, .7) 60%, rgba(212, 232, 255, .7))
-
-    .reviews-section
-        padding-top: 30px
-        .reviews-slider
-            color: #4a4a4a
-            font-family: $basicFont
-            font-size: 16px
-            font-style: italic
-            height: 300px
-            letter-spacing: 1px
-            line-height: 30px
+.reviews-section
+    padding-top: 30px
+    .reviews-slider
+        color: #3d321d
+        font-family: $basicFont
+        font-size: 16px
+        font-style: italic
+        height: 280px
+        letter-spacing: 1px
+        line-height: 30px
+        margin: 0 auto
+        padding: 50px 0
+        text-align: center
+        width: 90%
+        max-width: 900px
+        @media (max-width: 1000px)
+            font-size: 14px
+            line-height: 25px
+        @media (max-width: 700px)
+            width: 100%
+        .carousel-inner
             margin: 0 auto
-            padding: 50px 0
-            text-align: center
-            width: 90%
-            max-width: 900px
-            @media (max-width: 1000px)
-                font-size: 14px
-                line-height: 25px
-            @media (max-width: 700px)
-                width: 100%
-            .carousel-inner
-                margin: 0 auto
-            .review-box
-                display: flex
-                img
-                    width: 40px
-                    opacity: .5
-                    margin: 0 25px
-                    @media (max-width: 600px)
-                        width: 30px
-                        padding-top: 20px
-                    @media (max-width: 400px)
-                        width: 20px
-                        margin: 0 15px
-            .review-body
-                margin: 0 auto
-            .review-author
-                font-style: normal
-                text-align: right
-                margin-top: 15px
-
-    .benefits-section
-        .benefits-box
-            color: $black
-            .benefits-header
-                font-size: 60px
-                font-family: $headerFont
-                padding: 40px 0
-                @media (max-width: 1000px)
-                    font-size: 45px
-            .benefits-text
-                font-size: 18px
-                font-family: $basicFont
-                letter-spacing: 1px
-                line-height: 35px
-                text-indent: 50px
-                width: 90%
-                max-width: 900px
-                margin: 0 auto
-                @media (max-width: 1000px)
-                    font-size: 16px
-                    line-height: 25px
-                @media (max-width: 850px)
-                    font-size: 14px
-
-.cta
-    background: radial-gradient(circle, $newBlue 65%, $lightNewBlue 100%)
-    padding: 30px 0
-    width: 100%
-    h3
-        color: $light3yellow
-        font-size: 50px
-        font-family: $headerFont
-        padding: 20px 0
-        @media (max-width: 550px)
-            font-size: 40px
-        @media (max-width: 420px)
-            font-size: 30px
-    p
-        margin: 25px 0 50px
-        .schedule-btn
-            background: linear-gradient(45deg, $lightTonedDownBlue  0%, $tonedDownBlue 100%)
-            color: $black
-            font-size: 16px
-            font-weight: bold
-            letter-spacing: 1px
-            padding: 15px 30px
-            transition: all .25s ease-in-out
-            @media (max-width: 550px)
-                font-size: 14px
-            @media (max-width: 420px)
-                font-size: 12px
-            &:hover
-                font-size: 20px
-                @media (max-width: 550px)
-                    font-size: 16px
-                @media (max-width: 420px)
-                    font-size: 14px
+        .review-box
+            display: flex
+            img
+                width: 40px
+                opacity: .5
+                margin: 0 25px
+                @media (max-width: 600px)
+                    width: 30px
+                    padding-top: 20px
+                @media (max-width: 400px)
+                    width: 20px
+                    margin: 0 15px
+        .review-body
+            margin: 0 auto
+        .review-author
+            font-style: normal
+            text-align: right
+            margin-top: 15px
 
 
-.hours-map
-    color: $newBlue
+.contact
+    box-shadow: 0 -10px 20px #ccc
     display: flex
-    padding: 50px 0
+    margin-top: -35px
     @media (max-width: 800px)
         display: block
-        padding: 20px 0
     .hours-box
+        +backgroundCover
+        background-image: url('../img/towels.png')
         width: 50%
         margin: 0 auto
+        line-height: 35px
+        position: relative
         @media (max-width: 800px)
             width: 100%
-        h2
-            font-size: 50px
-            font-family: $headerFont
-            @media(max-width: 1000px)
-                font-size: 40px
-            @media(max-width: 400px)
-                font-size: 30px
-        h4
-            font-size: 25px
-            font-style: italic
-            margin-left: -25px
-            @media(max-width: 1000px)
-                font-size: 20px
-            @media (max-width: 400px)
-                font-size: 16px
-        .hours-container
-            margin: 0 auto
-            width: 400px
-            position: absolute
-            left: 50%
-            transform: translateX(-50%)
-            @media (max-width: 800px)
-                width: 60%
-            @media (max-width: 550px)
-                width: 100%
         .hours
-            font-size: 18px   
-            letter-spacing: 1px
-            line-height: 1.7em
-            width: 50%
+            padding: 30px
+            padding-right: 200px
+            position: absolute
+            right: 0
+            @media (max-width: 1250px)
+                padding-right: 150px
+            @media (max-width: 1120px)
+                padding-right: 100px
             @media (max-width: 1000px)
-                font-size: 15px
+                // padding-right: 40px
+                position: relative
+            @media (max-width: 900px)
+                padding-right: 30px
             @media (max-width: 800px)
-                width: 90%
-                margin: 0 auto
-            @media (max-width: 400px)
-                font-size: 14px
-            @media (max-width: 320px)
-                font-size: 13px
-    .map-address
-        font-family: $subheaderFont
-        font-size: 24px
-        padding-bottom: 10px
-        @media(max-width: 1000px)
-            font-size: 20px
-        @media (max-width: 500px)
-            font-size: 18px
-        @media (max-width: 350px)
-            font-size: 14px
+                width: 100%
+                padding: 0 0 20px 0
+            h3
+                color: #3d321d
+                font-size: 24px
+                font-weight: bold
+                padding: 15px 0 3px
+                @media (max-width: 700px)
+                    font-size: 22px
+                @media (max-width: 800px)
+                    text-align: center
+            p
+                color: #3d321d
+                font-size: 18px
+                @media (max-width: 800px)
+                    text-align: center
+                @media (max-width: 400px)
+                    font-size: 16px
+            hr
+                @media (max-width: 800px)
+                     margin: 0 auto
+                     width: 50%          
     .map-box
         width: 50%
         @media (max-width: 800px)
-            width: 90%
-            margin: 0 auto
-            margin-top: 200px
+            width: 100%
     .map
-        border: 15px solid $newBlue
         overflow: hidden
         height: 420px
-        width: 90%
+        width: 100%
         margin: 0 auto
         iframe
             height: 100%
             width: 100%
 
-
-
+.benefits-section
+    margin-top: 20px
+    padding-bottom: 40px
+    @media (max-width: 800px)
+        padding-bottom: 0
+    .benefits-box
+        color: #3d321d
+        .benefits-header
+            font-size: 50px
+            font-family: "Pathway Gothic One", sans-serif
+            padding: 20px 0 25px 0
+            @media (max-width: 1000px)
+                font-size: 45px
+            @media (max-width:420px)
+                font-size: 35px
+        .benefits-text
+            font-size: 17px
+            font-family: "Lato", sans-serif
+            line-height: 35px
+            width: 90%
+            max-width: 900px
+            margin: 0 auto
+            p
+                padding: 15px 0
+            @media (max-width: 1000px)
+                font-size: 12pt
+                line-height: 30px
+            @media (max-width: 850px)
+                // font-size: 14px
