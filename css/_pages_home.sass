@@ -38,11 +38,13 @@
         @media (max-width: 500px)
             display: block
             padding: 0
-    .card-shell
+    a.card-shell
         width: 30%
         padding: 0
+        text-decoration: none
         transition: all .3s
         &:hover
+            text-decoration: none
             .info-btn
                 opacity: 1
                 transform: scale(1)
@@ -67,7 +69,6 @@
             color: #111a00
             font-family: "Pathway Gothic One", sans-serif
             font-size: 26pt
-            // font-style: italic
             letter-spacing: 2px
             padding: 0
             transition: all .3s ease-in
@@ -91,14 +92,16 @@
             .launch-btns-br
                 display: block
         
-    .book-now,
-    .full-menu
+    a.book-now,
+    a.full-menu
         font-family: "Pathway Gothic One", sans-serif
         font-size: 24px
         letter-spacing: 2px
         padding: 20px 40px
+        text-decoration: none
         transition: all .3s
         &:hover
+            text-decoration: none
             transform: scale(1.05)
         &:visited,
         &:active
@@ -226,6 +229,7 @@
                      margin: 0 auto
                      width: 50%          
     .map-box
+        position: relative
         width: 50%
         @media (max-width: 800px)
             width: 100%
