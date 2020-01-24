@@ -56,19 +56,19 @@
 <body>
 
     
-    <header class="text-center">
-        <nav id="scroll-nav" class="navbar navbar-default navbar-expand-xl">
+    <header>
+        <nav id="sticky-nav" class="navbar navbar-default navbar-expand-md">
             <a href="./" class="navbar-brand"><img src="./img/im-logo.png" alt="Ideal Massage" width="200px"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse-nav">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sticky-collapse">
                 <i style="color: #558000;" class="fas fa-bars fa-2x"></i>
             </button>
-            <div id="collapse-nav" class="nav-center navbar-collapse collapse">
-                <ul class="navbar-nav justify-content-center">
+            <div id="sticky-collapse" class="nav-center navbar-collapse collapse">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="./">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./about-us.html">About Us</a>
+                        <a class="nav-link" href="./about.html">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./staff.html">Staff</a>
@@ -91,14 +91,14 @@
 
         <img class="header-img" src="./img/im-logo.png" alt="Ideal Massage" width="500px">
 
-        <nav id="top-nav" class="navbar navbar-expand-sm justify-content-center">
-            <div class="nav-center navbar-collapse collapse">
+        <nav id="main-nav" class="navbar navbar-expand-sm justify-content-center">
+            <div id="main-collapse" class="nav-center navbar-collapse collapse">
                 <ul class="navbar-nav w-100 justify-content-center">
                     <li class="nav-item">
                         <a class="nav-link" href="./">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./about-us.html">About Us</a>
+                        <a class="nav-link" href="./about.html">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./staff.html">Staff</a>
@@ -122,14 +122,15 @@
 
 <section id="contact-section">
 
+    <h1 class="text-center">Contact Us</h1>
         <div class="contact-box">
+            <p class="copy">To request an appointment, please <a href="https://www.vagaro.com/idealmassage/book-now">click here</a>. If you have any questions, feel free to check out our <a href="/about.html">FAQ Section</a> or send us a message with the form below</p>
 
 	<script type="text/javascript">var submitted=false;</script>
 	<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='thank-you.html';}"></iframe>
 
     
 	<div class="form-box">
-        <h1 class="text-center">We'd love to hear from you!</h1>
         
         <form action="https://docs.google.com/forms/d/e/1FAIpQLSdfnlg5Ej-Kl3CyhexlclUfNm_gqzswyU_QtTPIED9Bw-GHjA/formResponse" target="hidden_iframe" method="post" onsubmit="submitted=true;">
             
@@ -140,9 +141,9 @@
 			<p><input required type="email" name="entry.1045781291" placeholder="Email"></p>
 
 			<p class="form-label"></p>
-			<p><textarea name="entry.839337160" cols="" rows="" placeholder="How may I help you?"></textarea></p>
+			<p><textarea name="entry.839337160" cols="" rows="" placeholder="Message"></textarea></p>
 
-			<p class="submit"><button class="rounded-pill" type="submit" formaction="https://docs.google.com/forms/d/e/1FAIpQLSdfnlg5Ej-Kl3CyhexlclUfNm_gqzswyU_QtTPIED9Bw-GHjA/formResponse"><i class="fas fa-envelope"></i> Send</button></p>
+			<p class="submit"><button type="submit" formaction="https://docs.google.com/forms/d/e/1FAIpQLSdfnlg5Ej-Kl3CyhexlclUfNm_gqzswyU_QtTPIED9Bw-GHjA/formResponse"><i class="fas fa-envelope"></i> Send</button></p>
 
 		</form>
     </div>
@@ -205,7 +206,7 @@
                         <p><input class="form-control" required type="email" name="entry.1045781291" placeholder="Email"></p>
             
                         <p class="form-label"></p>
-                        <p><textarea class="form-control" name="entry.839337160" cols="" rows="5" placeholder="How may I help you?"></textarea></p>
+                        <p><textarea class="form-control" name="entry.839337160" cols="" rows="5" placeholder="Message"></textarea></p>
             
                         <p class="submit"><button type="submit" formaction="https://docs.google.com/forms/d/e/1FAIpQLSdfnlg5Ej-Kl3CyhexlclUfNm_gqzswyU_QtTPIED9Bw-GHjA/formResponse"><i class="fas fa-envelope"></i> Send</button></p>
             

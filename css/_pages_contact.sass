@@ -3,22 +3,34 @@
 
 #contact-section
 	+backgroundCover
-	// background-image: url('../img/beach-cinemagraph.gif')
+	background-image: url('../img/leaf-vase.jpg')
 	// background-color: rgba(0,0,0,.2)
 	// background-blend-mode: multiply
-	.contact-box
-		padding: 100px 0 50px 0
-
+	
 	h1
-		color: $light3yellow
+		color: $brown
 		font-size: 50px
 		font-family: $headerFont
+		padding-top: 40px
 		padding-bottom: 20px
 		@media (max-width: 650px)
 			font-size: 35px
+	.contact-box
+		padding: 40px 0 50px 0
+		p.copy
+			font-size: 16pt
+			font-family: "Lato", sans-serif
+			line-height: 35px
+			max-width: 800px
+			margin: 0 auto
+			margin-bottom: 35px
+			text-align: center
+			a
+				color: $up1green
+				text-decoration: underline
+
 	.form-box
-		// background-color: rgba(0,0,0,.2)
-		border-radius: 5px
+		background-color: rgba(0,0,0,.2)
 		padding: 25px 50px
 		max-width: 600px
 		margin: 0 auto
@@ -30,9 +42,10 @@
 			padding: 10px 0
 		input,
 		textarea
-			background-color: $white
+			background-color: #eee
 			border: 1px solid transparent
-			border-radius: 20px
+			border-radius: 0
+			box-shadow: 0 0 5px $green
 			outline: none
 			width: 100%
 			padding: 20px
@@ -40,34 +53,36 @@
 		input::placeholder,
 		textarea::placeholder
 			transition: all .2s ease-in-out
-		input:focus::placeholder
-			padding-left: 210px
-		textarea:focus::placeholder
-			padding-left: 161px
+		// input:focus::placeholder
+			// padding-left: 210px
+		// textarea:focus::placeholder
+			// padding-left: 161px
 		textarea
 			height: 150px
 			line-height: 25px
 			padding-bottom: 10px
 		input:focus,
 		textarea:focus
-			background-color: $lightTonedDownBlue
+			background-color: $white
 		.submit
-			margin-top: 15px
-			padding-bottom: 50px
+			padding: 50px 0 20px
 			text-align: center
 			button
-				background-color: $light3yellow
+				background-color: transparent
 				border: none
-				color: #333
+				box-shadow: 0 0 5px $green
+				color: $green
 				cursor: pointer
 				font-size: 20px
-				letter-spacing: 2px
+				letter-spacing: 1px
 				outline: none
 				padding: 15px 30px
+				transition: all .3s
 				i
 					padding-right: 8px
 				&:hover
-					background-color: $lightTonedDownBlue
+					background-color: $green
+					color: white
 
 #thank-you-section
 	width: 50vw
