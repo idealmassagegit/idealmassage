@@ -19,7 +19,7 @@
 		@media (max-width: 600px)
 			font-size: 40px
 			padding-bottom: 15px
-		@media (max-width: 400px)
+		@media (max-width: 420px)
 			font-size: 30px
 	.about-text-box
 		padding: 35px 0
@@ -28,6 +28,8 @@
 		text-align: center
 		@media (max-width: 1200px)
 			padding: 0 40px
+		@media (max-width: 450px)
+			padding: 0 20px
 		.address
 			font-weight: bold
 			@media (max-width: 600px)
@@ -59,6 +61,8 @@
 		max-width: 900px
 	@media (max-width: 960px)
 		width: 90%
+	@media (max-width: 420px)
+		width: 100%
 .about-tabs
 	margin-top: 50px
 	padding: 0
@@ -69,10 +73,18 @@
 		font-weight: bold
 		font-size: 20px
 		letter-spacing: 1px
-		padding: 20px 0
+		padding: 20px 5px
 		&:hover
 			background-color: $green
 			color: white
+		@media (max-width: 550px)
+			font-size: 18px
+		@media (max-width: 500px)
+			font-size: 16px
+	@media (max-width: 621px)
+		.faq-tab,
+		.cancel-tab
+			line-height: 2
 
 .tab-content
 	margin-top: -2px
@@ -82,7 +94,7 @@
 	#cancel
 		background-color: #f6f6f6
 		box-shadow: 0 0 10px #bbb
-		padding: 0
+		padding: 0 0 20px
 	.expect-title,
 	.faq-title,
 	.cancel-title
@@ -94,7 +106,7 @@
 		text-align: center
 		@media (max-width: 600px)
 			font-size: 40px
-		@media (max-width: 400px)
+		@media (max-width: 420px)
 			font-size: 30px
 
 #expect
@@ -103,7 +115,7 @@
 		@media (max-width: 600px)
 			font-size: 40px
 			padding-bottom: 15px
-		@media (max-width: 400px)
+		@media (max-width: 420px)
 			font-size: 30px
 	.expect-block
 		display: flex
@@ -118,10 +130,33 @@
 				width: 60%
 				margin: 0 2.5%
 			.img-box
-				width: 35%			
-			
+				width: 35%
+		@media (max-width: 700px)
+			margin: 20px 0
+		@media (max-width: 600px)
+			.copy-box
+				order: 2
+				width: 70%
+				margin: 0 auto
+			.img-box
+				width: 70%
+				margin: 0 auto 15px
+		@media (max-width: 550px)
+			margin: 35px 0
+			.copy-box,
+			.img-box
+				width: 85%
+		@media (max-width: 420px)
+			.copy-box,
+			.img-box
+				width: 100%	
 		.copy-box
 			padding: 0 30px
+			position: relative
+			@media (max-width: 600px)
+				padding: 0
+			@media (max-width: 420px)
+				padding: 15px
 			p
 				top: 50%
 				transform: translateY(-50%)
@@ -132,23 +167,36 @@
 				line-height: 40px
 				max-width: 500px
 				margin: 0 auto
-				@media (max-width: 1175px)
-					font-size: 17px
-					span
-						font-size: 21px
 				span
 					color: #558000
 					font-size: 24px
 					font-weight: bold
 					padding: 0 5px
+				@media (max-width: 1175px)
+					font-size: 17px
+					span
+						font-size: 21px
+				@media (max-width: 850px)
+					font-size: 15px
+					line-height: 30px
+					span
+						font-size: 18px
+				@media (max-width: 700px)
+					line-height: 25px
+				@media (max-width: 600px)
+					position: relative
+					text-align: justify
+				@media (max-width: 450px)
+					text-align: center		
 		.img-box
 			img
 				width: 100%
 
-
 #faq
 	.faq-box
-		padding: 0 40px	40px	
+		padding: 0 40px	40px
+		@media (max-width: 600px)
+			padding: 0 20px 20px
 	.ques-box
 		background-color: white
 		border-left: 2px solid $green
@@ -161,9 +209,11 @@
 			padding: 20px
 			cursor: pointer
 			font-size: 20px
+			@media (max-width: 500px)
+				font-size: 18px
 	.active
 		.answ
-			background-color: rgba(153,230,0,.1)
+			background-color: rgba(153, 230, 0, .1)
 			max-height: 300px
 			padding-top: 20px
 			padding-bottom: 20px
@@ -174,13 +224,18 @@
 		margin-top: -2px
 		padding-top: 30px
 		text-align: center
+		@media (max-width: 420px)
+			font-size: 30px
 	.natal-copy
 		color: #3d321d
 		font-size: 18px
 		line-height: 35px
-		padding-bottom: 30px
 		font-family: 'Lato', sans-serif
 		padding: 25px
+		@media (max-width: 420px)
+			font-size: 16px
+			line-height: 27px
+			padding: 20px
 		h3
 			font-size: 40px
 		h5
@@ -201,8 +256,18 @@
 	line-height: 30px
 	padding-left: 40px
 	padding-right: 40px
+	@media (max-width: 420px)
+		padding-left: 20px
+		padding-right: 20px
 		
-					
+.cancel-span
+	display: none
+	@media (max-width: 420px)
+		display: inline
+.cancellation-span
+	@media (max-width: 420px)
+		display: none
+
 @media (max-width: 725px)
 	.policy-span
 		display: none			
@@ -229,7 +294,7 @@
 			width: 90%
 		@media (max-width: 600px)
 			font-size: 14px
-
+	
 
 .slider-box 
 	display: flex

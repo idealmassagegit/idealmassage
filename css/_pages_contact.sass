@@ -1,12 +1,10 @@
 
 
 
-#contact-section
+#contact-section,
+#thank-you-section
 	+backgroundCover
 	background-image: url('../img/leaf-vase.jpg')
-	// background-color: rgba(0,0,0,.2)
-	// background-blend-mode: multiply
-	
 	h1
 		color: $brown
 		font-size: 50px
@@ -15,28 +13,31 @@
 		padding-bottom: 20px
 		@media (max-width: 650px)
 			font-size: 35px
-	.contact-box
-		padding: 40px 0 50px 0
+	.form-box
+		background-color: rgba(0,0,0,.1)
+		padding: 25px 50px
+		max-width: 600px
+		margin: 0 auto
+		@media (max-width: 650px)
+			max-width: 90%
+			padding: 20px
 		p.copy
+			color: $brown
 			font-size: 16pt
 			font-family: "Lato", sans-serif
 			line-height: 35px
 			max-width: 800px
 			margin: 0 auto
 			margin-bottom: 35px
-			text-align: center
+			text-align: justify
 			a
 				color: $up1green
 				text-decoration: underline
-
-	.form-box
-		background-color: rgba(0,0,0,.2)
-		padding: 25px 50px
-		max-width: 600px
-		margin: 0 auto
-		@media (max-width: 650px)
-			max-width: 90%
-			padding: 25px 0
+			@media (max-width: 600px)
+				font-size: 14pt
+			@media (max-width: 420px)
+				font-size: 12pt
+				line-height: 30px
 		.form-label
 			font-size: 16px
 			padding: 10px 0
@@ -46,6 +47,7 @@
 			border: 1px solid transparent
 			border-radius: 0
 			box-shadow: 0 0 5px $green
+			color: $brown
 			outline: none
 			width: 100%
 			padding: 20px
@@ -83,7 +85,15 @@
 				&:hover
 					background-color: $green
 					color: white
-
 #thank-you-section
-	width: 50vw
-	margin: 0 auto
+	padding-bottom: 70px
+	.thank-you-box
+		background-color: rgba(250,250,250,.8)
+		margin: 0 auto
+		max-width: 500px
+		padding: 30px
+		p
+			color: $brown
+			font-family: "Lato", sans-serif
+			font-size: 14pt
+			line-height: 30px

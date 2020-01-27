@@ -24,7 +24,7 @@ $(window).scroll(function(){
 			});
 		}
 	}
-    
+     
 
 
   });
@@ -42,6 +42,15 @@ $(window).resize(function(){
 		$('.nav-link.schedule-btn').text('SCHEDULE YOUR MASSAGE');
 	}
 
+	if (win < 575) {
+		$('#sticky-nav').css('transform', 'translateY(0)');
+	} else {
+		if (scroll >= 180) {
+			$('#sticky-nav').css('transform', 'translateY(0)');
+		} else {
+			$('#sticky-nav').css('transform', 'translateY(-300px)');
+		}
+	}
 	
 
 });
