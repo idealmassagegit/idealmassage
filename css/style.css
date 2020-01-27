@@ -909,6 +909,11 @@
   }
 }
 
+#faq .ques-box .ques p {
+  margin: 0;
+  padding: 0;
+}
+
 #faq .active .answ {
   background-color: rgba(153, 230, 0, 0.1);
   max-height: 300px;
@@ -998,7 +1003,7 @@
   }
 }
 
-@media (max-width: 725px) {
+@media (max-width: 750px) {
   .policy-span {
     display: none;
   }
@@ -1204,6 +1209,7 @@
   -webkit-transition: all .3s;
   transition: all .3s;
   width: 33%;
+  height: auto;
 }
 
 #staff .staff-box .pic-row img:hover {
@@ -1273,7 +1279,6 @@
   cursor: pointer;
   font-style: italic;
   font-size: 1.3rem;
-  padding: 10px 0 20px;
   text-align: center;
 }
 

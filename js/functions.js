@@ -6,7 +6,7 @@ $(window).scroll(function(){
 	var win = $(window).width();
 
 	if (win > 575) {
-		if (scroll >= 180) {
+		if (scroll >= 140) {
 			$('#sticky-nav').css('transform', 'translateY(0)');
 		} else {
 			$('#sticky-nav').css('transform', 'translateY(-300px)');
@@ -34,7 +34,7 @@ $(window).scroll(function(){
 $(window).resize(function(){
 	var scroll = $(window).scrollTop();
 	var win = $(window).width();
-	console.log(win);
+	// console.log(win);
 
 	if (win < 980) {
 		$('.nav-link.schedule-btn').text('BOOK NOW');
@@ -45,7 +45,7 @@ $(window).resize(function(){
 	if (win < 575) {
 		$('#sticky-nav').css('transform', 'translateY(0)');
 	} else {
-		if (scroll >= 180) {
+		if (scroll >= 140) {
 			$('#sticky-nav').css('transform', 'translateY(0)');
 		} else {
 			$('#sticky-nav').css('transform', 'translateY(-300px)');
@@ -70,11 +70,11 @@ $(function(){
 		$('.nav-link.schedule-btn').text('SCHEDULE YOUR MASSAGE');
 	}
 
-	if (win < 558) {
-		// $('#sticky-nav').css('translateY(0)');
-	} else {
+	// if (win < 558) {
+	// 	// $('#sticky-nav').css('translateY(0)');
+	// } else {
 
-	}
+	// }
 
 
 	// Staff
