@@ -1489,6 +1489,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../img/leaf-vase.jpg");
+  background-position: 15%;
+  padding-bottom: 30px;
 }
 
 #contact-section h1,
@@ -1559,7 +1561,7 @@
 #contact-section .form-box .form-label,
 #thank-you-section .form-box .form-label {
   font-size: 16px;
-  padding: 10px 0;
+  padding: 7px 0;
   margin: 0;
 }
 
@@ -1630,6 +1632,13 @@
 #thank-you-section .form-box .submit {
   padding: 50px 0 20px;
   text-align: center;
+}
+
+@media (max-width: 500px) {
+  #contact-section .form-box .submit,
+  #thank-you-section .form-box .submit {
+    padding: 20px 0;
+  }
 }
 
 #contact-section .form-box .submit button,

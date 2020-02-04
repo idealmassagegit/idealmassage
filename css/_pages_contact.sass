@@ -5,6 +5,8 @@
 #thank-you-section
 	+backgroundCover
 	background-image: url('../img/leaf-vase.jpg')
+	background-position: 15%
+	padding-bottom: 30px
 	h1
 		color: $brown
 		font-size: 50px
@@ -40,7 +42,7 @@
 				line-height: 30px
 		.form-label
 			font-size: 16px
-			padding: 10px 0
+			padding: 7px 0
 			margin: 0
 		input,
 		textarea
@@ -70,6 +72,8 @@
 		.submit
 			padding: 50px 0 20px
 			text-align: center
+			@media (max-width: 500px)
+				padding: 20px 0
 			button
 				background-color: transparent
 				border: none
