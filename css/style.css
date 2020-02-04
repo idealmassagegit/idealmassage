@@ -1687,12 +1687,8 @@ body {
   overflow-x: hidden !important;
 }
 
-header,
-main,
-.montage,
-section,
-footer {
-  overflow-x: hidden;
+.montage {
+  overflow: hidden;
 }
 
 header {
