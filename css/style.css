@@ -1687,6 +1687,14 @@ body {
   overflow-x: hidden !important;
 }
 
+header,
+main,
+.montage,
+section,
+footer {
+  overflow-x: hidden;
+}
+
 header {
   z-index: 2;
   text-align: center;
