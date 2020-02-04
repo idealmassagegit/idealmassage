@@ -1712,11 +1712,6 @@ header {
   width: 100%;
 }
 
-#main-nav .navbar-nav,
-#sticky-nav .navbar-nav {
-  margin: 0 auto;
-}
-
 #main-nav a.nav-link,
 #sticky-nav a.nav-link {
   color: #3d321d;
