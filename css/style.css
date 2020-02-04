@@ -1217,14 +1217,14 @@
 }
 
 #staff .staff-box .pic-row img:hover {
-  -webkit-box-shadow: 5px 5px 5px  #ccc;
-          box-shadow: 5px 5px 5px  #ccc;
+  -webkit-box-shadow: 3px 3px 3px  #ddd;
+          box-shadow: 3px 3px 3px  #ddd;
   opacity: 1;
 }
 
 #staff .staff-box .pic-row img.active {
-  -webkit-box-shadow: 5px 5px 5px  #ccc;
-          box-shadow: 5px 5px 5px  #ccc;
+  -webkit-box-shadow: 3px 3px 3px  #ddd;
+          box-shadow: 3px 3px 3px  #ddd;
   cursor: default;
   opacity: 1;
 }
@@ -1531,7 +1531,7 @@
   line-height: 35px;
   max-width: 800px;
   margin: 0 auto;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   text-align: justify;
 }
 
@@ -1560,6 +1560,7 @@
 #thank-you-section .form-box .form-label {
   font-size: 16px;
   padding: 10px 0;
+  margin: 0;
 }
 
 #contact-section .form-box input,
