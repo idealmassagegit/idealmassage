@@ -1819,7 +1819,7 @@ header {
   #sticky-nav #sticky-collapse {
     background-color: #f6f6f6;
     text-align: left;
-    margin-top: 70px;
+    margin-top: 70px !important;
     padding-left: 15px;
     padding-bottom: 15px;
   }
