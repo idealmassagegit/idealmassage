@@ -28,6 +28,12 @@
   width: 50%;
 }
 
+@media (max-width: 600px) {
+  .modal-content {
+    width: 90%;
+  }
+}
+
 .modal-header {
   background-color: #558000;
   border-radius: 0;
