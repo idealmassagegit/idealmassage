@@ -117,7 +117,25 @@
     </header>
 
     
-    
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">X</span>
+            </div>
+            <div class="modal-body">
+                <p>
+                    The small businesses of Hutto are facing some challenging times and we feel so fortunate to be in one of the most loving communities out there, so we're trying to give back to those who have trusted us and supported us for so long.
+                </p>
+                <p>
+                    Our doors may be closed, but we still want to take care of you guys, so <span style="font-weight:bold;">if you purchase an E-Gift Card between now and April 4th, we're entering you into a drawing for a free 90 minute service!</span>
+                </p>
+                <p>
+                    We cannot thank you enough for your continued support through this very uncertain time, we are so honored to be a part of the Hutto community!
+                </p>
+                <p class="text-center"><a href="https://www.vagaro.com/idealmassage/gift-certificates">Purchase Yours Today!</a></p>
+            </div>
+        </div>
+    </div>
 
 
     <!-- <section class="jumbotron main-jumbo text-center"> -->
@@ -535,6 +553,25 @@
 
             <!-- Functions -->
     <script src="./js/functions.js"></script>
+
+
+    <script>
+    
+            $(document).ready(function(){
+                var modal = document.getElementById("myModal");
+                var span = document.getElementsByClassName("close")[0];
+                modal.style.display = "block";
+                span.onclick = function(){
+                    modal.style.display = "none";
+                }
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            });
+        
+    </script>
     
     
     </body>
