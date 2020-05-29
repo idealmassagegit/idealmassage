@@ -1278,8 +1278,6 @@
 }
 
 #staff .staff-box .pic-row img {
-  cursor: pointer;
-  opacity: .7;
   -webkit-transition: all .3s;
   transition: all .3s;
   width: 95%;
