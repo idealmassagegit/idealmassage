@@ -1278,6 +1278,8 @@
 }
 
 #staff .staff-box .pic-row img {
+  cursor: pointer;
+  opacity: .7;
   -webkit-transition: all .3s;
   transition: all .3s;
   width: 95%;
@@ -1306,9 +1308,8 @@
   padding: 0 20px 20px 20px;
 }
 
-#staff .text-row .violet,
-#staff .text-row .chelsey,
-#staff .text-row .michael {
+#staff .text-row .jeanette,
+#staff .text-row .chelsey {
   max-height: 0;
   opacity: 0;
   overflow: hidden;

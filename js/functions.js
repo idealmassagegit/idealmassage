@@ -4,6 +4,7 @@
 $(window).scroll(function(){
 	var scroll = $(window).scrollTop();
 	var win = $(window).width();
+	// console.log(scroll);
 
 	if (win > 575) {
 		if (scroll >= 140) {
@@ -12,16 +13,12 @@ $(window).scroll(function(){
 			$('#sticky-nav').css('transform', 'translateY(-300px)');
 		}
 	} else {
-		if (scroll >= 300) {
+		if (scroll >= 150) {
 			$('#sticky-nav').css('background-color', '#f6f6f6');
-			$('.schedule-btn').css({
-				opacity: 1
-			});
+			$('.nav-link.schedule-btn').css('opacity', 1);
 		} else {
 			$('#sticky-nav').css('background-color', 'transparent');
-			$('.schedule-btn').css({
-				opacity: 0
-			});
+			$('.nav-link.schedule-btn').css('opacity', 0);
 		}
 	}
      
@@ -91,6 +88,13 @@ $(function(){
 			$('.pic-row img, .text-row div').removeClass('active');
 			$(this).addClass('active');
 			$('.violet').addClass('active');
+		}
+	});
+	$('.jeanette-image').click(function(){
+		if (!$(this).hasClass('active')) {
+			$('.pic-row img, .text-row div').removeClass('active');
+			$(this).addClass('active');
+			$('.jeanette').addClass('active');
 		}
 	});
 	$('.chelsey-image').click(function(){
