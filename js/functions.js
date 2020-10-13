@@ -83,11 +83,11 @@ $(function(){
 			$('.michael').addClass('active');
 		}
 	});
-	$('.violet-image').click(function(){
+	$('.cindy-image').click(function(){
 		if (!$(this).hasClass('active')) {
 			$('.pic-row img, .text-row div').removeClass('active');
 			$(this).addClass('active');
-			$('.violet').addClass('active');
+			$('.cindy').addClass('active');
 		}
 	});
 	$('.jeanette-image').click(function(){

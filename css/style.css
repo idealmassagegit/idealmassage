@@ -1309,7 +1309,8 @@
 }
 
 #staff .text-row .jeanette,
-#staff .text-row .chelsey {
+#staff .text-row .chelsey,
+#staff .text-row .cindy {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
