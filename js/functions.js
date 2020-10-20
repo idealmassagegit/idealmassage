@@ -97,6 +97,13 @@ $(function(){
 			$('.jeanette').addClass('active');
 		}
 	});
+	$('.candice-image').click(function(){
+		if (!$(this).hasClass('active')) {
+			$('.pic-row img, .text-row div').removeClass('active');
+			$(this).addClass('active');
+			$('.candice').addClass('active');
+		}
+	});
 	$('.chelsey-image').click(function(){
 		if (!$(this).hasClass('active')) {
 			$('.pic-row img, .text-row div').removeClass('active');

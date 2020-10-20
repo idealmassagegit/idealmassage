@@ -15,7 +15,7 @@
 			margin: 0
 	.staff-box
 		margin: 0 auto
-		max-width: 600px
+		max-width: 800px
 		@media (max-width: 1000px)
 			width: 95%
 		.pic-row
@@ -37,6 +37,9 @@
 				box-shadow: 3px 3px 3px  #ddd
 				cursor: default
 				opacity: 1
+		.main-pic-row
+			@media (max-width: 500px)
+				display: none
 	.text-row
 		background-color: #f6f6f6
 		border-top: 4px solid $green
@@ -45,7 +48,8 @@
 		padding: 0 20px 20px 20px
 		.jeanette,
 		.chelsey,
-		.cindy
+		.cindy,
+		.candice
 			max-height: 0
 			opacity: 0
 			overflow: hidden
@@ -69,7 +73,6 @@
 			cursor: pointer
 			font-style: italic
 			font-size: 1.3rem
-			// padding: 10px 0 20px
 			text-align: center
 		h2
 			color: #3d321d
@@ -81,5 +84,13 @@
 			text-align: center
 
 
-
+	.mobile-pic-row
+		display: none
+		.pic-row
+			justify-content: center
+			div
+				width: 40%
+		@media (max-width: 500px)
+			display: block
+		
 

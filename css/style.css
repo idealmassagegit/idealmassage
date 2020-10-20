@@ -1255,7 +1255,7 @@
 
 #staff .staff-box {
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 800px;
 }
 
 @media (max-width: 1000px) {
@@ -1299,6 +1299,12 @@
   opacity: 1;
 }
 
+@media (max-width: 500px) {
+  #staff .staff-box .main-pic-row {
+    display: none;
+  }
+}
+
 #staff .text-row {
   background-color: #f6f6f6;
   border-top: 4px solid #304800;
@@ -1310,7 +1316,8 @@
 
 #staff .text-row .jeanette,
 #staff .text-row .chelsey,
-#staff .text-row .cindy {
+#staff .text-row .cindy,
+#staff .text-row .candice {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
@@ -1364,6 +1371,26 @@
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: center;
+}
+
+#staff .mobile-pic-row {
+  display: none;
+}
+
+#staff .mobile-pic-row .pic-row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#staff .mobile-pic-row .pic-row div {
+  width: 40%;
+}
+
+@media (max-width: 500px) {
+  #staff .mobile-pic-row {
+    display: block;
+  }
 }
 
 .exampleofmixing {
