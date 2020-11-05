@@ -116,7 +116,15 @@
         </nav>
     </header>
 
-    
+    <div id="banner">
+        <span class="close">X</span>
+        <p class="desktop">
+            We are now open EVERYDAY of the week.<br/>
+            Book Monday, Tuesday, or Wednesday and receive $15.00 off of your massage!</p>
+        <p class="tablet">Discount Days! Book Mon/Tue/Wed for $15 off!</p>
+        <p class="mobile">Book Mon/Tue/Wed for $15 off!</p>
+    </div>
+
     <!-- <div id="myModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -565,17 +573,21 @@
     <script>
     
             $(document).ready(function(){
-                var modal = document.getElementById("myModal");
-                var span = document.getElementsByClassName("close")[0];
-                modal.style.display = "block";
-                span.onclick = function(){
-                    modal.style.display = "none";
-                }
-                window.onclick = function(event) {
-                    if (event.target == modal) {
-                        modal.style.display = "none";
-                    }
-                }
+                var banner = $('#banner');
+                var modal = $('.modal');
+                var close = $('#banner .close');
+                // banner.style.display = "block";
+                setTimeout(function(){
+                    banner.css('transform', 'translateY(0)');
+                }, 1000)
+                close.on('click', function(){
+                    banner.css('transform', 'translateY(100px)');
+                });
+                // window.onclick = function(event) {
+                //     if (event.target == modal) {
+                //         modal.style.display = "none";
+                //     }
+                // }
             });
         
     </script>
