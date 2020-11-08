@@ -2,7 +2,10 @@
 @import _colors
 @import _fonts
 
-
+#home-header
+    transition: all .3s
+#home-header.with-banner
+        margin-top: 70px
 #banner
     // background-color: rgba(255,255,255,.6)
     background-color: #304800
@@ -11,13 +14,13 @@
     font-size: 17pt
     line-height: 25px
     position: fixed
-    bottom: 0
+    top: 0
     height: 75px
     overflow: hidden
     padding: 10px 0
     text-align: center
     transition: transform .25s
-    transform: translateY(100px)
+    transform: translateY(-150px)
     width: 100%
     z-index: 999
     .close

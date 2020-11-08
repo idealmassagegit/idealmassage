@@ -55,7 +55,7 @@
 <body>
 
     
-    <header>
+    <header id="home-header">
         <nav id="sticky-nav" class="navbar navbar-default navbar-expand-md">
             <a href="./" class="navbar-brand"><img src="./img/im-logo.png" alt="Ideal Massage" width="200px"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sticky-collapse">
@@ -574,15 +574,20 @@
     
             $(document).ready(function(){
                 var banner = $('#banner');
+                var header = $('#home-header');
                 var modal = $('.modal');
                 var close = $('#banner .close');
                 // banner.style.display = "block";
                 setTimeout(function(){
                     banner.css('transform', 'translateY(0)');
+                    header.addClass('with-banner');
                 }, 1000)
                 close.on('click', function(){
-                    banner.css('transform', 'translateY(100px)');
+                    banner.css('transform', 'translateY(-120px)');
+                    header.removeClass('with-banner');
                 });
+
+               
                 // window.onclick = function(event) {
                 //     if (event.target == modal) {
                 //         modal.style.display = "none";
