@@ -64,7 +64,7 @@ $(function(){
 	if (win < 980) {
 		$('.nav-link.schedule-btn').text('BOOK NOW');
 	} else {
-		$('.nav-link.schedule-btn').text('SCHEDULE YOUR MASSAGE');
+		$('.nav-link.schedule-btn').text('SCHEDULE MY MASSAGE');
 	}
 
 	// if (win < 558) {
