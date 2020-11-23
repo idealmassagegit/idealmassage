@@ -711,7 +711,7 @@
 
 .about-section .about-text-box {
   padding: 35px 0;
-  max-width: 690px;
+  max-width: 900px;
   margin: 0 auto;
   text-align: center;
 }
@@ -1949,6 +1949,7 @@ header {
 #main-nav .nav-link.schedule-btn:hover,
 #sticky-nav .nav-link.schedule-btn:hover {
   background-color: #77b300;
+  color: white;
 }
 
 @media (max-width: 360px) {
@@ -2112,10 +2113,6 @@ footer .social {
   padding-bottom: 15px;
 }
 
-footer .social a {
-  padding: 10px;
-}
-
 footer .footer-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2159,7 +2156,7 @@ footer .footer-box .footer-right {
 
 footer .footer-box .footer-left p {
   font-size: 16px;
-  padding: 5px 15px;
+  padding: 3px 15px;
 }
 
 footer .footer-box .footer-left .add-br {

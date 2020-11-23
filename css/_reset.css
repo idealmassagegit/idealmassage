@@ -6,3 +6,7 @@ a:visited,
 a:hover {
 	text-decoration: none !important
 }
+
+strong {
+	font-weight: bold;
+}
