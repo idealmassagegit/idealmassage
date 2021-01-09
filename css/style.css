@@ -11,6 +11,7 @@
 #home-header {
   -webkit-transition: all .3s;
   transition: all .3s;
+  padding-bottom: 30px;
 }
 
 #home-header.with-banner {
@@ -164,8 +165,8 @@
 
 .montage {
   height: 550px;
-  -webkit-filter: blur(11px);
-          filter: blur(11px);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
   opacity: .5;
   -webkit-transition: all .3s;
   transition: all .3s;
@@ -406,20 +407,16 @@
   display: none;
 }
 
-.reviews-section {
-  padding-top: 30px;
-}
-
 .reviews-section .reviews-slider {
   color: #3d321d;
   font-family: "Lato", sans-serif;
   font-size: 16px;
   font-style: italic;
-  height: 280px;
   letter-spacing: 1px;
   line-height: 30px;
   margin: 0 auto;
-  padding: 50px 0;
+  margin-top: 100px;
+  padding: 50px 0 0;
   text-align: center;
   width: 90%;
   max-width: 900px;
@@ -429,6 +426,7 @@
   .reviews-section .reviews-slider {
     font-size: 14px;
     line-height: 25px;
+    margin-top: 140px;
   }
 }
 
@@ -479,8 +477,6 @@
 }
 
 .contact {
-  -webkit-box-shadow: 0 -10px 20px #ccc;
-          box-shadow: 0 -10px 20px #ccc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -497,12 +493,20 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../img/towels.png");
+  background-position: top;
+  background-color: #558000cc;
+  background-image: url("../img/exterior.png");
   background-blend-mode: multiply;
   width: 50%;
   margin: 0 auto;
   line-height: 35px;
   position: relative;
+  -webkit-transition: background-color .25s;
+  transition: background-color .25s;
+}
+
+.contact .hours-box:hover {
+  background-color: #558000;
 }
 
 @media (max-width: 800px) {
@@ -512,16 +516,12 @@
 }
 
 .contact .hours-box .hours {
-  padding: 30px;
-  padding-right: 200px;
+  padding: 0 30px;
   position: absolute;
-  right: 0;
-}
-
-@media (max-width: 1250px) {
-  .contact .hours-box .hours {
-    padding-right: 150px;
-  }
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-55%);
+          transform: translateY(-55%);
 }
 
 @media (max-width: 1120px) {
@@ -544,15 +544,16 @@
 
 @media (max-width: 800px) {
   .contact .hours-box .hours {
+    -webkit-transform: none;
+            transform: none;
     width: 100%;
     padding: 0 0 20px 0;
   }
 }
 
 .contact .hours-box .hours h3 {
-  color: #3d321d;
+  color: #ccc;
   font-size: 24px;
-  font-weight: bold;
   padding: 15px 0 3px;
 }
 
@@ -569,7 +570,7 @@
 }
 
 .contact .hours-box .hours p {
-  color: #3d321d;
+  color: #ccc;
   font-size: 18px;
 }
 
@@ -586,7 +587,11 @@
 }
 
 .contact .hours-box .hours a {
-  color: #558000;
+  color: #ccc;
+}
+
+.contact .hours-box .hours a:hover {
+  color: #eee;
 }
 
 .contact .map-box {
@@ -1401,7 +1406,7 @@
 #staff .text-row .jeanette,
 #staff .text-row .chelsey,
 #staff .text-row .cindy,
-#staff .text-row .candice {
+#staff .text-row .niya {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
@@ -1899,39 +1904,39 @@ header {
   z-index: 2;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 750px) {
   .header-img {
     margin-top: 75px;
   }
 }
 
-#main-nav,
-#sticky-nav {
+header #main-nav,
+header #sticky-nav {
   font-family: "Pathway Gothic One", sans-serif;
   z-index: 420;
   width: 100%;
 }
 
-#main-nav a.nav-link,
-#sticky-nav a.nav-link {
+header #main-nav a.nav-link,
+header #sticky-nav a.nav-link {
   color: #3d321d;
   font-size: 18pt;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
 
-#main-nav a.nav-link:hover,
-#sticky-nav a.nav-link:hover {
+header #main-nav a.nav-link:hover,
+header #sticky-nav a.nav-link:hover {
   color: #558000;
 }
 
-#main-nav .active a.nav-link,
-#sticky-nav .active a.nav-link {
+header #main-nav .active a.nav-link,
+header #sticky-nav .active a.nav-link {
   color: #558000;
 }
 
-#main-nav .nav-link.schedule-btn,
-#sticky-nav .nav-link.schedule-btn {
+header #main-nav .nav-link.schedule-btn,
+header #sticky-nav .nav-link.schedule-btn {
   background-color: #558000;
   color: white;
   display: inline-block;
@@ -1946,42 +1951,79 @@ header {
   padding: 30px 20px;
 }
 
-#main-nav .nav-link.schedule-btn:hover,
-#sticky-nav .nav-link.schedule-btn:hover {
+header #main-nav .nav-link.schedule-btn:hover,
+header #sticky-nav .nav-link.schedule-btn:hover {
   background-color: #77b300;
   color: white;
 }
 
 @media (max-width: 360px) {
-  #main-nav .nav-link.schedule-btn,
-  #sticky-nav .nav-link.schedule-btn {
+  header #main-nav .nav-link.schedule-btn,
+  header #sticky-nav .nav-link.schedule-btn {
     padding: 10px 15px;
   }
 }
 
-#main-nav .navbar-toggler,
-#sticky-nav .navbar-toggler {
+header #main-nav .navbar-toggler,
+header #sticky-nav .navbar-toggler {
   position: absolute;
   left: 0;
   top: 10px;
 }
 
-#main-nav {
+header .phone a {
+  color: #3d321d;
+  font-size: 13pt;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+
+header .phone a:hover {
+  color: #558000;
+}
+
+header .phone img {
+  padding-bottom: 2px;
+  padding-right: 5px;
+  vertical-align: middle;
+  width: 30px;
+}
+
+header #main-nav {
   background-color: transparent;
+  margin-top: 10px;
   position: relative;
 }
 
-#main-nav .nav-item {
+header #main-nav .nav-item {
   padding: 0 10px;
 }
 
 @media (max-width: 1100px) {
-  #main-nav .nav-item {
+  header #main-nav .nav-item {
     padding: 0 5px;
   }
 }
 
-#sticky-nav {
+header #main-nav .schedule-btn {
+  background-color: #558000;
+  -webkit-transition: all .25s;
+  transition: all .25s;
+}
+
+header #main-nav .schedule-btn a {
+  color: white;
+}
+
+header #main-nav .schedule-btn:hover {
+  background-color: #77b300;
+}
+
+header #main-nav .schedule-btn:hover a {
+  color: white;
+}
+
+header #sticky-nav {
   background-color: #f6f6f6;
   padding: 0;
   position: fixed;
@@ -1991,12 +2033,12 @@ header {
   transition: all .3s ease-in;
 }
 
-#sticky-nav .navbar-brand {
+header #sticky-nav .navbar-brand {
   margin-right: 0;
   padding-left: 10px;
 }
 
-#sticky-nav .navbar-nav {
+header #sticky-nav .navbar-nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -2004,21 +2046,21 @@ header {
 }
 
 @media (max-width: 980px) {
-  #sticky-nav a.nav-link {
+  header #sticky-nav a.nav-link {
     font-size: 16pt;
   }
 }
 
 @media (max-width: 768px) {
-  #sticky-nav {
+  header #sticky-nav {
     background-color: transparent;
     height: 70px;
   }
-  #sticky-nav .navbar-brand {
+  header #sticky-nav .navbar-brand {
     display: none;
     margin-left: 75px;
   }
-  #sticky-nav #sticky-collapse {
+  header #sticky-nav #sticky-collapse {
     background-color: #f6f6f6;
     text-align: left;
     top: 70px !important;
@@ -2027,7 +2069,7 @@ header {
     position: absolute;
     width: 200px;
   }
-  #sticky-nav .nav-right {
+  header #sticky-nav .nav-right {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2039,21 +2081,21 @@ header {
     position: absolute;
     right: 0;
   }
-  #sticky-nav .nav-link.schedule-btn {
+  header #sticky-nav .nav-link.schedule-btn {
     opacity: 0;
     padding: 20px;
   }
 }
 
-@media (max-width: 575px) {
-  #sticky-nav {
+@media (max-width: 750px) {
+  header #sticky-nav {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
 }
 
-@media (max-width: 575px) {
-  #sticky-collapse.show {
+@media (max-width: 750px) {
+  header #sticky-collapse.show {
     background-color: #f6f6f6;
   }
 }

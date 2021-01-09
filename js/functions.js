@@ -6,7 +6,7 @@ $(window).scroll(function(){
 	var win = $(window).width();
 	// console.log(scroll);
 
-	if (win > 575) {
+	if (win > 750) {
 		if (scroll >= 140) {
 			$('#sticky-nav').css('transform', 'translateY(0)');
 		} else {
@@ -39,7 +39,7 @@ $(window).resize(function(){
 		$('.nav-link.schedule-btn').text('SCHEDULE YOUR MASSAGE');
 	}
 
-	if (win < 575) {
+	if (win < 750) {
 		$('#sticky-nav').css('transform', 'translateY(0)');
 	} else {
 		if (scroll >= 140) {
@@ -97,11 +97,11 @@ $(function(){
 			$('.jeanette').addClass('active');
 		}
 	});
-	$('.candice-image').click(function(){
+	$('.niya-image').click(function(){
 		if (!$(this).hasClass('active')) {
 			$('.pic-row img, .text-row div').removeClass('active');
 			$(this).addClass('active');
-			$('.candice').addClass('active');
+			$('.niya').addClass('active');
 		}
 	});
 	$('.chelsey-image').click(function(){

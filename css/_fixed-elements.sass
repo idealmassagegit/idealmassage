@@ -25,101 +25,122 @@ header
     max-width: 80%
     position: relative
     z-index: 2
-    @media (max-width: 575px)
+    @media (max-width: 750px)
         margin-top: 75px
 
-
-#main-nav,
-#sticky-nav
-    font-family: "Pathway Gothic One", sans-serif
-    z-index: 420
-    width: 100%
-    // .navbar-nav
-        // margin: 0 auto
-    a.nav-link
-        color: $brown
-        font-size: 18pt
-        transition: all .3s
-        &:hover
-            color: $up1green
-    .active a.nav-link
-        color: $up1green
-    .nav-link.schedule-btn
-        background-color: $up1green
-        color: white
-        display: inline-block
-        height: 100%
+header 
+    #main-nav,
+    #sticky-nav
         font-family: "Pathway Gothic One", sans-serif
-        font-size: 18pt
-        letter-spacing: 2px
-        transform: scale(.8)
-        transition: all .3s
-        padding: 30px 20px
-        &:hover
-            background-color: $up2green
-            color: white
-        @media (max-width: 360px)
-            // font-size: 14px
-            padding: 10px 15px
-    .navbar-toggler
-        position: absolute
-        left: 0
-        top: 10px
-
-#main-nav
-    background-color: transparent
-    position: relative
-    .nav-item
-        padding: 0 10px
-        @media (max-width: 1100px)
-            padding: 0 5px
-        
-    
-#sticky-nav
-    background-color: $white
-    padding: 0
-    position: fixed
-    transform: translateY(-300px)
-    transition: all .3s ease-in
-    .navbar-brand
-        margin-right: 0
-        padding-left: 10px
-    .navbar-nav
-        justify-content: center
+        z-index: 420
         width: 100%
-        
-    @media (max-width: 980px)
         a.nav-link
-            font-size: 16pt
-    @media (max-width: 768px)
-        background-color: transparent
-        height: 70px
-        .navbar-brand
-            display: none
-            margin-left: 75px
-        #sticky-collapse
-            background-color: $white
-            text-align: left
-            top: 70px !important
-            padding-left: 15px
-            padding-bottom: 15px
-            position: absolute
-            width: 200px
-        .nav-right
-            display: flex
-            flex-direction: row-reverse
-            margin-right: 0
-            position: absolute
-            right: 0
+            color: $brown
+            font-size: 18pt
+            transition: all .3s
+            &:hover
+                color: $up1green
+        .active a.nav-link
+            color: $up1green
         .nav-link.schedule-btn
-            opacity: 0
-            padding: 20px
-    @media (max-width: 575px)
-        transform: translateY(0)
+            background-color: $up1green
+            color: white
+            display: inline-block
+            height: 100%
+            font-family: "Pathway Gothic One", sans-serif
+            font-size: 18pt
+            letter-spacing: 2px
+            transform: scale(.8)
+            transition: all .3s
+            padding: 30px 20px
+            &:hover
+                background-color: $up2green
+                color: white
+            @media (max-width: 360px)
+                // font-size: 14px
+                padding: 10px 15px
+        .navbar-toggler
+            position: absolute
+            left: 0
+            top: 10px
+    .phone
+        a
+            color: $brown
+            font-size: 13pt
+            transition: all .25s
+            &:hover
+                color: $up1green
+        img
+            padding-bottom: 2px
+            padding-right: 5px
+            vertical-align: middle
+            width: 30px
             
-#sticky-collapse.show
-    @media (max-width: 575px)
+header
+    #main-nav
+        background-color: transparent
+        margin-top: 10px
+        position: relative
+        .nav-item
+            padding: 0 10px
+            @media (max-width: 1100px)
+                padding: 0 5px
+        .schedule-btn
+            background-color: $up1green
+            transition: all .25s
+            a
+                color: white
+            &:hover
+                background-color: $up2green
+                a
+                    color: white
+        
+header
+    #sticky-nav
         background-color: $white
+        padding: 0
+        position: fixed
+        transform: translateY(-300px)
+        transition: all .3s ease-in
+        .navbar-brand
+            margin-right: 0
+            padding-left: 10px
+        .navbar-nav
+            justify-content: center
+            width: 100%
+            
+        @media (max-width: 980px)
+            a.nav-link
+                font-size: 16pt
+        @media (max-width: 768px)
+            background-color: transparent
+            height: 70px
+            .navbar-brand
+                display: none
+                margin-left: 75px
+            #sticky-collapse
+                background-color: $white
+                text-align: left
+                top: 70px !important
+                padding-left: 15px
+                padding-bottom: 15px
+                position: absolute
+                width: 200px
+            .nav-right
+                display: flex
+                flex-direction: row-reverse
+                margin-right: 0
+                position: absolute
+                right: 0
+            .nav-link.schedule-btn
+                opacity: 0
+                padding: 20px
+        @media (max-width: 750px)
+            transform: translateY(0)
+                
+    #sticky-collapse.show
+        @media (max-width: 750px)
+            background-color: $white
   
 
 footer
