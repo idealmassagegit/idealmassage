@@ -13,12 +13,12 @@ $(window).scroll(function(){
 			$('#sticky-nav').css('transform', 'translateY(-300px)');
 		}
 	} else {
-		if (scroll >= 150) {
+		if (scroll >= 100) {
 			$('#sticky-nav').css('background-color', '#f6f6f6');
 			$('.nav-link.schedule-btn').css('opacity', 1);
 		} else {
 			$('#sticky-nav').css('background-color', 'transparent');
-			$('.nav-link.schedule-btn').css('opacity', 0);
+			// $('.nav-link.schedule-btn').css('opacity', 0);
 		}
 	}
      

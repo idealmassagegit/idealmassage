@@ -26,7 +26,7 @@ header
     position: relative
     z-index: 2
     @media (max-width: 750px)
-        margin-top: 75px
+        margin-top: 70px
 
 header 
     #main-nav,
@@ -38,6 +38,8 @@ header
             color: $brown
             font-size: 18pt
             transition: all .3s
+            // @media (max-width: 750px)
+            //     font-size: 16pt
             &:hover
                 color: $up1green
         .active a.nav-link
@@ -64,6 +66,7 @@ header
             left: 0
             top: 10px
     .phone
+        padding-top: 10px
         a
             color: $brown
             font-size: 13pt
@@ -94,6 +97,9 @@ header
                 background-color: $up2green
                 a
                     color: white
+        @media (max-width: 750px )
+            display: none
+            
         
 header
     #sticky-nav
@@ -107,14 +113,14 @@ header
             padding-left: 10px
         .navbar-nav
             justify-content: center
-            width: 100%
-            
+            width: 100%   
         @media (max-width: 980px)
             a.nav-link
                 font-size: 16pt
-        @media (max-width: 768px)
+        @media (max-width: 765px)
             background-color: transparent
             height: 70px
+            // display: none
             .navbar-brand
                 display: none
                 margin-left: 75px
@@ -133,7 +139,7 @@ header
                 position: absolute
                 right: 0
             .nav-link.schedule-btn
-                opacity: 0
+                // opacity: 0
                 padding: 20px
         @media (max-width: 750px)
             transform: translateY(0)
