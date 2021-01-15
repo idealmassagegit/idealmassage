@@ -57,6 +57,13 @@ $(window).resize(function(){
 
 	//    READY
 $(function(){
+
+	$('#niyaModal').modal({
+		// backdrop: false
+	});
+	$('.close').click(function(){
+		$(this).parents('.modal').css('display', 'none');
+	})
 	
 	var scroll = $(window).scrollTop();
 	var win = $(window).width();
