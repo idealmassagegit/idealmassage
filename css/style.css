@@ -1534,12 +1534,6 @@
   opacity: 1;
 }
 
-@media (max-width: 500px) {
-  #staff .staff-box .main-pic-row {
-    display: none;
-  }
-}
-
 #staff .text-row {
   background-color: #f6f6f6;
   border-top: 4px solid #304800;
