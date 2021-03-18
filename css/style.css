@@ -2030,13 +2030,8 @@
   }
 }
 
-@media (max-width: 600px) {
-  #carousel li {
-    width: 150px !important;
-  }
-  #carousel img {
-    width: 150px;
-  }
+.flex-direction-nav a:before {
+  color: #77b300;
 }
 
 .exampleofmixing {
