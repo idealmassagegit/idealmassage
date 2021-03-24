@@ -112,13 +112,16 @@
 
 .modal-content {
   background-color: #fefefe;
+  -webkit-box-shadow: inset 0 0 20px #304800;
+          box-shadow: inset 0 0 20px #304800;
   margin: auto;
+  top: 15%;
   border-radius: 0;
   border: none;
-  width: 50%;
+  width: 700px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   .modal-content {
     width: 90%;
   }
@@ -144,9 +147,48 @@
 }
 
 .modal-body {
-  -webkit-box-shadow: inset 0 0 20px #304800;
-          box-shadow: inset 0 0 20px #304800;
   padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 750px) {
+  .modal-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.modal-body .modal-left {
+  width: 300px;
+}
+
+@media (max-width: 750px) {
+  .modal-body .modal-left {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .modal-body .modal-left img {
+    width: 180px;
+  }
+}
+
+.modal-body .modal-right {
+  padding-top: 30px;
+}
+
+@media (max-width: 750px) {
+  .modal-body .modal-right {
+    text-align: center;
+  }
 }
 
 .modal-body p {
@@ -157,7 +199,21 @@
   word-spacing: 2px;
 }
 
-.modal-body a {
+@media (max-width: 500px) {
+  .modal-body p {
+    font-size: 17pt;
+  }
+}
+
+.modal-footer {
+  border: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 30px;
+}
+
+.modal-footer a {
   color: #558000;
   font-size: 15pt;
   font-weight: bold;
@@ -165,9 +221,18 @@
   transition: all .2s ease-in;
 }
 
-.modal-body a:hover {
+.modal-footer a:hover {
   color: #304800;
   font-size: 16pt;
+}
+
+@media (max-width: 500px) {
+  .modal-footer a {
+    font-size: 13pt;
+  }
+  .modal-footer a:hover {
+    font-size: 13pt;
+  }
 }
 
 .montage {
