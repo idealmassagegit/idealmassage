@@ -81,13 +81,6 @@ $(function(){
 
 	// Staff
 
-	$('.michael-image').click(function(){
-		if (!$(this).hasClass('active')) {
-			$('.pic-row img, .text-row div').removeClass('active');
-			$(this).addClass('active');
-			$('.michael').addClass('active');
-		}
-	});
 	$('.cindy-image').click(function(){
 		if (!$(this).hasClass('active')) {
 			$('.pic-row img, .text-row div').removeClass('active');
@@ -102,18 +95,11 @@ $(function(){
 			$('.jeanette').addClass('active');
 		}
 	});
-	$('.niya-image').click(function(){
+	$('.latoya-image').click(function(){
 		if (!$(this).hasClass('active')) {
 			$('.pic-row img, .text-row div').removeClass('active');
 			$(this).addClass('active');
-			$('.niya').addClass('active');
-		}
-	});
-	$('.chelsey-image').click(function(){
-		if (!$(this).hasClass('active')) {
-			$('.pic-row img, .text-row div').removeClass('active');
-			$(this).addClass('active');
-			$('.chelsey').addClass('active');
+			$('.latoya').addClass('active');
 		}
 	});
 

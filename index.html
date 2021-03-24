@@ -131,25 +131,25 @@
         <p class="mobile">Book Mon/Tue/Wed for $15 off!</p>
     </div> -->
 
-    <!-- <div id="myModal" class="modal">
+    <div id="myModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <span class="close">X</span>
+                <span class="close" data-dismiss="modal" aria-label="Close">X</span>
             </div>
-            <div class="modal-body text-center">
-                <p>
-                    <img src="./img/hand.png" alt="Waving emoji"/><br/>Hey hard working people of Hutto!
-                </p>
-                <p>
-                    <img src="./img/pray.png" alt="Gracious emoji"/><br/>We are honored to be one of Hutto’s most trusted resources for therapeutic relief, and we have an amazing NEW THERAPIST, who would love to take you in as a regular client! Book your first session with Jeanette and get AROMATHERAPY and STEAM TOWELS added into your massage for FREE!
-                </p>
-                <p>
-                    Jeanette is bookable Wednesday - Sunday.    
-                </p>
-                <p class="text-center"><a href="https://www.vagaro.com/idealmassage/book-now">Book Your Appointment Today!</a></p>
+            <div class="modal-body">
+                <div class="modal-left text-center">
+                    <img src="./img/latoya.jpg" alt="Latoya - Ideal Massage"/>
+                </div>
+                <div class="modal-right">
+                    <p>Meet our new Massage Therapist LaToya.</p>
+                    <p>Bookable Thursday, Friday, and SATURDAY!</p>
+                </div>
             </div>
+            <div class="modal-footer text-center">
+                <p class="text-center"><a href="https://www.vagaro.com/idealmassage/book-now" target="_blank">Book Your Appointment Today!</a></p>
+           </div>
         </div>
-    </div> -->
+    </div>
 
 
     <!-- <section class="jumbotron main-jumbo text-center"> -->
@@ -603,10 +603,11 @@
     <script>
     
             $(document).ready(function(){
+                $('.modal').modal();
                 // var banner = $('#banner');
                 // var header = $('#home-header');
                 // var modal = $('.modal');
-                // var close = $('#banner .close');
+                // var close = $('.close');
                 // banner.style.display = "block";
                 // setTimeout(function(){
                 //     banner.css('transform', 'translateY(0)');
@@ -618,11 +619,11 @@
                 // });
 
                
-                // window.onclick = function(event) {
-                //     if (event.target == modal) {
-                //         modal.style.display = "none";
-                //     }
-                // }
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
             });
         
     </script>
