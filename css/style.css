@@ -162,6 +162,8 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 0;
+    padding-top: 15px;
   }
 }
 
@@ -182,7 +184,8 @@
 }
 
 .modal-body .modal-right {
-  padding-top: 30px;
+  padding: 20px;
+  padding-bottom: 0;
 }
 
 @media (max-width: 750px) {
@@ -201,7 +204,7 @@
 
 @media (max-width: 500px) {
   .modal-body p {
-    font-size: 17pt;
+    font-size: 15pt;
   }
 }
 
@@ -1609,7 +1612,7 @@
 }
 
 #staff .text-row .jeanette,
-#staff .text-row .chelsey,
+#staff .text-row .shonda,
 #staff .text-row .latoya {
   max-height: 0;
   opacity: 0;

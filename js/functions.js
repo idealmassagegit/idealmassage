@@ -81,11 +81,11 @@ $(function(){
 
 	// Staff
 
-	$('.cindy-image').click(function(){
+	$('.shonda-image').click(function(){
 		if (!$(this).hasClass('active')) {
 			$('.pic-row img, .text-row div').removeClass('active');
 			$(this).addClass('active');
-			$('.cindy').addClass('active');
+			$('.shonda').addClass('active');
 		}
 	});
 	$('.jeanette-image').click(function(){
