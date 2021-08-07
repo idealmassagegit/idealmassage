@@ -2279,6 +2279,7 @@ header #sticky-nav .navbar-nav {
 footer {
   background-color: #ccc;
   padding: 30px;
+  text-align: center;
 }
 
 @media (max-width: 420px) {
@@ -2306,10 +2307,6 @@ footer a:hover {
 footer strong {
   color: #3d321d;
   font-weight: bold;
-}
-
-footer img {
-  padding-bottom: 20px;
 }
 
 @media (max-width: 915px) {
@@ -2372,6 +2369,16 @@ footer .footer-box .footer-right {
   }
 }
 
+footer .footer-box .footer-left {
+  text-align: left;
+}
+
+@media (max-width: 915px) {
+  footer .footer-box .footer-left {
+    text-align: center;
+  }
+}
+
 footer .footer-box .footer-left p {
   font-size: 16px;
   padding: 3px 15px;
@@ -2405,82 +2412,44 @@ footer .footer-box .footer-middle p {
 }
 
 footer .footer-box .footer-middle a {
+  font-size: 20px;
+}
+
+footer .footer-box .footer-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 25px;
+}
+
+@media (max-width: 915px) {
+  footer .footer-box .footer-right {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+footer .footer-box .footer-right p {
+  line-height: 45px;
+}
+
+footer .footer-box .footer-right a {
   font-family: "Pathway Gothic One", sans-serif;
   font-size: 35px;
 }
 
-footer .footer-box .footer-right .form-box {
-  font-family: "Lato", sans-serif;
-  font-size: 18px;
-  margin-top: 50px;
+footer .footer-box .footer-right div {
+  width: 50%;
 }
 
-footer .footer-box .footer-right .form-box h3 {
-  color: #3d321d;
-  font-size: 18px;
-  letter-spacing: 1px;
+footer .footer-box .footer-right div:nth-child(1) {
+  text-align: right;
 }
 
-footer .footer-box .footer-right .form-box .form-label {
-  margin-top: 15px;
-}
-
-footer .footer-box .footer-right .form-box input,
-footer .footer-box .footer-right .form-box textarea {
-  background-color: #f6f6f6;
-  border-radius: 0;
-  position: relative;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-footer .footer-box .footer-right .form-box input:focus,
-footer .footer-box .footer-right .form-box textarea:focus {
-  background-color: white;
-  -webkit-box-shadow: 0 0 5px rgba(48, 72, 0, 0.8);
-          box-shadow: 0 0 5px rgba(48, 72, 0, 0.8);
-}
-
-footer .footer-box .footer-right .form-box input::-webkit-input-placeholder,
-footer .footer-box .footer-right .form-box textarea::-webkit-input-placeholder {
-  color: rgba(48, 72, 0, 0.5);
-}
-
-footer .footer-box .footer-right .form-box input:-ms-input-placeholder,
-footer .footer-box .footer-right .form-box textarea:-ms-input-placeholder {
-  color: rgba(48, 72, 0, 0.5);
-}
-
-footer .footer-box .footer-right .form-box input::-ms-input-placeholder,
-footer .footer-box .footer-right .form-box textarea::-ms-input-placeholder {
-  color: rgba(48, 72, 0, 0.5);
-}
-
-footer .footer-box .footer-right .form-box input::placeholder,
-footer .footer-box .footer-right .form-box textarea::placeholder {
-  color: rgba(48, 72, 0, 0.5);
-}
-
-footer .footer-box .footer-right .form-box .submit {
-  text-align: center;
-}
-
-footer .footer-box .footer-right .form-box .submit button {
-  color: #304800;
-  cursor: pointer;
-  margin-top: 20px;
-  background-color: transparent;
-  border: none;
-  -webkit-box-shadow: 0 0 5px #304800;
-          box-shadow: 0 0 5px #304800;
-  padding: 10px 20px;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-footer .footer-box .footer-right .form-box .submit button:hover {
-  background-color: #304800;
-  color: white;
+footer .footer-box .footer-right div:nth-child(2) {
+  padding-left: 25px;
+  text-align: left;
 }
 
 footer .copyright {
