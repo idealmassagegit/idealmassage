@@ -56,11 +56,15 @@
 <body>
 
     
-    <header>
+    <header id="home-header">
         <nav id="sticky-nav" class="navbar navbar-default navbar-expand-md">
             <a href="./" class="navbar-brand"><img src="./img/im-logo.png" alt="Ideal Massage" width="200px"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sticky-collapse">
-                <i style="color: #558000;" class="fas fa-bars fa-2x"></i>
+                <svg viewBox="0 0 100 80" width="40" height="40">
+                    <rect width="100" height="15"></rect>
+                    <rect y="30" width="100" height="15"></rect>
+                    <rect y="60" width="100" height="15"></rect>
+                </svg>
             </button>
             <div id="sticky-collapse" class="nav-center navbar-collapse collapse">
                 <ul class="navbar-nav">
@@ -73,8 +77,13 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="./staff.html">Staff</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./services.html">Services</a>
+                    <li class="nav-item services-parent">
+                        <a class="nav-link">Services <i class="fas fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="./massage-menu.html" class="nav-link">&mdash; Massage Menu</a></li>
+                            <li><a href="./spa-menu.html" class="nav-link">&mdash; Spa Menu</a></li>
+                            <li><a href="./aesthetics-menu.html" class="nav-link">&mdash; Aesthetics Menu</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://www.vagaro.com/idealmassage/gift-certificates" target="_blank">Gift Cards</a>
@@ -103,8 +112,13 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="./staff.html">Staff</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./services.html">Services</a>
+                    <li class="nav-item services-parent">
+                        <a class="nav-link">Services <i class="fas fa-xs fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="./massage-menu.html" class="nav-link">&mdash; Massage Menu</a></li>
+                            <li><a href="./spa-menu.html" class="nav-link">&mdash; Spa Menu</a></li>
+                            <li><a href="./aesthetics-menu.html" class="nav-link">&mdash; Aesthetics Menu</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://www.vagaro.com/idealmassage/gift-certificates" target="_blank">Gift Cards</a>
@@ -118,6 +132,9 @@
                 </ul>
             </div>
         </nav>
+        <div class="phone">
+            <a href="tel:+1-512-902-5510"><img class="phone-icon" src="./img/phone.png" alt="Phone icon" /> (512) 902-5510</a>
+        </div>
     </header>
 
     
@@ -129,18 +146,19 @@
             <div class="main-pic-row pic-row text-center">
                 <div><img class="jeanette-image rounded active" src="./img/jeanette.jpg" width="160px" alt="Jeanette"></div>
                 <div><img class="latoya-image rounded" src="./img/latoya.jpg" width="160px" alt="Latoya photo"></div>
-                <div><img class="chelsey-image rounded" src="./img/chelsey.jpg" width="160px" alt="Chelsey photo"></div>
+                <div><img class="danielle-image rounded" src="./img/danielle.jpg" width="160px" alt="Danielle photo"></div>
+                <div><img class="chelsey-image rounded" src="./img/girl.jpg" width="160px" alt="Chelsey photo"></div>
             </div>
-            <!-- <div class="mobile-pic-row text-center">
+            <div class="mobile-pic-row text-center">
                 <div class="pic-row">
-                    <div><img class="jeanette-image rounded active" src="./img/jeanette.jpg" width="160px" alt="Jeanette"></div>
-                    <div><img class="cindy-image rounded" src="./img/cindy.jpg" width="160px" alt="Chelsey photo"></div>
+                    <div><img class="jeanette-image rounded active" src="./img/jeanette.jpg" width="160px" alt="Jeanette photo"></div>
+                    <div><img class="latoya-image rounded" src="./img/latoya.jpg" width="160px" alt="Latoya photo"></div>
                 </div>
                 <div class="pic-row">
-                    <div><img class="niya-image rounded" src="./img/girl.jpg" width="160px" alt="Niya photo"></div>
-                    <div><img class="chelsey-image rounded" src="./img/chelsey.jpg" width="160px" alt="Chelsey photo"></div>
+                    <div><img class="danielle-image rounded" src="./img/danielle.jpg" width="160px" alt="Danielle photo"></div>
+                    <div><img class="chelsey-image rounded" src="./img/girl.jpg" width="160px" alt="Chelsey photo"></div>
                 </div>
-            </div> -->
+            </div>
 
             <div class="text-row">
                 <div class="jeanette active">
@@ -150,6 +168,10 @@
                 <div class="latoya">
                     <h2>Latoya</h2>
                     <p>With an extensive background in healthcare and physical therapy, I am steadfast in my passion for addressing my client’s truest source of pain and tension. I believe that pain is simply a symptom of a more intricate issue, and I utilize my multifaceted education and experience to help you conquer pain and discomfort. My strengths include Deep Tissue Massage, Trigger Point Therapy, Orthopedic Massage and Swedish Massage. I believe that every BODY is unique which is why no two sessions are alike.  My goal for each session is to hold space where therapeutic massage and relaxation meet allowing each of my clients to transition from surviving to truly thriving. Allow me to help you explore the extensive benefits of massage therapy!</p>
+                </div>
+                <div class="danielle">
+                    <h2>Danielle</h2>
+                    <p>I’ve always been fascinated with the beauty world when I was growing up, specifically with skincare and anti-aging techniques for the body. Jumping at the idea to learn as much as I could about skin care and beauty regimens, seven years later here I am excited to share my knowledge with you and help improve the inner image and feeling you have of yourself! Lets accent your natural beauty, men or women welcome! Skin care, for young adults, local trusted professional waxing services for all ages, and decedent facials, I’m your one stop shop! </p>
                 </div>
                 <div class="chelsey">
                     <h2>Chelsey</h2>

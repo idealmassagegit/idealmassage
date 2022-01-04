@@ -102,6 +102,13 @@ $(function(){
 			$('.latoya').addClass('active');
 		}
 	});
+	$('.danielle-image').click(function(){
+		if (!$(this).hasClass('active')) {
+			$('.pic-row img, .text-row div').removeClass('active');
+			$(this).addClass('active');
+			$('.danielle').addClass('active');
+		}
+	});
 
 	$('.lang').click(function(){
 		if($(this).hasClass('esp')) {

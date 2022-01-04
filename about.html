@@ -56,11 +56,15 @@
 <body>
 
     
-    <header>
+    <header id="home-header">
         <nav id="sticky-nav" class="navbar navbar-default navbar-expand-md">
             <a href="./" class="navbar-brand"><img src="./img/im-logo.png" alt="Ideal Massage" width="200px"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sticky-collapse">
-                <i style="color: #558000;" class="fas fa-bars fa-2x"></i>
+                <svg viewBox="0 0 100 80" width="40" height="40">
+                    <rect width="100" height="15"></rect>
+                    <rect y="30" width="100" height="15"></rect>
+                    <rect y="60" width="100" height="15"></rect>
+                </svg>
             </button>
             <div id="sticky-collapse" class="nav-center navbar-collapse collapse">
                 <ul class="navbar-nav">
@@ -73,8 +77,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./staff.html">Staff</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./services.html">Services</a>
+                    <li class="nav-item services-parent">
+                        <a class="nav-link">Services <i class="fas fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="./massage-menu.html" class="nav-link">&mdash; Massage Menu</a></li>
+                            <li><a href="./spa-menu.html" class="nav-link">&mdash; Spa Menu</a></li>
+                            <li><a href="./aesthetics-menu.html" class="nav-link">&mdash; Aesthetics Menu</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://www.vagaro.com/idealmassage/gift-certificates" target="_blank">Gift Cards</a>
@@ -103,8 +112,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./staff.html">Staff</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./services.html">Services</a>
+                    <li class="nav-item services-parent">
+                        <a class="nav-link">Services <i class="fas fa-xs fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="./massage-menu.html" class="nav-link">&mdash; Massage Menu</a></li>
+                            <li><a href="./spa-menu.html" class="nav-link">&mdash; Spa Menu</a></li>
+                            <li><a href="./aesthetics-menu.html" class="nav-link">&mdash; Aesthetics Menu</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://www.vagaro.com/idealmassage/gift-certificates" target="_blank">Gift Cards</a>
@@ -118,6 +132,9 @@
                 </ul>
             </div>
         </nav>
+        <div class="phone">
+            <a href="tel:+1-512-902-5510"><img class="phone-icon" src="./img/phone.png" alt="Phone icon" /> (512) 902-5510</a>
+        </div>
     </header>
 
     

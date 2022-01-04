@@ -119,7 +119,7 @@
   top: 15%;
   border-radius: 0;
   border: none;
-  width: 600px;
+  width: 900px;
 }
 
 @media (max-width: 650px) {
@@ -765,40 +765,37 @@
   width: 100%;
 }
 
-.benefits-section {
+.cancellation-section {
+  color: #3d321d;
   margin-top: 20px;
   padding-bottom: 40px;
 }
 
 @media (max-width: 800px) {
-  .benefits-section {
+  .cancellation-section {
     padding-bottom: 0;
   }
 }
 
-.benefits-section .benefits-box {
-  color: #3d321d;
-}
-
-.benefits-section .benefits-box .benefits-header {
+.cancellation-section .cancellation-header {
   font-size: 50px;
   font-family: "Pathway Gothic One", sans-serif;
   padding: 20px 0 25px 0;
 }
 
 @media (max-width: 1000px) {
-  .benefits-section .benefits-box .benefits-header {
+  .cancellation-section .cancellation-header {
     font-size: 45px;
   }
 }
 
 @media (max-width: 420px) {
-  .benefits-section .benefits-box .benefits-header {
+  .cancellation-section .cancellation-header {
     font-size: 35px;
   }
 }
 
-.benefits-section .benefits-box .benefits-text {
+.cancellation-section .cancellation-text {
   font-size: 17px;
   font-family: "Lato", sans-serif;
   line-height: 35px;
@@ -807,12 +804,12 @@
   margin: 0 auto;
 }
 
-.benefits-section .benefits-box .benefits-text p {
+.cancellation-section .cancellation-text p {
   padding: 15px 0;
 }
 
 @media (max-width: 1000px) {
-  .benefits-section .benefits-box .benefits-text {
+  .cancellation-section .cancellation-text {
     font-size: 12pt;
     line-height: 30px;
   }
@@ -1536,6 +1533,12 @@
   opacity: 1;
 }
 
+@media (max-width: 500px) {
+  #staff .staff-box .main-pic-row {
+    display: none;
+  }
+}
+
 #staff .text-row {
   background-color: #f6f6f6;
   border-top: 4px solid #304800;
@@ -1547,7 +1550,8 @@
 
 #staff .text-row .jeanette,
 #staff .text-row .chelsey,
-#staff .text-row .latoya {
+#staff .text-row .latoya,
+#staff .text-row .danielle {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
@@ -1658,157 +1662,87 @@
 }
 
 .services h3 {
+  color: #3d321d;
   font-family: "Pathway Gothic One", sans-serif;
   font-size: 25pt;
-  margin-top: 15px;
-  margin-bottom: 5px;
-  margin-left: -10px;
+  padding: 5px 25px;
+  text-align: center;
 }
 
-.services .menu-list {
-  width: 30vw;
-  margin: 0 auto;
-}
-
-.services .menu-list li {
-  cursor: pointer;
+.services p {
+  color: #3d321d;
+  font-size: 18px;
   line-height: 30px;
-  -webkit-transition: all .15s;
-  transition: all .15s;
 }
 
-.services .menu-list li:hover {
-  padding-left: 20px;
-}
-
-.services #accordion,
-.services #accordion2 {
-  -webkit-box-shadow: 0 0 10px #3d321d;
-          box-shadow: 0 0 10px #3d321d;
-  max-width: 650px;
+.services .promo-service {
+  border: 1px solid #304800;
   margin: 0 auto;
-  margin-bottom: 50px;
+  text-align: center;
+  width: 75%;
 }
 
-@media (max-width: 700px) {
-  .services #accordion,
-  .services #accordion2 {
+@media (max-width: 760px) {
+  .services .promo-service {
+    width: 90%;
+  }
+}
+
+.services .promo-service h3 {
+  background: #233500;
+  background: linear-gradient(130deg, #233500 0%, #558000 100%);
+  color: #f6f6f6;
+  padding: 15px;
+}
+
+.services .promo-service p {
+  padding: 15px;
+}
+
+.services .promo-service .price {
+  color: #304800;
+  font-size: 20px;
+  line-height: 35px;
+  padding-bottom: 0;
+}
+
+.services .services-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+@media (max-width: 975px) {
+  .services .services-container {
+    display: block;
+  }
+}
+
+.services .services-container .service {
+  border-bottom: 1px solid #304800;
+  padding-bottom: 25px;
+  margin: 30px;
+  width: 45%;
+}
+
+@media (max-width: 975px) {
+  .services .services-container .service {
+    margin: 20px 10px;
     width: 95%;
   }
 }
 
-.services #accordion .card,
-.services #accordion2 .card {
-  border-radius: 0;
-}
-
-.services #accordion .card-header,
-.services #accordion2 .card-header {
-  background-color: #ddd;
-  border: none;
-  border-radius: 0;
-  padding: 10px 0;
-}
-
-.services #accordion .card-header:hover,
-.services #accordion2 .card-header:hover {
-  background-color: #ccc;
-}
-
-.services #accordion .card-title,
-.services #accordion2 .card-title {
-  border-radius: 0;
+.services .services-container .service span {
   color: #304800;
-  display: inline-block;
+}
+
+.services .services-container .price {
+  color: #304800;
   font-size: 20px;
-  letter-spacing: 1px;
-  margin: 0;
-  padding-left: 50px;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-  -webkit-transition: all .2s;
-  transition: all .2s;
-}
-
-@media (max-width: 450px) {
-  .services #accordion .card-title,
-  .services #accordion2 .card-title {
-    font-size: 18px;
-  }
-}
-
-.services #accordion .card-title:hover,
-.services #accordion2 .card-title:hover {
-  text-decoration: none;
-}
-
-.services #accordion .card-title.collapsed,
-.services #accordion2 .card-title.collapsed {
-  padding-left: 25px;
-}
-
-.services #accordion .card-body,
-.services #accordion2 .card-body {
-  background-color: rgba(255, 255, 255, 0.9);
-  color: #3d321d;
-  font-size: 18px;
-  line-height: 30px;
-  text-align: justify;
-}
-
-@media (max-width: 450px) {
-  .services #accordion .card-body,
-  .services #accordion2 .card-body {
-    font-size: 16px;
-    text-align: left;
-  }
-}
-
-.services #accordion .price,
-.services #accordion2 .price {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 15px;
-}
-
-@media (max-width: 600px) {
-  .services #accordion .price,
-  .services #accordion2 .price {
-    font-size: 17px;
-  }
-}
-
-.services #accordion .card-link,
-.services #accordion2 .card-link {
-  border: none;
-  -webkit-box-shadow: 0 0 5px #304800;
-          box-shadow: 0 0 5px #304800;
-  display: inline-block;
-  color: #304800;
-  cursor: pointer;
-  font-weight: normal;
-  letter-spacing: 1px;
-  margin: 0 auto;
-  margin-top: 10px;
-  padding: 10px 15px;
-  text-decoration: none;
-  -webkit-transition: all .15s ease-in;
-  transition: all .15s ease-in;
-}
-
-@media (max-width: 600px) {
-  .services #accordion .card-link,
-  .services #accordion2 .card-link {
-    font-size: 14px;
-  }
-}
-
-.services #accordion .card-link:hover,
-.services #accordion2 .card-link:hover {
-  background-color: #304800;
-  color: white;
-  text-decoration: none;
+  line-height: 35px;
+  padding-bottom: 15px;
+  text-align: center;
 }
 
 #contact-section,
@@ -2072,6 +2006,10 @@ header {
   }
 }
 
+header svg {
+  fill: #558000;
+}
+
 header #main-nav,
 header #sticky-nav {
   font-family: "Pathway Gothic One", sans-serif;
@@ -2090,6 +2028,60 @@ header #sticky-nav a.nav-link {
 header #main-nav a.nav-link:hover,
 header #sticky-nav a.nav-link:hover {
   color: #558000;
+}
+
+header #main-nav .nav-item.services-parent,
+header #sticky-nav .nav-item.services-parent {
+  cursor: pointer;
+  position: relative;
+}
+
+@media (max-width: 765px) {
+  header #main-nav .nav-item.services-parent .fa-caret-down,
+  header #sticky-nav .nav-item.services-parent .fa-caret-down {
+    display: none;
+  }
+}
+
+header #main-nav .nav-item.services-parent ul,
+header #sticky-nav .nav-item.services-parent ul {
+  background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
+  height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  position: absolute;
+  text-align: left;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  width: 200px;
+}
+
+@media (max-width: 765px) {
+  header #main-nav .nav-item.services-parent ul,
+  header #sticky-nav .nav-item.services-parent ul {
+    position: relative;
+    width: auto;
+    height: auto;
+    display: block;
+  }
+}
+
+@media (min-width: 766px) {
+  header #main-nav .nav-item.services-parent:hover ul,
+  header #sticky-nav .nav-item.services-parent:hover ul {
+    height: 150px;
+    padding: 15px;
+  }
 }
 
 header #main-nav .active a.nav-link,
@@ -2189,7 +2181,7 @@ header #main-nav .schedule-btn:hover a {
   color: white;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 765px) {
   header #main-nav {
     display: none;
   }
@@ -2421,6 +2413,7 @@ footer .footer-box .footer-right {
   footer .footer-box .footer-right {
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: -25px;
     text-align: center;
   }
 }

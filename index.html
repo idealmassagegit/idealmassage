@@ -59,7 +59,11 @@
         <nav id="sticky-nav" class="navbar navbar-default navbar-expand-md">
             <a href="./" class="navbar-brand"><img src="./img/im-logo.png" alt="Ideal Massage" width="200px"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sticky-collapse">
-                <i style="color: #558000;" class="fas fa-bars fa-2x"></i>
+                <svg viewBox="0 0 100 80" width="40" height="40">
+                    <rect width="100" height="15"></rect>
+                    <rect y="30" width="100" height="15"></rect>
+                    <rect y="60" width="100" height="15"></rect>
+                </svg>
             </button>
             <div id="sticky-collapse" class="nav-center navbar-collapse collapse">
                 <ul class="navbar-nav">
@@ -72,8 +76,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./staff.html">Staff</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./services.html">Services</a>
+                    <li class="nav-item services-parent">
+                        <a class="nav-link">Services <i class="fas fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="./massage-menu.html" class="nav-link">&mdash; Massage Menu</a></li>
+                            <li><a href="./spa-menu.html" class="nav-link">&mdash; Spa Menu</a></li>
+                            <li><a href="./aesthetics-menu.html" class="nav-link">&mdash; Aesthetics Menu</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://www.vagaro.com/idealmassage/gift-certificates" target="_blank">Gift Cards</a>
@@ -102,8 +111,13 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./staff.html">Staff</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./services.html">Services</a>
+                    <li class="nav-item services-parent">
+                        <a class="nav-link">Services <i class="fas fa-xs fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="./massage-menu.html" class="nav-link">&mdash; Massage Menu</a></li>
+                            <li><a href="./spa-menu.html" class="nav-link">&mdash; Spa Menu</a></li>
+                            <li><a href="./aesthetics-menu.html" class="nav-link">&mdash; Aesthetics Menu</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="https://www.vagaro.com/idealmassage/gift-certificates" target="_blank">Gift Cards</a>
@@ -131,18 +145,18 @@
         <p class="mobile">Book Mon/Tue/Wed for $15 off!</p>
     </div> -->
 
-    <!-- <div id="myModal" class="modal">
+    <div id="myModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
                 <span class="close" data-dismiss="modal" aria-label="Close">X</span>
             </div>
             <div class="modal-body">
                 <a href="https://www.vagaro.com/idealmassage/book-now">
-                    <img src="./img/august-special.jpg" alt="August Special - $10 off Exfoliations Tuesday-Thursday">
+                    <img src="./img/welcome-danielle.jpg" alt="Welcome Danielle to the Ideal Massage Team - Facials, Waxes, and Lashes - Pair any services with a massage or book individual services.">
                 </a>
             </div>
         </div>
-    </div> -->
+    </div>
 
 
     <!-- <section class="jumbotron main-jumbo text-center"> -->
@@ -159,6 +173,12 @@
     <section class="cards-section">
         
         <div class="card-flex-box">
+            <a href="https://www.vagaro.com/idealmassage/services" style="display: block;"  class="card-shell mx-auto text-center">
+                <img class="card-img-top" src="./img/cbd-icon.png" alt="New Client Service">
+                <div class="card-body">
+                    <h3 class="card-title">New Client <br class="card-br"/>Service</h3>
+                </div>
+            </a>
             <a href="https://www.vagaro.com/idealmassage/services" style="display: block;" class="card-shell mx-auto text-center">
                 <img class="card-img-top" src="./img/massage-icon.png" alt="DEEP Tissue Massage">
                 <div class="card-body">
@@ -166,15 +186,9 @@
                 </div>
             </a>
             <a href="https://www.vagaro.com/idealmassage/services" style="display: block;"  class="card-shell mx-auto text-center">
-                <img class="card-img-top" src="./img/cbd-icon.png" alt="DEEP Tissue Massage">
+                <img class="card-img-top" src="./img/body-wrap-icon.png" alt="3-Hour Body Wrap">
                 <div class="card-body">
-                    <h3 class="card-title">Mary's Nutritionals CBD Oil Massage</h3>
-                </div>
-            </a>
-            <a href="https://www.vagaro.com/idealmassage/services" style="display: block;"  class="card-shell mx-auto text-center">
-                <img class="card-img-top" src="./img/preg-icon.png" alt="DEEP Tissue Massage">
-                <div class="card-body">
-                    <h3 class="card-title">Prenatal <br class="card-br"/> Massage</h3>
+                    <h3 class="card-title">3-Hour <br class="card-br"/> Body Wrap</h3>
                 </div>
             </div>
         </a>
@@ -490,23 +504,13 @@
     <img src="./img/exterior.png" alt="Ideal Massage building exterior" />
 </div>
 
-<section class="benefits-section">
-    <div class="benefits-box">
-        <div class="benefits-header text-center">
-            <h2>Benefits of Massage</h2>
-        </div>
-        <div class="benefits-text text-justify">
-            <p>At Ideal Massage we approach pain and tension patterns from a clinical and therapeutic standpoint. Whatever your needs may be, our goal is to develop a plan to get you functioning at optimum health while enjoying a corrective and relaxing experience. We specialize in pain management therapy that focuses on releasing the root of tension and injury in the body. We can work as light or as deep as needed while still providing muscular rehabilitation or deep relaxation. We have a passion for healing work and believe that massage can be beneficial in many ways.</p>
-            <p style="text-indent: none; text-align: center;">We look forward to working with you! </p>
-        </div>
-        <div class="benefits-text"><hr/></div>
-        <div class="benefits-header text-center">
-            <h2>Cancellation Policy</h2>
-        </div>
-        <div class="benefits-text text-justify">
-            <p>We have reserved a special time just for you with one of our providers. If you need to cancel your time with us, we require a 24-hour cancellation notice. If you do not call us or email us before your appointment we will charge 100% of the price of the service as a cancellation fee. If you are able to call us during the 24 hours before and you would like to reschedule your appointment for something in the following 2 weeks only a 50% cancellation fee will be charged for all treatments. This fee covers the time of the service provider. Scheduling an appointment with us is your acceptance of these policies.</p>
-            <p><strong>Late Arrival Policy:</strong> All massage appointments have been designed to allow appropriate time for full enjoyment of each service. Your late arrival may limit our ability to offer the fullest possible experience. Please be aware that late arrivals will not be afforded extension of scheduled treatments. Treatments will be rendered only for the remainder of the scheduled appointment and you will be responsible for payment for the full service.</p>
-        </div>
+<section class="cancellation-section">
+    <div class="cancellation-header text-center">
+        <h2>Cancellation Policy</h2>
+    </div>
+    <div class="cancellation-text text-justify">
+        <p>We have reserved a special time just for you with one of our providers. If you need to cancel your time with us, we require a 24-hour cancellation notice. If you do not call us or email us before your appointment we will charge 100% of the price of the service as a cancellation fee. If you are able to call us during the 24 hours before and you would like to reschedule your appointment for something in the following 2 weeks only a 50% cancellation fee will be charged for all treatments. This fee covers the time of the service provider. Scheduling an appointment with us is your acceptance of these policies.</p>
+        <p><strong>Late Arrival Policy:</strong> All massage appointments have been designed to allow appropriate time for full enjoyment of each service. Your late arrival may limit our ability to offer the fullest possible experience. Please be aware that late arrivals will not be afforded extension of scheduled treatments. Treatments will be rendered only for the remainder of the scheduled appointment and you will be responsible for payment for the full service.</p>
     </div>
 </section>
 
