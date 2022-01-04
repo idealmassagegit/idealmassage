@@ -2057,6 +2057,7 @@ header #sticky-nav .nav-item.services-parent ul {
       -ms-flex: 0;
           flex: 0;
   height: 0;
+  list-style-type: none;
   overflow: hidden;
   padding: 0 15px;
   position: absolute;
@@ -2074,6 +2075,11 @@ header #sticky-nav .nav-item.services-parent ul {
     height: auto;
     display: block;
   }
+}
+
+header #main-nav .nav-item.services-parent ul li a,
+header #sticky-nav .nav-item.services-parent ul li a {
+  padding: 0;
 }
 
 @media (min-width: 766px) {
