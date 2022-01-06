@@ -529,7 +529,7 @@
   padding: 20px 40px;
 }
 
-.price-preview .price-preview-box .preview-prices div {
+.price-preview .price-preview-box .preview-prices p {
   color: #3d321d;
   font-family: "Montserrat", sans-serif;
   font-size: 15pt;
@@ -539,7 +539,7 @@
   text-align: center;
 }
 
-.price-preview .price-preview-box .preview-prices div span {
+.price-preview .price-preview-box .preview-prices p span {
   font-style: italic;
   font-weight: normal;
 }
@@ -2085,7 +2085,7 @@ header #sticky-nav .nav-item.services-parent ul li a {
 @media (min-width: 766px) {
   header #main-nav .nav-item.services-parent:hover ul,
   header #sticky-nav .nav-item.services-parent:hover ul {
-    height: 150px;
+    height: 130px;
     padding: 15px;
   }
 }

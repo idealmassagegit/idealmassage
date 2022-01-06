@@ -69,7 +69,7 @@ $(function(){
 	if (win < 980) {
 		$('.nav-link.schedule-btn').text('BOOK NOW');
 	} else {
-		$('.nav-link.schedule-btn').text('SCHEDULE MY MASSAGE');
+		$('.nav-link.schedule-btn').text('SCHEDULE APPOINTMENT');
 	}
 
 	// if (win < 558) {
