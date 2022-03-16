@@ -116,27 +116,27 @@
   -webkit-box-shadow: inset 0 0 20px #304800;
           box-shadow: inset 0 0 20px #304800;
   margin: auto;
-  top: 15%;
+  top: 2%;
   border-radius: 0;
   border: none;
-  width: 900px;
+  width: 500px;
 }
 
 @media (max-width: 650px) {
   .modal-content {
-    width: 90%;
+    width: 80%;
+    top: 15%;
   }
 }
 
 @media (max-width: 550px) {
   .modal-content {
-    width: 97%;
+    width: 90%;
   }
 }
 
 .modal-header {
-  background: #233500;
-  background: linear-gradient(230deg, #233500 0%, #558000 100%);
+  background: #0b0316;
   border-radius: 0;
   border: none;
   width: 100%;
