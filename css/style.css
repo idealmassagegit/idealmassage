@@ -2215,7 +2215,7 @@ header #sticky-nav .nav-item.services-parent ul li a {
 @media (min-width: 766px) {
   header #main-nav .nav-item.services-parent:hover ul,
   header #sticky-nav .nav-item.services-parent:hover ul {
-    height: 130px;
+    height: 150px;
     padding: 15px;
   }
 }
