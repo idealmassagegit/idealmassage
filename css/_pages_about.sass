@@ -8,8 +8,10 @@
 	background-position: center
 	background-attachment: fixed
 	background-image: url('../img/massage-guy.jpg')
+
 	.about-box
 		background-color: rgba(246,246,246,.8)
+
 	.about-title
 		color: #3d321d
 		font-family: "Pathway Gothic One", sans-serif
@@ -21,6 +23,7 @@
 			padding-bottom: 15px
 		@media (max-width: 420px)
 			font-size: 30px
+
 	.about-text-box
 		padding: 35px 0
 		max-width: 900px
@@ -30,15 +33,18 @@
 			padding: 0 40px
 		@media (max-width: 450px)
 			padding: 0 20px
+
 		.address
 			font-weight: bold
 			@media (max-width: 600px)
 				font-size: 14px
+
 		p
 			color: #3d321d
 			font-size: 18px
 			line-height: 35px
 			padding: 15px 0
+
 		a
 			color: #558000
 			letter-spacing: 1px
@@ -63,9 +69,15 @@
 		width: 90%
 	@media (max-width: 420px)
 		width: 100%
+
 .about-tabs
 	margin-top: 50px
 	padding: 0
+	@media (max-width: 621px)
+		.faq-tab,
+		.cancel-tab
+			line-height: 2
+
 	.nav-link
 		border-radius: 0
 		color: $green
@@ -81,20 +93,19 @@
 			font-size: 18px
 		@media (max-width: 500px)
 			font-size: 16px
-	@media (max-width: 621px)
-		.faq-tab,
-		.cancel-tab
-			line-height: 2
+	
 
 .tab-content
 	margin-top: -2px
 	margin-bottom: 70px
+	
 	#expect,
 	#faq,
 	#cancel
 		background-color: #f6f6f6
 		box-shadow: 0 0 10px #bbb
 		padding: 0 0 20px
+
 	.expect-title,
 	.faq-title,
 	.cancel-title
@@ -117,10 +128,12 @@
 			padding-bottom: 15px
 		@media (max-width: 420px)
 			font-size: 30px
+
 	.expect-block
 		display: flex
 		flex-wrap: wrap
 		position: relative
+
 		.copy-box,
 		.img-box
 			width: 50%
@@ -150,6 +163,7 @@
 			.copy-box,
 			.img-box
 				width: 100%	
+
 		.copy-box
 			padding: 0 30px
 			position: relative
@@ -157,6 +171,7 @@
 				padding: 0
 			@media (max-width: 420px)
 				padding: 15px
+
 			p
 				top: 50%
 				transform: translateY(-50%)
@@ -167,6 +182,7 @@
 				line-height: 40px
 				max-width: 500px
 				margin: 0 auto
+
 				span
 					color: #558000
 					font-size: 24px
@@ -197,6 +213,7 @@
 		padding: 0 40px	40px
 		@media (max-width: 600px)
 			padding: 0 20px 20px
+
 	.ques-box
 		background-color: white
 		border-left: 2px solid $green
@@ -205,21 +222,26 @@
 		&:hover
 			.ques
 				color: #558000
+
 		.ques
 			padding: 20px
 			cursor: pointer
 			font-size: 20px
 			@media (max-width: 500px)
 				font-size: 18px
+
 			p
 				margin: 0
 				padding: 0
+	
 	.active
 		.answ
-			background-color: rgba(153, 230, 0, .1)
 			max-height: 300px
-			padding-top: 20px
-			padding-bottom: 20px
+			padding-bottom: 15px
+
+			p
+				border-top: 1px solid #ccc
+
 	.expect-natal
 		color: #3d321d
 		font-family: 'Pathway Gothic One', sans-serif
@@ -229,6 +251,7 @@
 		text-align: center
 		@media (max-width: 420px)
 			font-size: 30px
+
 	.natal-copy
 		color: #3d321d
 		font-size: 18px
@@ -262,6 +285,9 @@
 	@media (max-width: 420px)
 		padding-left: 20px
 		padding-right: 20px
+
+	p
+		padding-top: 15px
 		
 .cancel-span
 	display: none

@@ -11,9 +11,7 @@ body
 
 .montage
     overflow: hidden
-header
-    z-index: 2
-    text-align: center
+
 .header-img
     margin-top: 20px
     max-width: 80%
@@ -22,21 +20,29 @@ header
     @media (max-width: 750px)
         margin-top: 70px
 
-header 
+header
+    border-bottom: 5px solid $green
+    text-align: center
+    z-index: 2
+
     svg
         fill: $up1green
+
     #main-nav,
     #sticky-nav
         font-family: "Pathway Gothic One", sans-serif
         z-index: 420
         width: 100%
-
+        
         a.nav-link
             color: $brown
             font-size: 18pt
             transition: all .3s
             &:hover
                 color: $up1green
+
+        ul.subnav li
+            padding: 5px 0
 
         .nav-item.services-parent
             cursor: pointer

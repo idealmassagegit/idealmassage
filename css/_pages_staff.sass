@@ -6,6 +6,7 @@
 	background-attachment: fixed
 	padding-top: 1px
 	padding-bottom: 70px
+
 	h1
 		color: #3d321d
 		font-size: 50px
@@ -13,47 +14,114 @@
 		margin: 20px 0
 		@media (max-width: 500px)
 			margin: 0
+
 	.staff-box
+		display: flex
+		flex-direction: row
+		flex-wrap: nowrap
 		margin: 0 auto
-		max-width: 800px
+		max-width: 1200px
 		@media (max-width: 1000px)
 			width: 95%
+
+		.photo-grid
+			width: 50%
+			@media (max-width: 600px)
+				width: 35%
+
 		.pic-row
 			display: flex
 			justify-content: space-around
-			div
-				width: 45%
-				margin: 0 auto
-			img
+			flex-wrap: wrap
+			margin-bottom: 15px
+			width: 100%
+
+			.jeanette-box,
+			.latoya-box,
+			.danielle-box,
+			.samantha-box,
+			.cynthia-box,
+			.chelsey-box
+				background-size: contain
+				background-repeat: no-repeat
 				cursor: pointer
-				opacity: .7
-				transition: all .3s
-				width: 95%
-				margin: 0 auto
+				height: 160px
+				width: 160px
+				margin: 0 8px 16px
+				padding:  5px
+				@media (max-width: 800px)
+					height: 120px
+					width: 120px
+				@media (max-width: 500px)
+					height: 100px
+					width: 100px
+				.active
+					cursor: default
+
+			.jeanette-box
+				background-image: url('../img/jeanette-bw.jpg')
 				&:hover
-					box-shadow: 3px 3px 3px  #ddd
-					opacity: 1
-			img.active
-				box-shadow: 3px 3px 3px  #ddd
-				cursor: default
-				opacity: 1
-		.main-pic-row
-			@media (max-width: 500px)
-				display: none
+					background-image: url('../img/jeanette.jpg')
+			.jeanette-box.active
+				background-image: url('../img/jeanette.jpg')
+
+			.latoya-box
+				background-image: url('../img/latoya-bw.jpg')
+				&:hover
+					background-image: url('../img/latoya.jpg')
+			.latoya-box.active
+				background-image: url('../img/latoya.jpg')
+
+			.danielle-box
+				background-image: url('../img/danielle-bw.jpg')
+				&:hover
+					background-image: url('../img/danielle.jpg')
+			.danielle-box.active
+				background-image: url('../img/danielle.jpg')
+
+			.samantha-box
+				background-image: url('../img/samantha-bw.jpg')
+				&:hover
+					background-image: url('../img/samantha.jpg')
+			.samantha-box.active
+				background-image: url('../img/samantha.jpg')
+
+			.cynthia-box
+				background-image: url('../img/cynthia-bw.jpg')
+				&:hover
+					background-image: url('../img/cynthia.jpg')
+			.cynthia-box.active
+				background-image: url('../img/cynthia.jpg')
+
+			.chelsey-box
+				background-image: url('../img/chelsey-bw.jpg')
+				&:hover
+					background-image: url('../img/chelsey.jpg')
+			.chelsey-box.active
+				background-image: url('../img/chelsey.jpg')
+
 	.text-row
 		background-color: #f6f6f6
 		border-top: 4px solid $green
 		box-shadow: 0 0 10px #bbb
-		margin-top: 25px
+		margin: 0 auto
+		margin-right: 0
 		padding: 0 20px 20px 20px
+		width: 50%
+		@media (max-width: 600px)
+			width: 65%
+
 		.jeanette,
 		.chelsey,
 		.latoya,
+		.samantha,
+		.cynthia,
 		.danielle
 			max-height: 0
 			opacity: 0
 			overflow: hidden
 			transition: all .3s
+
 		.active
 			opacity: 1
 			max-height: 400px
@@ -61,6 +129,7 @@
 				max-height: 550px
 			@media (max-width: 450px)
 				max-height: 800px
+
 		p
 			color: #3d321d
 			font-size: 16px
@@ -68,12 +137,14 @@
 			@media (max-width: 450px)
 				font-size: 14px
 				line-height: 27px
+
 		.lang
 			color: #558000
 			cursor: pointer
 			font-style: italic
 			font-size: 1.3rem
 			text-align: center
+
 		h2
 			color: #3d321d
 			font-family: "Pathway Gothic One", sans-serif
@@ -82,16 +153,3 @@
 			padding-top: 15px
 			padding-bottom: 15px
 			text-align: center
-
-
-	.mobile-pic-row
-		display: none
-		.pic-row
-			justify-content: center
-			padding-top: 15px
-			div
-				width: 40%
-		@media (max-width: 500px)
-			display: block
-		
-

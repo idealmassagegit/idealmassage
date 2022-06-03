@@ -81,32 +81,46 @@ $(function(){
 
 	// Staff
 
-	$('.chelsey-image').click(function(){
+	$('.chelsey-box').click(function(){
 		if (!$(this).hasClass('active')) {
-			$('.pic-row img, .text-row div').removeClass('active');
+			$('.pic-row div, .text-row div').removeClass('active');
 			$(this).addClass('active');
 			$('.chelsey').addClass('active');
 		}
 	});
-	$('.jeanette-image').click(function(){
+	$('.jeanette-box').click(function(){
 		if (!$(this).hasClass('active')) {
-			$('.pic-row img, .text-row div').removeClass('active');
+			$('.pic-row div, .text-row div').removeClass('active');
 			$(this).addClass('active');
 			$('.jeanette').addClass('active');
 		}
 	});
-	$('.latoya-image').click(function(){
+	$('.latoya-box').click(function(){
 		if (!$(this).hasClass('active')) {
-			$('.pic-row img, .text-row div').removeClass('active');
+			$('.pic-row div, .text-row div').removeClass('active');
 			$(this).addClass('active');
 			$('.latoya').addClass('active');
 		}
 	});
-	$('.danielle-image').click(function(){
+	$('.danielle-box').click(function(){
 		if (!$(this).hasClass('active')) {
-			$('.pic-row img, .text-row div').removeClass('active');
+			$('.pic-row div, .text-row div').removeClass('active');
 			$(this).addClass('active');
 			$('.danielle').addClass('active');
+		}
+	});
+	$('.cynthia-box').click(function(){
+		if (!$(this).hasClass('active')) {
+			$('.pic-row div, .text-row div').removeClass('active');
+			$(this).addClass('active');
+			$('.cynthia').addClass('active');
+		}
+	});
+	$('.samantha-box').click(function(){
+		if (!$(this).hasClass('active')) {
+			$('.pic-row div, .text-row div').removeClass('active');
+			$(this).addClass('active');
+			$('.samantha').addClass('active');
 		}
 	});
 
