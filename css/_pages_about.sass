@@ -25,19 +25,31 @@
 			font-size: 30px
 
 	.about-text-box
-		padding: 35px 0
-		max-width: 900px
+		display: flex
+		flex-direction: row
+		flex-wrap: nowrap
+		max-width: 1000px
 		margin: 0 auto
-		text-align: center
+		padding: 0 0 35px 0
+		// text-align: center
 		@media (max-width: 1200px)
 			padding: 0 40px
+		@media (max-width: 768px)
+			display: block
 		@media (max-width: 450px)
 			padding: 0 20px
 
-		.address
-			font-weight: bold
-			@media (max-width: 600px)
-				font-size: 14px
+		.left
+			width: 50%
+			@media (max-width: 768px)
+				width: 100%
+		.right
+			padding-left: 40px
+			width: 50%
+			@media (max-width: 768px)
+				padding: 0
+				width: 100%
+
 
 		p
 			color: #3d321d
@@ -45,11 +57,20 @@
 			line-height: 35px
 			padding: 15px 0
 
+
+	.address
+		font-weight: bold
+		text-align: center
+		@media (max-width: 768px)
+				padding-top: 20px
+		@media (max-width: 600px)
+			font-size: 14px
+
 		a
 			color: #558000
 			letter-spacing: 1px
 			padding: 10px 5px
-			text-decoration: underline
+			text-decoration: none
 			&:hover
 				color: #77b300
 
