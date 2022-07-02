@@ -1567,6 +1567,7 @@
       flex-wrap: nowrap;
   margin: 0 auto;
   max-width: 1200px;
+  position: relative;
 }
 
 @media (max-width: 1000px) {
@@ -1725,6 +1726,8 @@
   margin: 0 auto;
   margin-right: 0;
   padding: 0 20px 20px 20px;
+  position: absolute;
+  right: 0;
   width: 50%;
 }
 
