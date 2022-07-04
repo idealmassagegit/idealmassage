@@ -1798,6 +1798,10 @@
   text-align: center;
 }
 
+.hidden {
+  display: none;
+}
+
 .exampleofmixing {
   -webkit-transform: rotate(30deg);
   transform: rotate(30deg);
