@@ -503,10 +503,7 @@
 }
 
 .price-preview {
-  background: #233500;
-  background: linear-gradient(130deg, #233500 0%, #558000 100%);
   margin-top: -35px;
-  padding: 30px 0 55px;
 }
 
 .price-preview h3 {
