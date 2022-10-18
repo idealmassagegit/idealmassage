@@ -937,8 +937,19 @@
   padding: 15px 0;
 }
 
+.about-section .service-list li {
+  color: #3d321d;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 15px 0;
+  text-align: center;
+}
+
 .about-section .address {
+  font-size: 22px;
   font-weight: bold;
+  margin-top: 24px;
+  margin-bottom: 24px;
   text-align: center;
 }
 
@@ -1113,16 +1124,6 @@
   margin: 0 auto;
 }
 
-@media (max-width: 1175px) {
-  #expect .expect-block .copy-box {
-    width: 60%;
-    margin: 0 2.5%;
-  }
-  #expect .expect-block .img-box {
-    width: 35%;
-  }
-}
-
 @media (max-width: 700px) {
   #expect .expect-block {
     margin: 20px 0;
@@ -1161,7 +1162,6 @@
 }
 
 #expect .expect-block .copy-box {
-  padding: 0 30px;
   position: relative;
 }
 
@@ -1178,39 +1178,33 @@
 }
 
 #expect .expect-block .copy-box p {
+  color: #558000;
+  position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  position: absolute;
-  color: #3d321d;
-  display: inline-block;
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: bold;
   line-height: 40px;
+  width: 100%;
   max-width: 500px;
   margin: 0 auto;
+  text-align: center;
 }
 
 #expect .expect-block .copy-box p span {
-  color: #558000;
+  display: block;
   font-size: 24px;
-  font-weight: bold;
   padding: 0 5px;
 }
 
 @media (max-width: 1175px) {
-  #expect .expect-block .copy-box p {
-    font-size: 17px;
-  }
   #expect .expect-block .copy-box p span {
     font-size: 21px;
   }
 }
 
 @media (max-width: 850px) {
-  #expect .expect-block .copy-box p {
-    font-size: 15px;
-    line-height: 30px;
-  }
   #expect .expect-block .copy-box p span {
     font-size: 18px;
   }
@@ -1225,7 +1219,6 @@
 @media (max-width: 600px) {
   #expect .expect-block .copy-box p {
     position: relative;
-    text-align: justify;
   }
 }
 
@@ -1286,7 +1279,7 @@
   border-top: 1px solid #ccc;
 }
 
-#faq .expect-natal {
+#faq h3 {
   color: #3d321d;
   font-family: 'Pathway Gothic One', sans-serif;
   font-size: 40px;
@@ -1296,12 +1289,13 @@
 }
 
 @media (max-width: 420px) {
-  #faq .expect-natal {
+  #faq h3 {
     font-size: 30px;
   }
 }
 
-#faq .natal-copy {
+#faq .natal-copy,
+#faq .foot-copy {
   color: #3d321d;
   font-size: 18px;
   line-height: 35px;
@@ -1310,27 +1304,169 @@
 }
 
 @media (max-width: 420px) {
-  #faq .natal-copy {
+  #faq .natal-copy,
+  #faq .foot-copy {
     font-size: 16px;
     line-height: 27px;
     padding: 20px;
   }
 }
 
-#faq .natal-copy h3 {
+#faq .natal-copy h3,
+#faq .foot-copy h3 {
   font-size: 40px;
 }
 
-#faq .natal-copy h5 {
+#faq .natal-copy h5,
+#faq .foot-copy h5 {
   margin-top: 20px;
   font-size: 30px;
   font-family: "Pathway Gothic One", sans-serif;
   padding-bottom: 15px;
 }
 
-#faq .natal-copy li {
+#faq .natal-copy li,
+#faq .foot-copy li {
   list-style-type: disc;
   margin-left: 35px;
+}
+
+#faq .foot-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+#faq .foot-box .left,
+#faq .foot-box .right {
+  width: 50%;
+}
+
+#faq table.foot-bath-colors {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+  #faq table.foot-bath-colors thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  #faq table.foot-bath-colors tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+  }
+  #faq table.foot-bath-colors td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  #faq table.foot-bath-colors td:last-child {
+    border-bottom: 0;
+  }
+}
+
+#faq table.foot-bath-colors th,
+#faq table.foot-bath-colors td {
+  border: 1px solid #555;
+  padding: 16px;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  #faq table.foot-bath-colors th,
+  #faq table.foot-bath-colors td {
+    text-align: center;
+  }
+}
+
+#faq table.foot-bath-colors th {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+#faq table.foot-bath-colors .color {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 25%;
+}
+
+@media (max-width: 1200px) {
+  #faq table.foot-bath-colors .color {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  #faq table.foot-bath-colors .color {
+    width: auto;
+  }
+}
+
+#faq table.foot-bath-colors .yelgreen {
+  background-color: #c8e90e;
+}
+
+#faq table.foot-bath-colors .orange {
+  background-color: #ee9d33;
+}
+
+#faq table.foot-bath-colors .brown {
+  background-color: #61452d;
+  color: #f6f6f6;
+}
+
+#faq table.foot-bath-colors .whitechs {
+  background-image: radial-gradient(#e5e5e5 35%, transparent 20%);
+  background-color: #accee2;
+  background-position: 0 0, -10px -10px;
+  background-size: 40px 40px;
+}
+
+#faq table.foot-bath-colors .grnblack {
+  background: #304800;
+  background: linear-gradient(35deg, #304800 33%, black 100%);
+  color: #f6f6f6;
+}
+
+#faq table.foot-bath-colors .red {
+  background-image: radial-gradient(#d33131 35%, transparent 20%);
+  background-color: #bdd8e7;
+  background-position: 0 0, 50px 50px;
+  background-size: 10px 10px;
+  color: #111a00;
+}
+
+#faq table.foot-bath-colors .white {
+  background-color: #eaeaea;
+}
+
+#faq table.foot-bath-colors .black {
+  background-image: radial-gradient(#111a00 35%, transparent 20%);
+  background-color: #bdd8e7;
+  background-position: 0 0, 50px 50px;
+  background-size: 10px 10px;
+  color: #111a00;
+}
+
+#faq table.foot-bath-colors span {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
+  color: #f6f6f6;
+  padding: 8px 16px;
 }
 
 .answ {

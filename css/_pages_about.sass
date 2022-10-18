@@ -50,16 +50,25 @@
 				padding: 0
 				width: 100%
 
-
 		p
 			color: #3d321d
 			font-size: 18px
 			line-height: 35px
 			padding: 15px 0
 
+	.service-list
+		li
+			color: #3d321d
+			font-size: 24px
+			line-height: 24px
+			padding: 15px 0
+			text-align: center
 
 	.address
+		font-size: 22px
 		font-weight: bold
+		margin-top: 24px
+		margin-bottom: 24px
 		text-align: center
 		@media (max-width: 768px)
 				padding-top: 20px
@@ -160,11 +169,11 @@
 			width: 50%
 			margin: 0 auto
 		@media (max-width: 1175px)
-			.copy-box
-				width: 60%
-				margin: 0 2.5%
-			.img-box
-				width: 35%
+			// .copy-box
+				// width: 60%
+				// margin: 0 2.5%
+			// .img-box
+				// width: 35%
 		@media (max-width: 700px)
 			margin: 20px 0
 		@media (max-width: 600px)
@@ -186,7 +195,7 @@
 				width: 100%	
 
 		.copy-box
-			padding: 0 30px
+			// padding: 0 30px
 			position: relative
 			@media (max-width: 600px)
 				padding: 0
@@ -194,35 +203,38 @@
 				padding: 15px
 
 			p
+				// color: #3d321d
+				color: #558000
+				position: absolute
 				top: 50%
 				transform: translateY(-50%)
-				position: absolute
-				color: #3d321d
-				display: inline-block
-				font-size: 20px
+				// display: inline-block
+				font-size: 30px
+				font-weight: bold
 				line-height: 40px
+				width: 100%
 				max-width: 500px
 				margin: 0 auto
+				text-align: center
 
 				span
-					color: #558000
+					display: block
 					font-size: 24px
-					font-weight: bold
 					padding: 0 5px
 				@media (max-width: 1175px)
-					font-size: 17px
+					// font-size: 17px
 					span
 						font-size: 21px
 				@media (max-width: 850px)
-					font-size: 15px
-					line-height: 30px
+					// font-size: 15px
+					// line-height: 30px
 					span
 						font-size: 18px
 				@media (max-width: 700px)
 					line-height: 25px
 				@media (max-width: 600px)
 					position: relative
-					text-align: justify
+					// text-align: justify
 				@media (max-width: 450px)
 					text-align: center		
 		.img-box
@@ -263,7 +275,7 @@
 			p
 				border-top: 1px solid #ccc
 
-	.expect-natal
+	h3
 		color: #3d321d
 		font-family: 'Pathway Gothic One', sans-serif
 		font-size: 40px
@@ -273,7 +285,8 @@
 		@media (max-width: 420px)
 			font-size: 30px
 
-	.natal-copy
+	.natal-copy,
+	.foot-copy
 		color: #3d321d
 		font-size: 18px
 		line-height: 35px
@@ -293,7 +306,107 @@
 		li
 			list-style-type: disc
 			margin-left: 35px
+
+	.foot-box
+		display: flex
+		margin-bottom: 24px
+
+		.left,
+		.right
+			width: 50%
+
+	table.foot-bath-colors
+		box-shadow: 0px 0px 10px rgba(0,0,0,.4)
+		margin-top: 24px
+		@media (max-width: 768px)
+			thead 
+				border: none
+				clip: rect(0 0 0 0)
+				height: 1px
+				margin: -1px
+				overflow: hidden
+				padding: 0
+				position: absolute
+				width: 1px
+  
+			tr 
+				border-bottom: 3px solid #ddd
+				display: block
 			
+			td 
+				border-bottom: 1px solid #ddd
+				display: block
+				font-size: .8em
+				text-align: right
+			
+			// td::before 
+			// 	content: attr(data-label)
+			// 	float: left
+			// 	font-weight: bold
+			// 	text-transform: uppercase
+
+			td:last-child 
+				border-bottom: 0
+  
+		th,
+		td
+			border: 1px solid #555
+			padding: 16px
+			vertical-align: middle
+			@media (max-width: 768px)
+				text-align: center
+		th
+			font-size: 24px
+			font-weight: bold
+			letter-spacing: 1px
+			text-align: center
+		.color
+			font-size: 24px
+			font-weight: bold
+			letter-spacing: 1px
+			text-align: center
+			width: 25%
+			@media (max-width: 1200px)
+				font-size: 18px
+			@media (max-width: 768px)
+				width: auto
+		.yelgreen
+			background-color: $yellowgreen
+		.orange
+			background-color: $orange
+		.brown
+			background-color: $lightbrown
+			color: $white
+		.whitechs
+			background-image: radial-gradient(#e5e5e5 35%, transparent 20%)
+			background-color: #accee2
+			background-position: 0 0, -10px -10px
+			background-size: 40px 40px
+		.grnblack
+			background: $green
+			background: linear-gradient(35deg, $green 33%, rgba(0,0,0,1) 100%)			
+			color: $white
+		.red
+			background-image: radial-gradient($red 35%, transparent 20%)
+			background-color: #bdd8e7
+			background-position: 0 0, 50px 50px
+			background-size: 10px 10px
+			color: $black
+		.white
+			background-color: #eaeaea
+		.black
+			background-image: radial-gradient($black 35%, transparent 20%)
+			background-color: #bdd8e7
+			background-position: 0 0, 50px 50px
+			background-size: 10px 10px
+			// background-color: $black
+			color: $black
+
+		span
+			background-color: rgba(0,0,0,.7)
+			border-radius: 4px
+			color: $white
+			padding: 8px 16px
 .answ
 	color: #3d321d
 	font-size: 16px
