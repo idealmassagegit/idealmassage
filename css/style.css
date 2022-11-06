@@ -2351,7 +2351,7 @@ header #sticky-nav a.nav-link:hover {
 
 header #main-nav ul.subnav li,
 header #sticky-nav ul.subnav li {
-  padding: 8px 0;
+  padding: 5px 0;
 }
 
 header #main-nav .nav-item.services-parent,
