@@ -102,18 +102,18 @@ $(function(){
 			$('.latoya').addClass('active');
 		}
 	});
-	$('.danielle-box').click(function(){
+	$('.rachel-box').click(function(){
 		if (!$(this).hasClass('active')) {
 			$('.pic-row div, .text-row div').removeClass('active');
 			$(this).addClass('active');
-			$('.danielle').addClass('active');
+			$('.rachel').addClass('active');
 		}
 	});
-	$('.cynthia-box').click(function(){
+	$('.carla-box').click(function(){
 		if (!$(this).hasClass('active')) {
 			$('.pic-row div, .text-row div').removeClass('active');
 			$(this).addClass('active');
-			$('.cynthia').addClass('active');
+			$('.carla').addClass('active');
 		}
 	});
 	$('.samantha-box').click(function(){
