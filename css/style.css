@@ -1744,9 +1744,9 @@
 
 #staff .staff-box .pic-row .jeanette-box,
 #staff .staff-box .pic-row .latoya-box,
-#staff .staff-box .pic-row .danielle-box,
+#staff .staff-box .pic-row .rachel-box,
 #staff .staff-box .pic-row .samantha-box,
-#staff .staff-box .pic-row .cynthia-box,
+#staff .staff-box .pic-row .carla-box,
 #staff .staff-box .pic-row .chelsey-box {
   background-size: contain;
   background-repeat: no-repeat;
@@ -1760,9 +1760,9 @@
 @media (max-width: 800px) {
   #staff .staff-box .pic-row .jeanette-box,
   #staff .staff-box .pic-row .latoya-box,
-  #staff .staff-box .pic-row .danielle-box,
+  #staff .staff-box .pic-row .rachel-box,
   #staff .staff-box .pic-row .samantha-box,
-  #staff .staff-box .pic-row .cynthia-box,
+  #staff .staff-box .pic-row .carla-box,
   #staff .staff-box .pic-row .chelsey-box {
     height: 120px;
     width: 120px;
@@ -1772,9 +1772,9 @@
 @media (max-width: 500px) {
   #staff .staff-box .pic-row .jeanette-box,
   #staff .staff-box .pic-row .latoya-box,
-  #staff .staff-box .pic-row .danielle-box,
+  #staff .staff-box .pic-row .rachel-box,
   #staff .staff-box .pic-row .samantha-box,
-  #staff .staff-box .pic-row .cynthia-box,
+  #staff .staff-box .pic-row .carla-box,
   #staff .staff-box .pic-row .chelsey-box {
     height: 100px;
     width: 100px;
@@ -1783,9 +1783,9 @@
 
 #staff .staff-box .pic-row .jeanette-box .active,
 #staff .staff-box .pic-row .latoya-box .active,
-#staff .staff-box .pic-row .danielle-box .active,
+#staff .staff-box .pic-row .rachel-box .active,
 #staff .staff-box .pic-row .samantha-box .active,
-#staff .staff-box .pic-row .cynthia-box .active,
+#staff .staff-box .pic-row .carla-box .active,
 #staff .staff-box .pic-row .chelsey-box .active {
   cursor: default;
 }
@@ -1814,16 +1814,16 @@
   background-image: url("../img/latoya.jpg");
 }
 
-#staff .staff-box .pic-row .danielle-box {
-  background-image: url("../img/danielle-bw.jpg");
+#staff .staff-box .pic-row .rachel-box {
+  background-image: url("../img/rachel-bw.jpg");
 }
 
-#staff .staff-box .pic-row .danielle-box:hover {
-  background-image: url("../img/danielle.jpg");
+#staff .staff-box .pic-row .rachel-box:hover {
+  background-image: url("../img/rachel.jpg");
 }
 
-#staff .staff-box .pic-row .danielle-box.active {
-  background-image: url("../img/danielle.jpg");
+#staff .staff-box .pic-row .rachel-box.active {
+  background-image: url("../img/rachel.jpg");
 }
 
 #staff .staff-box .pic-row .samantha-box {
@@ -1838,16 +1838,16 @@
   background-image: url("../img/samantha.jpg");
 }
 
-#staff .staff-box .pic-row .cynthia-box {
-  background-image: url("../img/cynthia-bw.jpg");
+#staff .staff-box .pic-row .carla-box {
+  background-image: url("../img/carla-bw.jpg");
 }
 
-#staff .staff-box .pic-row .cynthia-box:hover {
-  background-image: url("../img/cynthia.jpg");
+#staff .staff-box .pic-row .carla-box:hover {
+  background-image: url("../img/carla.jpg");
 }
 
-#staff .staff-box .pic-row .cynthia-box.active {
-  background-image: url("../img/cynthia.jpg");
+#staff .staff-box .pic-row .carla-box.active {
+  background-image: url("../img/carla.jpg");
 }
 
 #staff .staff-box .pic-row .chelsey-box {
@@ -1885,8 +1885,8 @@
 #staff .text-row .chelsey,
 #staff .text-row .latoya,
 #staff .text-row .samantha,
-#staff .text-row .cynthia,
-#staff .text-row .danielle {
+#staff .text-row .carla,
+#staff .text-row .rachel {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
@@ -2285,6 +2285,101 @@
 
 .flex-direction-nav a:before {
   color: #77b300;
+}
+
+.foot-bath-chart {
+  text-align: center;
+}
+
+.foot-bath-chart h2 {
+  color: #304800;
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.foot-bath-chart img {
+  margin-bottom: 32px;
+  max-width: 700px;
+}
+
+@media (max-width: 750px) {
+  .foot-bath-chart img {
+    max-width: 90%;
+  }
+}
+
+.foot-bath-chart table {
+  border: 2px solid black;
+  margin: 0 auto;
+}
+
+.foot-bath-chart table thead th {
+  border-bottom: 2px solid black;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px;
+  text-align: center;
+}
+
+.foot-bath-chart table thead th:nth-child(1) {
+  border-right: 2px solid black;
+}
+
+.foot-bath-chart table thead th:nth-child(2) {
+  border-right: 2px solid black;
+}
+
+.foot-bath-chart table tbody td {
+  padding: 12px;
+}
+
+.foot-bath-chart table tbody td:nth-child(1) {
+  border-right: 2px solid black;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.foot-bath-chart table tbody td:nth-child(2) {
+  border-right: 2px solid black;
+}
+
+.foot-bath-chart table .yellow-green {
+  background-color: #b6d333;
+}
+
+.foot-bath-chart table .orange {
+  background-color: #cf6711;
+}
+
+.foot-bath-chart table .brown {
+  background-color: #5a3c15;
+  color: white;
+}
+
+.foot-bath-chart table .white {
+  background-color: #eee;
+}
+
+.foot-bath-chart table .dark-green {
+  background-color: #304800;
+  color: white;
+}
+
+.foot-bath-chart table .red {
+  background-color: #db3e3e;
+}
+
+.foot-bath-chart table .foam {
+  background-color: #dadada;
+}
+
+.foot-bath-chart table .black {
+  background-color: #222;
+  color: white;
 }
 
 .exampleofmixing {
