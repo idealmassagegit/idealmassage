@@ -88,18 +88,18 @@ $(function(){
 			$('.chelsey').addClass('active');
 		}
 	});
-	$('.jeanette-box').click(function(){
+	$('.julia-box').click(function(){
 		if (!$(this).hasClass('active')) {
 			$('.pic-row div, .text-row div').removeClass('active');
 			$(this).addClass('active');
-			$('.jeanette').addClass('active');
+			$('.julia').addClass('active');
 		}
 	});
-	$('.latoya-box').click(function(){
+	$('.marissa-box').click(function(){
 		if (!$(this).hasClass('active')) {
 			$('.pic-row div, .text-row div').removeClass('active');
 			$(this).addClass('active');
-			$('.latoya').addClass('active');
+			$('.marissa').addClass('active');
 		}
 	});
 	$('.rachel-box').click(function(){

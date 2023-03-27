@@ -1675,7 +1675,7 @@
   width: 50%;
 }
 
-#staff {
+.staff {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1686,7 +1686,7 @@
   padding-bottom: 70px;
 }
 
-#staff h1 {
+.staff h1 {
   color: #3d321d;
   font-size: 50px;
   font-family: "Pathway Gothic One", sans-serif;
@@ -1694,12 +1694,20 @@
 }
 
 @media (max-width: 500px) {
-  #staff h1 {
+  .staff h1 {
     margin: 0;
   }
 }
 
-#staff .staff-box {
+.staff h2 {
+  color: #3d321d;
+  font-size: 30px;
+  font-family: "Pathway Gothic One", sans-serif;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.staff .staff-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1715,39 +1723,49 @@
 }
 
 @media (max-width: 1000px) {
-  #staff .staff-box {
+  .staff .staff-box {
     width: 95%;
   }
 }
 
-#staff .staff-box .photo-grid {
-  width: 50%;
-}
-
-@media (max-width: 600px) {
-  #staff .staff-box .photo-grid {
-    width: 35%;
+@media (max-width: 700px) {
+  .staff .staff-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
-#staff .staff-box .pic-row {
+.staff .staff-box .photo-grid {
+  width: 43%;
+}
+
+@media (max-width: 700px) {
+  .staff .staff-box .photo-grid {
+    width: 100%;
+  }
+}
+
+.staff .staff-box .pic-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 15px;
   width: 100%;
 }
 
-#staff .staff-box .pic-row .jeanette-box,
-#staff .staff-box .pic-row .latoya-box,
-#staff .staff-box .pic-row .rachel-box,
-#staff .staff-box .pic-row .samantha-box,
-#staff .staff-box .pic-row .carla-box,
-#staff .staff-box .pic-row .chelsey-box {
+.staff .staff-box .pic-row .julia-box,
+.staff .staff-box .pic-row .marissa-box,
+.staff .staff-box .pic-row .rachel-box,
+.staff .staff-box .pic-row .samantha-box,
+.staff .staff-box .pic-row .carla-box,
+.staff .staff-box .pic-row .chelsey-box {
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -1758,111 +1776,111 @@
 }
 
 @media (max-width: 800px) {
-  #staff .staff-box .pic-row .jeanette-box,
-  #staff .staff-box .pic-row .latoya-box,
-  #staff .staff-box .pic-row .rachel-box,
-  #staff .staff-box .pic-row .samantha-box,
-  #staff .staff-box .pic-row .carla-box,
-  #staff .staff-box .pic-row .chelsey-box {
+  .staff .staff-box .pic-row .julia-box,
+  .staff .staff-box .pic-row .marissa-box,
+  .staff .staff-box .pic-row .rachel-box,
+  .staff .staff-box .pic-row .samantha-box,
+  .staff .staff-box .pic-row .carla-box,
+  .staff .staff-box .pic-row .chelsey-box {
     height: 120px;
     width: 120px;
   }
 }
 
 @media (max-width: 500px) {
-  #staff .staff-box .pic-row .jeanette-box,
-  #staff .staff-box .pic-row .latoya-box,
-  #staff .staff-box .pic-row .rachel-box,
-  #staff .staff-box .pic-row .samantha-box,
-  #staff .staff-box .pic-row .carla-box,
-  #staff .staff-box .pic-row .chelsey-box {
+  .staff .staff-box .pic-row .julia-box,
+  .staff .staff-box .pic-row .marissa-box,
+  .staff .staff-box .pic-row .rachel-box,
+  .staff .staff-box .pic-row .samantha-box,
+  .staff .staff-box .pic-row .carla-box,
+  .staff .staff-box .pic-row .chelsey-box {
     height: 100px;
     width: 100px;
   }
 }
 
-#staff .staff-box .pic-row .jeanette-box .active,
-#staff .staff-box .pic-row .latoya-box .active,
-#staff .staff-box .pic-row .rachel-box .active,
-#staff .staff-box .pic-row .samantha-box .active,
-#staff .staff-box .pic-row .carla-box .active,
-#staff .staff-box .pic-row .chelsey-box .active {
+.staff .staff-box .pic-row .julia-box .active,
+.staff .staff-box .pic-row .marissa-box .active,
+.staff .staff-box .pic-row .rachel-box .active,
+.staff .staff-box .pic-row .samantha-box .active,
+.staff .staff-box .pic-row .carla-box .active,
+.staff .staff-box .pic-row .chelsey-box .active {
   cursor: default;
 }
 
-#staff .staff-box .pic-row .jeanette-box {
-  background-image: url("../img/jeanette-bw.jpg");
+.staff .staff-box .pic-row .julia-box {
+  background-image: url("../img/julia-bw.jpg");
 }
 
-#staff .staff-box .pic-row .jeanette-box:hover {
-  background-image: url("../img/jeanette.jpg");
+.staff .staff-box .pic-row .julia-box:hover {
+  background-image: url("../img/julia.jpg");
 }
 
-#staff .staff-box .pic-row .jeanette-box.active {
-  background-image: url("../img/jeanette.jpg");
+.staff .staff-box .pic-row .julia-box.active {
+  background-image: url("../img/julia.jpg");
 }
 
-#staff .staff-box .pic-row .latoya-box {
-  background-image: url("../img/latoya-bw.jpg");
+.staff .staff-box .pic-row .marissa-box {
+  background-image: url("../img/marissa-bw.jpg");
 }
 
-#staff .staff-box .pic-row .latoya-box:hover {
-  background-image: url("../img/latoya.jpg");
+.staff .staff-box .pic-row .marissa-box:hover {
+  background-image: url("../img/marissa.jpg");
 }
 
-#staff .staff-box .pic-row .latoya-box.active {
-  background-image: url("../img/latoya.jpg");
+.staff .staff-box .pic-row .marissa-box.active {
+  background-image: url("../img/marissa.jpg");
 }
 
-#staff .staff-box .pic-row .rachel-box {
+.staff .staff-box .pic-row .rachel-box {
   background-image: url("../img/rachel-bw.jpg");
 }
 
-#staff .staff-box .pic-row .rachel-box:hover {
+.staff .staff-box .pic-row .rachel-box:hover {
   background-image: url("../img/rachel.jpg");
 }
 
-#staff .staff-box .pic-row .rachel-box.active {
+.staff .staff-box .pic-row .rachel-box.active {
   background-image: url("../img/rachel.jpg");
 }
 
-#staff .staff-box .pic-row .samantha-box {
+.staff .staff-box .pic-row .samantha-box {
   background-image: url("../img/samantha-bw.jpg");
 }
 
-#staff .staff-box .pic-row .samantha-box:hover {
+.staff .staff-box .pic-row .samantha-box:hover {
   background-image: url("../img/samantha.jpg");
 }
 
-#staff .staff-box .pic-row .samantha-box.active {
+.staff .staff-box .pic-row .samantha-box.active {
   background-image: url("../img/samantha.jpg");
 }
 
-#staff .staff-box .pic-row .carla-box {
+.staff .staff-box .pic-row .carla-box {
   background-image: url("../img/carla-bw.jpg");
 }
 
-#staff .staff-box .pic-row .carla-box:hover {
+.staff .staff-box .pic-row .carla-box:hover {
   background-image: url("../img/carla.jpg");
 }
 
-#staff .staff-box .pic-row .carla-box.active {
+.staff .staff-box .pic-row .carla-box.active {
   background-image: url("../img/carla.jpg");
 }
 
-#staff .staff-box .pic-row .chelsey-box {
+.staff .staff-box .pic-row .chelsey-box {
   background-image: url("../img/chelsey-bw.jpg");
 }
 
-#staff .staff-box .pic-row .chelsey-box:hover {
+.staff .staff-box .pic-row .chelsey-box:hover {
   background-image: url("../img/chelsey.jpg");
 }
 
-#staff .staff-box .pic-row .chelsey-box.active {
+.staff .staff-box .pic-row .chelsey-box.active {
   background-image: url("../img/chelsey.jpg");
 }
 
-#staff .text-row {
+.staff .text-row {
   background-color: #f6f6f6;
   border-top: 4px solid #304800;
   -webkit-box-shadow: 0 0 10px #bbb;
@@ -1872,21 +1890,22 @@
   padding: 0 20px 20px 20px;
   position: absolute;
   right: 0;
-  width: 50%;
+  width: 55%;
 }
 
-@media (max-width: 600px) {
-  #staff .text-row {
-    width: 65%;
+@media (max-width: 700px) {
+  .staff .text-row {
+    position: relative;
+    width: 100%;
   }
 }
 
-#staff .text-row .jeanette,
-#staff .text-row .chelsey,
-#staff .text-row .latoya,
-#staff .text-row .samantha,
-#staff .text-row .carla,
-#staff .text-row .rachel {
+.staff .text-row .julia,
+.staff .text-row .chelsey,
+.staff .text-row .marissa,
+.staff .text-row .samantha,
+.staff .text-row .carla,
+.staff .text-row .rachel {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
@@ -1894,37 +1913,31 @@
   transition: all .3s;
 }
 
-#staff .text-row .active {
+.staff .text-row .active {
   opacity: 1;
-  max-height: 400px;
-}
-
-@media (max-width: 670px) {
-  #staff .text-row .active {
-    max-height: 550px;
-  }
+  max-height: 650px;
 }
 
 @media (max-width: 450px) {
-  #staff .text-row .active {
+  .staff .text-row .active {
     max-height: 800px;
   }
 }
 
-#staff .text-row p {
+.staff .text-row p {
   color: #3d321d;
   font-size: 16px;
   line-height: 30px;
 }
 
 @media (max-width: 450px) {
-  #staff .text-row p {
+  .staff .text-row p {
     font-size: 14px;
     line-height: 27px;
   }
 }
 
-#staff .text-row .lang {
+.staff .text-row .lang {
   color: #558000;
   cursor: pointer;
   font-style: italic;
@@ -1932,7 +1945,7 @@
   text-align: center;
 }
 
-#staff .text-row h2 {
+.staff .text-row h2 {
   color: #3d321d;
   font-family: "Pathway Gothic One", sans-serif;
   font-size: 32px;

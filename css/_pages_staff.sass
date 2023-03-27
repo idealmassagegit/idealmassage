@@ -1,5 +1,5 @@
 
-#staff
+.staff
 	+backgroundCover
 	background-position: left bottom
 	background-image: url('../img/leaf-border.png')
@@ -15,6 +15,13 @@
 		@media (max-width: 500px)
 			margin: 0
 
+	h2
+		color: #3d321d
+		font-size: 30px
+		font-family: "Pathway Gothic One", sans-serif
+		margin-bottom: 16px
+		text-align: center
+
 	.staff-box
 		display: flex
 		flex-direction: row
@@ -24,21 +31,23 @@
 		position: relative
 		@media (max-width: 1000px)
 			width: 95%
+		@media (max-width: 700px)
+			flex-direction: column
 
 		.photo-grid
-			width: 50%
-			@media (max-width: 600px)
-				width: 35%
+			width: 43%
+			@media (max-width: 700px)
+				width: 100%
 
 		.pic-row
 			display: flex
-			justify-content: space-around
+			justify-content: center
 			flex-wrap: wrap
 			margin-bottom: 15px
 			width: 100%
 
-			.jeanette-box,
-			.latoya-box,
+			.julia-box,
+			.marissa-box,
 			.rachel-box,
 			.samantha-box,
 			.carla-box,
@@ -59,19 +68,19 @@
 				.active
 					cursor: default
 
-			.jeanette-box
-				background-image: url('../img/jeanette-bw.jpg')
+			.julia-box
+				background-image: url('../img/julia-bw.jpg')
 				&:hover
-					background-image: url('../img/jeanette.jpg')
-			.jeanette-box.active
-				background-image: url('../img/jeanette.jpg')
+					background-image: url('../img/julia.jpg')
+			.julia-box.active
+				background-image: url('../img/julia.jpg')
 
-			.latoya-box
-				background-image: url('../img/latoya-bw.jpg')
+			.marissa-box
+				background-image: url('../img/marissa-bw.jpg')
 				&:hover
-					background-image: url('../img/latoya.jpg')
-			.latoya-box.active
-				background-image: url('../img/latoya.jpg')
+					background-image: url('../img/marissa.jpg')
+			.marissa-box.active
+				background-image: url('../img/marissa.jpg')
 
 			.rachel-box
 				background-image: url('../img/rachel-bw.jpg')
@@ -110,13 +119,14 @@
 		padding: 0 20px 20px 20px
 		position: absolute
 		right: 0
-		width: 50%
-		@media (max-width: 600px)
-			width: 65%
+		width: 55%
+		@media (max-width: 700px)
+			position: relative
+			width: 100%
 
-		.jeanette,
+		.julia,
 		.chelsey,
-		.latoya,
+		.marissa,
 		.samantha,
 		.carla,
 		.rachel
@@ -127,9 +137,9 @@
 
 		.active
 			opacity: 1
-			max-height: 400px
-			@media (max-width: 670px)
-				max-height: 550px
+			max-height: 650px
+			// @media (max-width: 670px)
+			// 	max-height: 550px
 			@media (max-width: 450px)
 				max-height: 800px
 
