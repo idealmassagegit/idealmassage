@@ -88,25 +88,18 @@ $(function(){
 			$('.chelsey').addClass('active');
 		}
 	});
+	$('.sam-box').click(function(){
+		if (!$(this).hasClass('active')) {
+			$('.pic-row div, .text-row div').removeClass('active');
+			$(this).addClass('active');
+			$('.sam').addClass('active');
+		}
+	});
 	$('.julia-box').click(function(){
 		if (!$(this).hasClass('active')) {
 			$('.pic-row div, .text-row div').removeClass('active');
 			$(this).addClass('active');
 			$('.julia').addClass('active');
-		}
-	});
-	$('.marissa-box').click(function(){
-		if (!$(this).hasClass('active')) {
-			$('.pic-row div, .text-row div').removeClass('active');
-			$(this).addClass('active');
-			$('.marissa').addClass('active');
-		}
-	});
-	$('.rachel-box').click(function(){
-		if (!$(this).hasClass('active')) {
-			$('.pic-row div, .text-row div').removeClass('active');
-			$(this).addClass('active');
-			$('.rachel').addClass('active');
 		}
 	});
 	$('.carla-box').click(function(){
@@ -116,24 +109,63 @@ $(function(){
 			$('.carla').addClass('active');
 		}
 	});
-	$('.samantha-box').click(function(){
+	$('.blake-box').click(function(){
 		if (!$(this).hasClass('active')) {
 			$('.pic-row div, .text-row div').removeClass('active');
 			$(this).addClass('active');
-			$('.samantha').addClass('active');
+			$('.blake').addClass('active');
+		}
+	});
+	$('.bianca-box').click(function(){
+		if (!$(this).hasClass('active')) {
+			$('.pic-row div, .text-row div').removeClass('active');
+			$(this).addClass('active');
+			$('.bianca').addClass('active');
+		}
+	});
+	$('.kiarra-box').click(function(){
+		if (!$(this).hasClass('active')) {
+			$('.pic-row div, .text-row div').removeClass('active');
+			$(this).addClass('active');
+			$('.kiarra').addClass('active');
+		}
+	});
+	$('.rachel-box').click(function(){
+		if (!$(this).hasClass('active')) {
+			$('.pic-row div, .text-row div').removeClass('active');
+			$(this).addClass('active');
+			$('.rachel').addClass('active');
+		}
+	});
+	$('.marissa-box').click(function(){
+		if (!$(this).hasClass('active')) {
+			$('.pic-row div, .text-row div').removeClass('active');
+			$(this).addClass('active');
+			$('.marissa').addClass('active');
+		}
+	});
+	$('.haley-box').click(function(){
+		if (!$(this).hasClass('active')) {
+			$('.pic-row div, .text-row div').removeClass('active');
+			$(this).addClass('active');
+			$('.haley').addClass('active');
 		}
 	});
 
-	$('.lang').click(function(){
-		if($(this).hasClass('esp')) {
-			$(this).text('Bilingual Booking Option!');
-			$(this).removeClass('esp').addClass('eng');
-			$('.lang-txt').text("Con su experiencia en el servicio de masajes, Michael se dedica especialmente a la prestación de masajes para que sus clientes logren una sensación de bienestar tanto física como mental, que les permita crear un equilibrio vital, desarrollar un mejor desempeño laboral y enfrentar de mejor manera el quehacer diario. Mike esta dedicado a ser un curador que usa su intuición y atención para ayudar a lograr sus metas.");
-		} else {
-			$(this).text('Se Habla Español!').removeClass('eng').addClass('esp');
-			$('.lang-txt').text("The focus of my massage practice is on therapeutic bodywork with a highly relaxing quality within a holistic, mind-body-spirit perspective. My healing work varies greatly, intuitively drawing upon many different healing traditions to meet the specific conditions that arise. My practice centers around listening to your body's messages and you, because you are the expert of your own body. Although I am a total massage geek, I still feel that caring, listening, intuition and tuning into energy are my best tools as a healer. I look forward to getting to know you and the miraculous ecosystem of your unique body.")
-		}
-	});
+	if ( $(window).width() <= 700 ) {
+		$( ".pic-row div" ).wrap( "<a href='#Staff'></a>" );
+	}
+
+	// $('.lang').click(function(){
+	// 	if($(this).hasClass('esp')) {
+	// 		$(this).text('Bilingual Booking Option!');
+	// 		$(this).removeClass('esp').addClass('eng');
+	// 		$('.lang-txt').text("Con su experiencia en el servicio de masajes, Michael se dedica especialmente a la prestación de masajes para que sus clientes logren una sensación de bienestar tanto física como mental, que les permita crear un equilibrio vital, desarrollar un mejor desempeño laboral y enfrentar de mejor manera el quehacer diario. Mike esta dedicado a ser un curador que usa su intuición y atención para ayudar a lograr sus metas.");
+	// 	} else {
+	// 		$(this).text('Se Habla Español!').removeClass('eng').addClass('esp');
+	// 		$('.lang-txt').text("The focus of my massage practice is on therapeutic bodywork with a highly relaxing quality within a holistic, mind-body-spirit perspective. My healing work varies greatly, intuitively drawing upon many different healing traditions to meet the specific conditions that arise. My practice centers around listening to your body's messages and you, because you are the expert of your own body. Although I am a total massage geek, I still feel that caring, listening, intuition and tuning into energy are my best tools as a healer. I look forward to getting to know you and the miraculous ecosystem of your unique body.")
+	// 	}
+	// });
 
 
 

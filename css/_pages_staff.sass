@@ -17,7 +17,7 @@
 
 	h2
 		color: #3d321d
-		font-size: 30px
+		font-size: 36px
 		font-family: "Pathway Gothic One", sans-serif
 		margin-bottom: 16px
 		text-align: center
@@ -34,81 +34,116 @@
 		@media (max-width: 700px)
 			flex-direction: column
 
-		.photo-grid
-			width: 43%
-			@media (max-width: 700px)
-				width: 100%
-
-		.pic-row
-			display: flex
-			justify-content: center
-			flex-wrap: wrap
-			margin-bottom: 15px
+	.photo-grid
+		width: 43%
+		display: flex
+		justify-content: space-between
+		@media (max-width: 700px)
 			width: 100%
 
-			.julia-box,
-			.marissa-box,
-			.rachel-box,
-			.samantha-box,
-			.carla-box,
-			.chelsey-box
-				background-size: contain
-				background-repeat: no-repeat
-				cursor: pointer
-				height: 160px
-				width: 160px
-				margin: 0 8px 16px
-				padding:  5px
-				@media (max-width: 800px)
-					height: 120px
-					width: 120px
-				@media (max-width: 500px)
-					height: 100px
-					width: 100px
-				.active
-					cursor: default
+	.pic-row
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		margin-bottom: 15px
+		width: 100%
 
-			.julia-box
-				background-image: url('../img/julia-bw.jpg')
-				&:hover
-					background-image: url('../img/julia.jpg')
-			.julia-box.active
-				background-image: url('../img/julia.jpg')
+		.chelsey-box,
+		.sam-box,
+		.julia-box,
+		.carla-box,
+		.blake-box,
+		.bianca-box,
+		.kiarra-box,
+		.rachel-box,
+		.marissa-box,
+		.haley-box
+			background-size: contain
+			background-repeat: no-repeat
+			cursor: pointer
+			height: 160px
+			width: 160px
+			margin: 0 8px 16px
+			padding:  5px
+			@media (max-width: 1000px)
+				height: 120px
+				width: 120px
+			@media (max-width: 500px)
+				height: 100px
+				width: 100px
+			.active
+				cursor: default
 
-			.marissa-box
-				background-image: url('../img/marissa-bw.jpg')
-				&:hover
-					background-image: url('../img/marissa.jpg')
-			.marissa-box.active
-				background-image: url('../img/marissa.jpg')
-
-			.rachel-box
-				background-image: url('../img/rachel-bw.jpg')
-				&:hover
-					background-image: url('../img/rachel.jpg')
-			.rachel-box.active
-				background-image: url('../img/rachel.jpg')
-
-			.samantha-box
-				background-image: url('../img/samantha-bw.jpg')
-				&:hover
-					background-image: url('../img/samantha.jpg')
-			.samantha-box.active
-				background-image: url('../img/samantha.jpg')
-
-			.carla-box
-				background-image: url('../img/carla-bw.jpg')
-				&:hover
-					background-image: url('../img/carla.jpg')
-			.carla-box.active
-				background-image: url('../img/carla.jpg')
-
-			.chelsey-box
-				background-image: url('../img/chelsey-bw.jpg')
-				&:hover
-					background-image: url('../img/chelsey.jpg')
-			.chelsey-box.active
+		.chelsey-box
+			background-image: url('../img/chelsey-bw.jpg')
+			&:hover
 				background-image: url('../img/chelsey.jpg')
+		.chelsey-box.active
+			background-image: url('../img/chelsey.jpg')
+
+		.sam-box
+			background-image: url('../img/samantha-bw.jpg')
+			&:hover
+				background-image: url('../img/samantha.jpg')
+		.sam-box.active
+			background-image: url('../img/samantha.jpg')
+
+		.julia-box
+			background-image: url('../img/julia-bw.jpg')
+			&:hover
+				background-image: url('../img/julia.jpg')
+		.julia-box.active
+			background-image: url('../img/julia.jpg')
+
+		.carla-box
+			background-image: url('../img/carla-bw.jpg')
+			&:hover
+				background-image: url('../img/carla.jpg')
+		.carla-box.active
+			background-image: url('../img/carla.jpg')
+
+		.blake-box
+			background-image: url('../img/blake-bw.jpg')
+			&:hover
+				background-image: url('../img/blake.jpg')
+		.blake-box.active
+			background-image: url('../img/blake.jpg')
+
+		.bianca-box
+			background-image: url('../img/bianca-bw.jpg')
+			&:hover
+				background-image: url('../img/bianca.jpg')
+		.bianca-box.active
+			background-image: url('../img/bianca.jpg')
+
+		.kiarra-box
+			background-image: url('../img/kiarra-bw.jpg')
+			&:hover
+				background-image: url('../img/kiarra.jpg')
+		.kiarra-box.active
+			background-image: url('../img/kiarra.jpg')
+
+		.rachel-box
+			background-image: url('../img/rachel-bw.jpg')
+			&:hover
+				background-image: url('../img/rachel.jpg')
+		.rachel-box.active
+			background-image: url('../img/rachel.jpg')
+
+		.marissa-box
+			background-image: url('../img/marissa-bw.jpg')
+			&:hover
+				background-image: url('../img/marissa.jpg')
+		.marissa-box.active
+			background-image: url('../img/marissa.jpg')
+
+		.haley-box
+			background-image: url('../img/haley-bw.jpg')
+			&:hover
+				background-image: url('../img/haley.jpg')
+		.haley-box.active
+			background-image: url('../img/haley.jpg')
+
 
 	.text-row
 		background-color: #f6f6f6
@@ -124,12 +159,16 @@
 			position: relative
 			width: 100%
 
-		.julia,
 		.chelsey,
-		.marissa,
-		.samantha,
+		.sam,
+		.julia,
 		.carla,
-		.rachel
+		.blake,
+		.bianca,
+		.kiarra,
+		.rachel,
+		.marissa,
+		.haley
 			max-height: 0
 			opacity: 0
 			overflow: hidden

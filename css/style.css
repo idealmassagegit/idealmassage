@@ -1701,7 +1701,7 @@
 
 .staff h2 {
   color: #3d321d;
-  font-size: 30px;
+  font-size: 36px;
   font-family: "Pathway Gothic One", sans-serif;
   margin-bottom: 16px;
   text-align: center;
@@ -1737,17 +1737,23 @@
   }
 }
 
-.staff .staff-box .photo-grid {
+.staff .photo-grid {
   width: 43%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 700px) {
-  .staff .staff-box .photo-grid {
+  .staff .photo-grid {
     width: 100%;
   }
 }
 
-.staff .staff-box .pic-row {
+.staff .pic-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1760,12 +1766,16 @@
   width: 100%;
 }
 
-.staff .staff-box .pic-row .julia-box,
-.staff .staff-box .pic-row .marissa-box,
-.staff .staff-box .pic-row .rachel-box,
-.staff .staff-box .pic-row .samantha-box,
-.staff .staff-box .pic-row .carla-box,
-.staff .staff-box .pic-row .chelsey-box {
+.staff .pic-row .chelsey-box,
+.staff .pic-row .sam-box,
+.staff .pic-row .julia-box,
+.staff .pic-row .carla-box,
+.staff .pic-row .blake-box,
+.staff .pic-row .bianca-box,
+.staff .pic-row .kiarra-box,
+.staff .pic-row .rachel-box,
+.staff .pic-row .marissa-box,
+.staff .pic-row .haley-box {
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -1775,109 +1785,169 @@
   padding: 5px;
 }
 
-@media (max-width: 800px) {
-  .staff .staff-box .pic-row .julia-box,
-  .staff .staff-box .pic-row .marissa-box,
-  .staff .staff-box .pic-row .rachel-box,
-  .staff .staff-box .pic-row .samantha-box,
-  .staff .staff-box .pic-row .carla-box,
-  .staff .staff-box .pic-row .chelsey-box {
+@media (max-width: 1000px) {
+  .staff .pic-row .chelsey-box,
+  .staff .pic-row .sam-box,
+  .staff .pic-row .julia-box,
+  .staff .pic-row .carla-box,
+  .staff .pic-row .blake-box,
+  .staff .pic-row .bianca-box,
+  .staff .pic-row .kiarra-box,
+  .staff .pic-row .rachel-box,
+  .staff .pic-row .marissa-box,
+  .staff .pic-row .haley-box {
     height: 120px;
     width: 120px;
   }
 }
 
 @media (max-width: 500px) {
-  .staff .staff-box .pic-row .julia-box,
-  .staff .staff-box .pic-row .marissa-box,
-  .staff .staff-box .pic-row .rachel-box,
-  .staff .staff-box .pic-row .samantha-box,
-  .staff .staff-box .pic-row .carla-box,
-  .staff .staff-box .pic-row .chelsey-box {
+  .staff .pic-row .chelsey-box,
+  .staff .pic-row .sam-box,
+  .staff .pic-row .julia-box,
+  .staff .pic-row .carla-box,
+  .staff .pic-row .blake-box,
+  .staff .pic-row .bianca-box,
+  .staff .pic-row .kiarra-box,
+  .staff .pic-row .rachel-box,
+  .staff .pic-row .marissa-box,
+  .staff .pic-row .haley-box {
     height: 100px;
     width: 100px;
   }
 }
 
-.staff .staff-box .pic-row .julia-box .active,
-.staff .staff-box .pic-row .marissa-box .active,
-.staff .staff-box .pic-row .rachel-box .active,
-.staff .staff-box .pic-row .samantha-box .active,
-.staff .staff-box .pic-row .carla-box .active,
-.staff .staff-box .pic-row .chelsey-box .active {
+.staff .pic-row .chelsey-box .active,
+.staff .pic-row .sam-box .active,
+.staff .pic-row .julia-box .active,
+.staff .pic-row .carla-box .active,
+.staff .pic-row .blake-box .active,
+.staff .pic-row .bianca-box .active,
+.staff .pic-row .kiarra-box .active,
+.staff .pic-row .rachel-box .active,
+.staff .pic-row .marissa-box .active,
+.staff .pic-row .haley-box .active {
   cursor: default;
 }
 
-.staff .staff-box .pic-row .julia-box {
-  background-image: url("../img/julia-bw.jpg");
-}
-
-.staff .staff-box .pic-row .julia-box:hover {
-  background-image: url("../img/julia.jpg");
-}
-
-.staff .staff-box .pic-row .julia-box.active {
-  background-image: url("../img/julia.jpg");
-}
-
-.staff .staff-box .pic-row .marissa-box {
-  background-image: url("../img/marissa-bw.jpg");
-}
-
-.staff .staff-box .pic-row .marissa-box:hover {
-  background-image: url("../img/marissa.jpg");
-}
-
-.staff .staff-box .pic-row .marissa-box.active {
-  background-image: url("../img/marissa.jpg");
-}
-
-.staff .staff-box .pic-row .rachel-box {
-  background-image: url("../img/rachel-bw.jpg");
-}
-
-.staff .staff-box .pic-row .rachel-box:hover {
-  background-image: url("../img/rachel.jpg");
-}
-
-.staff .staff-box .pic-row .rachel-box.active {
-  background-image: url("../img/rachel.jpg");
-}
-
-.staff .staff-box .pic-row .samantha-box {
-  background-image: url("../img/samantha-bw.jpg");
-}
-
-.staff .staff-box .pic-row .samantha-box:hover {
-  background-image: url("../img/samantha.jpg");
-}
-
-.staff .staff-box .pic-row .samantha-box.active {
-  background-image: url("../img/samantha.jpg");
-}
-
-.staff .staff-box .pic-row .carla-box {
-  background-image: url("../img/carla-bw.jpg");
-}
-
-.staff .staff-box .pic-row .carla-box:hover {
-  background-image: url("../img/carla.jpg");
-}
-
-.staff .staff-box .pic-row .carla-box.active {
-  background-image: url("../img/carla.jpg");
-}
-
-.staff .staff-box .pic-row .chelsey-box {
+.staff .pic-row .chelsey-box {
   background-image: url("../img/chelsey-bw.jpg");
 }
 
-.staff .staff-box .pic-row .chelsey-box:hover {
+.staff .pic-row .chelsey-box:hover {
   background-image: url("../img/chelsey.jpg");
 }
 
-.staff .staff-box .pic-row .chelsey-box.active {
+.staff .pic-row .chelsey-box.active {
   background-image: url("../img/chelsey.jpg");
+}
+
+.staff .pic-row .sam-box {
+  background-image: url("../img/samantha-bw.jpg");
+}
+
+.staff .pic-row .sam-box:hover {
+  background-image: url("../img/samantha.jpg");
+}
+
+.staff .pic-row .sam-box.active {
+  background-image: url("../img/samantha.jpg");
+}
+
+.staff .pic-row .julia-box {
+  background-image: url("../img/julia-bw.jpg");
+}
+
+.staff .pic-row .julia-box:hover {
+  background-image: url("../img/julia.jpg");
+}
+
+.staff .pic-row .julia-box.active {
+  background-image: url("../img/julia.jpg");
+}
+
+.staff .pic-row .carla-box {
+  background-image: url("../img/carla-bw.jpg");
+}
+
+.staff .pic-row .carla-box:hover {
+  background-image: url("../img/carla.jpg");
+}
+
+.staff .pic-row .carla-box.active {
+  background-image: url("../img/carla.jpg");
+}
+
+.staff .pic-row .blake-box {
+  background-image: url("../img/blake-bw.jpg");
+}
+
+.staff .pic-row .blake-box:hover {
+  background-image: url("../img/blake.jpg");
+}
+
+.staff .pic-row .blake-box.active {
+  background-image: url("../img/blake.jpg");
+}
+
+.staff .pic-row .bianca-box {
+  background-image: url("../img/bianca-bw.jpg");
+}
+
+.staff .pic-row .bianca-box:hover {
+  background-image: url("../img/bianca.jpg");
+}
+
+.staff .pic-row .bianca-box.active {
+  background-image: url("../img/bianca.jpg");
+}
+
+.staff .pic-row .kiarra-box {
+  background-image: url("../img/kiarra-bw.jpg");
+}
+
+.staff .pic-row .kiarra-box:hover {
+  background-image: url("../img/kiarra.jpg");
+}
+
+.staff .pic-row .kiarra-box.active {
+  background-image: url("../img/kiarra.jpg");
+}
+
+.staff .pic-row .rachel-box {
+  background-image: url("../img/rachel-bw.jpg");
+}
+
+.staff .pic-row .rachel-box:hover {
+  background-image: url("../img/rachel.jpg");
+}
+
+.staff .pic-row .rachel-box.active {
+  background-image: url("../img/rachel.jpg");
+}
+
+.staff .pic-row .marissa-box {
+  background-image: url("../img/marissa-bw.jpg");
+}
+
+.staff .pic-row .marissa-box:hover {
+  background-image: url("../img/marissa.jpg");
+}
+
+.staff .pic-row .marissa-box.active {
+  background-image: url("../img/marissa.jpg");
+}
+
+.staff .pic-row .haley-box {
+  background-image: url("../img/haley-bw.jpg");
+}
+
+.staff .pic-row .haley-box:hover {
+  background-image: url("../img/haley.jpg");
+}
+
+.staff .pic-row .haley-box.active {
+  background-image: url("../img/haley.jpg");
 }
 
 .staff .text-row {
@@ -1900,12 +1970,16 @@
   }
 }
 
-.staff .text-row .julia,
 .staff .text-row .chelsey,
-.staff .text-row .marissa,
-.staff .text-row .samantha,
+.staff .text-row .sam,
+.staff .text-row .julia,
 .staff .text-row .carla,
-.staff .text-row .rachel {
+.staff .text-row .blake,
+.staff .text-row .bianca,
+.staff .text-row .kiarra,
+.staff .text-row .rachel,
+.staff .text-row .marissa,
+.staff .text-row .haley {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
