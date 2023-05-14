@@ -1766,15 +1766,14 @@
   width: 100%;
 }
 
-.staff .pic-row .chelsey-box,
-.staff .pic-row .sam-box,
-.staff .pic-row .julia-box,
-.staff .pic-row .carla-box,
 .staff .pic-row .blake-box,
 .staff .pic-row .bianca-box,
+.staff .pic-row .julia-box,
 .staff .pic-row .kiarra-box,
+.staff .pic-row .carla-box,
+.staff .pic-row .sam-box,
+.staff .pic-row .chelsey-box,
 .staff .pic-row .rachel-box,
-.staff .pic-row .marissa-box,
 .staff .pic-row .haley-box {
   background-size: contain;
   background-repeat: no-repeat;
@@ -1786,15 +1785,14 @@
 }
 
 @media (max-width: 1000px) {
-  .staff .pic-row .chelsey-box,
-  .staff .pic-row .sam-box,
-  .staff .pic-row .julia-box,
-  .staff .pic-row .carla-box,
   .staff .pic-row .blake-box,
   .staff .pic-row .bianca-box,
+  .staff .pic-row .julia-box,
   .staff .pic-row .kiarra-box,
+  .staff .pic-row .carla-box,
+  .staff .pic-row .sam-box,
+  .staff .pic-row .chelsey-box,
   .staff .pic-row .rachel-box,
-  .staff .pic-row .marissa-box,
   .staff .pic-row .haley-box {
     height: 120px;
     width: 120px;
@@ -1802,80 +1800,30 @@
 }
 
 @media (max-width: 500px) {
-  .staff .pic-row .chelsey-box,
-  .staff .pic-row .sam-box,
-  .staff .pic-row .julia-box,
-  .staff .pic-row .carla-box,
   .staff .pic-row .blake-box,
   .staff .pic-row .bianca-box,
+  .staff .pic-row .julia-box,
   .staff .pic-row .kiarra-box,
+  .staff .pic-row .carla-box,
+  .staff .pic-row .sam-box,
+  .staff .pic-row .chelsey-box,
   .staff .pic-row .rachel-box,
-  .staff .pic-row .marissa-box,
   .staff .pic-row .haley-box {
     height: 100px;
     width: 100px;
   }
 }
 
-.staff .pic-row .chelsey-box .active,
-.staff .pic-row .sam-box .active,
-.staff .pic-row .julia-box .active,
-.staff .pic-row .carla-box .active,
 .staff .pic-row .blake-box .active,
 .staff .pic-row .bianca-box .active,
+.staff .pic-row .julia-box .active,
 .staff .pic-row .kiarra-box .active,
+.staff .pic-row .carla-box .active,
+.staff .pic-row .sam-box .active,
+.staff .pic-row .chelsey-box .active,
 .staff .pic-row .rachel-box .active,
-.staff .pic-row .marissa-box .active,
 .staff .pic-row .haley-box .active {
   cursor: default;
-}
-
-.staff .pic-row .chelsey-box {
-  background-image: url("../img/chelsey-bw.jpg");
-}
-
-.staff .pic-row .chelsey-box:hover {
-  background-image: url("../img/chelsey.jpg");
-}
-
-.staff .pic-row .chelsey-box.active {
-  background-image: url("../img/chelsey.jpg");
-}
-
-.staff .pic-row .sam-box {
-  background-image: url("../img/samantha-bw.jpg");
-}
-
-.staff .pic-row .sam-box:hover {
-  background-image: url("../img/samantha.jpg");
-}
-
-.staff .pic-row .sam-box.active {
-  background-image: url("../img/samantha.jpg");
-}
-
-.staff .pic-row .julia-box {
-  background-image: url("../img/julia-bw.jpg");
-}
-
-.staff .pic-row .julia-box:hover {
-  background-image: url("../img/julia.jpg");
-}
-
-.staff .pic-row .julia-box.active {
-  background-image: url("../img/julia.jpg");
-}
-
-.staff .pic-row .carla-box {
-  background-image: url("../img/carla-bw.jpg");
-}
-
-.staff .pic-row .carla-box:hover {
-  background-image: url("../img/carla.jpg");
-}
-
-.staff .pic-row .carla-box.active {
-  background-image: url("../img/carla.jpg");
 }
 
 .staff .pic-row .blake-box {
@@ -1902,6 +1850,18 @@
   background-image: url("../img/bianca.jpg");
 }
 
+.staff .pic-row .julia-box {
+  background-image: url("../img/julia-bw.jpg");
+}
+
+.staff .pic-row .julia-box:hover {
+  background-image: url("../img/julia.jpg");
+}
+
+.staff .pic-row .julia-box.active {
+  background-image: url("../img/julia.jpg");
+}
+
 .staff .pic-row .kiarra-box {
   background-image: url("../img/kiarra-bw.jpg");
 }
@@ -1914,6 +1874,42 @@
   background-image: url("../img/kiarra.jpg");
 }
 
+.staff .pic-row .carla-box {
+  background-image: url("../img/carla-bw.jpg");
+}
+
+.staff .pic-row .carla-box:hover {
+  background-image: url("../img/carla.jpg");
+}
+
+.staff .pic-row .carla-box.active {
+  background-image: url("../img/carla.jpg");
+}
+
+.staff .pic-row .sam-box {
+  background-image: url("../img/samantha-bw.jpg");
+}
+
+.staff .pic-row .sam-box:hover {
+  background-image: url("../img/samantha.jpg");
+}
+
+.staff .pic-row .sam-box.active {
+  background-image: url("../img/samantha.jpg");
+}
+
+.staff .pic-row .chelsey-box {
+  background-image: url("../img/chelsey-bw.jpg");
+}
+
+.staff .pic-row .chelsey-box:hover {
+  background-image: url("../img/chelsey.jpg");
+}
+
+.staff .pic-row .chelsey-box.active {
+  background-image: url("../img/chelsey.jpg");
+}
+
 .staff .pic-row .rachel-box {
   background-image: url("../img/rachel-bw.jpg");
 }
@@ -1924,18 +1920,6 @@
 
 .staff .pic-row .rachel-box.active {
   background-image: url("../img/rachel.jpg");
-}
-
-.staff .pic-row .marissa-box {
-  background-image: url("../img/marissa-bw.jpg");
-}
-
-.staff .pic-row .marissa-box:hover {
-  background-image: url("../img/marissa.jpg");
-}
-
-.staff .pic-row .marissa-box.active {
-  background-image: url("../img/marissa.jpg");
 }
 
 .staff .pic-row .haley-box {
@@ -1970,15 +1954,14 @@
   }
 }
 
-.staff .text-row .chelsey,
-.staff .text-row .sam,
-.staff .text-row .julia,
-.staff .text-row .carla,
 .staff .text-row .blake,
 .staff .text-row .bianca,
+.staff .text-row .julia,
 .staff .text-row .kiarra,
+.staff .text-row .carla,
+.staff .text-row .sam,
+.staff .text-row .chelsey,
 .staff .text-row .rachel,
-.staff .text-row .marissa,
 .staff .text-row .haley {
   max-height: 0;
   opacity: 0;
