@@ -1742,9 +1742,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 700px) {
@@ -1773,7 +1773,6 @@
 .staff .pic-row .carla-box,
 .staff .pic-row .sam-box,
 .staff .pic-row .chelsey-box,
-.staff .pic-row .rachel-box,
 .staff .pic-row .haley-box {
   background-size: contain;
   background-repeat: no-repeat;
@@ -1792,7 +1791,6 @@
   .staff .pic-row .carla-box,
   .staff .pic-row .sam-box,
   .staff .pic-row .chelsey-box,
-  .staff .pic-row .rachel-box,
   .staff .pic-row .haley-box {
     height: 120px;
     width: 120px;
@@ -1807,7 +1805,6 @@
   .staff .pic-row .carla-box,
   .staff .pic-row .sam-box,
   .staff .pic-row .chelsey-box,
-  .staff .pic-row .rachel-box,
   .staff .pic-row .haley-box {
     height: 100px;
     width: 100px;
@@ -1821,7 +1818,6 @@
 .staff .pic-row .carla-box .active,
 .staff .pic-row .sam-box .active,
 .staff .pic-row .chelsey-box .active,
-.staff .pic-row .rachel-box .active,
 .staff .pic-row .haley-box .active {
   cursor: default;
 }
@@ -1910,18 +1906,6 @@
   background-image: url("../img/chelsey.jpg");
 }
 
-.staff .pic-row .rachel-box {
-  background-image: url("../img/rachel-bw.jpg");
-}
-
-.staff .pic-row .rachel-box:hover {
-  background-image: url("../img/rachel.jpg");
-}
-
-.staff .pic-row .rachel-box.active {
-  background-image: url("../img/rachel.jpg");
-}
-
 .staff .pic-row .haley-box {
   background-image: url("../img/haley-bw.jpg");
 }
@@ -1961,7 +1945,6 @@
 .staff .text-row .carla,
 .staff .text-row .sam,
 .staff .text-row .chelsey,
-.staff .text-row .rachel,
 .staff .text-row .haley {
   max-height: 0;
   opacity: 0;
@@ -2066,6 +2049,7 @@
 .services .promo-service {
   border: 1px solid #304800;
   margin: 0 auto;
+  padding-bottom: 32px;
   text-align: center;
   width: 75%;
 }

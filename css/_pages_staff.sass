@@ -37,7 +37,7 @@
 	.photo-grid
 		width: 43%
 		display: flex
-		justify-content: space-between
+		justify-content: center
 		@media (max-width: 700px)
 			width: 100%
 
@@ -55,7 +55,6 @@
 		.carla-box,
 		.sam-box,
 		.chelsey-box,
-		.rachel-box,
 		.haley-box
 			background-size: contain
 			background-repeat: no-repeat
@@ -122,14 +121,6 @@
 				background-image: url('../img/chelsey.jpg')
 		.chelsey-box.active
 			background-image: url('../img/chelsey.jpg')
-
-		.rachel-box
-			background-image: url('../img/rachel-bw.jpg')
-			&:hover
-				background-image: url('../img/rachel.jpg')
-		.rachel-box.active
-			background-image: url('../img/rachel.jpg')
-
 		.haley-box
 			background-image: url('../img/haley-bw.jpg')
 			&:hover
@@ -159,7 +150,6 @@
 		.carla,
 		.sam,
 		.chelsey,
-		.rachel,
 		.haley
 			max-height: 0
 			opacity: 0

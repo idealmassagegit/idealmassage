@@ -130,13 +130,6 @@ $(function(){
 			$('.kiarra').addClass('active');
 		}
 	});
-	$('.rachel-box').click(function(){
-		if (!$(this).hasClass('active')) {
-			$('.pic-row div, .text-row div').removeClass('active');
-			$(this).addClass('active');
-			$('.rachel').addClass('active');
-		}
-	});
 	$('.marissa-box').click(function(){
 		if (!$(this).hasClass('active')) {
 			$('.pic-row div, .text-row div').removeClass('active');
