@@ -1899,10 +1899,7 @@
   -webkit-box-shadow: 0 0 10px #bbb;
           box-shadow: 0 0 10px #bbb;
   margin: 0 auto;
-  margin-right: 0;
   padding: 0 20px 20px 20px;
-  position: absolute;
-  right: 0;
   width: 55%;
 }
 
