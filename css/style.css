@@ -1741,8 +1741,8 @@
   width: 100%;
 }
 
-.staff .pic-row .blake-box,
-.staff .pic-row .bianca-box,
+.staff .pic-row .jeff-box,
+.staff .pic-row .jennifer-box,
 .staff .pic-row .julia-box,
 .staff .pic-row .kiarra-box,
 .staff .pic-row .carla-box,
@@ -1759,8 +1759,8 @@
 }
 
 @media (max-width: 1000px) {
-  .staff .pic-row .blake-box,
-  .staff .pic-row .bianca-box,
+  .staff .pic-row .jeff-box,
+  .staff .pic-row .jennifer-box,
   .staff .pic-row .julia-box,
   .staff .pic-row .kiarra-box,
   .staff .pic-row .carla-box,
@@ -1773,8 +1773,8 @@
 }
 
 @media (max-width: 500px) {
-  .staff .pic-row .blake-box,
-  .staff .pic-row .bianca-box,
+  .staff .pic-row .jeff-box,
+  .staff .pic-row .jennifer-box,
   .staff .pic-row .julia-box,
   .staff .pic-row .kiarra-box,
   .staff .pic-row .carla-box,
@@ -1786,8 +1786,8 @@
   }
 }
 
-.staff .pic-row .blake-box .active,
-.staff .pic-row .bianca-box .active,
+.staff .pic-row .jeff-box .active,
+.staff .pic-row .jennifer-box .active,
 .staff .pic-row .julia-box .active,
 .staff .pic-row .kiarra-box .active,
 .staff .pic-row .carla-box .active,
@@ -1797,28 +1797,28 @@
   cursor: default;
 }
 
-.staff .pic-row .blake-box {
-  background-image: url("../img/blake-bw.jpg");
+.staff .pic-row .jeff-box {
+  background-image: url("../img/jeff-bw.jpg");
 }
 
-.staff .pic-row .blake-box:hover {
-  background-image: url("../img/blake.jpg");
+.staff .pic-row .jeff-box:hover {
+  background-image: url("../img/jeff.jpg");
 }
 
-.staff .pic-row .blake-box.active {
-  background-image: url("../img/blake.jpg");
+.staff .pic-row .jeff-box.active {
+  background-image: url("../img/jeff.jpg");
 }
 
-.staff .pic-row .bianca-box {
-  background-image: url("../img/bianca-bw.jpg");
+.staff .pic-row .jennifer-box {
+  background-image: url("../img/jennifer-bw.jpg");
 }
 
-.staff .pic-row .bianca-box:hover {
-  background-image: url("../img/bianca.jpg");
+.staff .pic-row .jennifer-box:hover {
+  background-image: url("../img/jennifer.jpg");
 }
 
-.staff .pic-row .bianca-box.active {
-  background-image: url("../img/bianca.jpg");
+.staff .pic-row .jennifer-box.active {
+  background-image: url("../img/jennifer.jpg");
 }
 
 .staff .pic-row .julia-box {
@@ -1910,8 +1910,8 @@
   }
 }
 
-.staff .text-row .blake,
-.staff .text-row .bianca,
+.staff .text-row .jeff,
+.staff .text-row .jennifer,
 .staff .text-row .julia,
 .staff .text-row .kiarra,
 .staff .text-row .carla,
