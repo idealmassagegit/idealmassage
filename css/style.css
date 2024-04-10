@@ -1741,14 +1741,14 @@
   width: 100%;
 }
 
-.staff .pic-row .jeff-box,
+.staff .pic-row .nicole-box,
 .staff .pic-row .jennifer-box,
 .staff .pic-row .julia-box,
-.staff .pic-row .kiarra-box,
+.staff .pic-row .tammy-box,
 .staff .pic-row .carla-box,
 .staff .pic-row .sam-box,
 .staff .pic-row .chelsey-box,
-.staff .pic-row .haley-box {
+.staff .pic-row .janelle-box {
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -1759,54 +1759,54 @@
 }
 
 @media (max-width: 1000px) {
-  .staff .pic-row .jeff-box,
+  .staff .pic-row .nicole-box,
   .staff .pic-row .jennifer-box,
   .staff .pic-row .julia-box,
-  .staff .pic-row .kiarra-box,
+  .staff .pic-row .tammy-box,
   .staff .pic-row .carla-box,
   .staff .pic-row .sam-box,
   .staff .pic-row .chelsey-box,
-  .staff .pic-row .haley-box {
+  .staff .pic-row .janelle-box {
     height: 120px;
     width: 120px;
   }
 }
 
 @media (max-width: 500px) {
-  .staff .pic-row .jeff-box,
+  .staff .pic-row .nicole-box,
   .staff .pic-row .jennifer-box,
   .staff .pic-row .julia-box,
-  .staff .pic-row .kiarra-box,
+  .staff .pic-row .tammy-box,
   .staff .pic-row .carla-box,
   .staff .pic-row .sam-box,
   .staff .pic-row .chelsey-box,
-  .staff .pic-row .haley-box {
+  .staff .pic-row .janelle-box {
     height: 100px;
     width: 100px;
   }
 }
 
-.staff .pic-row .jeff-box .active,
+.staff .pic-row .nicole-box .active,
 .staff .pic-row .jennifer-box .active,
 .staff .pic-row .julia-box .active,
-.staff .pic-row .kiarra-box .active,
+.staff .pic-row .tammy-box .active,
 .staff .pic-row .carla-box .active,
 .staff .pic-row .sam-box .active,
 .staff .pic-row .chelsey-box .active,
-.staff .pic-row .haley-box .active {
+.staff .pic-row .janelle-box .active {
   cursor: default;
 }
 
-.staff .pic-row .jeff-box {
-  background-image: url("../img/jeff-bw.jpg");
+.staff .pic-row .nicole-box {
+  background-image: url("../img/nicole-bw.jpg");
 }
 
-.staff .pic-row .jeff-box:hover {
-  background-image: url("../img/jeff.jpg");
+.staff .pic-row .nicole-box:hover {
+  background-image: url("../img/nicole.jpg");
 }
 
-.staff .pic-row .jeff-box.active {
-  background-image: url("../img/jeff.jpg");
+.staff .pic-row .nicole-box.active {
+  background-image: url("../img/nicole.jpg");
 }
 
 .staff .pic-row .jennifer-box {
@@ -1833,16 +1833,28 @@
   background-image: url("../img/julia.jpg");
 }
 
-.staff .pic-row .kiarra-box {
-  background-image: url("../img/kiarra-bw.jpg");
+.staff .pic-row .tammy-box {
+  background-image: url("../img/tammy-bw.jpg");
 }
 
-.staff .pic-row .kiarra-box:hover {
-  background-image: url("../img/kiarra.jpg");
+.staff .pic-row .tammy-box:hover {
+  background-image: url("../img/tammy.jpg");
 }
 
-.staff .pic-row .kiarra-box.active {
-  background-image: url("../img/kiarra.jpg");
+.staff .pic-row .tammy-box.active {
+  background-image: url("../img/tammy.jpg");
+}
+
+.staff .pic-row .janelle-box {
+  background-image: url("../img/janelle-bw.jpg");
+}
+
+.staff .pic-row .janelle-box:hover {
+  background-image: url("../img/janelle.jpg");
+}
+
+.staff .pic-row .janelle-box.active {
+  background-image: url("../img/janelle.jpg");
 }
 
 .staff .pic-row .carla-box {
@@ -1910,13 +1922,14 @@
   }
 }
 
-.staff .text-row .jeff,
+.staff .text-row .nicole,
 .staff .text-row .jennifer,
 .staff .text-row .julia,
-.staff .text-row .kiarra,
+.staff .text-row .tammy,
 .staff .text-row .carla,
 .staff .text-row .sam,
 .staff .text-row .chelsey,
+.staff .text-row .janelle,
 .staff .text-row .haley {
   max-height: 0;
   opacity: 0;

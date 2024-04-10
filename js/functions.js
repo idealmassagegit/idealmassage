@@ -109,11 +109,11 @@ $(function(){
 			$('.carla').addClass('active');
 		}
 	});
-	$('.jeff-box').click(function(){
+	$('.tammy-box').click(function(){
 		if (!$(this).hasClass('active')) {
 			$('.pic-row div, .text-row div').removeClass('active');
 			$(this).addClass('active');
-			$('.jeff').addClass('active');
+			$('.tammy').addClass('active');
 		}
 	});
 	$('.jennifer-box').click(function(){
@@ -123,11 +123,11 @@ $(function(){
 			$('.jennifer').addClass('active');
 		}
 	});
-	$('.kiarra-box').click(function(){
+	$('.nicole-box').click(function(){
 		if (!$(this).hasClass('active')) {
 			$('.pic-row div, .text-row div').removeClass('active');
 			$(this).addClass('active');
-			$('.kiarra').addClass('active');
+			$('.nicole').addClass('active');
 		}
 	});
 	$('.marissa-box').click(function(){
@@ -142,6 +142,13 @@ $(function(){
 			$('.pic-row div, .text-row div').removeClass('active');
 			$(this).addClass('active');
 			$('.haley').addClass('active');
+		}
+	});
+	$('.janelle-box').click(function(){
+		if (!$(this).hasClass('active')) {
+			$('.pic-row div, .text-row div').removeClass('active');
+			$(this).addClass('active');
+			$('.janelle').addClass('active');
 		}
 	});
 
