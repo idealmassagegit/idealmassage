@@ -48,19 +48,12 @@
 		margin-bottom: 15px
 		width: 100%
 
-		.nicole-box,
-		.jennifer-box,
-		.julia-box,
-		.tammy-box,
-		.carla-box,
-		.sam-box,
-		.chelsey-box,
-		.janelle-box
+		.pic-box
 			background-size: contain
 			background-repeat: no-repeat
 			cursor: pointer
-			height: 160px
-			width: 160px
+			height: 180px
+			width: 180px
 			margin: 0 8px 16px
 			padding:  5px
 			@media (max-width: 1000px)
@@ -108,6 +101,13 @@
 		.janelle-box.active
 			background-image: url('../img/janelle.jpg')
 
+		.melissa-box
+			background-image: url('../img/melissa-bw.jpg')
+			&:hover
+				background-image: url('../img/melissa.jpg')
+		.melissa-box.active
+			background-image: url('../img/melissa.jpg')
+
 		.carla-box
 			background-image: url('../img/carla-bw.jpg')
 			&:hover
@@ -128,6 +128,7 @@
 				background-image: url('../img/chelsey.jpg')
 		.chelsey-box.active
 			background-image: url('../img/chelsey.jpg')
+		
 		.haley-box
 			background-image: url('../img/haley-bw.jpg')
 			&:hover
@@ -141,10 +142,7 @@
 		border-top: 4px solid $green
 		box-shadow: 0 0 10px #bbb
 		margin: 0 auto
-		// margin-right: 0
 		padding: 0 20px 20px 20px
-		// position: absolute
-		// right: 0
 		width: 55%
 		@media (max-width: 700px)
 			position: relative
@@ -154,6 +152,7 @@
 		.jennifer,
 		.julia,
 		.tammy,
+		.melissa,
 		.carla,
 		.sam,
 		.chelsey,

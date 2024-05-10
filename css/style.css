@@ -1748,59 +1748,31 @@
   width: 100%;
 }
 
-.staff .pic-row .nicole-box,
-.staff .pic-row .jennifer-box,
-.staff .pic-row .julia-box,
-.staff .pic-row .tammy-box,
-.staff .pic-row .carla-box,
-.staff .pic-row .sam-box,
-.staff .pic-row .chelsey-box,
-.staff .pic-row .janelle-box {
+.staff .pic-row .pic-box {
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
-  height: 160px;
-  width: 160px;
+  height: 180px;
+  width: 180px;
   margin: 0 8px 16px;
   padding: 5px;
 }
 
 @media (max-width: 1000px) {
-  .staff .pic-row .nicole-box,
-  .staff .pic-row .jennifer-box,
-  .staff .pic-row .julia-box,
-  .staff .pic-row .tammy-box,
-  .staff .pic-row .carla-box,
-  .staff .pic-row .sam-box,
-  .staff .pic-row .chelsey-box,
-  .staff .pic-row .janelle-box {
+  .staff .pic-row .pic-box {
     height: 120px;
     width: 120px;
   }
 }
 
 @media (max-width: 500px) {
-  .staff .pic-row .nicole-box,
-  .staff .pic-row .jennifer-box,
-  .staff .pic-row .julia-box,
-  .staff .pic-row .tammy-box,
-  .staff .pic-row .carla-box,
-  .staff .pic-row .sam-box,
-  .staff .pic-row .chelsey-box,
-  .staff .pic-row .janelle-box {
+  .staff .pic-row .pic-box {
     height: 100px;
     width: 100px;
   }
 }
 
-.staff .pic-row .nicole-box .active,
-.staff .pic-row .jennifer-box .active,
-.staff .pic-row .julia-box .active,
-.staff .pic-row .tammy-box .active,
-.staff .pic-row .carla-box .active,
-.staff .pic-row .sam-box .active,
-.staff .pic-row .chelsey-box .active,
-.staff .pic-row .janelle-box .active {
+.staff .pic-row .pic-box .active {
   cursor: default;
 }
 
@@ -1862,6 +1834,18 @@
 
 .staff .pic-row .janelle-box.active {
   background-image: url("../img/janelle.jpg");
+}
+
+.staff .pic-row .melissa-box {
+  background-image: url("../img/melissa-bw.jpg");
+}
+
+.staff .pic-row .melissa-box:hover {
+  background-image: url("../img/melissa.jpg");
+}
+
+.staff .pic-row .melissa-box.active {
+  background-image: url("../img/melissa.jpg");
 }
 
 .staff .pic-row .carla-box {
@@ -1933,6 +1917,7 @@
 .staff .text-row .jennifer,
 .staff .text-row .julia,
 .staff .text-row .tammy,
+.staff .text-row .melissa,
 .staff .text-row .carla,
 .staff .text-row .sam,
 .staff .text-row .chelsey,
