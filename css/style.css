@@ -970,14 +970,7 @@
 @media (max-width: 1175px) {
   .about-tabs,
   .tab-content {
-    max-width: 900px;
-  }
-}
-
-@media (max-width: 960px) {
-  .about-tabs,
-  .tab-content {
-    width: 90%;
+    max-width: 90%;
   }
 }
 
@@ -1312,10 +1305,10 @@
 
 #faq .natal-copy h5,
 #faq .foot-copy h5 {
-  margin-top: 20px;
+  margin-top: 48px;
   font-size: 30px;
   font-family: "Pathway Gothic One", sans-serif;
-  padding-bottom: 15px;
+  padding-bottom: 32px;
 }
 
 #faq .natal-copy li,
@@ -1336,13 +1329,27 @@
   width: 50%;
 }
 
+#faq .foot-bath-img {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  #faq .foot-bath-img {
+    display: none;
+  }
+}
+
 #faq table.foot-bath-colors {
+  display: none;
   -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   margin-top: 24px;
 }
 
 @media (max-width: 768px) {
+  #faq table.foot-bath-colors {
+    display: table;
+  }
   #faq table.foot-bath-colors thead {
     border: none;
     clip: rect(0 0 0 0);
@@ -1657,7 +1664,7 @@
   width: 50%;
 }
 
-.staff {
+.staff-page {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1665,10 +1672,14 @@
   background-image: url("../img/leaf-border.png");
   background-attachment: fixed;
   padding-top: 1px;
-  padding-bottom: 70px;
 }
 
-.staff h1 {
+.staff-page .staff {
+  border-bottom: 5px solid #304800;
+  padding-bottom: 5em;
+}
+
+.staff-page h1 {
   color: #3d321d;
   font-size: 50px;
   font-family: "Pathway Gothic One", sans-serif;
@@ -1676,12 +1687,12 @@
 }
 
 @media (max-width: 500px) {
-  .staff h1 {
+  .staff-page h1 {
     margin: 0;
   }
 }
 
-.staff h2 {
+.staff-page h2 {
   color: #3d321d;
   font-size: 36px;
   font-family: "Pathway Gothic One", sans-serif;
@@ -1689,7 +1700,7 @@
   text-align: center;
 }
 
-.staff .staff-box {
+.staff-page .staff-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1705,13 +1716,13 @@
 }
 
 @media (max-width: 1000px) {
-  .staff .staff-box {
+  .staff-page .staff-box {
     width: 95%;
   }
 }
 
 @media (max-width: 700px) {
-  .staff .staff-box {
+  .staff-page .staff-box {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1719,7 +1730,7 @@
   }
 }
 
-.staff .photo-grid {
+.staff-page .photo-grid {
   width: 43%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1730,12 +1741,12 @@
 }
 
 @media (max-width: 700px) {
-  .staff .photo-grid {
+  .staff-page .photo-grid {
     width: 100%;
   }
 }
 
-.staff .pic-row {
+.staff-page .pic-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1748,7 +1759,7 @@
   width: 100%;
 }
 
-.staff .pic-row .pic-box {
+.staff-page .pic-row .pic-box {
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -1759,144 +1770,144 @@
 }
 
 @media (max-width: 1000px) {
-  .staff .pic-row .pic-box {
+  .staff-page .pic-row .pic-box {
     height: 120px;
     width: 120px;
   }
 }
 
 @media (max-width: 500px) {
-  .staff .pic-row .pic-box {
+  .staff-page .pic-row .pic-box {
     height: 100px;
     width: 100px;
   }
 }
 
-.staff .pic-row .pic-box .active {
+.staff-page .pic-row .pic-box .active {
   cursor: default;
 }
 
-.staff .pic-row .nicole-box {
+.staff-page .pic-row .nicole-box {
   background-image: url("../img/nicole-bw.jpg");
 }
 
-.staff .pic-row .nicole-box:hover {
+.staff-page .pic-row .nicole-box:hover {
   background-image: url("../img/nicole.jpg");
 }
 
-.staff .pic-row .nicole-box.active {
+.staff-page .pic-row .nicole-box.active {
   background-image: url("../img/nicole.jpg");
 }
 
-.staff .pic-row .jennifer-box {
+.staff-page .pic-row .jennifer-box {
   background-image: url("../img/jennifer-bw.jpg");
 }
 
-.staff .pic-row .jennifer-box:hover {
+.staff-page .pic-row .jennifer-box:hover {
   background-image: url("../img/jennifer.jpg");
 }
 
-.staff .pic-row .jennifer-box.active {
+.staff-page .pic-row .jennifer-box.active {
   background-image: url("../img/jennifer.jpg");
 }
 
-.staff .pic-row .julia-box {
+.staff-page .pic-row .julia-box {
   background-image: url("../img/julia-bw.jpg");
 }
 
-.staff .pic-row .julia-box:hover {
+.staff-page .pic-row .julia-box:hover {
   background-image: url("../img/julia.jpg");
 }
 
-.staff .pic-row .julia-box.active {
+.staff-page .pic-row .julia-box.active {
   background-image: url("../img/julia.jpg");
 }
 
-.staff .pic-row .tammy-box {
+.staff-page .pic-row .tammy-box {
   background-image: url("../img/tammy-bw.jpg");
 }
 
-.staff .pic-row .tammy-box:hover {
+.staff-page .pic-row .tammy-box:hover {
   background-image: url("../img/tammy.jpg");
 }
 
-.staff .pic-row .tammy-box.active {
+.staff-page .pic-row .tammy-box.active {
   background-image: url("../img/tammy.jpg");
 }
 
-.staff .pic-row .janelle-box {
+.staff-page .pic-row .janelle-box {
   background-image: url("../img/janelle-bw.jpg");
 }
 
-.staff .pic-row .janelle-box:hover {
+.staff-page .pic-row .janelle-box:hover {
   background-image: url("../img/janelle.jpg");
 }
 
-.staff .pic-row .janelle-box.active {
+.staff-page .pic-row .janelle-box.active {
   background-image: url("../img/janelle.jpg");
 }
 
-.staff .pic-row .melissa-box {
+.staff-page .pic-row .melissa-box {
   background-image: url("../img/melissa-bw.jpg");
 }
 
-.staff .pic-row .melissa-box:hover {
+.staff-page .pic-row .melissa-box:hover {
   background-image: url("../img/melissa.jpg");
 }
 
-.staff .pic-row .melissa-box.active {
+.staff-page .pic-row .melissa-box.active {
   background-image: url("../img/melissa.jpg");
 }
 
-.staff .pic-row .carla-box {
+.staff-page .pic-row .carla-box {
   background-image: url("../img/carla-bw.jpg");
 }
 
-.staff .pic-row .carla-box:hover {
+.staff-page .pic-row .carla-box:hover {
   background-image: url("../img/carla.jpg");
 }
 
-.staff .pic-row .carla-box.active {
+.staff-page .pic-row .carla-box.active {
   background-image: url("../img/carla.jpg");
 }
 
-.staff .pic-row .sam-box {
+.staff-page .pic-row .sam-box {
   background-image: url("../img/samantha-bw.jpg");
 }
 
-.staff .pic-row .sam-box:hover {
+.staff-page .pic-row .sam-box:hover {
   background-image: url("../img/samantha.jpg");
 }
 
-.staff .pic-row .sam-box.active {
+.staff-page .pic-row .sam-box.active {
   background-image: url("../img/samantha.jpg");
 }
 
-.staff .pic-row .chelsey-box {
+.staff-page .pic-row .chelsey-box {
   background-image: url("../img/chelsey-bw.jpg");
 }
 
-.staff .pic-row .chelsey-box:hover {
+.staff-page .pic-row .chelsey-box:hover {
   background-image: url("../img/chelsey.jpg");
 }
 
-.staff .pic-row .chelsey-box.active {
+.staff-page .pic-row .chelsey-box.active {
   background-image: url("../img/chelsey.jpg");
 }
 
-.staff .pic-row .haley-box {
+.staff-page .pic-row .haley-box {
   background-image: url("../img/haley-bw.jpg");
 }
 
-.staff .pic-row .haley-box:hover {
+.staff-page .pic-row .haley-box:hover {
   background-image: url("../img/haley.jpg");
 }
 
-.staff .pic-row .haley-box.active {
+.staff-page .pic-row .haley-box.active {
   background-image: url("../img/haley.jpg");
 }
 
-.staff .text-row {
+.staff-page .text-row {
   background-color: #f6f6f6;
   border-top: 4px solid #304800;
   -webkit-box-shadow: 0 0 10px #bbb;
@@ -1907,22 +1918,22 @@
 }
 
 @media (max-width: 700px) {
-  .staff .text-row {
+  .staff-page .text-row {
     position: relative;
     width: 100%;
   }
 }
 
-.staff .text-row .nicole,
-.staff .text-row .jennifer,
-.staff .text-row .julia,
-.staff .text-row .tammy,
-.staff .text-row .melissa,
-.staff .text-row .carla,
-.staff .text-row .sam,
-.staff .text-row .chelsey,
-.staff .text-row .janelle,
-.staff .text-row .haley {
+.staff-page .text-row .nicole,
+.staff-page .text-row .jennifer,
+.staff-page .text-row .julia,
+.staff-page .text-row .tammy,
+.staff-page .text-row .melissa,
+.staff-page .text-row .carla,
+.staff-page .text-row .sam,
+.staff-page .text-row .chelsey,
+.staff-page .text-row .janelle,
+.staff-page .text-row .haley {
   max-height: 0;
   opacity: 0;
   overflow: hidden;
@@ -1930,31 +1941,31 @@
   transition: all .3s;
 }
 
-.staff .text-row .active {
+.staff-page .text-row .active {
   opacity: 1;
   max-height: 650px;
 }
 
 @media (max-width: 450px) {
-  .staff .text-row .active {
+  .staff-page .text-row .active {
     max-height: 800px;
   }
 }
 
-.staff .text-row p {
+.staff-page .text-row p {
   color: #3d321d;
   font-size: 16px;
   line-height: 30px;
 }
 
 @media (max-width: 450px) {
-  .staff .text-row p {
+  .staff-page .text-row p {
     font-size: 14px;
     line-height: 27px;
   }
 }
 
-.staff .text-row .lang {
+.staff-page .text-row .lang {
   color: #558000;
   cursor: pointer;
   font-style: italic;
@@ -1962,7 +1973,7 @@
   text-align: center;
 }
 
-.staff .text-row h2 {
+.staff-page .text-row h2 {
   color: #3d321d;
   font-family: "Pathway Gothic One", sans-serif;
   font-size: 32px;
@@ -1970,6 +1981,45 @@
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: center;
+}
+
+.careers-section {
+  padding: 4em 0 5em;
+}
+
+.careers-title {
+  color: #3d321d;
+  font-size: 40px;
+  font-family: "Pathway Gothic One", sans-serif;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.careers-box {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.careers-box .careers-text {
+  background-color: #f6f6f6;
+  border-top: 4px solid #304800;
+  -webkit-box-shadow: 0 0 10px #bbb;
+          box-shadow: 0 0 10px #bbb;
+  margin: 0 auto;
+  padding: 20px;
+  width: 55%;
+}
+
+@media (max-width: 700px) {
+  .careers-box .careers-text {
+    width: 100%;
+  }
+}
+
+.careers-box .careers-text p {
+  color: #3d321d;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .hidden {

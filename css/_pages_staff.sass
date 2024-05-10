@@ -1,11 +1,15 @@
 
-.staff
+.staff-page
 	+backgroundCover
 	background-position: left bottom
 	background-image: url('../img/leaf-border.png')
 	background-attachment: fixed
 	padding-top: 1px
-	padding-bottom: 70px
+
+
+	.staff
+		border-bottom: 5px solid #304800
+		padding-bottom: 5em
 
 	h1
 		color: #3d321d
@@ -192,6 +196,42 @@
 			padding-top: 15px
 			padding-bottom: 15px
 			text-align: center
+
+
+
+.careers-section
+	// background: rgb(255,255,255)
+	// background: linear-gradient(180deg, rgba(255,255,255,.7) 50%, rgba(204,204,204,1) 100%)
+	padding: 4em 0 5em
+
+.careers-title
+	color: #3d321d
+	font-size: 40px
+	font-family: "Pathway Gothic One", sans-serif
+	margin: 20px 0
+	text-align: center
+
+.careers-box
+	max-width: 1200px
+	margin: 0 auto
+
+	.careers-text
+		background-color: #f6f6f6
+		border-top: 4px solid $green
+		box-shadow: 0 0 10px #bbb
+		margin: 0 auto
+		padding: 20px
+		width: 55%
+		@media (max-width: 700px)
+			width: 100%
+
+		p
+			color: #3d321d
+			font-size: 16px
+			line-height: 30px
+	
+		
+
 
 
 .hidden
